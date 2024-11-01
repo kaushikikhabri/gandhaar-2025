@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Niconne&family=Satisfy&family=Updock&display=swap');
+.theme-carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background-color: #0f0f2b; /* Dark background */
+  padding: 20px;
+}
+
+.theme-carousel h1 {
+  font-size: 8rem;
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-family: "Updock", cursive;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.theme-cards-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 15px;
+  padding: 20px;
+}
+
+.theme-card {
+  flex: 0 0 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: center;
+  background: linear-gradient(145deg, #ff5f6d, #ffc371); /* Gradient background */
+  border-radius: 20px;
+  padding: 25px;
+  color: white;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  transition: transform 0.3s ease;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.theme-card:hover {
+  transform: scale(1.08);
+}
+
+.theme-card img {
+  width: 80%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px; /* Space below the image */
+}
+
+.theme-day {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #00e0ff;
+  margin-bottom: 10px;
+  font-family: 'Pacifico', cursive;
+}
+
+.theme-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 10px 0;
+  font-family: 'Merriweather', serif;
+}
+
+.theme-description {
+  font-size: 1rem;
+  color: #e0e0e0;
+  line-height: 1.4;
+}
