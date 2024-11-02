@@ -1,0 +1,33 @@
+/* ImageGallery.css */
+
+.image-gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('https://files.oaiusercontent.com/file-lRdSIUEEukfBPGwBJysFIg99?se=2024-11-02T15%3A11%3A34Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D495be401-b9a2-4a35-88e4-084c247ba6af.webp&sig=hyLdKS5p24LVc8aurzGgZ/Wy5kcI6hXGS05KtWk3MnM%3D');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .music-card {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    max-width: 400px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .music-card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .music-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  

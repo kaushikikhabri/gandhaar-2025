@@ -1,0 +1,93 @@
+.timeline-container {
+  background: #cfbcd7;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: rgb(53, 53, 53);
+}
+
+.timeline-title {
+  font-size: 5em;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.timeline-subtitle {
+  padding-top: 0.25em;
+}
+
+.timeline-element-content {
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25),
+    0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
+  padding: 2em 3em !important;
+}
+
+.timeline-date {
+  color: rgb(0, 0, 0);
+}
+
+.timeline-description {
+  margin: 1.5em 0 4em 0;
+  padding-bottom: 25px;
+}
+
+.timeline-button {
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  color: white;
+}
+
+.timeline-work-button {
+  background-color: #06d6a0;
+}
+
+.timeline-work-button:hover {
+  background-color: #0ac593;
+}
+
+.timeline-school-button {
+  background-color: #f9c74f;
+}
+
+.timeline-school-button:hover {
+  background-color: #f3bc3c;
+}
+
+@media only screen and (max-width: 1700px) {
+  .timeline-element-date {
+    display: block !important;
+    float: none !important;
+    color: rgb(44, 44, 44);
+    margin-top: 1.5em;
+  }
+}
+
+.vertical-timeline::before {
+    background: black !important;
+  }
+  
+.vertical-timeline-element-content, .vertical-timeline-element-content-arrow {
+    border: 2px solid black;
+}
+
+
+.day-selector {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .day-selector button {
+    background-color: #3da3d5;
+    color: white;
+    border: 2px solid black;
+    padding: 0.5em 1em;
+    margin: 0 0.5em;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+  }
+  
+  .day-selector button:hover {
+    background-color: #2d8abf;
+  }
