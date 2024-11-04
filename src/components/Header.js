@@ -1,6 +1,6 @@
 import React from "react";
-import s_logo from "../logos/sanstha-logo.png";
-import c_logo from "../logos/college-logo.png";
+import s_logo from "../images/sanstha-logo.png";
+import c_logo from "../images/college-logo.png";
 import "../style/Header.css";
 
 const Header = () => {
