@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../logos/gandhaar-logo.png";
+import logo from "../images/gandhaar-logo.png";
 import "../style/Footer.css";
 
 const Footer = () => {
