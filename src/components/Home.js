@@ -9,6 +9,9 @@ import StarLineUp from "./StarLineUp";
 import Schedule from "./Schedule";
 import ImageGallery from "./ImageGallery";
 import Footer from "./Footer";
+import Event from "./Event";
+import EventSlider from "./EventSlider";
+import EventCard from "./EventCard";
 
 function Home() {
   const targetDate = "2025-01-30T23:59:59";
@@ -19,7 +22,10 @@ function Home() {
       <PreGandhaarThemes />
       <GandhaarThemes />
       <Events />
+      <Event />
+      <EventSlider />
       <StarLineUp />
+      <EventCard />
       <Schedule />
       <ImageGallery />
       <Footer />
