@@ -1,0 +1,94 @@
+/* Navbar Container */
+.navbar {
+    display: flex;
+    justify-content: center; /* This pushes the menu text to the left and menu links to the right */
+    align-items: center; /* Vertically centers the items */
+    padding: 10px 20px;
+    z-index: 1000;
+    position: sticky;
+    top: 80px; /* Adjust position based on sticky header */
+    width: 50%;
+    
+    margin: 0 auto; /* Center the navbar horizontally */
+    background-color: #ffffff; /* White background */
+    border-radius: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+  }
+  
+  /* Menu Text (Instead of Hamburger) */
+  .menu-text {
+    display: none; /* Initially hidden on desktop */
+    cursor: pointer;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #000843;
+    transition: color 0.3s;
+  }
+  
+  .menu-text:hover {
+    color: #ffcc00;
+  }
+  
+  /* Navbar Links (Horizontal Layout for Desktop) */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Individual Nav Link Styles */
+  .nav-link {
+    color: #000843;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-transform: uppercase;
+  }
+  
+  /* Hover Effect */
+  .nav-link:hover {
+    background-color: #ffcc00;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Media Queries for Mobile (Below 768px) */
+  @media (max-width: 768px) {
+    /* Hide nav links by default on mobile */
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      gap: 20px;
+      position: absolute;
+      top: 80px; /* Adjust based on navbar height */
+      right: 0;
+      background-color: #ffffff;
+      width: 100%;
+      height: 100vh;
+      padding-top: 60px;
+      box-shadow: -4px 0 8px rgba(0, 0, 0, 0.3);
+      border-radius: 0 0 0 20px;
+    }
+  
+    /* Display nav links when menu is active */
+    .nav-links.active {
+      display: flex;
+    }
+
+  
+    /* Show menu text on mobile */
+    .menu-text {
+      display: block; /* Make the menu text visible */
+    }
+    
+  }
+  
