@@ -1,35 +1,73 @@
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: linear-gradient(135deg, #004d80, #ffcc00); /* A nice deep blue color */
-    color: #ffffff; /* White text color for contrast */
-   
-    height: 120px; /* Adjust height as needed */
-    z-index : 1000;
-    position: sticky;
-    top: 0px;
+    display: flex;  
+    flex-direction: column;
+    height: 30em ; /* Adjust height as needed */
     width: 100%;
+   background-image: url("E:\Projects\Gandhaar25\gandhaar-2025\src\images\dashboard3.jpeg"); /* Path to your background image */
+  background-size: cover; /* Ensures the image covers the entire header */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Optional: Add shadow */
     
   }
   
   .header img {
-    height: 80px; /* Adjust the logo size if necessary */
+    height: 100px; /* Adjust the logo size if necessary */
   }
-  
-  .college-name {
-    font-family: 'Brush Script MT', cursive; /* Specific cursive font */
-    font-size: 3.2em;
-    font-weight: bold;
+  .logos{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    height: fit-content;
+    border-radius: 20px;
+    width: fit-content;
+  }
+
+  .tag {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Start invisible */
+    animation: popUp 5s ease forwards; /* Apply animation */
+    animation-fill-mode: forwards; /* Ensures the animation's last state persists */
+}
+
+@keyframes popUp {
+    0% {
+        opacity: 0;
+        transform: scale(0.8) translateY(20px); /* Start slightly below and scaled down */
+    }
+    60% {
+        opacity: 1;
+        transform: scale(1.1) translateY(0); /* Scale up slightly */
+    }
+    100% {
+        opacity: 1; /* Keep opacity at 1 */
+        transform: scale(1); /* Settle at normal size */
+    }
+}
+
+.tag p {
+    margin: 0;
     text-align: center;
-    flex: 1;
-    color: #ffcc00;
-    letter-spacing: 12px;
-  }
-  
-  
-  #logo1, #logo2 {
-    height: 80px;
-    width: auto;
-  }
-  
+}
+.tag1{
+  font-size: 3rem;
+  font-weight: 700;
+  color: rgb(15, 18, 8);
+  font-family:'Cinzel', serif;
+}
+.tag2{
+  font-size: 2rem;
+  color: rgb(22, 30, 0);
+  font-family:'Cinzel', serif;
+  font-weight: 500;
+}
+.tag3{
+  font-size: 6rem;
+  font-family: 'Playfair Display', serif;
+  color: white;
+  opacity: 0; /* Start invisible */
+    animation: popUp 5s ease forwards; /* Apply animation */
+    animation-fill-mode: forwards; /* Ensures the animation's last state persists */
+}

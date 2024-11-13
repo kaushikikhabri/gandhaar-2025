@@ -1,7 +1,6 @@
 import React from "react";
 import Launch from "./Launch";
 import Header from "./Header";
-import Navigation from "./Navigation";
 import Countdown from "./Countdown";
 import PreGandhaarThemes from "./PreGandhaarThemes";
 import GandhaarThemes from "./GandhaarThemes";
@@ -16,7 +15,6 @@ function Home() {
   return (
     <div>
       <Header />
-      <Navigation/>
       <Countdown targetDate={targetDate} />
       <PreGandhaarThemes />
       <GandhaarThemes />
