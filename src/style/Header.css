@@ -1,34 +1,35 @@
 .header {
-    height: 20vh;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-}
-
-#logo1 {
-    max-width: 19vh;
-    max-height: 19vh;
-}
-
-#logo2 {
-    max-width: 20vw;
-    max-height: 18vh;
-}
-
-.college-name {
-    font-size: 22px;
-    font-weight: bold;
-    color: black;
-}
-
-@media screen and (max-width:665px) {
-    #logo1 {
-        max-height: 12vh; 
-        max-width: 12vh;
-    }
-
-    .college-name {
-        font-size: 15px;
-    }
+    justify-content: space-between;
+    background: linear-gradient(135deg, #004d80, #ffcc00); /* A nice deep blue color */
+    color: #ffffff; /* White text color for contrast */
+   
+    height: 120px; /* Adjust height as needed */
+    z-index : 1000;
+    position: sticky;
+    top: 0px;
+    width: 100%;
     
-}
+  }
+  
+  .header img {
+    height: 80px; /* Adjust the logo size if necessary */
+  }
+  
+  .college-name {
+    font-family: 'Brush Script MT', cursive; /* Specific cursive font */
+    font-size: 3.2em;
+    font-weight: bold;
+    text-align: center;
+    flex: 1;
+    color: #ffcc00;
+    letter-spacing: 12px;
+  }
+  
+  
+  #logo1, #logo2 {
+    height: 80px;
+    width: auto;
+  }
+  
