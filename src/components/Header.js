@@ -25,11 +25,10 @@ const Header = () => {
 
       <div className="tag">
         <p className="tag1">MKSSS's Cummins College of Engineering for Women </p>
-        <p className="tag2">Brings You Gandhaar 2025</p>
+        <p className="tag2">Brings You</p>
         <p className="tag3">Gandhaar 2025</p>
       </div>
     </div>
   );
 };
-
 export default Header;
