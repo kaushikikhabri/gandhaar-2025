@@ -3,26 +3,31 @@ import s_logo from "../images/sanstha-logo.png";
 import c_logo from "../images/college-logo.png";
 import "../style/Header.css";
 
-
 const Header = () => {
   return (
     <div className="header">
-    
-    <div className="logos">
-        <div className="lg1">
-          <img id="logo1" src={s_logo} alt="Logo 1" />
+      <div className="navbar">
+        <div className="logo-left">
+          <img id="logo1" src={s_logo} alt="Sanstha Logo" />
         </div>
-        <div className="lg2">
-          <img id="logo2" src={c_logo} alt="Logo 2" />
+        <ul className="nav-menu">
+          <li className="nav-item"><a href="#home">Home</a></li>
+          <li className="nav-item"><a href="#events">Events</a></li>
+          <li className="nav-item"><a href="#schedule">Schedule</a></li>
+          <li className="nav-item"><a href="#workshops">Workshops</a></li>
+          <li className="nav-item"><a href="#team">Team</a></li>
+          <li className="nav-item"><a href="#about-us">About Us</a></li>
+        </ul>
+        <div className="logo-right">
+          <img id="logo2" src={c_logo} alt="College Logo" />
         </div>
-    </div>
+      </div>
 
-    <div className="tag">
-      <p className="tag1">MKSSS's Cummins College </p> <p className="tag2"> Presenting </p> 
-      <p className="tag3">Gandhaar 2025</p>
-      
-    </div>
-     
+      <div className="tag">
+        <p className="tag1">MKSSS's Cummins College of Engineering for Women </p>
+        <p className="tag2">Brings You Gandhaar 2025</p>
+        <p className="tag3">Gandhaar 2025</p>
+      </div>
     </div>
   );
 };
