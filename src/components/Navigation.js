@@ -1,27 +1,42 @@
-import React, { useState } from "react";
-import "../style/Navigation.css"; // Import the CSS
+import React, { useEffect, useState } from "react";
+import "../style/Navigation.css";
 
 const Navigation = () => {
-  const [isMenuActive, setIsMenuActive] = useState(false); // State for toggling menu
+  const [isSticky, setIsSticky] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
 
-  const toggleMenu = () => {
-    setIsMenuActive(!isMenuActive); // Toggle menu visibility
-  };
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY; // Get the scroll position
+      if (scrollPosition > 200) { // Change 200 to your desired threshold
+        setIsSticky(true);
+        setIsVisible(true);
+      } else {
+        setIsSticky(false);
+        setIsVisible(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
-    <nav className="navbar">
-      
-      <div className="menu-text" onClick={toggleMenu}>
-        Menu
-      </div>
-
-      <ul className={`nav-links ${isMenuActive ? "active" : ""}`}>
-        <li><a href="#home" className="nav-link">Home</a></li>
-        <li><a href="#schedule" className="nav-link">Schedule</a></li>
-        <li><a href="#workshops" className="nav-link">Workshops</a></li>
-        <li><a href="#events" className="nav-link">Events</a></li>
+    <div
+      className={`navcontainer ${isSticky ? "sticky" : ""}`}
+      style={{ display: isVisible ? "flex" : "none" }}
+    >
+      <ul className="navmenu">
+        <li className="navitem"><a href="#home">Home</a></li>
+        <li className="navitem"><a href="#events">Events</a></li>
+        <li className="navitem"><a href="#schedule">Schedule</a></li>
+        <li className="navitem"><a href="#workshops">Workshops</a></li>
+        <li className="navitem"><a href="#team">Team</a></li>
+        <li className="navitem"><a href="#about-us">About Us</a></li>
       </ul>
-    </nav>
+    </div>
   );
 };
 

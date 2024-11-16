@@ -1,94 +1,48 @@
-/* Navbar Container */
-.navbar {
-    display: flex;
-    justify-content: center; /* This pushes the menu text to the left and menu links to the right */
-    align-items: center; /* Vertically centers the items */
-    padding: 10px 20px;
-    z-index: 1000;
-    position: sticky;
-    top: 80px; /* Adjust position based on sticky header */
-    width: 50%;
-    
-    margin: 0 auto; /* Center the navbar horizontally */
-    background-color: #ffffff; /* White background */
-    border-radius: 20px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+.navcontainer {
+    display: none; /* Hidden by default */
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    transition: top 0.3s ease, opacity 0.3s ease; /* Smooth transition for position and visibility */
   }
   
-  /* Menu Text (Instead of Hamburger) */
-  .menu-text {
-    display: none; /* Initially hidden on desktop */
-    cursor: pointer;
-    font-family: 'Dancing Script', cursive;
-    font-size: 1.4em;
-    font-weight: bold;
-    color: #000843;
-    transition: color 0.3s;
+  .navcontainer.sticky {
+    display: flex; /* Becomes visible when sticky class is added */
+    position: fixed; /* Stick to the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure it's above other elements */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
   }
   
-  .menu-text:hover {
-    color: #ffcc00;
-  }
-  
-  /* Navbar Links (Horizontal Layout for Desktop) */
-  .nav-links {
+  .navmenu {
+    background-color: rgba(255, 255, 255, 0.244);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(10px);
+    background-image: linear-gradient(135deg, rgba(132, 25, 156, 0.546) 10%, rgba(240, 95, 87, 0.546) 100%);
     list-style: none;
-    display: flex;
-    gap: 30px;
-    margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(250, 123, 244);
+    border-radius: 20px;
   }
   
-  /* Individual Nav Link Styles */
-  .nav-link {
-    color: #000843;
+  .navitem {
+    margin: 15px;
+  }
+  
+  .navitem a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    font-size: 17px;
     text-decoration: none;
-    font-size: 1.2em;
-    font-family: 'Dancing Script', cursive;
-    font-weight: bold;
-    transition: all 0.3s ease;
-    padding: 10px 20px;
-    border-radius: 10px;
-    text-transform: uppercase;
-  }
-  
-  /* Hover Effect */
-  .nav-link:hover {
-    background-color: #ffcc00;
-    color: white;
-    cursor: pointer;
-    transform: scale(1.1);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Media Queries for Mobile (Below 768px) */
-  @media (max-width: 768px) {
-    /* Hide nav links by default on mobile */
-    .nav-links {
-      display: none;
-      flex-direction: column;
-      gap: 20px;
-      position: absolute;
-      top: 80px; /* Adjust based on navbar height */
-      right: 0;
-      background-color: #ffffff;
-      width: 100%;
-      height: 100vh;
-      padding-top: 60px;
-      box-shadow: -4px 0 8px rgba(0, 0, 0, 0.3);
-      border-radius: 0 0 0 20px;
-    }
-  
-    /* Display nav links when menu is active */
-    .nav-links.active {
-      display: flex;
-    }
-
-  
-    /* Show menu text on mobile */
-    .menu-text {
-      display: block; /* Make the menu text visible */
-    }
-    
+    padding: 10px 15px;
+    background: linear-gradient(90deg, #d8d8d8, #f8f9fa, #d8d8d8);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
   }
   
