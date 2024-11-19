@@ -32,7 +32,6 @@ const images = [
   { src: image14, alt: 'Image 14' },
 ];
 
- 
 const ImageGallery = () => {
   const [selectedImageIndex, setSelectedImageIndex] = useState(null);
   const imageGridRef = useRef(null);
@@ -70,9 +69,6 @@ const ImageGallery = () => {
           <div 
             key={index} 
             className="image-item" 
-            style={{
-              transform: `translateY(${index % 2 === 0 ? -20 : 10}px)`,
-            }} 
             onClick={() => openModal(index % images.length)}
           >
             <img src={image.src} alt={image.alt} />
