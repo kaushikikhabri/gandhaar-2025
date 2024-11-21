@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/gandhaar-2025/static/css/main.433807be.css",
+    "main.js": "/gandhaar-2025/static/js/main.5a0425f5.js",
+    "static/js/453.8a02548c.chunk.js": "/gandhaar-2025/static/js/453.8a02548c.chunk.js",
+    "static/media/image9.JPG": "/gandhaar-2025/static/media/image9.ee3c61b0939b1749ef23.JPG",
+    "static/media/image4.jpg": "/gandhaar-2025/static/media/image4.6b61eb5e96d03c6b5602.jpg",
+    "static/media/image12.JPG": "/gandhaar-2025/static/media/image12.4515faf2fa28e9b803c8.JPG",
+    "static/media/image3.JPG": "/gandhaar-2025/static/media/image3.1270dfb74eb86dfe91df.JPG",
+    "static/media/image2.jpg": "/gandhaar-2025/static/media/image2.f7b339bb05ffbf2e40ef.jpg",
+    "static/media/image14.JPG": "/gandhaar-2025/static/media/image14.ddb23c718f6f0077a924.JPG",
+    "static/media/image10.JPG": "/gandhaar-2025/static/media/image10.9671baedfd41ac4c6e75.JPG",
+    "static/media/image5.JPG": "/gandhaar-2025/static/media/image5.1798c84bbc5d0b6e6baf.JPG",
+    "static/media/image1.JPG": "/gandhaar-2025/static/media/image1.b55ae8aabd3307d4fd98.JPG",
+    "static/media/image13.JPG": "/gandhaar-2025/static/media/image13.ca4a9ef4664f952e3f34.JPG",
+    "static/media/image6.JPG": "/gandhaar-2025/static/media/image6.8df8f30e890e0671605b.JPG",
+    "static/media/image7.JPG": "/gandhaar-2025/static/media/image7.9f3299400713a01a127e.JPG",
+    "static/media/image8.JPG": "/gandhaar-2025/static/media/image8.a2f65128472b81bd8d0e.JPG",
+    "static/media/image11.JPG": "/gandhaar-2025/static/media/image11.0315439a5198560bdde3.JPG",
+    "static/media/PuneMap.jpeg": "/gandhaar-2025/static/media/PuneMap.545b9c3b065a3aab3932.jpeg",
+    "static/media/gandhaar-logo.png": "/gandhaar-2025/static/media/gandhaar-logo.267dc4c4a61872d7f723.png",
+    "static/media/fa-solid-900.ttf": "/gandhaar-2025/static/media/fa-solid-900.07ed6d5fa32c1d54af0f.ttf",
+    "static/media/fa-brands-400.ttf": "/gandhaar-2025/static/media/fa-brands-400.0ff70dcbf135d859ebf3.ttf",
+    "static/media/sanstha-logo.png": "/gandhaar-2025/static/media/sanstha-logo.02ab85ed9c1b0fb7a2b8.png",
+    "static/media/fa-solid-900.woff2": "/gandhaar-2025/static/media/fa-solid-900.93f719f4d62bfa3e748c.woff2",
+    "static/media/sabali.jpg": "/gandhaar-2025/static/media/sabali.3f4cbd2da1bd305d4ae9.jpg",
+    "static/media/college-logo.png": "/gandhaar-2025/static/media/college-logo.2000a122e3b4b339357b.png",
+    "static/media/fa-brands-400.woff2": "/gandhaar-2025/static/media/fa-brands-400.bb8d5a145e22822103fb.woff2",
+    "static/media/fa-regular-400.ttf": "/gandhaar-2025/static/media/fa-regular-400.17a6e1aebccdbaa39e78.ttf",
+    "static/media/comedy.jpg": "/gandhaar-2025/static/media/comedy.160278dc69cd888f9a4c.jpg",
+    "static/media/fa-regular-400.woff2": "/gandhaar-2025/static/media/fa-regular-400.bc3722686635b5f86132.woff2",
+    "static/media/fa-v4compatibility.ttf": "/gandhaar-2025/static/media/fa-v4compatibility.0f6cb412603527bda691.ttf",
+    "static/media/fa-v4compatibility.woff2": "/gandhaar-2025/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
+    "index.html": "/gandhaar-2025/index.html",
+    "main.433807be.css.map": "/gandhaar-2025/static/css/main.433807be.css.map",
+    "main.5a0425f5.js.map": "/gandhaar-2025/static/js/main.5a0425f5.js.map",
+    "453.8a02548c.chunk.js.map": "/gandhaar-2025/static/js/453.8a02548c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.433807be.css",
+    "static/js/main.5a0425f5.js"
+  ]
+}
