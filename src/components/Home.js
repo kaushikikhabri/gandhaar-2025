@@ -1,4 +1,5 @@
 import React from "react";
+import "../style/Home.css";
 import Launch from "./Launch";
 import Header from "./Header";
 import Navigation from "./Navigation";
@@ -14,6 +15,8 @@ import Event from "./Event";
 import EventSlider from "./EventSlider";
 import EventCard from "./EventCard";
 import CulturalFestMindMap from "./CulturalFestMindMap";
+import HundredDaysOfPoetry from "./HundredDaysofPoetry";
+import DummyGallery from "./DummyGallery";
 
 function Home() {
   const targetDate = "2025-01-30T23:59:59";
@@ -26,8 +29,10 @@ function Home() {
       <CulturalFestMindMap />
       {/* <GandhaarThemes /> */}
       {/* <Events /> */}
+      <HundredDaysOfPoetry />
       <Event />
-      <EventSlider />
+      <DummyGallery />
+      {/* <EventSlider /> */}
       <StarLineUp />
       <EventCard />
       <Schedule />
