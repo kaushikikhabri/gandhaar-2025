@@ -66,12 +66,10 @@ const ImageGallery = () => {
     <div className="gallery-container">
       <div className="image-grid" ref={imageGridRef}>
         {[...images].map((image, index) => (
-          <div
-            key={index}
-            className="image-item"
-            style={{
-              transform: `translateY(${index % 2 === 0 ? -20 : 10}px)`,
-            }}
+          <div 
+            key={index} 
+            className="image-item" 
+
             onClick={() => openModal(index % images.length)}
           >
             <img src={image.src} alt={image.alt} />
