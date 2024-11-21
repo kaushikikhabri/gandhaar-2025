@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #ff9a9a;
+    color: #ffff;
+}
+
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #222;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+header .subheader {
+    font-size: 1.5rem;
+    color: #ccc;
+}
+
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+}
+
+/* Ensure only two boxes per row on larger screens */
+@media (min-width: 768px) {
+    .post {
+        flex: 0 0 calc(50% - 20px); /* Two posts per row, with space between */
+    }
+}
+
+/* Optional: Center alignment for smaller screens */
+@media (max-width: 767px) {
+    .post {
+        flex: 0 0 100%; /* One post per row on smaller screens */
+    }
+}
+
+
+.posts h2 {
+    font-size: 2rem;
+    color: #ff9a9a;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.posts .browse {
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.posts .category,
+.posts .tag {
+    color: #e74c3c;
+    cursor: pointer;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    color: #ff9a9a;
+    padding: 20px;
+    margin: 20px;
+    width: 45%;
+    max-width: 700px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    outline: none; /* Remove default focus outline */
+}
+
+.post:hover,
+.post:focus {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+}
+
+.post img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.post-content {
+    text-align: center;
+}
+
+.post-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.post-content h3 a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+.post-content h3 a:hover {
+    text-decoration: underline;
+}
+
+.post-content .author {
+    color: #bbb;
+    font-size: 1rem;
+}
+
+.post-content .date {
+    font-size: 0.9rem;
+    color: #888;
+    margin-top: 5px;
+}
+
+.event-header {
+    position: relative;
+    text-align: center;
+    padding: 50px 20px;
+    background-image: url("https://media.istockphoto.com/vectors/abstract-music-notes-design-vector-id522874751?k=6&m=522874751&s=612x612&w=0&h=jylycWTuQLtwT57iip8udHV-wDtLQJmYathF8id56wc=");
+    background-size: cover;
+    background-position: center;
+   
+}
+
+.event-header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+@media (min-width: 768px) {
+    .posts {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .post {
+        width: 45%;
+        margin: 20px;
+    }
+
+    .event-header h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .post {
+        width: 30%;
+    }
+
+    .event-header h1 {
+        font-size: 3.5rem;
+    }
+}
+/* EventDetail.css */
+.hero {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.hero-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-content p {
+  margin-bottom: 0.5rem;
+}
+
+.hero-content span {
+  font-size: 0.9rem;
+}
+
+.event-details {
+  padding: 20px;
+
+}
+
+.event-details .content {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
