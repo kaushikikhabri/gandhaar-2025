@@ -89,7 +89,7 @@ const Navigation = () => {
             </li>
             <li className="draweritem">
               <a href="#team" onClick={toggleDrawer}>
-               <span>👥</span>  Team
+                <span>👥</span>  Team
               </a>
             </li>
             <li className="draweritem">
