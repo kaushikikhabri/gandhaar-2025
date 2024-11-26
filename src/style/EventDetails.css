@@ -1,221 +1,160 @@
-* {
-    margin: 0;
-    padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Niconne&family=Rubik+Gemstones&family=Satisfy&family=Updock&family=Yesteryear&display=swap');
+
+.event-container-title{
+  font-size: 100px;
+  margin-bottom: 30px;
+  font-family: "Lavishly Yours", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 20%;
+    padding: 1rem;
+    background: white;
+    border-right: 1px solid #ccc;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
+    padding-right: 10px;
+    text-align: start;
+  }
 
-body {
-    background-color: #ff9a9a;
-    color: #ffff;
-}
-
-
-header {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #222;
-}
-
-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 5px;
-}
-
-header .subheader {
-    font-size: 1.5rem;
-    color: #ccc;
-}
-
-.posts {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-   
-}
-
-/* Ensure only two boxes per row on larger screens */
-@media (min-width: 768px) {
-    .post {
-        flex: 0 0 calc(50% - 20px); /* Two posts per row, with space between */
-    }
-}
-
-/* Optional: Center alignment for smaller screens */
-@media (max-width: 767px) {
-    .post {
-        flex: 0 0 100%; /* One post per row on smaller screens */
-    }
-}
-
-
-.posts h2 {
-    font-size: 2rem;
-    color: #ff9a9a;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-}
-
-.posts .browse {
-    font-size: 1rem;
-    color: #ccc;
-    margin-bottom: 20px;
-}
-
-.posts .category,
-.posts .tag {
-    color: #e74c3c;
-    cursor: pointer;
-}
-
-.post {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #333;
-    color: #ff9a9a;
-    padding: 20px;
-    margin: 20px;
-    width: 45%;
-    max-width: 700px;
-    border-radius: 8px;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    cursor: pointer;
-    outline: none; /* Remove default focus outline */
-}
-
-.post:hover,
-.post:focus {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
-}
-
-.post img {
+  .sidebar h3 {
+    margin-bottom: 2rem;
+  }
+  
+  .sidebar h4 {
+    margin-bottom: 1rem;
+  }
+  
+  .sidebar select {
     width: 100%;
-    height: auto;
-    border-radius: 4px;
-    margin-bottom: 10px;
-}
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  /* Main Content Styling */
+  .main-content {
+    width: 80%;
+    padding: 1rem;
+    box-sizing: border-box;
+    /* background: linear-gradienta(90.7deg, rgb(255, 253, 218) 1.9%, rgb(246, 210, 255) 39.3%, rgb(152, 222, 254) 64.7%, rgb(251, 255, 210) 100.8%); */
+    /* background: linear-gradient(104.3deg, rgb(253, 243, 243) 10.9%, rgb(248, 231, 231) 27.8%, rgb(160, 112, 161) 101.7%); */
+    background: linear-gradient(103deg, rgb(235, 225, 188) 7.2%, rgb(232, 188, 234) 57.5%, rgb(203, 209, 244) 90.7%); 
+  }
+  
+  /* Grid Styling */
+  .event-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 3rem;
+    margin-right: 10px;
+  }
 
-.post-content {
-    text-align: center;
-}
+  /* Event Card Styling */
+  .event-details-card {
+    display: flex; /* Enables flex layout */
+    flex-direction: column; /* Stacks children vertically */
+    justify-content: space-between; /* Distributes space to push elements apart */
+    background: #fff;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 1rem;
+    /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
+    box-shadow: rgba(0, 0, 0, 1) 7px 7px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    height: 100%; /* Ensures all cards have consistent height */
+    width: 320px;
+  }
 
-.post-content h3 {
-    font-size: 1.5rem;
-    margin-bottom: 5px;
-}
-
-.post-content h3 a {
-    color: #1e90ff;
-    text-decoration: none;
-}
-
-.post-content h3 a:hover {
-    text-decoration: underline;
-}
-
-.post-content .author {
-    color: #bbb;
-    font-size: 1rem;
-}
-
-.post-content .date {
-    font-size: 0.9rem;
-    color: #888;
-    margin-top: 5px;
-}
-
-.event-header {
-    position: relative;
-    text-align: center;
-    padding: 50px 20px;
-    background-image: url("https://media.istockphoto.com/vectors/abstract-music-notes-design-vector-id522874751?k=6&m=522874751&s=612x612&w=0&h=jylycWTuQLtwT57iip8udHV-wDtLQJmYathF8id56wc=");
-    background-size: cover;
-    background-position: center;
-   
-}
-
-.event-header h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-}
-
-@media (min-width: 768px) {
-    .posts {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .post {
-        width: 45%;
-        margin: 20px;
-    }
-
-    .event-header h1 {
-        font-size: 3rem;
-    }
-}
-
-@media (min-width: 1200px) {
-    .post {
-        width: 30%;
-    }
-
-    .event-header h1 {
-        font-size: 3.5rem;
-    }
-}
-/* EventDetail.css */
-.hero {
-  position: relative;
-  text-align: center;
-  color: white;
-}
-
-.hero-image {
+  .event-details-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: rgba(0, 0, 0, 0.4) 5px 5px, rgba(44, 44, 44, 0.4) 10px 10px, rgba(58, 58, 58, 0.4) 15px 15px, rgba(83, 82, 82, 0.4) 20px 20px, rgba(101, 101, 101, 0.4) 25px 25px;
+  }
+  
+  .event-details-card h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Tags Styling */
+  .event-tag {
+    width: fit-content;
+    display: inline-block;
+    margin: 0.25rem 0.25rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    color: black;
+    border: 1px solid #7403f4;
+  }
+  
+ /* Event Register Button Styling */
+.event-register-button {
   width: 100%;
-  height: 300px;
-  object-fit: cover;
-}
-
-.hero-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.hero-content h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.hero-content h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.hero-content p {
-  margin-bottom: 0.5rem;
-}
-
-.hero-content span {
+  background-color: #7403f4;
+  color: #fff;
+  border: none;
+  padding: 0.9rem 1rem;
+  border-radius: 45px;
+  cursor: pointer;
   font-size: 0.9rem;
+  margin-top: 30px;
+  transition: background-color 0.5s ease, transform 0.5s ease; 
 }
 
-.event-details {
-  padding: 20px;
+  
+  .event-register-button:hover {
+    background-color: #430091;
+    transform: scale(1.02);
+  }
 
+  .event-details-image img {
+    width: 100%;
+    height: 140px; /* Set a fixed height for all images */
+    border-radius: 8px;
+    object-fit: cover; /* Ensures images fit the container without distortion */
+    margin-bottom: 10px;
+  }
+
+  /* Filter Section Styling */
+h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
-.event-details .content {
-  max-width: 800px;
-  margin: 0 auto;
-  font-size: 1.1rem;
-  line-height: 1.6;
+
+/* Checkbox and Label Styling */
+input[type="checkbox"] {
+  margin-right: 1px; /* Space between checkbox and label */
+  vertical-align: middle; /* Align checkbox with text */
 }
+
+label {
+  display: inline-block;
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .sidebar {
+      display: none;
+    }
+  
+    .main-content {
+      width: 100%;
+    }
+  
+    .event-grid {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+  }
+  
+ 

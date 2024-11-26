@@ -30,7 +30,8 @@ const events = {
     registerLink: "https://example.com/missfreshers-register",
   },
   danceBattle: {
-    image: "https://th.bing.com/th/id/OIP.wcYjgTNMTVTELs4veDe1uwHaE8?w=280&h=187&c=7&r=0&o=5&dpr=1.1&pid=1.7",
+    image:
+      "https://th.bing.com/th/id/OIP.wcYjgTNMTVTELs4veDe1uwHaE8?w=280&h=187&c=7&r=0&o=5&dpr=1.1&pid=1.7",
     title: "Street Dance Battle",
     subtitle: "Where Moves Speak Louder Than Words",
     details:

@@ -22,21 +22,21 @@ function Home() {
   const targetDate = "2025-01-30T23:59:59";
   return (
     <div>
-      <Header />
-      <Navigation />
+      {/* <Header /> */}
+      {/* <Navigation /> */}
       <Countdown targetDate={targetDate} />
       <PreGandhaarThemes />
-      <CulturalFestMindMap />
-      {/* <GandhaarThemes /> */}
-      {/* <Events /> */}
+      {/* <CulturalFestMindMap /> */}
+      <GandhaarThemes />
+      <Events />
       <HundredDaysOfPoetry />
-      <Event />
-      <DummyGallery />
+      {/* <Event /> */}
+      {/* <DummyGallery /> */}
       {/* <EventSlider /> */}
       <StarLineUp />
-      <EventCard />
-      <Schedule />
-      <ImageGallery />
+      {/* <EventCard /> */}
+      {/* <Schedule /> */}
+      {/* <ImageGallery /> */}
       <Footer />
     </div>
   );
