@@ -63,8 +63,6 @@ const Event = () => {
         height: "auto", // Adjust as needed for your content
         margin: "0px", // Removes any default margin
         padding: "200px", // Optional: removes padding if needed
-        backgroundImage:
-          "radial-gradient(circle at top left, #950923 10%, #111113 100%)",
       }}
     >
       <div style={containerStyle}>
