@@ -10,7 +10,7 @@
 
 /* Sidebar Styling */
 .sidebar {
-    width: 25%;
+    width: 22%;
     padding: 0.7rem;
     background: #f1ebf8;
     border-right: 1px solid #ccc;
@@ -155,19 +155,104 @@ label {
     margin-bottom: 10px;
   }
 
-  /* Responsive Adjustments */
-  @media (max-width: 768px) {
-    .sidebar {
-      display: none;
-    }
-  
-    .main-content {
-      width: 100%;
-    }
-  
-    .event-grid {
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    }
+ /* For screens above 768px (Desktop view) */
+@media (min-width: 768px) {
+  .sidebar {
+    display: block; /* Show the sidebar */
+  }
+
+
+  .bottom-drawer {
+    display: none; /* Hide the bottom drawer */
+  }
+}
+
+
+/* For screens below 768px (Mobile view) */
+@media (max-width: 768px) {
+  .sidebar {
+    display: none; /* Hide the sidebar */
+  }
+
+  .main-content {
+    width: 100%;
+  }
+  .bottom-drawer {
+    margin: 0;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #fff;
+    border-top: 1px solid #ccc;
+    z-index: 1000;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-between;
   }
   
- 
+  .drawer-item {
+    margin: 0; /* Remove margin between filter items */
+    padding: 2px; /* Remove padding if any */
+    margin: 0 2px;
+    flex: 1;
+    text-align: center;
+  }
+  
+  .drawer-item:last-child {
+    margin-right: 0;
+  }
+  
+  .drawer-toggle {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: #7403f4;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .drawer-toggle:hover {
+    background: #5203b2;
+  }
+  
+  .drawer-content {
+    width: 100%;
+    margin: 5px 0;
+    padding: 5px;
+    display: none;
+    background: #f8f8f8;
+    border-radius: 5px;
+  }
+  
+  .drawer-item.open .drawer-content {
+    /* display: block; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: start;
+  }
+
+  .drawer-item.open .drawer-content label{
+    text-align: start;
+    font-size: 14px;
+  }
+
+  
+/* Hide default checkbox and style custom checkbox */
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none; /* For Safari */
+  width: 14px;
+  height: 14px;
+  border: 1px solid #7403f4;
+  border-radius: 13px;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+}
+
+}  

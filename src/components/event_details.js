@@ -2,8 +2,8 @@ const event_details = {
   inauguration: {
     start: "10:00 AM",
     end: "11:00 AM",
-    location: "Main Building Quadrangle",
-    category: "fun",
+    location: "Main Bldg Quadrangle",
+    category: "Fun",
     day: "Feb 1",
     teamSize: 1,
     imageUrl:
@@ -13,7 +13,7 @@ const event_details = {
     start: "11:00 AM",
     end: "12:00 PM",
     location: "Stage 2",
-    category: "workshop",
+    category: "Workshop",
     day: "Feb 1",
     teamSize: 1,
     imageUrl:
@@ -22,8 +22,8 @@ const event_details = {
   dilSeDance: {
     start: "12:00 PM",
     end: "1:00 PM",
-    location: "Main Building Quadrangle",
-    category: "dance",
+    location: "Main Bldg Quadrangle",
+    category: "Dance",
     day: "Feb 1",
     teamSize: 9,
     imageUrl:
@@ -33,7 +33,7 @@ const event_details = {
     start: "1:00 PM",
     end: "2:00 PM",
     location: "Between Main & IT Building",
-    category: "artistry",
+    category: "Artistry",
     day: "Feb 1",
     teamSize: 2,
     imageUrl:
@@ -42,8 +42,8 @@ const event_details = {
   facePainting: {
     start: "2:00 PM",
     end: "3:00 PM",
-    location: "Mechanical Circle",
-    category: "artistry",
+    location: "Mech Circle",
+    category: "Artistry",
     day: "Feb 1",
     teamSize: 2,
     imageUrl:
@@ -53,7 +53,7 @@ const event_details = {
     start: "3:00 PM",
     end: "4:00 PM",
     location: "Stage 2",
-    category: "drama",
+    category: "Drama",
     day: "Feb 2",
     teamSize: 4,
     imageUrl:
@@ -62,8 +62,8 @@ const event_details = {
   suronKaSafar: {
     start: "4:00 PM",
     end: "5:00 PM",
-    location: "Instrumentation Auditorium",
-    category: "music",
+    location: "Instru Audi",
+    category: "Music",
     day: "Feb 2",
     teamSize: 2,
     imageUrl:
@@ -73,7 +73,7 @@ const event_details = {
     start: "5:00 PM",
     end: "6:00 PM",
     location: "KB Joshi Hall",
-    category: "drama",
+    category: "Drama",
     day: "Feb 2",
     teamSize: 6,
     imageUrl:
@@ -83,7 +83,7 @@ const event_details = {
     start: "6:00 PM",
     end: "7:00 PM",
     location: "Stage 2",
-    category: "dance",
+    category: "Dance",
     day: "Feb 2",
     teamSize: 12,
     imageUrl:
@@ -93,7 +93,7 @@ const event_details = {
     start: "7:00 PM",
     end: "8:00 PM",
     location: "Between Main & IT Building",
-    category: "artistry",
+    category: "Artistry",
     day: "Feb 3",
     teamSize: 2,
     imageUrl:
@@ -103,7 +103,7 @@ const event_details = {
     start: "8:00 PM",
     end: "9:00 PM",
     location: "Stage 2",
-    category: "drama",
+    category: "Drama",
     day: "Feb 3",
     teamSize: 4,
     imageUrl:
@@ -112,8 +112,8 @@ const event_details = {
   heenaHustle: {
     start: "9:00 PM",
     end: "10:00 PM",
-    location: "Mechanical Circle",
-    category: "artistry",
+    location: "Mech Circle",
+    category: "Artistry",
     day: "Feb 3",
     teamSize: 2,
     imageUrl:
@@ -123,7 +123,7 @@ const event_details = {
     start: "10:00 PM",
     end: "11:00 PM",
     location: "Samastha Ground",
-    category: "runway",
+    category: "Runway",
     day: "Feb 4",
     teamSize: 16,
     imageUrl:
