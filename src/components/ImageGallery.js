@@ -39,25 +39,25 @@ const ImageGallery = () => {
   const openModal = (index) => {
     setSelectedImageIndex(index);
     if (imageGridRef.current) {
-      imageGridRef.current.style.animationPlayState = 'paused';
+      imageGridRef.current.style.animationPlayState = "paused";
     }
   };
 
   const closeModal = () => {
     setSelectedImageIndex(null);
     if (imageGridRef.current) {
-      imageGridRef.current.style.animationPlayState = 'running';
+      imageGridRef.current.style.animationPlayState = "running";
     }
   };
 
   const showPrevImage = () => {
-    setSelectedImageIndex((prevIndex) => 
+    setSelectedImageIndex((prevIndex) =>
       prevIndex === 0 ? images.length - 1 : prevIndex - 1
     );
   };
 
   const showNextImage = () => {
-    setSelectedImageIndex((prevIndex) => 
+    setSelectedImageIndex((prevIndex) =>
       prevIndex === images.length - 1 ? 0 : prevIndex + 1
     );
   };
@@ -66,31 +66,37 @@ const ImageGallery = () => {
     <div className="gallery-container">
       <div className="image-grid" ref={imageGridRef}>
         {[...images].map((image, index) => (
-          <div 
-            key={index} 
-            className="image-item" 
-            onClick={() => openModal(index % images.length)}
-          >
-            <img src={image.src} alt={image.alt} />
+          <div key={index} className="image-item">
+            <img
+              src={image.src}
+              alt={image.alt}
+              onClick={() => openModal(index)}
+            />
           </div>
         ))}
       </div>
       {selectedImageIndex !== null && (
         <div className="modal" onClick={closeModal}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <span className="close" onClick={closeModal}>&times;</span>
-            <img 
-              src={images[selectedImageIndex].src} 
-              alt={images[selectedImageIndex].alt} 
-              className="modal-image" 
+            <span className="close" onClick={closeModal}>
+              &times;
+            </span>
+            <img
+              
+              src={images[selectedImageIndex].src}
+              alt={images[selectedImageIndex].alt}
+               className="modal-image"
             />
-            <span className="arrow left" onClick={showPrevImage}>&#10094;</span>
-            <span className="arrow right" onClick={showNextImage}>&#10095;</span>
+            <span className="arrow left" onClick={showPrevImage}>
+              &#10094;
+            </span>
+            <span className="arrow right" onClick={showNextImage}>
+              &#10095;
+            </span>
           </div>
         </div>
       )}
     </div>
   );
 };
-
 export default ImageGallery;
