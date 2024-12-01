@@ -1,13 +1,6 @@
 import React , { useState }  from "react";
 import "../style/Schedule.css";
 
-// function Schedule() {
-//   return <div>Schedule</div>;
-// }
-
-// export default Schedule;
-
-
 const Schedule = () => {
   const [activeDay, setActiveDay] = useState(1); 
 
