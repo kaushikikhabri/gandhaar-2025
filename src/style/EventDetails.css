@@ -1,4 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Niconne&family=Rubik+Gemstones&family=Satisfy&family=Updock&family=Yesteryear&display=swap');
+.bubbles {
+  position: fixed; /* Ensure it's fixed relative to the viewport */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Full height of the screen */
+  overflow: hidden;
+  z-index: -1; /* Ensure bubbles are behind the content */
+}
+
+.event-details-card {
+  position: relative; /* Position cards relative to the screen */
+  z-index: 1; /* Ensure cards are above the bubbles */
+}
 
 .event-container-title{
   font-size: 100px;
@@ -12,7 +26,8 @@
 .sidebar {
     width: 22%;
     padding: 0.7rem;
-    background: #f1ebf8;
+    background: #f2e8ff;
+    /* background: linear-gradient(206.5deg,  rgba(223, 159, 247, 0.8) 23%, rgba(255, 215, 185, 0.91) 93%); */
     border-right: 1px solid #ccc;
     box-sizing: border-box;
     padding-right: 10px;
@@ -154,6 +169,7 @@ label {
     object-fit: cover; /* Ensures images fit the container without distortion */
     margin-bottom: 10px;
   }
+  
 
  /* For screens above 768px (Desktop view) */
 @media (min-width: 768px) {

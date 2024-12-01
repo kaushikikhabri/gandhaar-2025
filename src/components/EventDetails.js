@@ -12,6 +12,7 @@ import CategoryIcon from "@mui/icons-material/Category";
 import LaunchIcon from "@mui/icons-material/Launch";
 import FilterAltIcon from "@mui/icons-material/FilterAlt";
 import FilterListIcon from "@mui/icons-material/FilterList";
+import Bubbles from "./Bubbles";
 
 const EventDetails = () => {
   const [drawerOpen, setDrawerOpen] = useState(null); // For bottom drawer
@@ -56,7 +57,7 @@ const EventDetails = () => {
   });
 
   return (
-    <>
+    <div>
       <Navigation />
       <div style={{ display: "flex", backgroundColor: "white" }}>
         {/* Sidebar */}
@@ -93,11 +94,11 @@ const EventDetails = () => {
             <div>
               {[
                 "All",
-                "Main Building Quadrangle",
+                "Main Bldg Quadrangle",
                 "Stage 2",
                 "Between Main & IT Building",
-                "Mechanical Circle",
-                "Instrumentation Auditorium",
+                "Mech Circle",
+                "Instru Audi",
                 "KB Joshi Hall",
                 "Samastha Ground",
               ].map((location) => (
@@ -123,14 +124,14 @@ const EventDetails = () => {
             <div>
               {[
                 "All",
-                "dance",
-                "music",
-                "fun",
-                "runway",
-                "culinary",
-                "artistry",
-                "drama",
-                "workshop",
+                "Dance",
+                "Music",
+                "Fun",
+                "Runway",
+                "Culinary",
+                "Artistry",
+                "Drama",
+                "Workshop",
               ].map((category) => (
                 <div key={category}>
                   <input
@@ -153,6 +154,8 @@ const EventDetails = () => {
 
         {/* Main Content */}
         <div className="main-content">
+          <Bubbles />
+
           <h2 className="event-container-title">Event List</h2>
           {filteredEvents.length === 0 ? (
             <p>No events match the selected filters.</p>
@@ -295,7 +298,7 @@ const EventDetails = () => {
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

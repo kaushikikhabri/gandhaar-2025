@@ -17,6 +17,8 @@ import EventCard from "./EventCard";
 import CulturalFestMindMap from "./CulturalFestMindMap";
 import HundredDaysOfPoetry from "./HundredDaysofPoetry";
 import DummyGallery from "./DummyGallery";
+import EventSource from "./EventSource";
+import Bubbles from "./Bubbles";
 
 function Home() {
   const targetDate = "2025-01-30T23:59:59";
@@ -28,8 +30,9 @@ function Home() {
       <PreGandhaarThemes />
       {/* <CulturalFestMindMap /> */}
       <GandhaarThemes />
-      <Events />
-      <HundredDaysOfPoetry />
+      {/* <Events /> */}
+      <EventSource />
+      {/* <HundredDaysOfPoetry /> */}
       {/* <Event /> */}
       {/* <DummyGallery /> */}
       {/* <EventSlider /> */}

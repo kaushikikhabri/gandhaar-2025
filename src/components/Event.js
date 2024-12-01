@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import "../style/Event.css"; // Optional CSS file if you want to extract styles
-import { slideImages } from "./slieImages";
+import { slideImages } from "./slideImages";
 
 const Event = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -20,13 +20,11 @@ const Event = () => {
     }
   };
 
+  // Start slider on mount and clean up on unmount
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % slideImages.length);
-    }, 2000);
-
-    return () => clearInterval(interval);
-  }, [slideImages.length]);
+    startInterval(); // Start the slider
+    return () => stopInterval(); // Cleanup the interval on unmount
+  }, []); // Empty dependency array ensures this runs only on mount/unmount
 
   const getVisibleImages = (index) => {
     const length = slideImages.length;
@@ -37,10 +35,25 @@ const Event = () => {
     ];
   };
 
+  const handlePrevious = () => {
+    stopInterval(); // Pause the interval when navigating manually
+    setCurrentIndex((prevIndex) =>
+      prevIndex - 1 < 0 ? slideImages.length - 1 : prevIndex - 1
+    );
+    startInterval(); // Resume the interval after navigation
+  };
+
+  const handleNext = () => {
+    stopInterval(); // Pause the interval when navigating manually
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % slideImages.length);
+    startInterval(); // Resume the interval after navigation
+  };
+
   const containerStyle = {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
+    position: "relative",
     width: "100%",
     overflow: "visible", // Allow images to overflow the container
   };
@@ -56,6 +69,20 @@ const Event = () => {
     transition: "transform 0.5s ease, opacity 0.5s ease",
   };
 
+  const iconStyle = {
+    position: "absolute",
+    top: "50%",
+    transform: "translateY(-50%)",
+    fontSize: "2rem",
+    color: "white",
+    backgroundColor: "rgba(0, 0, 0, 0.5)",
+    borderRadius: "50%",
+    padding: "10px",
+    cursor: "pointer",
+    zIndex: 10,
+    userSelect: "none",
+  };
+
   return (
     <div
       style={{
@@ -64,8 +91,15 @@ const Event = () => {
         margin: "0px", // Removes any default margin
         padding: "200px", // Optional: removes padding if needed
       }}
+      onMouseEnter={stopInterval} // Pause slider when mouse enters container
+      onMouseLeave={startInterval} // Resume slider when mouse leaves container
     >
       <div style={containerStyle}>
+        {/* Left Arrow */}
+        <div style={{ ...iconStyle, left: "5%" }} onClick={handlePrevious}>
+          &#8249;
+        </div>
+
         {getVisibleImages(currentIndex).map((image, i) => (
           <img
             key={i}
@@ -77,10 +111,13 @@ const Event = () => {
               opacity: i === 1 ? 1 : 0.7,
               transition: "transform 0.5s ease, opacity 0.5s ease",
             }}
-            onMouseEnter={stopInterval}
-            onMouseLeave={startInterval}
           />
         ))}
+
+        {/* Right Arrow */}
+        <div style={{ ...iconStyle, right: "5%" }} onClick={handleNext}>
+          &#8250;
+        </div>
       </div>
     </div>
   );
