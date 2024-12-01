@@ -1,0 +1,48 @@
+.navcontainer {
+    display: none; /* Hidden by default */
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    transition: top 0.3s ease, opacity 0.3s ease; /* Smooth transition for position and visibility */
+  }
+  
+  .navcontainer.sticky {
+    display: flex; /* Becomes visible when sticky class is added */
+    position: fixed; /* Stick to the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure it's above other elements */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+  }
+  
+  .navmenu {
+    background-color: rgba(255, 255, 255, 0.244);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(10px);
+    background-image: linear-gradient(135deg, rgba(132, 25, 156, 0.546) 10%, rgba(240, 95, 87, 0.546) 100%);
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(250, 123, 244);
+    border-radius: 20px;
+  }
+  
+  .navitem {
+    margin: 15px;
+  }
+  
+  .navitem a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    font-size: 17px;
+    text-decoration: none;
+    padding: 10px 15px;
+    background: linear-gradient(90deg, #d8d8d8, #f8f9fa, #d8d8d8);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
