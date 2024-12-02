@@ -40,12 +40,14 @@ const ImageGallery = () => {
     setSelectedImageIndex(index);
     if (imageGridRef.current) {
       imageGridRef.current.style.animationPlayState = "paused";
+      imageGridRef.current.style.animationPlayState = "paused";
     }
   };
 
   const closeModal = () => {
     setSelectedImageIndex(null);
     if (imageGridRef.current) {
+      imageGridRef.current.style.animationPlayState = "running";
       imageGridRef.current.style.animationPlayState = "running";
     }
   };
@@ -66,13 +68,12 @@ const ImageGallery = () => {
     <div className="gallery-container">
       <div className="image-grid" ref={imageGridRef}>
         {[...images].map((image, index) => (
-          <div 
-            key={index} 
-            className="image-item" 
-
-            onClick={() => openModal(index % images.length)}
-          >
-            <img src={image.src} alt={image.alt} />
+          <div key={index} className="image-item">
+            <img
+              src={image.src}
+              alt={image.alt}
+              onClick={() => openModal(index)}
+            />
           </div>
         ))}
       </div>
@@ -83,9 +84,10 @@ const ImageGallery = () => {
               &times;
             </span>
             <img
+              
               src={images[selectedImageIndex].src}
               alt={images[selectedImageIndex].alt}
-              className="modal-image"
+               className="modal-image"
             />
             <span className="arrow left" onClick={showPrevImage}>
               &#10094;
@@ -99,5 +101,4 @@ const ImageGallery = () => {
     </div>
   );
 };
-
 export default ImageGallery;
