@@ -19,6 +19,7 @@ import HundredDaysOfPoetry from "./HundredDaysofPoetry";
 import DummyGallery from "./DummyGallery";
 import EventSource from "./EventSource";
 import Bubbles from "./Bubbles";
+import Team from "./Team";
 
 function Home() {
   const targetDate = "2025-01-30T23:59:59";
@@ -40,6 +41,7 @@ function Home() {
       {/* <EventCard /> */}
       {/* <Schedule /> */}
       {/* <ImageGallery /> */}
+      <Team />
       <Footer />
     </div>
   );
