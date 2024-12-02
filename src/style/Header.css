@@ -2,7 +2,7 @@
     position: relative;
     display: flex;  
     flex-direction: column;
-    height: 45em ; /* Adjust height as needed */
+    height: 50em ; /* Adjust height as needed */
    /* background-image: url("E:\Projects\Gandhaar25\gandhaar-2025\src\images\dashboard3.jpeg"); Path to your background image */
    background-image: 
     url("E:/Projects/Gandhaar25/gandhaar-2025/src/images/pexels-f4photography-1317374.jpg");
@@ -40,7 +40,7 @@
   }
 
   .tag {
-    padding-top: 9em;
+    padding-top: 4em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -81,27 +81,32 @@
   font-weight: 500;
 }
 .tag1{
-font-size: 3em;
+font-size: 1.8em;
 font-weight: bold;
 }
 
 .tag2{
-  font-size: 2.5em;
+  font-size: 1.5em;
   font-weight: bold;
 }
 .tag3 {
-  font-size: 7rem;
+  font-size: 12rem;
   font-family: 'Playfair Display', serif;
+  /* font-family: 'Cormorant Garamond', serif; */
+  /* font-family: 'EB Garamond', serif; */
+  /* font-family: 'Dancing Script', cursive; */
+
   /* background: linear-gradient(90deg, #ff6ec4, #7873f5, #ff9e6b, #7873f5); */
   /* background: linear-gradient(90deg, #141E30, #243B55, #141E30); */
   /* background: linear-gradient(90deg, #7da2f9, #304879, #6795ff); */
   /* background: linear-gradient(90deg, #ff416c, #ff4b2b, #ff416c); */
-  background: linear-gradient(90deg, #11998e, #38ef7d, #11998e);
+  background: linear-gradient(90deg, #0cbfb0, #44f287, #1ac0b2);
   background-clip: text; /* Show the gradient only on the text */
   -webkit-background-clip: text;
   color: transparent; /* Hide the default color to make gradient visible */
   position: relative;
   animation: popUp 7s ease forwards;
+  /* text-shadow: black; */
 }
 
 .navbar {
@@ -110,7 +115,7 @@ font-weight: bold;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  height: 5rem;
+  height: 5.5rem;
   background-color: rgba(255, 255, 255, 0.244); /* Semi-transparent background */
   backdrop-filter: blur(5px); /* Apply the blur effect */
   -webkit-backdrop-filter: blur(10px); /* Safari compatibility */
@@ -236,7 +241,7 @@ background-image: linear-gradient(135deg, rgba(132, 25, 156, 0.546) 10%, rgba(24
     display: none; /* Hide menu items in navbar */
   }
   .tag1{
-    font-size: 2em;
+    font-size: 1em;
   }
   .tag2{
     font-size: 1.5em;

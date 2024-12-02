@@ -23,9 +23,9 @@ function Home() {
       <Countdown targetDate={targetDate} />
       <PreGandhaarThemes />
       <GandhaarThemes />
-      <Events />
-      <Event />
-      <EventSlider />
+      {/* <Events /> */}
+      {/* <Event /> */}
+      {/* <EventSlider /> */}
       <StarLineUp />
       <EventCard />
       <Schedule />
