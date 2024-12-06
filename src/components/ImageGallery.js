@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import "../style/ImageGallery.css";
 import image1 from "../images/image1.JPG";
 import image2 from "../images/image2.jpg";
@@ -33,72 +33,42 @@ const images = [
 ];
 
 const ImageGallery = () => {
-  const [selectedImageIndex, setSelectedImageIndex] = useState(null);
-  const imageGridRef = useRef(null);
+  const [selectedImage, setSelectedImage] = useState(null);
 
-  const openModal = (index) => {
-    setSelectedImageIndex(index);
-    if (imageGridRef.current) {
-      imageGridRef.current.style.animationPlayState = "paused";
-      imageGridRef.current.style.animationPlayState = "paused";
-    }
+  const openImage = (image) => {
+    setSelectedImage(image);
   };
 
-  const closeModal = () => {
-    setSelectedImageIndex(null);
-    if (imageGridRef.current) {
-      imageGridRef.current.style.animationPlayState = "running";
-      imageGridRef.current.style.animationPlayState = "running";
-    }
-  };
-
-  const showPrevImage = () => {
-    setSelectedImageIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
-    );
-  };
-
-  const showNextImage = () => {
-    setSelectedImageIndex((prevIndex) =>
-      prevIndex === images.length - 1 ? 0 : prevIndex + 1
-    );
+  const closeImage = () => {
+    setSelectedImage(null);
   };
 
   return (
     <div className="gallery-container">
-      <div className="image-grid" ref={imageGridRef}>
-        {[...images].map((image, index) => (
-          <div key={index} className="image-item">
-            <img
-              src={image.src}
-              alt={image.alt}
-              onClick={() => openModal(index)}
-            />
+      <div className="image-grid">
+        {images.map((image, index) => (
+          <div
+            key={index}
+            className="image-item"
+            onClick={() => openImage(image)}
+          >
+            <img src={image.src} alt={image.alt} />
           </div>
         ))}
       </div>
-      {selectedImageIndex !== null && (
-        <div className="modal" onClick={closeModal}>
+
+      {selectedImage && (
+        <div className="image-modal" onClick={closeImage}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <span className="close" onClick={closeModal}>
-              &times;
-            </span>
-            <img
-              
-              src={images[selectedImageIndex].src}
-              alt={images[selectedImageIndex].alt}
-               className="modal-image"
-            />
-            <span className="arrow left" onClick={showPrevImage}>
-              &#10094;
-            </span>
-            <span className="arrow right" onClick={showNextImage}>
-              &#10095;
-            </span>
+            <img src={selectedImage.src} alt={selectedImage.alt} />
+            <button className="close-button" onClick={closeImage}>
+              Close
+            </button>
           </div>
         </div>
       )}
     </div>
   );
 };
+
 export default ImageGallery;
