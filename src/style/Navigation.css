@@ -1,0 +1,249 @@
+.navcontainer {
+  display: none;
+  /* Hidden by default */
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  transition: top 0.3s ease, opacity 0.3s ease;
+  /* Smooth transition for position and visibility */
+}
+
+.navcontainer.sticky {
+  display: flex;
+  /* Becomes visible when sticky class is added */
+  position: fixed;
+  /* Stick to the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* Full width */
+  z-index: 1000;
+  /* Ensure it's above other elements */
+}
+
+.navmenu {
+  background-color: rgba(255, 255, 255, 0.244);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(10px);
+  background-image: linear-gradient(135deg, rgba(132, 25, 156, 0.546) 10%, rgba(240, 95, 87, 0.546) 100%);
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(250, 123, 244);
+  border-radius: 20px;
+  height: inherit;
+}
+
+.navitem {
+  margin: 15px;
+  padding: 5px;
+}
+
+.navitem a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 800;
+  font-size: 17px;
+  text-decoration: none;
+  padding: 10px 15px;
+  background: linear-gradient(90deg, #d8d8d8, #f8f9fa, #d8d8d8);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.navitem a:hover {
+
+  color: black;
+
+}
+
+.hamburger {
+  font-size: 3rem;
+  color: #fff;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.hamburger::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: linear-gradient(45deg, #ff5454, #ffa65d, #fffc66, #79ff44, #00ffd5, #3a5bff, #ab5cff, #ff61dd, #ff5f5f);
+  background-size: 400%;
+  animation: glowing 3s linear infinite;
+  opacity: 0.5;
+  z-index: -1;
+  filter: blur(8px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.hamburger:hover::after {
+  transform: translate(-50%, -50%) scale(1.5);
+  opacity: 1;
+}
+
+.hamburger:active {
+  transform: scale(0.95);
+}
+
+@keyframes glowing {
+  0% {
+      background-position: 0 0;
+  }
+  50% {
+      background-position: 400% 0;
+  }
+  100% {
+      background-position: 0 0;
+  }
+}
+
+.drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50%;
+  max-width: 400px; /* Limit maximum width */
+  height: 100%;
+  background-color: rgba(132, 25, 156, 0.8);
+  background-image: linear-gradient(135deg, rgba(177, 36, 209, 0.274) 10%, rgba(240, 95, 87, 0.21) 100%);
+  box-shadow: -4px 0 6px rgba(0, 0, 0, 0.2);
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  z-index: 999;
+  color: #fff;
+  font-family: 'Cinzel', serif;
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.drawer.open {
+  transform: translateX(0);
+}
+
+.drawer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.drawer-header h2 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.close-drawer {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.drawermenu {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 1rem;
+}
+
+.draweritem {
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: rgba(240, 95, 87, 0.7);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.draweritem a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  width: 100%;
+}
+
+.draweritem a svg {
+  margin-right: 10px;
+  font-size: 1.8rem; /* Icon size */
+}
+
+.draweritem a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .drawer {
+    width: 70%; /* Adjust width for smaller screens */
+  }
+
+  .drawer-header h2 {
+    font-size: 2rem;
+  }
+
+  .draweritem a {
+    font-size: 1.4rem;
+  }
+
+  .draweritem a svg {
+    font-size: 1.6rem;
+  }
+}
+
+
+.draweritem a svg,
+/* If using icons as SVG */
+.draweritem a span {
+  /* Adjust icons and text spacing */
+  margin-right: 10px;
+  /* Spacing between icon and text */
+}
+
+/* Responsive Styles */
+@media (max-width: 968px) {
+  .hamburger {
+    display: block;
+    /* Show hamburger button on smaller screens */
+  }
+
+  .navcontainer {
+    top: 0%;
+  }
+
+  .navmenu .navitem {
+    display: none;
+    /* Hide nav items on smaller screens */
+  }
+
+  .navmenu {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    border-radius: 0%;
+    padding: 10px;
+  }
+
+  .navmenu .hamburger {
+    right: 0;
+  }
+}
