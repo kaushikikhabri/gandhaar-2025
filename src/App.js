@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Home from "./components/Home";
 import Launch from "./components/Launch";
+import StarLineUp from "./components/StarLineUp";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/launch" element={<Launch />} />
+          <Route path="/star-lineup" element={<StarLineUp />} />
         </Routes>
       </Router>
     </div>
