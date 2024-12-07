@@ -1,18 +1,11 @@
-import React , { useState }  from "react";
+import React, { useState } from "react";
 import "../style/Schedule.css";
 
-// function Schedule() {
-//   return <div>Schedule</div>;
-// }
-
-// export default Schedule;
-
-
 const Schedule = () => {
-  const [activeDay, setActiveDay] = useState(1); 
+  const [activeDay, setActiveDay] = useState(1);
 
-// const Schedule = () => {
-   const [hoveredEvent, setHoveredEvent] = useState(null);
+  // const Schedule = () => {
+  const [hoveredEvent, setHoveredEvent] = useState(null);
 
   const eventDetails = {
     inauguration: {
@@ -98,14 +91,26 @@ const Schedule = () => {
     <div className="schedule-container">
       <div className="timeline">
         {[
-          "10:00AM", "11:00AM", "12:00PM", "1:00PM", "2:00PM", "3:00PM",
-          "4:00PM", "5:00PM", "6:00PM", "7:00PM", "8:00PM", "9:00PM"
+          "10:00AM",
+          "11:00AM",
+          "12:00PM",
+          "1:00PM",
+          "2:00PM",
+          "3:00PM",
+          "4:00PM",
+          "5:00PM",
+          "6:00PM",
+          "7:00PM",
+          "8:00PM",
+          "9:00PM",
         ].map((time, index) => (
-          <div key={index} className="timeline-label">{time}</div>
+          <div key={index} className="timeline-label">
+            {time}
+          </div>
         ))}
       </div>
 
-      <div className={`events-container ${hoveredEvent ? 'blurred' : ''}`}>
+      <div className={`events-container ${hoveredEvent ? "blurred" : ""}`}>
         {Object.keys(eventDetails).map((eventName) => (
           <div
             key={eventName}
@@ -114,14 +119,23 @@ const Schedule = () => {
             onMouseLeave={handleMouseLeave}
           >
             <div className="event-name">
-              {eventName.replace(/([A-Z])/g, ' $1').toUpperCase()}
+              {eventName.replace(/([A-Z])/g, " $1").toUpperCase()}
             </div>
             {hoveredEvent === eventName && (
               <div className="event-details">
-                <div className="event-name">{eventName.replace(/([A-Z])/g, ' $1').toUpperCase()}</div> {/* Display event name */}
-                <div><strong>Start:</strong> {eventDetails[eventName].start}</div>
-                <div><strong>End:</strong> {eventDetails[eventName].end}</div>
-                <div><strong>Location:</strong> {eventDetails[eventName].location}</div>
+                <div className="event-name">
+                  {eventName.replace(/([A-Z])/g, " $1").toUpperCase()}
+                </div>{" "}
+                {/* Display event name */}
+                <div>
+                  <strong>Start:</strong> {eventDetails[eventName].start}
+                </div>
+                <div>
+                  <strong>End:</strong> {eventDetails[eventName].end}
+                </div>
+                <div>
+                  <strong>Location:</strong> {eventDetails[eventName].location}
+                </div>
               </div>
             )}
           </div>
@@ -153,11 +167,8 @@ const Schedule = () => {
           </button>
         ))}
       </div>
-
-
     </div>
   );
 };
 
 export default Schedule;
-

@@ -1,10 +1,15 @@
-// components/EventPage.js
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "../style/All-Events.css";
 
 function EventPage({ event }) {
+  const navigate = useNavigate(); // Hook to navigate
+
   return (
     <div>
+      {/* Back Button */}
+      <button className="back-button" onClick={() => navigate(-1)}></button>
+
       {/* Hero Section */}
       <section className="hero">
         <img src={event.image} alt={event.title} className="hero-image" />
@@ -13,6 +18,9 @@ function EventPage({ event }) {
           <h3>{event.subtitle}</h3>
         </div>
       </section>
+      <br>
+      </br>
+      <br></br>
 
       {/* Event Details Container */}
       <div className="event-container">
@@ -79,6 +87,8 @@ function EventPage({ event }) {
           </div>
         </section>
       </div>
+      <br></br>
+      <br></br>
     </div>
   );
 }
