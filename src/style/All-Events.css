@@ -1,14 +1,26 @@
-/* Hero Section */
-.hero {
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures all elements follow the same box-sizing model */
+  }
+  
+  /* Hero Section */
+  .hero {
     position: relative;
     text-align: center;
     color: white;
+    width: 100%; /* Ensure it takes up the full width of the viewport */
+    height: 250px; /* You can adjust the height as needed */
+    overflow: hidden; /* Ensure the image doesn't overflow */
+    display: block; /* Ensure it takes up full width */
   }
   
   .hero-image {
     width: 100%;
-    height: 250px;
-    object-fit: cover;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire space */
+    object-position: center; /* Keep the image centered */
   }
   
   .hero-content {
@@ -19,17 +31,8 @@
     text-align: center;
     padding: 10px;
     border-radius: 8px;
-   
-  }
-  
-  .hero-content h1 {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  .hero-content h3 {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
+    width: 100%; /* Ensure the content spans the width of the hero section */
+    box-sizing: border-box; /* Prevent padding from affecting width */
   }
   
   /* Container for sections */
@@ -38,31 +41,84 @@
     flex-wrap: wrap;
     gap: 30px; /* Space between boxes */
     justify-content: center; /* Center align the boxes */
-    padding: 50px;
+    padding: 0 10px; /* Prevent horizontal overflow */
+    width: 100%;
+    margin: 0 auto; /* Ensures container takes full width */
   }
   
-  /* Individual section styling */
+  /* Updated styling for sections */
   section {
     background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    border: 5px solid transparent;
     padding: 15px;
-    flex: 1 1 calc(50% - 20px); /* Take up 50% of the width minus the gap */
-    
+    flex: 1 1 calc(50% - 20px); /* Adjusts width to fit 2 items per row */
     box-sizing: border-box;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right, #4b0082, #ff007f);
   }
   
+  section:hover {
+    transform: scale(1.05);
+    border-color: #360061;
+  }
+  
+  /* Font Styling */
+  @import url('https://fonts.googleapis.com/css2?family=Celandine&display=swap');
+  
   section h2 {
-    font-size: 1.5rem;
+    font-family: 'Celandine', cursive;
+    font-size: 1.8rem;
     color: #4b0082;
     margin-bottom: 10px;
   }
   
   section p,
   section ul {
+    font-family: 'Arial', sans-serif;
     color: #333;
     font-size: 1rem;
     line-height: 1.5;
+  }
+  
+  /* Back Button */
+  .back-button {
+    position: fixed; /* Makes the button always visible */
+    top: 20px; /* Distance from the top */
+    left: 20px; /* Distance from the left */
+    background-color: #4b0082;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 1000; /* Ensures the button stays above other elements */
+  }
+  
+  .back-button:hover {
+    background-color: #360061;
+    transform: scale(1.1);
+  }
+  
+  .back-button:before {
+    content: "←"; /* Arrow symbol */
+    font-weight: bold;
+  }
+  
+  /* Consistency for Hero Section */
+  .hero-content {
+    font-family: 'Celandine', cursive;
+    color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
   }
   
   .contact-section ul {
@@ -95,11 +151,13 @@
     .event-container {
       flex-direction: column; /* Stack boxes vertically */
       align-items: center;
+      padding: 10px; /* Padding to prevent overflow */
     }
   
     section {
       flex: 1 1 100%; /* Full width for smaller screens */
-      max-width: 90%; /* Slight margin from edges */
+      max-width: 100%; /* Ensure sections don't exceed container width */
+      margin: 0 auto; /* Center the sections */
     }
   }
   
@@ -126,13 +184,13 @@
     }
   }
   
-/* Styling for Register Button */
-.register-button-container {
+  /* Styling for Register Button */
+  .register-button-container {
     text-align: center; /* Center the button */
     margin-top: 20px; /* Add some spacing */
-}
-
-.register-button {
+  }
+  
+  .register-button {
     background-color: #4b0082;
     color: #ffffff;
     font-size: 1rem;
@@ -141,8 +199,8 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-}
-
-.register-button:hover {
+  }
+  
+  .register-button:hover {
     background-color: #360061;
-}
+  }
