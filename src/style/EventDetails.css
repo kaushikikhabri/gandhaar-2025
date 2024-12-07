@@ -1,226 +1,273 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Niconne&family=Rubik+Gemstones&family=Satisfy&family=Updock&family=Yesteryear&display=swap');
+.bubbles {
+  position: fixed; /* Ensure it's fixed relative to the viewport */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Full height of the screen */
+  overflow: hidden;
+  z-index: -1; /* Ensure bubbles are behind the content */
 }
 
-body {
-    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20240103/pngtree-watercolor-texture-background-in-delicate-blue-and-pretty-pink-hues-image_13898373.png');
-    background-size: cover; /* Ensure the image covers the entire page */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
-    background-position: center; /* Center the image */
-    background-attachment: fixed; /* Keep the image fixed during scrolling */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-    font-family: Arial, sans-serif; /* Optional: Set a default font */
+.event-details-card {
+  position: relative; /* Position cards relative to the screen */
+  z-index: 1; /* Ensure cards are above the bubbles */
+}
+
+.event-container-title{
+  font-size: 100px;
+  margin-bottom: 30px;
+  font-family: "Lavishly Yours", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 22%;
+    padding: 0.7rem;
+    background: #f2e8ff;
+    /* background: linear-gradient(206.5deg,  rgba(223, 159, 247, 0.8) 23%, rgba(255, 215, 185, 0.91) 93%); */
+    border-right: 1px solid #ccc;
+    box-sizing: border-box;
+    padding-right: 10px;
+    text-align: start;
   }
 
-header {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #222;
+  .sidebar h3 {
+    margin-bottom: 2rem;
+  }
+  
+  .sidebar h4 {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+
+/* Hide default checkbox and style custom checkbox */
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none; /* For Safari */
+  width: 16px;
+  height: 16px;
+  border: 1px solid #7403f4;
+  border-radius: 13px;
+  outline: none;
+  cursor: pointer;
+  position: relative;
 }
 
-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 5px;
+/* Checkbox background on selection */
+input[type="checkbox"]:checked {
+  background-color: #7403f4;
+  border: 1.5px solid #7403f4;
 }
 
-header .subheader {
-    font-size: 1.5rem;
-    color: #ccc;
-}
-
-.posts {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-   
-}
-
-/* Ensure only two boxes per row on larger screens */
-@media (min-width: 768px) {
-    .post {
-        flex: 0 0 calc(50% - 20px); /* Two posts per row, with space between */
-    }
-}
-
-/* Optional: Center alignment for smaller screens */
-@media (max-width: 767px) {
-    .post {
-        flex: 0 0 100%; /* One post per row on smaller screens */
-    }
+/* Checkbox checkmark (optional for better UX) */
+input[type="checkbox"]:checked::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  width: 3px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
 }
 
 
-.posts h2 {
-    font-size: 2rem;
-    color: #ff9a9a;
-    text-transform: uppercase;
+label {
+  display: inline-block;
+  padding: 3px;
+  padding-left: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+  
+  
+  /* Main Content Styling */
+  .main-content {
+    width: 80%;
+    padding: 1rem;
+    box-sizing: border-box;
+    /* background: linear-gradienta(90.7deg, rgb(255, 253, 218) 1.9%, rgb(246, 210, 255) 39.3%, rgb(152, 222, 254) 64.7%, rgb(251, 255, 210) 100.8%); */
+    /* background: linear-gradient(104.3deg, rgb(253, 243, 243) 10.9%, rgb(248, 231, 231) 27.8%, rgb(160, 112, 161) 101.7%); */
+    background: linear-gradient(103deg, rgb(235, 225, 188) 7.2%, rgb(232, 188, 234) 57.5%, rgb(203, 209, 244) 90.7%); 
+  }
+  
+  /* Grid Styling */
+  .event-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-right: 10px;
+  }
+
+  /* Event Card Styling */
+  .event-details-card {
+    display: flex; /* Enables flex layout */
+    flex-direction: column; /* Stacks children vertically */
+    justify-content: space-between; /* Distributes space to push elements apart */
+    background: #fff;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 1rem;
+    /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
+    box-shadow: rgba(0, 0, 0, 1) 7px 7px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    height: 100%; /* Ensures all cards have consistent height */
+    width: auto;
+  }
+
+  .event-details-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: rgba(0, 0, 0, 0.4) 5px 5px, rgba(44, 44, 44, 0.4) 10px 10px, rgba(58, 58, 58, 0.4) 15px 15px, rgba(83, 82, 82, 0.4) 20px 20px, rgba(101, 101, 101, 0.4) 25px 25px;
+  }
+  
+  .event-details-card h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Tags Styling */
+  .event-tag {
+    width: fit-content;
+    display: inline-block;
+    margin: 0.25rem 0.25rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    color: black;
+    border: 1px solid #7403f4;
+  }
+  
+ /* Event Register Button Styling */
+.event-register-button {
+  width: 100%;
+  background-color: #7403f4;
+  color: #fff;
+  border: none;
+  padding: 0.9rem 1rem;
+  border-radius: 45px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-top: 30px;
+  transition: background-color 0.5s ease, transform 0.5s ease; 
+}
+
+  
+  .event-register-button:hover {
+    background-color: #430091;
+    transform: scale(1.02);
+  }
+
+  .event-details-image img {
+    width: 100%;
+    height: 140px; /* Set a fixed height for all images */
+    border-radius: 8px;
+    object-fit: cover; /* Ensures images fit the container without distortion */
     margin-bottom: 10px;
+  }
+  
+
+ /* For screens above 768px (Desktop view) */
+@media (min-width: 768px) {
+  .sidebar {
+    display: block; /* Show the sidebar */
+  }
+
+
+  .bottom-drawer {
+    display: none; /* Hide the bottom drawer */
+  }
 }
 
-.posts .browse {
-    font-size: 1rem;
-    color: #ccc;
-    margin-bottom: 20px;
-}
 
-.posts .category,
-.posts .tag {
-    color: #e74c3c;
+/* For screens below 768px (Mobile view) */
+@media (max-width: 768px) {
+  .sidebar {
+    display: none; /* Hide the sidebar */
+  }
+
+  .main-content {
+    width: 100%;
+  }
+  .bottom-drawer {
+    margin: 0;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #fff;
+    border-top: 1px solid #ccc;
+    z-index: 1000;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-between;
+  }
+  
+  .drawer-item {
+    margin: 0; /* Remove margin between filter items */
+    padding: 2px; /* Remove padding if any */
+    margin: 0 2px;
+    flex: 1;
+    text-align: center;
+  }
+  
+  .drawer-item:last-child {
+    margin-right: 0;
+  }
+  
+  .drawer-toggle {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: #7403f4;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
-}
-
-.post {
+  }
+  
+  .drawer-toggle:hover {
+    background: #5203b2;
+  }
+  
+  .drawer-content {
+    width: 100%;
+    margin: 5px 0;
+    padding: 5px;
+    display: none;
+    background: #f8f8f8;
+    border-radius: 5px;
+  }
+  
+  .drawer-item.open .drawer-content {
+    /* display: block; */
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #333;
-    color: #ff9a9a;
-    padding: 20px;
-    margin: 20px;
-    width: 45%;
-    max-width: 700px;
-    border-radius: 8px;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    cursor: pointer;
-    outline: none; /* Remove default focus outline */
-}
-
-.post:hover,
-.post:focus {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
-}
-
-.post img {
     width: 100%;
-    height: auto;
-    border-radius: 4px;
-    margin-bottom: 10px;
-}
+    text-align: start;
+  }
 
-.post-content {
-    text-align: center;
-}
+  .drawer-item.open .drawer-content label{
+    text-align: start;
+    font-size: 14px;
+  }
 
-.post-content h3 {
-    font-size: 1.5rem;
-    margin-bottom: 5px;
-}
-
-.post-content h3 a {
-    color: #1e90ff;
-    text-decoration: none;
-}
-
-.post-content h3 a:hover {
-    text-decoration: underline;
-}
-
-.post-content .author {
-    color: #bbb;
-    font-size: 1rem;
-}
-
-.post-content .date {
-    font-size: 0.9rem;
-    color: #888;
-    margin-top: 5px;
-}
-
-.event-header {
-    position: relative;
-    text-align: center;
-    padding: 50px 20px;
-    background-image: url("https://media.istockphoto.com/vectors/abstract-music-notes-design-vector-id522874751?k=6&m=522874751&s=612x612&w=0&h=jylycWTuQLtwT57iip8udHV-wDtLQJmYathF8id56wc=");
-    background-size: cover;
-    background-position: center;
-   
-}
-
-.event-header h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-}
-
-@media (min-width: 768px) {
-    .posts {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .post {
-        width: 45%;
-        margin: 20px;
-    }
-
-    .event-header h1 {
-        font-size: 3rem;
-    }
-}
-
-@media (min-width: 1200px) {
-    .post {
-        width: 30%;
-    }
-
-    .event-header h1 {
-        font-size: 3.5rem;
-    }
-}
-/* EventDetail.css */
-.hero {
+  
+/* Hide default checkbox and style custom checkbox */
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none; /* For Safari */
+  width: 14px;
+  height: 14px;
+  border: 1px solid #7403f4;
+  border-radius: 13px;
+  outline: none;
+  cursor: pointer;
   position: relative;
-  text-align: center;
-  color: white;
 }
-
-.hero-image {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-}
-
-.hero-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.hero-content h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.hero-content h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.hero-content p {
-  margin-bottom: 0.5rem;
-}
-
-.hero-content span {
-  font-size: 0.9rem;
-}
-
-.event-details {
-  padding: 20px;
-
-}
-
-.event-details .content {
-  max-width: 800px;
-  margin: 0 auto;
-  font-size: 1.1rem;
-  line-height: 1.6;
-}
+}  
