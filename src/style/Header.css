@@ -5,7 +5,7 @@
     height: 50em ; /* Adjust height as needed */
    /* background-image: url("E:\Projects\Gandhaar25\gandhaar-2025\src\images\dashboard3.jpeg"); Path to your background image */
    background-image: 
-    url("E:\Projects\Gandhaar25\gandhaar-2025\src\images\dashboard3.jpeg");
+    url("E:\Projects\Gandhaar25\gandhaar-2025\src\images\Gandhaar24.png");
   /* Ensure each image takes up 20% of the width and align them horizontally */
   background-repeat: no-repeat; /* Prevent repetition of images */
   background-size: 100% 100%; /* Each image is 20% of width and full height */
@@ -19,7 +19,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.717); /* Black overlay with 40% opacity */
+    background-color: rgba(0, 0, 0, 0.694); 
+    /* Black overlay with 40% opacity */
     z-index: 1; /* Ensure overlay is on top */
     pointer-events: none; /* Prevent overlay from blocking clicks */
   }
@@ -79,6 +80,7 @@
   color: transparent; /* Hide the default color to make gradient visible */
   position: relative;
   font-weight: 500;
+  text-shadow: 0 0 2px #f6d365;
 }
 .tag1{
 font-size: 1.8em;
@@ -99,15 +101,21 @@ font-weight: bold;
   /* background: linear-gradient(90deg, #ff6ec4, #7873f5, #ff9e6b, #7873f5); */
   /* background: linear-gradient(90deg, #141E30, #243B55, #141E30); */
   /* background: linear-gradient(90deg, #7da2f9, #304879, #6795ff); */
-  /* background: linear-gradient(90deg, #ff416c, #ff4b2b, #ff416c); */
-  background: linear-gradient(90deg, #0cbfb0, #44f287, #1ac0b2);
+  background: linear-gradient(90deg, #ff416c, #ff4b2b, #ff416c);
+  /* background: linear-gradient(90deg, #0cbfb0, #44f287, #1ac0b2); */
   background-clip: text; /* Show the gradient only on the text */
   -webkit-background-clip: text;
   color: transparent; /* Hide the default color to make gradient visible */
   position: relative;
   animation: popUp 7s ease forwards;
   /* text-shadow: black; */
+
+  text-shadow: 0 0 8px #ef30709e; /*Subtle soft glow*/
 }
+
+
+
+
 
 .navbar {
   /* background-color: rgba(255, 255, 255, 0.6); Semi-transparent white for frosted glass effect */
@@ -116,18 +124,26 @@ font-weight: bold;
   align-items: center;
   padding: 10px 20px;
   height: 5.5rem;
-  background-color: rgba(255, 255, 255, 0.244); /* Semi-transparent background */
-  backdrop-filter: blur(5px); /* Apply the blur effect */
-  -webkit-backdrop-filter: blur(10px); /* Safari compatibility */
+  background-color: rgba(255, 199, 45, 0.58);
+  background-image: linear-gradient(135deg,   rgba(231, 105, 8, 0.432) 10%,rgba(235, 138, 12, 0.514) 100%);
+  /* backdrop-filter: blur(5px); Apply the blur effect */
+  /* -webkit-backdrop-filter: blur(10px); Safari compatibility */
   /* background: rgb(9,9,121);
   background: radial-gradient(circle, rgba(9,9,121,1) 0%, rgba(1,80,119,1) 0%, rgba(1,80,119,1) 0%, rgba(2,0,36,1) 47%, rgba(0,212,255,1) 98%, rgba(4,68,101,1) 100%); */
   /* background: rgb(34,193,195);
 background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%); */
 /* background-image: radial-gradient( circle 817.6px at 10% 20%,  rgba(178,34,34,1) 0%, rgba(255,87,51,1) 41.9%, rgba(255,165,0,1) 100.2% ); */
 /* background-image: radial-gradient( circle 1292px at -13.6% 51.7%,  rgba(0,56,68,1) 0%, rgba(163,217,185,1) 51.5%, rgba(255,252,247,1) 88.6% ); */
-/* background-image: linear-gradient( 135deg, #FFAA85 10%, #B3315F 100%);; */
-background-image: linear-gradient(135deg, rgba(132, 25, 156, 0.546) 10%, rgba(240, 95, 87, 0.546) 100%);
+/* background-image: linear-gradient( 135deg, #FFAA85 10%, #B3315F 100%); */
+/* background-image: linear-gradient(135deg, rgba(132, 25, 156, 0.546) 10%, rgba(240, 95, 87, 0.546) 100%); */
+/* background-image: linear-gradient(135deg,   rgba(167, 4, 164, 0.532) 10%,rgba(255, 204, 0, 0.546) 100%); */
 
+/* background: #F27500;
+background: radial-gradient(at center top, #F27500, #E0B853); */
+/* background: #FFB75E;
+background: linear-gradient(
+  to right,
+  #FFB75E,#ED8F03) */
 }
 
 
@@ -160,7 +176,7 @@ background-image: linear-gradient(135deg, rgba(132, 25, 156, 0.546) 10%, rgba(24
   position: relative;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 800; 
-  font-size: 17px;
+  font-size: 1.2rem;
   padding: 10px 15px;
   display: inline-block;
   text-decoration: none;
@@ -182,7 +198,8 @@ background-image: linear-gradient(135deg, rgba(132, 25, 156, 0.546) 10%, rgba(24
   left: -100%;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(135deg, rgba(132, 25, 156, 0.792) 10%, rgba(240, 95, 87, 0.769) 100%);
+  /* background-image: linear-gradient(135deg, rgba(132, 25, 156, 0.792) 10%, rgba(240, 95, 87, 0.769) 100%); */
+  background-image: linear-gradient(135deg, rgba(255, 136, 0, 0.874) 10%, rgba(255, 128, 0, 0.769) 100%);
   border-radius: 15px;
   transition: left 0.4s ease;
   z-index: -1;
@@ -237,15 +254,22 @@ background-image: linear-gradient(135deg, rgba(132, 25, 156, 0.546) 10%, rgba(24
 
 /* Responsive styles for small screens */
 @media (max-width: 968px) {
+  .header{
+    background-image: url("E:\Projects\Gandhaar25\gandhaar-2025\src\images\phonesize.png");
+  }
   .nav-menu {
     display: none; /* Hide menu items in navbar */
   }
+ 
   .tag1{
-    font-size: 1em;
-  }
-  .tag2{
-    font-size: 1.5em;
-  }
+    font-size: 1.3em;
+   
+    }
+    
+    .tag2{
+      font-size: 1em;
+  
+    }
   .tag3{
     font-size: 5em;
   }
@@ -253,3 +277,102 @@ background-image: linear-gradient(135deg, rgba(132, 25, 156, 0.546) 10%, rgba(24
     display: block; /* Show menu button */
   }
 }
+.floating-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: linear-gradient(45deg, #ff5722, #ff9800);
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  animation: bounce 2s infinite;
+  z-index: 1000;
+}
+
+.floating-icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.floating-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  font-size: 12px;
+  text-align: center;
+}
+
+.floating-content span {
+  font-size: 24px;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+.floating-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: linear-gradient(45deg, #ff5722, #ff9800);
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  animation: bounce 2s infinite;
+  z-index: 1000;
+}
+
+.floating-icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.floating-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  font-size: 12px;
+  text-align: center;
+}
+
+.floating-content span {
+  font-size: 24px;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+
+
+
+
