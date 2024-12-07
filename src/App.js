@@ -26,7 +26,6 @@ import EventDetails from "./components/EventDetails";
 import Home from "./components/Home";
 import Launch from "./components/Launch";
 import StarLineUp from "./components/StarLineUp";
-// Updated import paths for All-Events folder
 import AllEvents from "./components/AllEvents";
 
 function App() {
