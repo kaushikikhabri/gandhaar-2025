@@ -11,9 +11,9 @@
     min-height: 100vh; /* Ensure it takes full viewport height */
     box-sizing: border-box; /* Include padding in height calculation */
     position: relative;
-    z-index: 1; /* Ensures the team content is above the waves */
-    margin-top: 50px;
-    margin-bottom: 100px;
+    /* z-index: 1; Ensures the team content is above the waves */
+    /* margin-top: 50px; */
+    /* margin-bottom: 100px; */
 }
 
 .team-title{
