@@ -43,18 +43,18 @@ const Footer = () => {
         </div>
         <div className="scroll" style={{ "--t": "15s" }}>
           <div>
-            <span>Memories for a Lifetime</span>
-            <span>Cultural Melange</span>
-            <span>Expression</span>
-            <span>Fireworks of Talent</span>
-            <span>Unity in Diversity</span>
+            <span>MEMORIES FOR A LIFETIME</span>
+            <span>CULTURAL MELANGE</span>
+            <span>EXPRESSION</span>
+            <span>FIREWORKS OF TALENT</span>
+            <span>UNITY IN DIVERSITY</span>
           </div>
           <div>
-            <span>Memories for a Lifetime</span>
-            <span>Cultural Melange</span>
-            <span>Expression</span>
-            <span>Fireworks of Talent</span>
-            <span>Unity in Diversity</span>
+            <span>MEMORIES FOR A LIFETIME</span>
+            <span>CULTURAL MELANGE</span>
+            <span>EXPRESSION</span>
+            <span>FIREWORKS OF TALENT</span>
+            <span>UNITY IN DIVERSITY</span>
           </div>
         </div>
       </div>
@@ -63,10 +63,10 @@ const Footer = () => {
       <div className="footer-content">
         <div className="col col1">
           <h3>Gandhaar 2025</h3>
-          
+
         </div>
         <div className="col col2">
-        <h4>Quick Links</h4>
+          <h4>Quick Links</h4>
           <a href="#about">About</a>
           <a href="#schedule">Schedule</a>
           <a href="#events">Events</a>
@@ -74,7 +74,7 @@ const Footer = () => {
           <p><a href="mailto:gandhaar@cumminscollege.com">gandhaar@cumminscollege.com</a></p>
         </div>
         <div className="col col3">
-          
+
           <img src={logo} alt="Gandhaar Logo" className="gandhaar-logo" />
         </div>
       </div>
