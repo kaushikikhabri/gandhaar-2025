@@ -1,34 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Honk&family=Kaushan+Script&family=Lavishly+Yours&family=Mogra&family=Niconne&family=Rubik+Gemstones&family=Satisfy&family=Updock&family=Yesteryear&display=swap');
+
 .header {
-    height: 20vh;
+    position: relative;
+    display: flex;  
+    flex-direction: column;
+    height: 50em ; /* Adjust height as needed */
+   /* background-image: url("E:\Projects\Gandhaar25\gandhaar-2025\src\images\dashboard3.jpeg"); Path to your background image */
+
+   background-image: 
+
+    url("E:\Projects\Gandhaar25\gandhaar-2025\src\images\Gandhaar24.png");
+
+  /* Ensure each image takes up 20% of the width and align them horizontally */
+  background-repeat: no-repeat; /* Prevent repetition of images */
+  background-size: 100% 100%; /* Each image is 20% of width and full height */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Optional: Add shadow */
+  }
+
+  .header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.694); 
+    /* Black overlay with 40% opacity */
+
+    z-index: 1; /* Ensure overlay is on top */
+    pointer-events: none; /* Prevent overlay from blocking clicks */
+  }
+  
+  .header * {
+    position: relative; /* Ensure child elements are above the overlay */
+    z-index: 2;
+  }
+    
+  .header img {
+    height: 70px; /* Adjust the logo size if necessary */
+  }
+  .logos{
     display: flex;
-    justify-content: space-between;
+    background-color: rgb(247, 237, 237);
+    height: fit-content;
+    width: fit-content;
+  }
+
+  .tag {
+    padding-top: 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    opacity: 0; /* Start invisible */
+    animation: popUp 5s ease forwards; /* Apply animation */
+    animation-fill-mode: forwards; /* Ensures the animation's last state persists */
 }
 
-#logo1 {
-    max-width: 19vh;
-    max-height: 19vh;
-}
-
-#logo2 {
-    max-width: 20vw;
-    max-height: 18vh;
-}
-
-.college-name {
-    font-size: 22px;
-    font-weight: bold;
-    color: black;
-}
-
-@media screen and (max-width:665px) {
-    #logo1 {
-        max-height: 12vh; 
-        max-width: 12vh;
+@keyframes popUp {
+    0% {
+        opacity: 0;
+        transform: scale(0.8) translateY(20px); /* Start slightly below and scaled down */
     }
+    60% {
+        opacity: 1;
+        transform: scale(1.1) translateY(0); /* Scale up slightly */
+    }
+    100% {
+        opacity: 1; /* Keep opacity at 1 */
+        transform: scale(1); /* Settle at normal size */
+    }
+}
 
-    .college-name {
-        font-size: 15px;
+.tag p {
+    margin: 0;
+    text-align: center;
+}
+.tag1,
+.tag2{
+  font-family:'Cinzel', serif; 
+  background: linear-gradient(90deg, #f6d365, #fda085, #f6d365);
+
+  background-clip: text; /* Show the gradient only on the text */
+  -webkit-background-clip: text;
+  color: transparent; /* Hide the default color to make gradient visible */
+  position: relative;
+  font-weight: 500;
+  text-shadow: 0 0 2px #f6d365;
+}
+.tag1{
+font-size: 1.8em;
+font-weight: bold;
+}
+
+.tag2{
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.tag3 {
+  font-size: 10rem;
+  /* font-family: 'Playfair Display', serif; */
+  font-family: "Kaushan Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+  /* font-family: 'Cormorant Garamond', serif; */
+  /* font-family: 'EB Garamond', serif; */
+  /* font-family: 'Dancing Script', cursive; */
+
+  /* background: linear-gradient(90deg, #ff6ec4, #7873f5, #ff9e6b, #7873f5); */
+  /* background: linear-gradient(90deg, #141E30, #243B55, #141E30); */
+  /* background: linear-gradient(90deg, #7da2f9, #304879, #6795ff); */
+  background: linear-gradient(90deg, #ff416c, #ff4b2b, #ff416c);
+  /* background: linear-gradient(90deg, #0cbfb0, #44f287, #1ac0b2); */
+  background-clip: text; /* Show the gradient only on the text */
+  -webkit-background-clip: text;
+  color: transparent; /* Hide the default color to make gradient visible */
+  position: relative;
+  animation: popUp 7s ease forwards;
+  /* text-shadow: black; */
+
+  text-shadow: 0 0 8px #ef30709e; /*Subtle soft glow*/
+}
+
+
+
+
+
+.navbar {
+  /* background-color: rgba(255, 255, 255, 0.6); Semi-transparent white for frosted glass effect */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  height: 5.5rem;
+  background-color: rgba(255, 199, 45, 0.58);
+  background-image: linear-gradient(135deg,   rgba(231, 105, 8, 0.432) 10%,rgba(235, 138, 12, 0.514) 100%);
+  /* backdrop-filter: blur(5px); Apply the blur effect */
+  /* -webkit-backdrop-filter: blur(10px); Safari compatibility */
+  /* background: rgb(9,9,121);
+  background: radial-gradient(circle, rgba(9,9,121,1) 0%, rgba(1,80,119,1) 0%, rgba(1,80,119,1) 0%, rgba(2,0,36,1) 47%, rgba(0,212,255,1) 98%, rgba(4,68,101,1) 100%); */
+  /* background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%); */
+/* background-image: radial-gradient( circle 817.6px at 10% 20%,  rgba(178,34,34,1) 0%, rgba(255,87,51,1) 41.9%, rgba(255,165,0,1) 100.2% ); */
+/* background-image: radial-gradient( circle 1292px at -13.6% 51.7%,  rgba(0,56,68,1) 0%, rgba(163,217,185,1) 51.5%, rgba(255,252,247,1) 88.6% ); */
+/* background-image: linear-gradient( 135deg, #FFAA85 10%, #B3315F 100%); */
+/* background-image: linear-gradient(135deg, rgba(132, 25, 156, 0.546) 10%, rgba(240, 95, 87, 0.546) 100%); */
+/* background-image: linear-gradient(135deg,   rgba(167, 4, 164, 0.532) 10%,rgba(255, 204, 0, 0.546) 100%); */
+
+/* background: #F27500;
+background: radial-gradient(at center top, #F27500, #E0B853); */
+/* background: #FFB75E;
+background: linear-gradient(
+  to right,
+  #FFB75E,#ED8F03) */
+}
+
+
+
+.logo-left, .logo-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo1, #logo2 {
+  height: 70px; /* Adjust size of logos */
+  
+}
+
+.nav-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.nav-item {
+  margin:  15px;
+}
+
+.nav-item a {
+  position: relative;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 800; 
+  font-size: 1.2rem;
+  padding: 10px 15px;
+  display: inline-block;
+  text-decoration: none;
+  overflow: hidden;
+  transition: color 0.4s ease;
+  background: linear-gradient(90deg, #d8d8d8, #f8f9fa, #d8d8d8);
+
+  background-clip: text; /* Show the gradient only on the text */
+  -webkit-background-clip: text;
+  color: transparent; /* Hide the default color to make gradient visible */
+  position: relative;
+  
+}
+
+.nav-item a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  /* background-image: linear-gradient(135deg, rgba(132, 25, 156, 0.792) 10%, rgba(240, 95, 87, 0.769) 100%); */
+  background-image: linear-gradient(135deg, rgba(255, 136, 0, 0.874) 10%, rgba(255, 128, 0, 0.769) 100%);
+  border-radius: 15px;
+  transition: left 0.4s ease;
+  z-index: -1;
+}
+
+.nav-item a:hover::before {
+  left: 0; 
+}
+
+.nav-item a:hover {
+  color: white; 
+  
+}
+
+/* Menu button for small screens */
+/* .menu-button {
+  display: none;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+} */
+
+.menu-button {
+  display: none; /* Visible only on small screens */
+  font-size: 1.5rem; /* Slightly larger font for better readability */
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 4px 7px; /* Add padding for a button-like appearance */
+  border-radius: 8px; /* Rounded corners */
+  background: linear-gradient(135deg, #11998e, #8138ef); /* Subtle gradient background */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Add a shadow for depth */
+  transition: all 0.3s ease; /* Smooth transitions for hover effects */
+}
+
+/* Hover effect for the menu button */
+.menu-button:hover {
+  background: linear-gradient(135deg, #6f38ef, #11998e); /* Reverse gradient on hover */
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4); /* Enhance the shadow on hover */
+}
+
+/* Active or pressed state */
+.menu-button:active {
+  transform: scale(0.95); /* Slightly shrink the button on press */
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3); /* Reduce the shadow on press */
+}
+
+
+
+
+/* Responsive styles for small screens */
+@media (max-width: 968px) {
+  .header{
+    background-image: url("E:\Projects\Gandhaar25\gandhaar-2025\src\images\phonesize.png");
+  }
+  .nav-menu {
+    display: none; /* Hide menu items in navbar */
+  }
+ 
+  .tag1{
+    font-size: 1.3em;
+   
     }
     
+    .tag2{
+      font-size: 1em;
+  
+    }
+  .tag3{
+    font-size: 5em;
+  }
+  .menu-button {
+    display: block; /* Show menu button */
+  }
 }
+.floating-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: linear-gradient(45deg, #ff5722, #ff9800);
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  animation: bounce 2s infinite;
+  z-index: 1000;
+}
+
+.floating-icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.floating-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  font-size: 12px;
+  text-align: center;
+}
+
+.floating-content span {
+  font-size: 24px;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+.floating-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: linear-gradient(45deg, #ff5722, #ff9800);
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  animation: bounce 2s infinite;
+  z-index: 1000;
+}
+
+.floating-icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.floating-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  font-size: 12px;
+  text-align: center;
+}
+
+.floating-content span {
+  font-size: 24px;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+
+
+
+
