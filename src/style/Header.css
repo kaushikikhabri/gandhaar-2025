@@ -9,7 +9,7 @@
 
    background-image: 
 
-    url("E:\Projects\Gandhaar25\gandhaar-2025\src\images\Gandhaar24.png");
+    url("/src/images/Gandhaar24.png");
 
   /* Ensure each image takes up 20% of the width and align them horizontally */
   background-repeat: no-repeat; /* Prevent repetition of images */
@@ -265,7 +265,7 @@ background: linear-gradient(
 /* Responsive styles for small screens */
 @media (max-width: 968px) {
   .header{
-    background-image: url("E:\Projects\Gandhaar25\gandhaar-2025\src\images\phonesize.png");
+    background-image: url("/src/images/phonesize.png");
   }
   .nav-menu {
     display: none; /* Hide menu items in navbar */
