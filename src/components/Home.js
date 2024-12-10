@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../style/Home.css";
 import Launch from "./Launch";
 import Header from "./Header";
@@ -25,16 +25,23 @@ import DevTeam from "./DevTeam";
 
 function Home() {
   const targetDate = "2025-01-30T23:59:59";
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
+  const toggleDrawer = () => {
+    setIsDrawerOpen((prev) => !prev);
+  };
   return (
     <div>
-      <Header />
-      <Navigation />
+      <Header toggleDrawer={toggleDrawer} />
+      <Navigation isDrawerOpen={isDrawerOpen} toggleDrawer={toggleDrawer} />
       <Countdown targetDate={targetDate} />
+
       <PreGandhaarThemes />
       {/* <CulturalFestMindMap /> */}
       {/* <GandhaarThemes /> */}
       {/* <Events /> */}
       {/* <EventSource /> */}
+      <EventSource />
       {/* <HundredDaysOfPoetry /> */}
       {/* <Event /> */}
       {/* <DummyGallery /> */}
@@ -47,6 +54,7 @@ function Home() {
       {/* <FireFooter /> */}
       {/* <Footer /> */}
       <DevTeam />
+      <Footer />
     </div>
   );
 }
