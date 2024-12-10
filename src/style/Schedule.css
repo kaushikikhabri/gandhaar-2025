@@ -1,204 +1,269 @@
-/* body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-  }
-   */
-  
-  
-  .schedule-container {
-    display: grid;
-    grid-template-rows: repeat(22, 30px);
-    grid-template-columns: repeat(6, 100px);
-    gap: 2px;
-    width: 60%;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 5px;
-    background-color: #f4f4f4;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .events-container {
-    display: grid;
-    grid-template-rows: repeat(22, 30px);
-    grid-template-columns: repeat(6, 100px);
-    gap: 2px;
-    position: relative;
-    transition: filter 0.5s ease;
-  }
-  
-  /* .events-container.blurred {
-    filter: blur(5px); 
-  } */
-  
-  .event {
+.schedule-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    color: #fff;
-    font-weight: 100;
-    text-align: center;
-    padding: 5px;
-    border-radius: 5px;
-    position: relative;
-    transition: transform 0.3s ease-in-out, z-index 0.3s ease-in-out;
+    gap: 2px;
+    padding-top: 20px; /* Add padding to ensure buttons have space above the schedule */
+    height: 100vh; /* Ensures it takes up the full viewport height */
+    background: linear-gradient(to right, #111111, #2c2a2b); /* Optional background for visibility */
   }
   
-  .event:hover {
-     /*transform: scale(1.2); Scale the event */
-    z-index: 10; /* Bring the hovered event on top */
-    box-shadow: 0 4px 10px 2px black;
-    text-align: center;
-  }
-  
-  .event-details {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background-color: inherit;;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    width: 250px; /* Fixed width for event details */
-    height: 200px; /* Fixed height */
-    box-sizing: border-box;
-    text-align: center;
-    font-size: 14px;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  .event-name {
-    font-size: clamp(14px, 4vw, 20px);
-    font-weight: bold;
-    
-  }
-  /* Add specific positioning for each event */
-  .inauguration {
-    grid-column: 1 / 7;
-    grid-row: 1 / 5;
-    background-color: #1f77b4; /* Blue */
-    
-    
-  }
-  
-  .zumba {
-    grid-column: 1 / 7;
-    grid-row: 5 / 6;
-    background-color: #ff7f0e; /* Orange */
-  }
-  
-  .dilSeDance {
-    grid-column: 1 / 2;
-    grid-row: 6 / 16;
-    background-color: #d62728; /* Red */
-  }
-  
-  .sketchSaga {
-    grid-column: 2 / 3;
-    grid-row: 6 / 9;
-    background-color: #9467bd; /* Purple */
-  }
-  
-  .facePainting {
-    grid-column: 3 / 4;
-    grid-row: 6 / 11;
-    background-color: #8c564b; /* Brown */
-  }
-  
-  .adMad {
-    grid-column: 4 / 5;
-    grid-row: 6 / 12;
-    background-color: #e377c2; /* Pink */
-  }
-  
-  .suronKaSafar {
-    grid-column: 5 / 6;
-    grid-row: 7 / 11;
-    background-color: #7f7f7f; /* Grey */
-  }
-  
-  .heGele {
-    grid-column: 6 / 7;
-    grid-row: 7 / 8;
-    background-color: #2ca02c; /* Green */
-  }
-  
-  .insia {
-    grid-column: 2 / 4;
-    grid-row: 12 / 13;
-    background-color: #ffbb78; /* Light Orange */
-  }
-  
-  .doodle {
-    grid-column: 4 / 5;
-    grid-row: 12 / 14;
-    background-color: #98c5e9; /* Light Blue */
-  }
-  
-  .vaadVivad {
-    grid-column: 2 / 4;
-    grid-row: 13 / 16;
-    background-color: #f7b7a3; /* Light Pink */
-  }
-  
-  .heenaHustle {
-    grid-column: 5 / 7;
-    grid-row: 12 / 15;
-    background-color: #ff9f00; /* Amber */
-  }
-  
-  .fashionShow {
-    grid-column: 1 / 7;
-    grid-row: 16 / 22;
-    background-color: #27ae60; /* Green */
-  }
-  
-  
-  .timeline {
+  .day-buttons {
     display: flex;
-    flex-direction: column;
-    margin-right: 40px;
-  }
-  
-  .timeline-label {
-    font-weight: bold;
-    padding: 20px 15px;
-    text-align: left; 
-    color: #333;
-    flex: 1;
-  }
-  
-  .day-buttons-container {
-    position: absolute;
-    top: 110%;
-    left: 200px;
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    justify-content: center;
+    gap: 15px;
+    z-index: 10; /* Ensure buttons are on top of other elements */
+    margin-bottom: 10px; /* Decrease this value to reduce the gap */
   }
   
   .day-button {
     padding: 10px 20px;
-    background-color: #d32978;
+    background-color: #ff7eb3;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 30px;
-    text-align: center;
-    transition: background-color 0.3s ease;
-  }
-  
-  .day-button:hover {
-    background-color: #83dbf8;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
   }
   
   .day-button.active {
-    background-color: #cded16;
+    background-color: #ffb347;
   }
+  
+  .day-button:hover {
+    background-color: #ffa07a;
+  }
+  
+  
+
+  /* .schedule-container {
+    display: grid;
+    grid-template-columns:7vw repeat(13, 6vw); 
+    grid-template-rows: repeat(22, 3vh);
+    gap: 5px;
+    padding: 5px;
+    margin-top: 5px; 
+    background: linear-gradient(to right, #111111, #2c2a2b);
+    height: 80vh;
+    padding-left: 15px;
+    margin-bottom: 0.1em;
+  } */
+
+  .schedule-container {
+    display: grid;
+    grid-template-columns: 7vw repeat(13, 5vw); /* Add an extra column for time */
+    grid-template-rows: repeat(22, 3vh); /* Set auto row height to adjust dynamically */
+    gap: 5px;
+    padding: 5px;
+    margin-top: 5px;
+    background: linear-gradient(to right, #111111, #2c2a2b);
+    height: 80vh;
+    margin-bottom: 0.1em;
+  }
+/*   
+  .time-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  } */
+  
+  .time-slot-container {
+    position: relative; /* Make the container a positioning context */
+    margin-right: 10px;
+  }
+  
+  .time-slot {
+    position: relative; /* Needed for the background box */
+    height: 120px; /* Adjust height as needed */
+    width: 100%; /* Full width */
+    margin: 0; /* Remove margin */
+    border-radius: 5px;
+    
+  }
+  
+  .time-label {
+    position: absolute; /* Place the label independently */
+    top: -8px; /* Adjust to place time exactly on the line */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center the text relative to the slot */
+    font-size: 10px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #000; /* Optional: Add background for readability */
+    padding: 2px 5px; /* Optional: Add padding around text */
+    border-radius: 3px; /* Optional: Round corners */
+  }
+  
+  
+
+  
+/*   
+  .location-header {
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 10px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  } */
+
+ 
+  
+  /* .time-slot {
+    Aligns content to the top of the box 
+    justify-content: center; /* Centers the content horizontally 
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    height: 100%; /* Ensures the time-slot element takes up the full height of the grid cell 
+    padding-bottom: 80%; /* Remove padding-top for alignment 
+    margin: 0; /* Remove margin if there is any 
+}*/
+  
+  .schedule-container .time-slot {
+    height: 5vh; /* Set a custom height for the first column rows */
+    line-height: 5vh; /* Align text vertically */
+  }
+  
+  .event {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space between start time, event text, and end time */
+    padding: 5px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    border: 2px solid #fff;
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+    
+  }
+
+  .event-text {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    /* padding: 10px; */
+    border-radius: 5px;
+    width: 80px; /* Fixed width for event details */
+    height: 50px; /* Fixed height */
+    box-sizing: border-box;
+    font-size: 15px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+  }
+
+  .start-time
+  {
+    content: attr(data-start); /* Use `data-start` attribute for the start time */
+    position:absolute;
+    top: 1px;
+    left: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0px 1px;
+    border-radius: 5px;
+    font-size: 7px;
+    color: #fff;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .end-time
+  {
+    content: attr(data-end); /* Use `data-end` attribute for the end time */
+    position: absolute;
+    bottom: 1px;
+    left: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0px 1px;
+    border-radius: 8px;
+    font-size: 7px;
+    color: #fff;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.7); /* Semi-transparent text for better readability */
+    line-height: 1;
+  }
+  .event:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  @media (max-width: 760px) {
+    .time-slot {
+      font-size: 8px;
+    }
+    .event-text {
+      font-size: 8px;
+      width: 50px; /* Fixed width for event details */
+      height: 50px; /* Fixed height */
+    }
+  }
+  
+ /* Modal Styles */
+ .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7); /* Make sure this is semi-transparent */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure the modal overlay is on top */
+  }
+  
+
+  .modal {
+    background: #fff !important;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100px;
+    max-height: 40%;
+    max-width: 15%; /* For responsiveness */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center content horizontally */
+    
+}
+
+  
+
+.modal h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.modal p {
+  font-size: 14px;
+  color: #666;
+}
+
+.modal button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #ff7eb3;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .modal button:hover {
+    background-color: #ffb347;
+  }
+ 
