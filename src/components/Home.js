@@ -37,7 +37,7 @@ function Home() {
       <Countdown targetDate={targetDate} />
 
       <PreGandhaarThemes />
-      {/* <CulturalFestMindMap /> */}
+      <CulturalFestMindMap />
       {/* <GandhaarThemes /> */}
       {/* <Events /> */}
       {/* <EventSource /> */}
@@ -48,8 +48,8 @@ function Home() {
       {/* <EventSlider /> */}
       <StarLineUp />
       {/* <EventCard /> */}
-      {/* <Schedule /> */}
-      <ImageGallery />
+      <Schedule />
+      {/* <ImageGallery /> */}
       <Team />
       {/* <FireFooter /> */}
       {/* <Footer /> */}

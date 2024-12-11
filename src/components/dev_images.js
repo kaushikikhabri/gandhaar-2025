@@ -56,6 +56,20 @@ const dev_images = {
     name: "Liam Martinez",
     title: "Software Tester",
   },
+  dev8: {
+    bgImage:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVO817u_wen6PDA5EKsj0v_CYM0YT24CsMOJxkX9-wixPNCBSl",
+    profileImage: dev7,
+    name: "Liam Martinez",
+    title: "Software Tester",
+  },
+  dev9: {
+    bgImage:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVO817u_wen6PDA5EKsj0v_CYM0YT24CsMOJxkX9-wixPNCBSl",
+    profileImage: dev7,
+    name: "Liam Martinez",
+    title: "Software Tester",
+  },
 };
 
 export default dev_images;

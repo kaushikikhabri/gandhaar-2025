@@ -17,6 +17,7 @@
     font-variation-settings:
       "MORF" 15,
       "SHLN" 50;
+      text-align: center;
 }
 
 .carousel-container {

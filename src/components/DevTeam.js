@@ -9,19 +9,16 @@ const DevTeam = () => {
       <h1 className="dev-team-title">Development Team</h1>
 
       <div className="dev-team-container">
-        {/* <img
+        <img
           className="earphones-image"
           src="https://www.pngarts.com/files/8/Earbuds-PNG-Photo.png"
           alt=""
-        /> */}
+        />
         <div className="dev-grid">
           {Object.values(dev_images).map((dev, index) => (
-            <div key={index} className="dev-card">
-              {/* <div className="bg"> */}
-              {/* <img className="bg" src={download} alt="" /> */}
-              {/* </div> */}
+            <div key={index}>
               <div className="dev-image-container">
-                <div className="dev-image-container">
+                <div>
                   <img
                     src={dev.profileImage}
                     alt={dev.name}

@@ -3,10 +3,13 @@
   height: 550px;
   overflow:hidden;
   position: relative;
-  background-color: rgb(255, 255, 255);
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='460' height='120'><text x='0' y='60' font-size='60' font-weight='bold' fill='rgba(0, 0, 0, 0.889)' font-family='Arial'>Gandhaar-2024</text><line x1='0' y1='100' x2='510' y2='100' stroke='black' stroke-width='4' /></svg>");
-  background-repeat: repeat;
-  background-size: 200px 120px;  
+  background: linear-gradient(103deg, rgb(235, 225, 188) 7.2%, rgb(232, 188, 234) 57.5%, rgb(203, 209, 244) 90.7%); 
+  /* background-color: rgb(255, 255, 255); */
+  /* background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='460' height='120'><text x='0' y='60' font-size='60' font-weight='bold' fill='rgba(0, 0, 0, 0.889)' font-family='Arial'>Gandhaar-2024</text><line x1='0' y1='100' x2='510' y2='100' stroke='black' stroke-width='4' /></svg>"); */
+  background-image: url(https://gosmartbricks.com/wp-content/uploads/2018/02/2-3.jpg);
+  background-color: rgba(0, 0, 0, 0.151);
+  background-repeat: no-repeat;
+  /* background-size: 200px 120px;   */
   display: flex;
 }
 

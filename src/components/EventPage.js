@@ -18,8 +18,7 @@ function EventPage({ event }) {
           <h3>{event.subtitle}</h3>
         </div>
       </section>
-      <br>
-      </br>
+      <br></br>
       <br></br>
 
       {/* Event Details Container */}
@@ -80,7 +79,7 @@ function EventPage({ event }) {
           <div className="register-button-container">
             <button
               className="register-button"
-              onClick={() => window.location.href = event.registerLink}
+              onClick={() => (window.location.href = event.registerLink)}
             >
               Register
             </button>

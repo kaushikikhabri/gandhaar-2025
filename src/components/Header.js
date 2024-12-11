@@ -24,12 +24,24 @@ const Header = ({ toggleDrawer }) => {
           <img id="logo1" src={s_logo} alt="Sanstha Logo" />
         </div>
         <ul className="nav-menu">
-          <li className="nav-item"><a href="#home">Home</a></li>
-          <li className="nav-item"><a href="#events">Events</a></li>
-          <li className="nav-item"><a href="#schedule">Schedule</a></li>
-          <li className="nav-item"><a href="#workshops">Workshops</a></li>
-          <li className="nav-item"><a href="#team">Team</a></li>
-          <li className="nav-item"><a href="#about-us">About Us</a></li>
+          <li className="nav-item">
+            <a href="#home">Home</a>
+          </li>
+          <li className="nav-item">
+            <a href="#events">Events</a>
+          </li>
+          <li className="nav-item">
+            <a href="#schedule">Schedule</a>
+          </li>
+          <li className="nav-item">
+            <a href="#workshops">Workshops</a>
+          </li>
+          <li className="nav-item">
+            <a href="#team">Team</a>
+          </li>
+          <li className="nav-item">
+            <a href="#about-us">About Us</a>
+          </li>
         </ul>
         <div className="logo-right">
           <img id="logo2" src={c_logo} alt="College Logo" />
@@ -43,7 +55,9 @@ const Header = ({ toggleDrawer }) => {
       {isMobile && (
         <div className="floating-icon" onClick={toggleDrawer}>
           <div className="floating-content">
-            <span role="img" aria-label="menu">✨</span>
+            <span role="img" aria-label="menu">
+              ✨
+            </span>
             <p>Menu</p>
           </div>
         </div>
