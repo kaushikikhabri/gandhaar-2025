@@ -41,7 +41,7 @@ const Header = ({ toggleDrawer }) => {
         <p className="tag3">Gandhaar 2025</p>
       </div>
       {isMobile && (
-        <div className="floating-icon" onClick={toggleDrawer}>
+        <div className="floating-icon" onClick={()=> toggleDrawer(true)}>
           <div className="floating-content">
             <span role="img" aria-label="menu">✨</span>
             <p>Menu</p>

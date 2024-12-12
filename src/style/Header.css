@@ -286,57 +286,11 @@ background: linear-gradient(
     display: block; /* Show menu button */
   }
 }
+
 .floating-icon {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: linear-gradient(45deg, #ff5722, #ff9800);
-  color: #fff;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-  animation: bounce 2s infinite;
-  z-index: 1000;
-}
-
-.floating-icon:hover {
-  transform: scale(1.1);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-}
-
-.floating-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: 'Arial', sans-serif;
-  font-size: 12px;
-  text-align: center;
-}
-
-.floating-content span {
-  font-size: 24px;
-}
-
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-10px);
-  }
-  60% {
-    transform: translateY(-5px);
-  }
-}
-.floating-icon {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 5rem;
+  right: 2rem;
   background: linear-gradient(45deg, #ff5722, #ff9800);
   color: #fff;
   width: 60px;
