@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Honk&family=Kaushan+Script&family=Lavishly+Yours&family=Mogra&family=Niconne&family=Rubik+Gemstones&family=Satisfy&family=Updock&family=Yesteryear&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Merienda:wght@300..900&family=Playwrite+MX+Guides&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Playwrite+MX+Guides&display=swap');
 
 .header {
     position: relative;
     display: flex;  
     flex-direction: column;
-    height: 50em ; /* Adjust height as needed */
+    height: 60rem ; /* Adjust height as needed */
    /* background-image: url("E:\Projects\Gandhaar25\gandhaar-2025\src\images\dashboard3.jpeg"); Path to your background image */
    background-image: 
 
@@ -41,13 +43,14 @@
   }
   .logos{
     display: flex;
-    background-color: rgb(247, 237, 237);
+    /* background-color: rgb(247, 237, 237); */
     height: fit-content;
     width: fit-content;
   }
 
   .tag {
-    padding-top: 4em;
+    /* padding-top: 4em; */
+    margin-top: 4rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -98,10 +101,19 @@ font-weight: bold;
   font-weight: bold;
 }
 .tag3 {
-  font-size: 10rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  
+}
+.tag3 span{
+  font-size: 12rem;
   /* font-family: 'Playfair Display', serif; */
   font-family: "Kaushan Script", cursive;
-  font-weight: 400;
+  /* font-family: "Merienda", cursive; */
+  /* font-family: "Dancing Script", cursive; */
+  font-optical-sizing: auto;
+  font-weight: 900;
   font-style: normal;
   /* font-family: 'Cormorant Garamond', serif; */
   /* font-family: 'EB Garamond', serif; */
@@ -119,9 +131,8 @@ font-weight: bold;
   animation: popUp 7s ease forwards;
   /* text-shadow: black; */
 
-  text-shadow: 0 0 8px #ef30709e; /*Subtle soft glow*/
+  /* text-shadow: 0 0 8px #ef30709e; Subtle soft glow */
 }
-
 
 
 
@@ -132,9 +143,9 @@ font-weight: bold;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  height: 5.5rem;
-  background-color: rgba(255, 199, 45, 0.58);
-  background-image: linear-gradient(135deg,   rgba(231, 105, 8, 0.432) 10%,rgba(235, 138, 12, 0.514) 100%);
+  height: fit-content;
+  /* background-color: rgba(255, 199, 45, 0.58); */
+  /* background-image: linear-gradient(135deg,   rgba(231, 105, 8, 0.432) 10%,rgba(235, 138, 12, 0.514) 100%); */
   /* backdrop-filter: blur(5px); Apply the blur effect */
   /* -webkit-backdrop-filter: blur(10px); Safari compatibility */
   /* background: rgb(9,9,121);
@@ -161,10 +172,15 @@ background: linear-gradient(
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0.5rem;
 }
 
-#logo1, #logo2 {
-  height: 70px; /* Adjust size of logos */
+#logo1 {
+  height: 6rem; /* Adjust size of logos */
+  
+}
+ #logo2 {
+  height: 5rem; /* Adjust size of logos */
   
 }
 
@@ -185,7 +201,7 @@ background: linear-gradient(
   position: relative;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 800; 
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   padding: 10px 15px;
   display: inline-block;
   text-decoration: none;
@@ -279,8 +295,8 @@ background: linear-gradient(
       font-size: 1em;
   
     }
-  .tag3{
-    font-size: 5em;
+  .tag3 span{
+    font-size: 4em;
   }
   .menu-button {
     display: block; /* Show menu button */
