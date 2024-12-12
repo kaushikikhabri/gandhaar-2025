@@ -42,8 +42,8 @@
 .dev-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Always 3 columns */
-    row-gap: 50px; /* Space between rows */
-    width: 100%; /* Full width of the container */
+    row-gap: 10px; /* Space between rows */
+    width: 70%; /* Full width of the container */
     max-width: 1200px; /* Optional: limit the max width */
     justify-content: center; /* Center the grid */
     align-items: center; /* Center the items vertically */
@@ -56,9 +56,8 @@
     border-radius: 20%;
     object-fit: cover;
     position: relative;
-    margin: 0 auto; 
     border: 5px solid black;
-    transform-origin: center; /* Ensure scaling happens from the center */
+   
 }
 
 
