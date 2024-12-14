@@ -6,16 +6,23 @@
     position: relative;
     display: flex;  
     flex-direction: column;
-    height: 60rem ; /* Adjust height as needed */
+    height: 60em ; 
    /* background-image: url("E:\Projects\Gandhaar25\gandhaar-2025\src\images\dashboard3.jpeg"); Path to your background image */
    background-image: 
-
-    url("/src/images/Gandhaar24.png");
+    /* url("/src/style/Collage.png");  */
+    /* url("/src/images/Gandhaar_collage5.png"); */
+    /* url("/src/images/Gandhaar_collage6.png"); */
+    /* url("/src/images/Gandhaar_collage7.png"); */
+    /* url("/src/images/Gandhaar_collage8.png"); */
+    /* url("/src/images/Gandhaar_collage9.png"); */
+    url("/src/images/Gandhaar_collage10.png");
 
   /* Ensure each image takes up 20% of the width and align them horizontally */
   background-repeat: no-repeat; /* Prevent repetition of images */
   background-size: 100% 100%; /* Each image is 20% of width and full height */
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Optional: Add shadow */
+  background-size: cover; /* Ensures the image covers the container */
+  background-position: center; /* Center the image */
   }
 
   .header::before {
@@ -25,13 +32,11 @@
     left: 0;
     width: 100%;
     height: 100%;
-
-    background-color: rgba(0, 0, 0, 0.694); 
-    /* Black overlay with 40% opacity */
-
+    background-color: rgba(0, 0, 0, 0.45); 
     z-index: 1; /* Ensure overlay is on top */
     pointer-events: none; /* Prevent overlay from blocking clicks */
-  }
+}
+
   
   .header * {
     position: relative; /* Ensure child elements are above the overlay */
@@ -39,7 +44,7 @@
   }
     
   .header img {
-    height: 70px; /* Adjust the logo size if necessary */
+    /* Adjust the logo size if necessary */
   }
   .logos{
     display: flex;
@@ -50,14 +55,14 @@
 
   .tag {
     /* padding-top: 4em; */
-    margin-top: 4rem;
+    margin-top: 4em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    opacity: 0; /* Start invisible */
-    animation: popUp 5s ease forwards; /* Apply animation */
-    animation-fill-mode: forwards; /* Ensures the animation's last state persists */
+    /* opacity: 0; Start invisible */
+    /* animation: popUp 5s ease forwards; Apply animation */
+    /* animation-fill-mode: forwards; Ensures the animation's last state persists */
 }
 
 @keyframes popUp {
@@ -88,7 +93,7 @@
   -webkit-background-clip: text;
   color: transparent; /* Hide the default color to make gradient visible */
   position: relative;
-  font-weight: 500;
+  /* font-weight:800; */
   text-shadow: 0 0 2px #f6d365;
 }
 .tag1{
@@ -96,10 +101,6 @@ font-size: 1.8em;
 font-weight: bold;
 }
 
-.tag2{
-  font-size: 1.5em;
-  font-weight: bold;
-}
 .tag3 {
   display: flex;
   flex-direction: column;
@@ -107,31 +108,30 @@ font-weight: bold;
   
 }
 .tag3 span{
-  font-size: 12rem;
+  font-size: 8em;
   /* font-family: 'Playfair Display', serif; */
-  font-family: "Kaushan Script", cursive;
-  /* font-family: "Merienda", cursive; */
+  /* font-family: "Kaushan Script", cursive; */
+  font-family: "Merienda", cursive;
   /* font-family: "Dancing Script", cursive; */
   font-optical-sizing: auto;
   font-weight: 900;
   font-style: normal;
-  /* font-family: 'Cormorant Garamond', serif; */
-  /* font-family: 'EB Garamond', serif; */
+  
   /* font-family: 'Dancing Script', cursive; */
 
   /* background: linear-gradient(90deg, #ff6ec4, #7873f5, #ff9e6b, #7873f5); */
   /* background: linear-gradient(90deg, #141E30, #243B55, #141E30); */
   /* background: linear-gradient(90deg, #7da2f9, #304879, #6795ff); */
-  background: linear-gradient(90deg, #ff416c, #ff4b2b, #ff416c);
-  /* background: linear-gradient(90deg, #0cbfb0, #44f287, #1ac0b2); */
+  /* background: linear-gradient(90deg, #ff416c, #ff4b2b, #ff416c); */
+  background: linear-gradient(90deg, #abd5d2, #82ffb2, #1ac0b2);
   background-clip: text; /* Show the gradient only on the text */
   -webkit-background-clip: text;
   color: transparent; /* Hide the default color to make gradient visible */
   position: relative;
-  animation: popUp 7s ease forwards;
+  
   /* text-shadow: black; */
 
-  /* text-shadow: 0 0 8px #ef30709e; Subtle soft glow */
+  text-shadow: 7px 2px 0 #dee8e7;
 }
 
 
@@ -142,7 +142,7 @@ font-weight: bold;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 3rem 3rem;
   height: fit-content;
   /* background-color: rgba(255, 199, 45, 0.58); */
   /* background-image: linear-gradient(135deg,   rgba(231, 105, 8, 0.432) 10%,rgba(235, 138, 12, 0.514) 100%); */
@@ -172,15 +172,15 @@ background: linear-gradient(
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.5rem;
+  padding: 0.5em;
 }
 
 #logo1 {
-  height: 6rem; /* Adjust size of logos */
+  height: 5em; /* Adjust size of logos */
   
 }
  #logo2 {
-  height: 5rem; /* Adjust size of logos */
+  height: 5em; /* Adjust size of logos */
   
 }
 
@@ -194,15 +194,15 @@ background: linear-gradient(
 }
 
 .nav-item {
-  margin:  15px;
+  margin:  0.7rem;
 }
 
 .nav-item a {
   position: relative;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 800; 
-  font-size: 1.5rem;
-  padding: 10px 15px;
+  font-size: 1.3em;
+  padding: 0.2rem 0.5rem;
   display: inline-block;
   text-decoration: none;
   overflow: hidden;
@@ -242,7 +242,7 @@ background: linear-gradient(
 /* Menu button for small screens */
 /* .menu-button {
   display: none;
-  font-size: 1rem;
+  font-size: 1em;
   color: white;
   cursor: pointer;
   font-weight: bold;
@@ -250,7 +250,7 @@ background: linear-gradient(
 
 .menu-button {
   display: none; /* Visible only on small screens */
-  font-size: 1.5rem; /* Slightly larger font for better readability */
+  font-size: 1.5em; /* Slightly larger font for better readability */
   color: white;
   cursor: pointer;
   font-weight: bold;
@@ -279,8 +279,10 @@ background: linear-gradient(
 
 /* Responsive styles for small screens */
 @media (max-width: 968px) {
-  .header{
-    background-image: url("/src/images/phonesize.png");
+  .header {
+    background-image: url("/src/images/phone_size2.png"); 
+    height: 40em ; 
+    
   }
   .nav-menu {
     display: none; /* Hide menu items in navbar */
@@ -296,7 +298,7 @@ background: linear-gradient(
   
     }
   .tag3 span{
-    font-size: 4em;
+    font-size: 3.5em;
   }
   .menu-button {
     display: block; /* Show menu button */
@@ -305,8 +307,8 @@ background: linear-gradient(
 
 .floating-icon {
   position: fixed;
-  bottom: 5rem;
-  right: 2rem;
+  bottom: 5em;
+  right: 2em;
   background: linear-gradient(45deg, #ff5722, #ff9800);
   color: #fff;
   width: 60px;
