@@ -32,18 +32,25 @@ const Countdown = ({ targetDate }) => {
   }, [targetDate]);
 
   return (
-    <div>
-      <div
-        style={{
-          fontSize: "4em",
-          fontWeight: "bold",
-          padding: "30px",
-          paddingBottom: "150px",
-          color: "white",
-        }}
-      >
-        {timeLeft.days}d : {timeLeft.hours}h : {timeLeft.minutes}m :{" "}
-        {timeLeft.seconds}s
+    <div className="wrap">
+      <h1>Countdown Timer</h1>
+      <div className="countdown">
+        <div className="time-block">
+          <div className="time">{timeLeft.days}</div>
+          <div className="label">Days</div>
+        </div>
+        <div className="time-block">
+          <div className="time">{timeLeft.hours}</div>
+          <div className="label">Hours</div>
+        </div>
+        <div className="time-block">
+          <div className="time">{timeLeft.minutes}</div>
+          <div className="label">Minutes</div>
+        </div>
+        <div className="time-block">
+          <div className="time">{timeLeft.seconds}</div>
+          <div className="label">Seconds</div>
+        </div>
       </div>
     </div>
   );

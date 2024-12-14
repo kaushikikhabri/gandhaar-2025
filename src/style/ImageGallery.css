@@ -17,10 +17,11 @@
   position: relative;
   z-index: 1;
   animation: scrollImages 12s linear infinite;
+  will-change: transform;
 }
 
 .image-grid:hover {
-  animation-play-state: paused;
+  animation-play-state: paused !important;
 }
 
 @keyframes scrollImages {

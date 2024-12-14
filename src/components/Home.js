@@ -33,7 +33,11 @@ function Home() {
   return (
     <div>
       <Header toggleDrawer={toggleDrawer} />
-      <Navigation isDrawerOpen={isDrawerOpen} toggleDrawer={toggleDrawer} scrollThreshold={200} />
+      <Navigation
+        isDrawerOpen={isDrawerOpen}
+        toggleDrawer={toggleDrawer}
+        scrollThreshold={200}
+      />
       <Countdown targetDate={targetDate} />
 
       <PreGandhaarThemes />
@@ -49,7 +53,7 @@ function Home() {
       <StarLineUp />
       {/* <EventCard /> */}
       <Schedule />
-      {/* <ImageGallery /> */}
+      <ImageGallery />
       <Team />
       {/* <FireFooter /> */}
       {/* <Footer /> */}
