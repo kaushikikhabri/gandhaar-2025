@@ -33,7 +33,7 @@ function Home() {
   return (
     <div>
       <Header toggleDrawer={toggleDrawer} />
-      <Navigation isDrawerOpen={isDrawerOpen} toggleDrawer={toggleDrawer} />
+      <Navigation isDrawerOpen={isDrawerOpen} toggleDrawer={toggleDrawer} scrollThreshold={200} />
       <Countdown targetDate={targetDate} />
 
       <PreGandhaarThemes />
