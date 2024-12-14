@@ -39,6 +39,7 @@ const Countdown = ({ targetDate }) => {
           fontWeight: "bold",
           padding: "30px",
           paddingBottom: "150px",
+          color: "white",
         }}
       >
         {timeLeft.days}d : {timeLeft.hours}h : {timeLeft.minutes}m :{" "}

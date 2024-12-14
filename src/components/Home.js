@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import "../style/Home.css";
 import Launch from "./Launch";
 import Header from "./Header";
 import Navigation from "./Navigation";
@@ -14,24 +15,45 @@ import Event from "./Event";
 import EventSlider from "./EventSlider";
 import EventCard from "./EventCard";
 import CulturalFestMindMap from "./CulturalFestMindMap";
+import HundredDaysOfPoetry from "./HundredDaysofPoetry";
+import DummyGallery from "./DummyGallery";
+import EventSource from "./EventSource";
+import Bubbles from "./Bubbles";
+import Team from "./Team";
+import FireFooter from "./FireFooter";
+import DevTeam from "./DevTeam";
 
 function Home() {
   const targetDate = "2025-01-30T23:59:59";
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
+  const toggleDrawer = () => {
+    setIsDrawerOpen((prev) => !prev);
+  };
   return (
     <div>
-      <Header />
-      <Navigation />
+      <Header toggleDrawer={toggleDrawer} />
+      <Navigation isDrawerOpen={isDrawerOpen} toggleDrawer={toggleDrawer} />
       <Countdown targetDate={targetDate} />
+
       <PreGandhaarThemes />
       <CulturalFestMindMap />
       {/* <GandhaarThemes /> */}
       {/* <Events /> */}
-      <Event />
-      <EventSlider />
+      {/* <EventSource /> */}
+      <EventSource />
+      {/* <HundredDaysOfPoetry /> */}
+      {/* <Event /> */}
+      {/* <DummyGallery /> */}
+      {/* <EventSlider /> */}
       <StarLineUp />
-      <EventCard />
+      {/* <EventCard /> */}
       <Schedule />
-      <ImageGallery />
+      {/* <ImageGallery /> */}
+      <Team />
+      {/* <FireFooter /> */}
+      {/* <Footer /> */}
+      <DevTeam />
       <Footer />
     </div>
   );

@@ -141,11 +141,13 @@ const ImageGallery = () => {
             < span className="arrow right" onClick={showNextImage}>
             &#10095;
             </span>
+
           </div>
         </div>
       )}
     </div>
   );
 };
+
 
 export default ImageGallery;
