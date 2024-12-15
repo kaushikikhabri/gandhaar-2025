@@ -45,8 +45,8 @@ const Header = ({ toggleDrawer }) => {
       {isMobile && (
         <div className="floating-icon" onClick={()=> toggleDrawer(true)}>
           <div className="floating-content">
-            <span role="img" aria-label="menu">✨</span>
-            <p>Menu</p>
+            {/* <span role="img" aria-label="menu">✨</span> */}
+            {/* <p>Menu</p> */}
           </div>
         </div>
       )}
