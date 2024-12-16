@@ -53,7 +53,7 @@ function Home() {
       <StarLineUp />
       {/* <EventCard /> */}
       <Schedule />
-      {/* <ImageGallery /> */}
+      <ImageGallery />
       <Team />
       {/* <FireFooter /> */}
       {/* <Footer /> */}
