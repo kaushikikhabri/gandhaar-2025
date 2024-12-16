@@ -28,6 +28,7 @@ function Home() {
       <Header />
       <Navigation />
       <Countdown targetDate={targetDate} />
+      {/* mrunal - pre-theme */}
       <PreGandhaarThemes />
       {/* <CulturalFestMindMap /> */}
       <GandhaarThemes />
