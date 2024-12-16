@@ -15,6 +15,7 @@
     "bootstrap": "^5.3.3",
     "gandhaar": "file:",
     "gsap": "^3.12.5",
+    "link": "^2.1.1",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.5",
     "react-dom": "^18.3.1",
@@ -22,6 +23,7 @@
     "react-responsive-3d-carousel": "^2.1.1",
     "react-router-dom": "^6.27.0",
     "react-scripts": "5.0.1",
+    "react-scroll": "^1.9.0",
     "react-slideshow-image": "^4.3.2",
     "swiper": "^11.1.15",
     "web-vitals": "^2.1.4"

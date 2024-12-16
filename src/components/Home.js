@@ -30,28 +30,28 @@ function Home() {
   };
   return (
     <div>
-      <Header toggleDrawer={toggleDrawer} />
-      <Navigation isDrawerOpen={isDrawerOpen} toggleDrawer={toggleDrawer} scrollThreshold={200} />
-      <Countdown targetDate={targetDate} />
+      <div id="home"> <Header toggleDrawer={toggleDrawer} /></div>
+      <div> <Navigation isDrawerOpen={isDrawerOpen} toggleDrawer={toggleDrawer} scrollThreshold={200} /> </div>
+      <div id="countdown"> <Countdown targetDate={targetDate} /> </div>
 
-      <PreGandhaarThemes />
+      <div id="pre-themes"><PreGandhaarThemes /></div>
       {/* <CulturalFestMindMap /> */}
-      <GandhaarThemes />
+      <div id="themes"><GandhaarThemes /></div>
       {/* <Events /> */}
-      <EventSource />
+      <div><EventSource /></div>
 
       {/* <HundredDaysOfPoetry /> */}
       {/* <Event /> */}
       {/* <DummyGallery /> */}
       {/* <EventSlider /> */}
 
-      <StarLineUp />
+    <div id="star-lineup"><StarLineUp /></div>
       {/* <EventCard /> */}
       {/* <Schedule /> */}
       {/* <ImageGallery /> */}
-      <Team />
+      <div id="team"><Team /></div>
 
-      <Footer />
+      <div id="footer"><Footer /></div>
     </div>
   );
 }
