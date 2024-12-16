@@ -25,7 +25,7 @@ const Team = () => {
               </div>
               <div className="panel-info">
                 <h3>{panel.fullName}</h3>
-                <p>{panel.year}</p>
+                <p>{panel.post}</p>
                 <div className="social-icons">
                   <a
                     href={panel.instaLink}
