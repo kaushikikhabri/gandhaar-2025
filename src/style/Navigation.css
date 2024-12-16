@@ -48,7 +48,7 @@
   border-bottom-right-radius: 25px; 
 }
 
-.navitem a {
+.navitem .navlink {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight:bolder;
   font-size: 17px;
@@ -60,12 +60,12 @@
   color: transparent;
 }
 
-.navitem a:hover {
+.navitem .navlink:hover {
 
   color: black;
+  cursor: pointer;
 
 }
-
 
 @keyframes glowing {
   0% {
@@ -156,7 +156,7 @@
   animation-delay: calc(var(--delay, 0) * 0.1s); /* Stagger items */
 }
 
-.draweritem a {
+.draweritem .drawerlink {
   text-decoration: none;
   color: #fff;
   font-size: 1.2rem;
@@ -165,7 +165,7 @@
   font-weight: 800;
 }
 
-.draweritem a:hover {
+.draweritem .drawerlink:hover {
   text-decoration: underline;
 }
 
