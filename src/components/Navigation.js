@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../style/Navigation.css";
+import { Link } from 'react-scroll';
 
 const Navigation = ({ isDrawerOpen, toggleDrawer, scrollThreshold = null }) => {
   const [isSticky, setIsSticky] = useState(false);
@@ -38,16 +39,31 @@ const Navigation = ({ isDrawerOpen, toggleDrawer, scrollThreshold = null }) => {
           className={`navcontainer ${isSticky ? "sticky" : ""}`}
           style={{ display: "flex" }}
         >
-          <ul className="navmenu">
-            <li className="navitem"><a href="#home">Home</a></li>
-            <li className="navitem"><a href="#events">Events</a></li>
-            <li className="navitem"><a href="#schedule">Schedule</a></li>
-            <li className="navitem"><a href="#theme">Theme</a></li>
-            <li className="navitem"><a href="#star-line-up">Star Line-Up</a></li>
-            <li className="navitem"><a href="#gallery">Gallery</a></li>
-            <li className="navitem"><a href="#team">Team</a></li>
-            <li className="navitem"><a href="#about-us">About Us</a></li>
-            
+           <ul className="navmenu">
+            <li className="navitem">
+              <Link className="navlink" to="home" smooth={true} duration={500}>Home</Link>
+            </li>
+            <li className="navitem">
+              <Link className="navlink" to="events" smooth={true} duration={500}>Events</Link>
+            </li>
+            <li className="navitem">
+              <Link className="navlink" to="schedule" smooth={true} duration={500}>Schedule</Link>
+            </li>
+            <li className="navitem">
+              <Link className="navlink" to="themes" smooth={true} duration={500}>Themes</Link>
+            </li>
+            <li className="navitem">
+              <Link className="navlink" to="star-lineup" smooth={true} duration={500}>Star Line-up</Link>
+            </li>
+            <li className="navitem">
+              <Link className="navlink" to="team" smooth={true} duration={500}>Team</Link>
+            </li>
+            <li className="navitem">
+              <Link className="navlink" to="gallery" smooth={true} duration={500}>Gallery</Link>
+            </li>
+            <li className="navitem">
+              <Link className="navlink" to="about-us" smooth={true} duration={500}>About Us</Link>
+            </li>
           </ul>
         </div>
       )}
@@ -60,46 +76,32 @@ const Navigation = ({ isDrawerOpen, toggleDrawer, scrollThreshold = null }) => {
           </div>
           <ul className="drawermenu">
             <li className="draweritem">
-              <a href="#home" onClick={toggleDrawer}>
-                <span>🏠</span> Home
-              </a>
+            <Link className="drawerlink" to="home" smooth={true} duration={500} onClick={toggleDrawer}><span>🏠</span> Home</Link>
             </li>
             <li className="draweritem">
-              <a href="#events" onClick={toggleDrawer}>
-                <span>🎉</span> Events
-              </a>
+            <Link className="drawerlink" to="events" smooth={true} duration={500} onClick={toggleDrawer}><span>🎉</span> Events</Link>
+            
             </li>
             <li className="draweritem">
-              <a href="#schedule" onClick={toggleDrawer}>
-                <span>📅</span> Schedule
-              </a>
+            <Link className="drawerlink" to="schedule" smooth={true} duration={500} onClick={toggleDrawer}><span>📅</span> Schedule</Link>
             </li>
-            <li className="draweritem">
-              <a href="#theme" onClick={toggleDrawer}>
-                <span>🎨</span> Theme
-              </a>
-            </li>
-            <li className="draweritem">
-              <a href="#star-line-up" onClick={toggleDrawer}>
-                <span>✨</span> Star Line-Up
-              </a>
-            </li>
-            <li className="draweritem">
-              <a href="#about-us" onClick={toggleDrawer}>
-                <span>🖼️</span> Gallery
-              </a>
-            </li>
-            <li className="draweritem">
-              <a href="#team" onClick={toggleDrawer}>
-                <span>👥</span> Team
-              </a>
-            </li>
-  
 
             <li className="draweritem">
-              <a href="#about-us" onClick={toggleDrawer}>
-                <span>ℹ️</span> About Us
-              </a>
+            <Link className="drawerlink" to="theme" smooth={true} duration={500} onClick={toggleDrawer}> <span>🎨</span> Theme</Link>
+            </li>
+
+            <li className="draweritem">
+            <Link className="drawerlink" to="star-lineup" smooth={true} duration={500} onClick={toggleDrawer}> <span>✨</span> Star Line-Up </Link>
+            </li>
+            <li className="draweritem">
+            <Link className="drawerlink" to="gallery" smooth={true} duration={500} onClick={toggleDrawer}> <span>🖼️</span> Gallery</Link>
+            </li>
+            <li className="draweritem">
+            <Link className="drawerlink" to="team" smooth={true} duration={500} onClick={toggleDrawer}> <span>👥</span> Team</Link>
+            </li>
+
+            <li className="draweritem">
+            <Link className="drawerlink" to="about-us" smooth={true} duration={500} onClick={toggleDrawer}> <span>ℹ️</span> About Us</Link>
             </li>
           </ul>
         </div>

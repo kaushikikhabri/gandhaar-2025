@@ -20,8 +20,6 @@ import DummyGallery from "./DummyGallery";
 import EventSource from "./EventSource";
 import Bubbles from "./Bubbles";
 import Team from "./Team";
-import FireFooter from "./FireFooter";
-import DevTeam from "./DevTeam";
 
 function Home() {
   const targetDate = "2025-01-30T23:59:59";
@@ -32,25 +30,22 @@ function Home() {
   };
   return (
     <div>
-      <Header toggleDrawer={toggleDrawer} />
-      <Navigation
-        isDrawerOpen={isDrawerOpen}
-        toggleDrawer={toggleDrawer}
-        scrollThreshold={200}
-      />
-      <Countdown targetDate={targetDate} />
+      <div id="home"> <Header toggleDrawer={toggleDrawer} /></div>
+      <div> <Navigation isDrawerOpen={isDrawerOpen} toggleDrawer={toggleDrawer} scrollThreshold={200} /> </div>
+      <div id="countdown"> <Countdown targetDate={targetDate} /> </div>
 
-      <PreGandhaarThemes />
+      <div id="pre-themes"><PreGandhaarThemes /></div>
       {/* <CulturalFestMindMap /> */}
-      {/* <GandhaarThemes /> */}
+      <div id="themes"><GandhaarThemes /></div>
       {/* <Events /> */}
-      {/* <EventSource /> */}
-      <EventSource />
+      <div><EventSource /></div>
+
       {/* <HundredDaysOfPoetry /> */}
       {/* <Event /> */}
       {/* <DummyGallery /> */}
       {/* <EventSlider /> */}
-      <StarLineUp />
+
+    <div id="star-lineup"><StarLineUp /></div>
       {/* <EventCard /> */}
       <Schedule />
       <ImageGallery />

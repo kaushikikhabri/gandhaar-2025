@@ -1,21 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Honk&family=Kaushan+Script&family=Lavishly+Yours&family=Mogra&family=Niconne&family=Rubik+Gemstones&family=Satisfy&family=Updock&family=Yesteryear&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Merienda:wght@300..900&family=Playwrite+MX+Guides&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Playwrite+MX+Guides&display=swap');
 
 .header {
     position: relative;
     display: flex;  
     flex-direction: column;
-    height: 50em ; /* Adjust height as needed */
+    height: 60em ; 
    /* background-image: url("E:\Projects\Gandhaar25\gandhaar-2025\src\images\dashboard3.jpeg"); Path to your background image */
-
    background-image: 
-
-    url("../images/Gandhaar24.png");
+    /* url("/src/style/Collage.png");  */
+    /* url("/src/images/Gandhaar_collage5.png"); */
+    /* url("/src/images/Gandhaar_collage6.png"); */
+    /* url("/src/images/Gandhaar_collage7.png"); */
+    /* url("/src/images/Gandhaar_collage8.png"); */
+    /* url("/src/images/Gandhaar_collage9.png"); */
+    url("/src/images/Gandhaar_collage10.png");
 
   /* Ensure each image takes up 20% of the width and align them horizontally */
   background-repeat: no-repeat; /* Prevent repetition of images */
   background-size: 100% 100%; /* Each image is 20% of width and full height */
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Optional: Add shadow */
+  background-size: cover; /* Ensures the image covers the container */
+  background-position: center; /* Center the image */
+  /* opacity: 0.7; */
   }
 
   .header::before {
@@ -25,10 +33,11 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.417);
+    background-color: rgba(0, 0, 0, 0.477); 
     z-index: 1; /* Ensure overlay is on top */
     pointer-events: none; /* Prevent overlay from blocking clicks */
-  }
+}
+
   
   .header * {
     position: relative; /* Ensure child elements are above the overlay */
@@ -36,24 +45,25 @@
   }
     
   .header img {
-    height: 70px; /* Adjust the logo size if necessary */
+    /* Adjust the logo size if necessary */
   }
   .logos{
     display: flex;
-    background-color: rgb(247, 237, 237);
+    /* background-color: rgb(247, 237, 237); */
     height: fit-content;
     width: fit-content;
   }
 
   .tag {
-    padding-top: 4em;
+    /* padding-top: 4em; */
+    margin-top: 4em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    opacity: 0; /* Start invisible */
-    animation: popUp 5s ease forwards; /* Apply animation */
-    animation-fill-mode: forwards; /* Ensures the animation's last state persists */
+    /* opacity: 0; Start invisible */
+    /* animation: popUp 5s ease forwards; Apply animation */
+    /* animation-fill-mode: forwards; Ensures the animation's last state persists */
 }
 
 @keyframes popUp {
@@ -78,49 +88,52 @@
 .tag1,
 .tag2{
   font-family:'Cinzel', serif; 
-  background: linear-gradient(90deg, #f6d365, #fda085, #f6d365);
+  background: linear-gradient(90deg, #ffdf78, #fda085, #ffe181);
 
   background-clip: text; /* Show the gradient only on the text */
   -webkit-background-clip: text;
   color: transparent; /* Hide the default color to make gradient visible */
   position: relative;
-  font-weight: 500;
-  text-shadow: 0 0 2px #f6d365;
+  /* font-weight:800; */
+  text-shadow: 0 0 2px #ffe58e;
 }
 .tag1{
 font-size: 1.8em;
 font-weight: bold;
 }
 
-.tag2{
-  font-size: 1.5em;
-  font-weight: bold;
-}
 .tag3 {
-  font-size: 10rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  
+}
+.tag3 span{
+  font-size: 8em;
   /* font-family: 'Playfair Display', serif; */
-  font-family: "Kaushan Script", cursive;
-  font-weight: 400;
+  /* font-family: "Kaushan Script", cursive; */
+  font-family: "Merienda", cursive;
+  /* font-family: "Dancing Script", cursive; */
+  font-optical-sizing: auto;
+  font-weight: 900;
   font-style: normal;
-  /* font-family: 'Cormorant Garamond', serif; */
-  /* font-family: 'EB Garamond', serif; */
+  
   /* font-family: 'Dancing Script', cursive; */
 
   /* background: linear-gradient(90deg, #ff6ec4, #7873f5, #ff9e6b, #7873f5); */
   /* background: linear-gradient(90deg, #141E30, #243B55, #141E30); */
   /* background: linear-gradient(90deg, #7da2f9, #304879, #6795ff); */
-  background: linear-gradient(90deg, #ff416c, #ff4b2b, #ff416c);
-  /* background: linear-gradient(90deg, #0cbfb0, #44f287, #1ac0b2); */
+  /* background: linear-gradient(90deg, #fe3664, #ff593b, #ff416c); */
+  background: linear-gradient(90deg, #abd5d2, #82ffb2, #1ac0b2);
   background-clip: text; /* Show the gradient only on the text */
   -webkit-background-clip: text;
   color: transparent; /* Hide the default color to make gradient visible */
   position: relative;
-  animation: popUp 7s ease forwards;
+  
   /* text-shadow: black; */
 
-  text-shadow: 0 0 8px #ef30709e; /*Subtle soft glow*/
+  text-shadow: 0.3rem 0.1rem 0 #f9f9f9;
 }
-
 
 
 
@@ -130,10 +143,10 @@ font-weight: bold;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
-  height: 5.5rem;
-  background-color: rgba(255, 199, 45, 0.58);
-  background-image: linear-gradient(135deg,   rgba(231, 105, 8, 0.432) 10%,rgba(235, 138, 12, 0.514) 100%);
+  padding: 3rem 3rem;
+  height: fit-content;
+  /* background-color: rgba(255, 199, 45, 0.58); */
+  /* background-image: linear-gradient(135deg,   rgba(231, 105, 8, 0.432) 10%,rgba(235, 138, 12, 0.514) 100%); */
   /* backdrop-filter: blur(5px); Apply the blur effect */
   /* -webkit-backdrop-filter: blur(10px); Safari compatibility */
   /* background: rgb(9,9,121);
@@ -160,10 +173,15 @@ background: linear-gradient(
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0.5em;
 }
 
-#logo1, #logo2 {
-  height: 70px; /* Adjust size of logos */
+#logo1 {
+  height: 5em; /* Adjust size of logos */
+  
+}
+ #logo2 {
+  height: 5em; /* Adjust size of logos */
   
 }
 
@@ -177,55 +195,53 @@ background: linear-gradient(
 }
 
 .nav-item {
-  margin:  15px;
+  margin: 0.7rem;
 }
 
-.nav-item a {
+.nav-item .nav-link {
   position: relative;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 800; 
-  font-size: 1.2rem;
-  padding: 10px 15px;
+  font-size: 1.3em;
+  padding: 0.2rem 0.5rem;
   display: inline-block;
   text-decoration: none;
   overflow: hidden;
   transition: color 0.4s ease;
   background: linear-gradient(90deg, #d8d8d8, #f8f9fa, #d8d8d8);
 
-  background-clip: text; /* Show the gradient only on the text */
+  background-clip: text;
   -webkit-background-clip: text;
-  color: transparent; /* Hide the default color to make gradient visible */
-  position: relative;
-  
+  color: transparent;
+  cursor: pointer;
 }
 
-.nav-item a::before {
+.nav-item .nav-link::before {
   content: "";
   position: absolute;
   top: 0;
   left: -100%;
   width: 100%;
   height: 100%;
-  /* background-image: linear-gradient(135deg, rgba(132, 25, 156, 0.792) 10%, rgba(240, 95, 87, 0.769) 100%); */
   background-image: linear-gradient(135deg, rgba(255, 136, 0, 0.874) 10%, rgba(255, 128, 0, 0.769) 100%);
   border-radius: 15px;
   transition: left 0.4s ease;
   z-index: -1;
 }
 
-.nav-item a:hover::before {
+.nav-item .nav-link:hover::before {
   left: 0; 
 }
 
-.nav-item a:hover {
+.nav-item .nav-link:hover {
   color: white; 
-  
 }
+
 
 /* Menu button for small screens */
 /* .menu-button {
   display: none;
-  font-size: 1rem;
+  font-size: 1em;
   color: white;
   cursor: pointer;
   font-weight: bold;
@@ -233,7 +249,7 @@ background: linear-gradient(
 
 .menu-button {
   display: none; /* Visible only on small screens */
-  font-size: 1.5rem; /* Slightly larger font for better readability */
+  font-size: 1.5em; /* Slightly larger font for better readability */
   color: white;
   cursor: pointer;
   font-weight: bold;
@@ -262,8 +278,10 @@ background: linear-gradient(
 
 /* Responsive styles for small screens */
 @media (max-width: 968px) {
-  .header{
-    background-image: url("../images/phonesize.png");
+  .header {
+    background-image: url("/src/images/phone_size2.png"); 
+    height: 40em ; 
+    
   }
   .nav-menu {
     display: none; /* Hide menu items in navbar */
@@ -278,8 +296,8 @@ background: linear-gradient(
       font-size: 1em;
   
     }
-  .tag3{
-    font-size: 5em;
+  .tag3 span{
+    font-size: 3.5em;
   }
   .menu-button {
     display: block; /* Show menu button */
@@ -288,12 +306,12 @@ background: linear-gradient(
 
 .floating-icon {
   position: fixed;
-  bottom: 5rem;
-  right: 2rem;
-  background: linear-gradient(45deg, #ff5722, #ff9800);
-  color: #fff;
-  width: 60px;
-  height: 60px;
+  bottom: 5em;
+  right: 2em;
+  /* background: linear-gradient(45deg, #ff5722, #ff9800); */
+  /* color: #fff; */
+  width: 5rem;
+  height: 5rem;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -302,6 +320,9 @@ background: linear-gradient(
   cursor: pointer;
   animation: bounce 2s infinite;
   z-index: 1000;
+  background-image: url(/src/images/macaw_nav.jpg);
+  background-size: cover;
+  
 }
 
 .floating-icon:hover {
@@ -316,6 +337,8 @@ background: linear-gradient(
   font-family: 'Arial', sans-serif;
   font-size: 12px;
   text-align: center;
+ 
+  
 }
 
 .floating-content span {
