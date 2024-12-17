@@ -20,6 +20,7 @@ import DummyGallery from "./DummyGallery";
 import EventSource from "./EventSource";
 import Bubbles from "./Bubbles";
 import Team from "./Team";
+import DevTeam from "./DevTeam";
 
 function Home() {
   const targetDate = "2025-01-30T23:59:59";
