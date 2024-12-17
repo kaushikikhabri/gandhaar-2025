@@ -47,11 +47,13 @@ function Home() {
 
     <div id="star-lineup"><StarLineUp /></div>
       {/* <EventCard /> */}
-      {/* <Schedule /> */}
-      {/* <ImageGallery /> */}
-      <div id="team"><Team /></div>
-
-      <div id="footer"><Footer /></div>
+      <Schedule />
+      <ImageGallery />
+      <Team />
+      {/* <FireFooter /> */}
+      {/* <Footer /> */}
+      <DevTeam />
+      {/* <Footer /> */}
     </div>
   );
 }
