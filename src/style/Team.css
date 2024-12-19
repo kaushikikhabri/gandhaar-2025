@@ -23,16 +23,21 @@
     font-size: 70px;
     margin-top: 30px;
     color: white;
+    text-align: center;
 }
 
-  .panel-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Auto adjust columns */
-    gap: 20px;
-    width: 100%; /* Ensure grid spans the full container width */
-    max-width: 1200px; /* Set a max-width for large screens */
-  }
-  
+.panel-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Auto adjust columns */
+  grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+
+  gap: 20px;
+  width: 100%; /* Ensure grid spans the full container width */
+  max-width: 1200px; /* Set a max-width for large screens */
+  justify-content: center; /* Horizontally center the grid */
+  align-items: center; /* Vertically center the grid */
+}
+
   
   .panel-card {
     position: relative;
@@ -106,7 +111,7 @@
     /* background-size: 400% 400%; */
     /* background-attachment: fixed; */
     overflow: hidden; /* Prevent extra content */
-    background: linear-gradient(171.8deg, rgb(83, 13, 188) 13.5%, rgb(8, 7, 111) 78.6%);
+    background: linear-gradient(180deg, rgb(83, 13, 188) 13.5%, rgb(8, 7, 111) 78.6%, #18168d 98.2%);
   }
   
   
