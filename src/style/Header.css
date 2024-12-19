@@ -320,7 +320,7 @@ background: linear-gradient(
   cursor: pointer;
   animation: bounce 2s infinite;
   z-index: 1000;
-  background-image: url(/src/images/macaw_nav.jpg);
+  background-image: url(/src/images/macaw1.png);
   background-size: cover;
   
 }
