@@ -220,9 +220,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1000; /* Ensure the modal overlay is on top */
-  }
-  
+  z-index: 2000; /* Ensure it's on top of everything */
+}
 
   .modal {
     background: #fff !important;
@@ -238,8 +237,6 @@
     align-items: center; /* Center content horizontally */
     
 }
-
-  
 
 .modal h2 {
   margin: 0;
