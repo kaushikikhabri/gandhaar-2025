@@ -16,7 +16,7 @@
   gap: 28px;
   position: relative;
   z-index: 1;
-  animation: scrollImages 12s linear infinite;
+  animation: scrollImages 10s linear infinite;
   will-change: transform;
 }
 
