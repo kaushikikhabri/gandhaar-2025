@@ -15,11 +15,10 @@ import Event from "./Event";
 import EventSlider from "./EventSlider";
 import EventCard from "./EventCard";
 import CulturalFestMindMap from "./CulturalFestMindMap";
-import HundredDaysOfPoetry from "./HundredDaysofPoetry";
-import DummyGallery from "./DummyGallery";
 import EventSource from "./EventSource";
 import Bubbles from "./Bubbles";
 import Team from "./Team";
+import DevTeam from "./DevTeam";
 
 function Home() {
   const targetDate = "2025-01-30T23:59:59";
