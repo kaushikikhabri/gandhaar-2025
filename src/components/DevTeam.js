@@ -42,12 +42,22 @@ import React from "react";
 import "../style/DevTeam.css";
 
 // Import all images
-import kaushikiImage from "../images/Kaushiki Khabri.jpg";
-import saiImage from "../images/Sai Ingole.jpg";
-import yashodaImage from "../images/Yashoda Kangle.jpg";
-import avasthiImage from "../images/Avasthi Jadhav.jpg";
-import mrunalImage from "../images/IMG_2330.jpg";
-import sameekshaImage from "../images/Sameeksha Tantak.jpg";
+// import kaushikiImage from "../images/Kaushiki Khabri.jpg";
+// import saiImage from "../images/Sai Ingole.jpg";
+// import yashodaImage from "../images/Yashoda Kangle.jpg";
+// import avasthiImage from "../images/Avasthi Jadhav.jpg";
+// import mrunalImage from "../images/IMG_2330.jpg";
+// import sameekshaImage from "../images/Sameeksha Tantak.jpg";
+
+import kaushikiImage from "../images/Kaushiki.png";
+import saiImage from "../images/sai.jpg";
+import yashodaImage from "../images/yashoda.png";
+import avasthiImage from "../images/Avasthi.png";
+import mrunalImage from "../images/mrunal.png";
+import sameekshaImage from "../images/Sameeksha.png";
+import ieshaImage from "../images/isha.png";
+import shrushtiImage from "../images/shrushti.png";
+import purvaImage from "../images/purva.png";
 
 const DevTeam = () => {
   const teamMembers = [
@@ -57,9 +67,9 @@ const DevTeam = () => {
     { name: "Avasthi Jadhav", img: avasthiImage },
     { name: "Mrunal Shinde", img: mrunalImage },
     { name: "Sameeksha Tantak", img: sameekshaImage },
-    { name: "Srushti Nikam", img: sameekshaImage },
-    { name: "Isha Bhule", img: sameekshaImage },
-    { name: "Purva Sarda", img: sameekshaImage },
+    { name: "Srushti Nikam", img: shrushtiImage },
+    { name: "Isha Bhule", img: ieshaImage },
+    { name: "Purva Sarda", img: purvaImage },
   ];
 
   return (
