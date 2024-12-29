@@ -156,11 +156,19 @@
   .time-slot {
     font-size: 5px;
   }
-  .event-text {
-    font-size: 7px;
-    width: 30px; /* Fixed width for event details */
-    height: 30px; /* Fixed height */
-  }
+  
+ /* Modal Styles */
+ .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7); /* Make sure this is semi-transparent */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  z-index: 2000; /* Ensure it's on top of everything */
 }
 
 /* Modal Styles */
@@ -178,6 +186,7 @@
 }
 
 
+
 .modal {
   background: #fff !important;
   padding: 20px;
@@ -190,7 +199,6 @@
   align-items: center; /* Center content horizontally */
   
 }
-
 
 
 .modal h2 {
