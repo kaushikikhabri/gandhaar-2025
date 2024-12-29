@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Almendra+SC&family=Delius&family=Galada&family=Honk&family=Imperial+Script&family=Kaushan+Script&family=Lavishly+Yours&family=Modak&family=Mogra&family=Niconne&family=Pattaya&family=Pirata+One&family=Rouge+Script&family=Rubik+Gemstones&family=Satisfy&family=Updock&family=Yesteryear&display=swap');
-
-#about-us-container {
+#AboutUsContainer {
     /* max-width: 1024px;  Limits the container width to 1024px */
-     padding: 10px; /* Centers the container horizontally */
+     /* Centers the container horizontally */
      background-color: rgb(17, 2, 87);
    }
    
@@ -18,7 +16,7 @@
      background: #050505; /* Monitor frame background */
      position: relative;
      border-radius: 8px; /* Rounded corners */
-     width: 60%; /* Adjust width as needed */
+     width: 55%; /* Adjust width as needed */
      aspect-ratio: 16 / 9; /* Consistent dimensions */
      /* height: 400px; */
      margin: 25px;
@@ -65,39 +63,20 @@
      flex: 1; /* Makes the text container take up available space in the flex layout */
      color: rgb(255, 253, 253); /* Sets the text color to white for better contrast on dark background */
      padding: 20px; /* Adds padding around the text */
-     text-align: start;
-     color: white;
+     text-align: justify;
    }
    
-   h4 {
-     font-size: 5rem; /* Sets the font size of the heading */
-     margin-bottom: 10px; /* Adds space below the heading */
+   #text h1,h2 {
+     font-size: 2rem; /* Sets the font size of the heading */
+     margin-bottom: 30px; /* Adds space below the heading */
      text-align: center;
-     color: white !important;
-     font-family: "Almendra SC", serif;
-     font-weight: 400;
-     font-style: normal;
-     /* font-family: 'Cinzel', serif; */
+     font-family: 'Cinzel', serif;
    }
-
-   h5 {
-    font-size: 2rem; /* Sets the font size of the heading */
-    margin-bottom: 30px; /* Adds space below the heading */
-    text-align: center;
-    color: white !important;
-    font-family: "Almendra SC", serif;
-    font-weight: 200;
-    font-style: normal;
-    /* font-family: 'Cinzel', serif; */
-  }
    
    #text p {
      font-size: 1rem; /* Sets the font size of the paragraph */
      line-height: 1.5; /* Increases the line height for better readability */
-     font-family: "Almendra SC", serif;
-     font-weight: 100;
-     font-style: normal;
-     /* font-family: 'Cinzel', serif; */
+     font-family: 'Cinzel', serif;
    }
    
    @media all and (max-width: 960px) {
@@ -118,7 +97,6 @@
        width: 90%; /* Makes the text container take up the full width */
        text-align: justify;
      }
-
    }
    
    @media all and (max-width: 480px) {
@@ -127,27 +105,6 @@
        animation: tvflicker 0.5s infinite alternate; /* Applies flickering effect on large screens */
  
      }
-     h4 {
-      font-size: 4rem; 
-      margin-bottom: 10px; /* Adds space below the heading */
-      text-align: center;
-      color: white !important;
-      font-family: "Almendra SC", serif;
-      font-weight: 400;
-      font-style: normal;
-      /* font-family: 'Cinzel', serif; */
-    }
- 
-    h5 {
-     font-size: 1.5rem; 
-     margin-bottom: 30px; /* Adds space below the heading */
-     text-align: center;
-     color: white !important;
-     font-family: "Almendra SC", serif;
-     font-weight: 200;
-     font-style: normal;
-     /* font-family: 'Cinzel', serif; */
-   }
    
      @keyframes tvflicker {
        0% {
