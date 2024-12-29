@@ -19,6 +19,7 @@ import EventSource from "./EventSource";
 import Bubbles from "./Bubbles";
 import Team from "./Team";
 import DevTeam from "./DevTeam";
+import AboutUs from "./AboutUs";
 
 function Home() {
   const targetDate = "2025-01-30T23:59:59";
@@ -68,12 +69,13 @@ function Home() {
       </div>
       {/* <EventCard /> */}
       <Schedule />
+      <AboutUs />
       <ImageGallery />
       <Team />
       {/* <FireFooter /> */}
       {/* <Footer /> */}
       <DevTeam />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
