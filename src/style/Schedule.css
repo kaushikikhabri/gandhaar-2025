@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
   gap: 2px;
   padding-top: 20px; /* Add padding to ensure buttons have space above the schedule */
   padding-left: 90px;
@@ -27,14 +28,15 @@
 .day-buttons {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 5vw;
   z-index: 10; /* Ensure buttons are on top of other elements */
   margin-bottom: 10px; /* Decrease this value to reduce the gap */
 }
 
 .day-button {
   padding: 10px 20px;
-  background-color: #ff7eb3;
+  
+  background: linear-gradient(45deg, #ff3366, #cc33cc, #9933ff);
   color: white;
   border: none;
   border-radius: 5px;
@@ -44,12 +46,12 @@
   transition: background-color 0.3s;
 }
 
-.day-button.active {
-  background-color: #ffb347;
+.day-button.active { 
+  background: linear-gradient(45deg, #ff6600, #ff3366, #ff0066);
 }
 
 .day-button:hover {
-  background-color: #ffa07a;
+  background: linear-gradient(45deg, #ff7eb3, #660066);
 }
 
 .schedule-container {
@@ -152,64 +154,42 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-@media (max-width: 760px) {
-  .time-slot {
-    font-size: 5px;
-  }
-  
- /* Modal Styles */
- .modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.7); /* Make sure this is semi-transparent */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  z-index: 2000; /* Ensure it's on top of everything */
-}
-
-/* Modal Styles */
 .modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.7); /* Make sure this is semi-transparent */
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  width: 30%;
+  height: 50%;
+  /* background: rgba(0, 0, 0, 0.7); */
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000; /* Ensure the modal overlay is on top */
+  z-index: 1000;
 }
-
-
 
 .modal {
-  background: #fff !important;
+  background: #fff;
+  display: block !important;
   padding: 20px;
   border-radius: 10px;
-  width: 250px;
+  width: 25vw; /* Adjust as needed */
+  height: 25vh;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   text-align: center;
-  display: flex;
-  flex-direction: column; /* Stack items vertically */
-  align-items: center; /* Center content horizontally */
-  
+  z-index: 2000;
 }
 
-
 .modal h2 {
-margin: 0;
+margin: 40px;
 font-size: 18px;
 color: #333;
 }
 
 .modal p {
 font-size: 14px;
+margin: 25px;
 color: #666;
+padding: 5px;
 }
 
 .modal button {
@@ -239,4 +219,35 @@ color: aqua;
 .event.flashmob .end-time {
   font-size: 0.8em;
   color: gray;
+}
+
+@media (max-width: 760px) {
+  .time-slot {
+    font-size: 5px;
+  }
+  .event-text {
+    font-size: 7px;
+    width: 30px; /* Fixed width for event details */
+    height: 30px; /* Fixed height */
+  }
+  .modal-overlay
+  {
+    width: 60%;
+    height: 25%;
+    top: 25%;
+    left: 25%;
+
+  }
+  
+  .modal h2
+  {
+    font-size: 15px;
+    margin: 10px;
+  }
+
+  .modal p
+  {
+    font-size: 12px;
+    margin: 10px;
+  }
 }
