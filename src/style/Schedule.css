@@ -233,7 +233,7 @@ color: aqua;
   .modal-overlay
   {
     width: 60%;
-    height: 25%;
+    height: 30%;
     top: 25%;
     left: 25%;
 
@@ -242,12 +242,12 @@ color: aqua;
   .modal h2
   {
     font-size: 15px;
-    margin: 10px;
+    margin: 8px;
   }
 
   .modal p
   {
     font-size: 12px;
-    margin: 10px;
+    margin: 5px;
   }
 }
