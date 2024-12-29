@@ -4,7 +4,7 @@ import "../style/AboutUs.css";
 const AboutUs = () => {
   return (
     <div id="about-us-container">
-      <h4>About Us</h4>
+      <p className="about-us-title">About Us</p>
       <h5>Gandhaar :&nbsp; A grand celebration of Culture and Talent</h5>
       <div id="monitor-text-wrapper">
         {/* <div id="card"> */}
