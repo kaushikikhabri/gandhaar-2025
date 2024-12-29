@@ -44,7 +44,7 @@ function Home() {
       </div>
       <div id="countdown">
         {" "}
-        <Countdown targetDate={targetDate} />{" "}
+        {/* <Countdown targetDate={targetDate} />{" "} */}
       </div>
 
       <div id="pre-themes">
