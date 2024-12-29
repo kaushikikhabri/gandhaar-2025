@@ -15,11 +15,11 @@ import Event from "./Event";
 import EventSlider from "./EventSlider";
 import EventCard from "./EventCard";
 import CulturalFestMindMap from "./CulturalFestMindMap";
-import HundredDaysOfPoetry from "./HundredDaysofPoetry";
-import DummyGallery from "./DummyGallery";
 import EventSource from "./EventSource";
 import Bubbles from "./Bubbles";
 import Team from "./Team";
+import DevTeam from "./DevTeam";
+import AboutUs from "./AboutUs";
 
 function Home() {
   const targetDate = "2025-01-30T23:59:59";
@@ -30,28 +30,52 @@ function Home() {
   };
   return (
     <div>
-      <div id="home"> <Header toggleDrawer={toggleDrawer} /></div>
-      <div> <Navigation isDrawerOpen={isDrawerOpen} toggleDrawer={toggleDrawer} scrollThreshold={200} /> </div>
-      <div id="countdown"> <Countdown targetDate={targetDate} /> </div>
+      <div id="home">
+        {" "}
+        <Header toggleDrawer={toggleDrawer} />
+      </div>
+      <div>
+        {" "}
+        <Navigation
+          isDrawerOpen={isDrawerOpen}
+          toggleDrawer={toggleDrawer}
+          scrollThreshold={200}
+        />{" "}
+      </div>
+      <div id="countdown">
+        {" "}
+        <Countdown targetDate={targetDate} />{" "}
+      </div>
 
-      <div id="pre-themes"><PreGandhaarThemes /></div>
+      <div id="pre-themes">
+        <PreGandhaarThemes />
+      </div>
       {/* <CulturalFestMindMap /> */}
-      <div id="themes"><GandhaarThemes /></div>
+      <div id="themes">
+        <GandhaarThemes />
+      </div>
       {/* <Events /> */}
-      <div><EventSource /></div>
+      <div>
+        <EventSource />
+      </div>
 
       {/* <HundredDaysOfPoetry /> */}
       {/* <Event /> */}
       {/* <DummyGallery /> */}
       {/* <EventSlider /> */}
 
-    <div id="star-lineup"><StarLineUp /></div>
+      <div id="star-lineup">
+        <StarLineUp />
+      </div>
       {/* <EventCard /> */}
-      {/* <Schedule /> */}
-      {/* <ImageGallery /> */}
-      <div id="team"><Team /></div>
-
-      <div id="footer"><Footer /></div>
+      <Schedule />
+      <AboutUs />
+      <ImageGallery />
+      <Team />
+      {/* <FireFooter /> */}
+      {/* <Footer /> */}
+      <DevTeam />
+      <Footer />
     </div>
   );
 }

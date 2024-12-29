@@ -16,12 +16,12 @@
   gap: 28px;
   position: relative;
   z-index: 1;
-  animation: scrollImages 12s linear infinite;
+  animation: scrollImages 50s linear infinite;
   will-change: transform;
 }
 
 .image-grid:hover {
-  animation-play-state: paused !important;
+  animation-play-state: paused !important;
 }
 
 @keyframes scrollImages {
@@ -90,8 +90,14 @@
   height: calc(98 / 231 * 285px);
 }
 
+ 
+
 .image-item:nth-child(7) {
-  margin-top: 340px;
+  /* margin-top: 340px;
+  width: 98px;
+  height: calc(98 / 231 * 285px); */
+
+  margin-top: 218px;
   width: 98px;
   height: calc(98 / 231 * 285px);
 }
@@ -115,12 +121,20 @@
 }
 
 .image-item:nth-child(11) {
-  margin-top: 218px;
+  /* margin-top: 218px;
   width: 98px;
-  height: calc(98 / 231 * 285px);
+  height: calc(98 / 231 * 285px); */
+
+  padding-top: 0px;
+  width: 196px;
+  height: calc(196 / 231 * 285px);
 }
 
 .image-item:nth-child(12) {
+  /* width: 98px;
+  height: calc(98 / 231 * 285px); */
+
+  margin-top: 340px;
   width: 98px;
   height: calc(98 / 231 * 285px);
 }
@@ -143,9 +157,13 @@
 }
 
 .image-item:nth-child(16) {
-  margin-top: 218px;
+  /* margin-top: 218px;
   width: 98px;
-  height: calc(98 / 231 * 285px);
+  height: calc(98 / 231 * 285px); */
+
+  margin-top: 218px;
+  width: 196px;
+  height: calc(196 / 231 * 285px);
 }
 
 .image-item:nth-child(17) {
@@ -161,7 +179,11 @@
 }
 
 .image-item:nth-child(19) {
-  margin-top: 218px;
+  /* margin-top: 218px;
+  width: 196px;
+  height: calc(196 / 231 * 285px); */
+
+  padding-top: 0px;
   width: 196px;
   height: calc(196 / 231 * 285px);
 }
@@ -173,9 +195,13 @@
 }
 
 .image-item:nth-child(21) {
-  margin-top: 218px;
+  /* margin-top: 218px;
   width: 98px;
-  height: calc(98 / 231 * 285px);
+  height: calc(98 / 231 * 285px); */
+
+  padding-top: 0px;
+  width: 196px;
+  height: calc(196 / 231 * 285px);
 }
 
 .image-item:nth-child(22) {
@@ -196,9 +222,13 @@
 }
 
 .image-item:nth-child(25) {
-  margin-top: 218px;
+  /* margin-top: 218px;
   width: 98px;
-  height: calc(98 / 231 * 285px);
+  height: calc(98 / 231 * 285px); */
+
+  margin-top: 218px;
+  width: 196px;
+  height: calc(196 / 231 * 285px);
 }
 
 .image-item:nth-child(26) {
@@ -239,9 +269,13 @@
 }
 
 .image-item:nth-child(32) {
-  margin-top: 340px;
+  /* margin-top: 340px;
   width: 98px;
-  height: calc(98 / 231 * 285px);
+  height: calc(98 / 231 * 285px); */
+
+  padding-top: 0px;
+  width: 196px;
+  height: calc(196 / 231 * 285px);
 }
 
 .image-item:nth-child(33) {
