@@ -6,10 +6,10 @@
   position: relative;
   gap: 2px;
   padding-top: 20px; /* Add padding to ensure buttons have space above the schedule */
-  padding-left: 90px;
+  padding-left: 20px;
   height: 109vh; /* Ensures it takes up the full viewport height */
   background: linear-gradient(to right, #111111, #2c2a2b); /* Optional background for visibility */
-  padding-bottom: 50px;
+  padding-bottom: 850px;
 }
 
 .schedule-title{
@@ -20,6 +20,7 @@
   margin-top: 30px;
   color: white;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .time-slot-container {
@@ -46,7 +47,6 @@
 
 .day-button {
   padding: 10px 20px;
-  
   background: linear-gradient(45deg, #ff3366, #cc33cc, #9933ff);
   color: white;
   border: none;
@@ -67,13 +67,12 @@
 
 .schedule-container {
   display: grid;
-  grid-template-columns: 7vw repeat(17, 5vw); /*7vw repeat(13, 5vw); Add an extra column for time */
+  grid-template-columns: 6vw repeat(10, 4.5vw); /*7vw repeat(13, 5vw); Add an extra column for time */
   grid-template-rows: repeat(28, 3vh);/*repeat(22, 3vh); /* Set auto row height to adjust dynamically */
   gap: 5px;
   padding: 5px;
   margin-top: 5px;
-  background: linear-gradient(to right, #111111, #2c2a2b);
-  height: 80vh;
+  height: 100vh;
   margin-bottom: 0.1em;
 }
 

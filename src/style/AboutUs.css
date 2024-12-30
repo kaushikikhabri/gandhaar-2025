@@ -71,7 +71,7 @@
      color: white;
    }
    
-   h4 {
+   .about-us-title {
     margin-top: 40px;
     font-size: 70px;
      margin-bottom: 10px; /* Adds space below the heading */
@@ -131,16 +131,7 @@
        animation: tvflicker 0.5s infinite alternate; /* Applies flickering effect on large screens */
  
      }
-     h4 {
-      font-size: 4rem; 
-      margin-bottom: 10px; /* Adds space below the heading */
-      text-align: center;
-      color: white !important;
-      font-family: "Almendra SC", serif;
-      font-weight: 400;
-      font-style: normal;
-      /* font-family: 'Cinzel', serif; */
-    }
+  
  
     h5 {
      font-size: 1.5rem; 
