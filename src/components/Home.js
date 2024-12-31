@@ -31,7 +31,7 @@ function Home() {
       {/* mrunal - pre-theme */}
       <PreGandhaarThemes />
       {/* <CulturalFestMindMap /> */}
-      <GandhaarThemes />
+      {/* <GandhaarThemes /> */}
       {/* <Events /> */}
       <EventSource />
       {/* <HundredDaysOfPoetry /> */}

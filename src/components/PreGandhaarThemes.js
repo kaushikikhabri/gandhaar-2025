@@ -8,35 +8,47 @@
 // export default PreGandhaarThemes;
 import React, { useState, useEffect } from "react";
 import "../style/PreGandhaarThemes.css";
-import themesera from "../images/themesera.PNG";
-import themeshautefashion from "../images/themesfashion.PNG";
-import themessaree from "../images/themesimg3.PNG";
-
+import tropicaltunes from "../images/tropicaltunes.webp";
+import streetbeats from "../images/streetbeats.webp";
+import metallica from "../images/metallica.webp";
+import rr from "../images/raagreverie.webp";
 
 function PreGandhaarThemes() {
   const [activeIndex, setActiveIndex] = useState(0);
   const [rotation, setRotation] = useState(0);
+
   const itemList = [
     {
       id: 0,
-      background: "#EA3D41",
-      day: "Day 1 - 23rd January:",
-      content: "Haute Fashion",
-      imgSrc: themeshautefashion,
+      background: "#4e131c",
+      day: "Day 1",
+      content: "Tropical Tunes",
+      description: "Vibe to the beats of the tropics",
+      imgSrc: tropicaltunes,
     },
     {
       id: 1,
       background: "#2D5643",
-      day: "Day 2 - 24th January:",
-      content: "Elegance Era",
-      imgSrc: themesera,
+      day: "Day 2",
+      content: "Street Beats",
+      description: "Feel the rhythm of the streets",
+      imgSrc: streetbeats,
     },
     {
       id: 2,
       background: "#E7A043",
-      day: "Day 3 - 25th January:",
-      content: "Traditional",
-      imgSrc: themessaree,
+      day: "Day 3",
+      content: "Metallica",
+      description: "Rock to the sound of legends",
+      imgSrc: metallica,
+    },
+    {
+      id: 3,
+      background: "#E7A043",
+      day: "Day 4",
+      content: "Raag Reverie",
+      description: "Immerse in the melody of raagas",
+      imgSrc: rr,
     },
   ];
 
@@ -67,11 +79,12 @@ function PreGandhaarThemes() {
             key={item.id}
             className={`item ${index === activeIndex ? "active" : ""} ${
               index !== activeIndex ? "hidden" : ""
-            }`}
+            } ${item.content.toLowerCase().replace(" ", "-")}`}
             style={{ "--background": item.background }}
           >
-            <div className="day1">{item.day}</div>
+            <div className="day">{item.day}</div>
             <div className="content">{item.content}</div>
+            <div className="description">{item.description}</div>
             <img src={item.imgSrc} className="fruit" alt={item.content} />
           </div>
         ))}
