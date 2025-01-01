@@ -5,7 +5,10 @@
   overflow: hidden;
   position: relative;
   background-color: rgb(255, 255, 255);
-  background-image: url("/src/images/bg9.jpg");
+  background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  background-image: url("/src/images/bg9.png");
+  /* background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%); */
+  /* background-color: aqua; */
   background-repeat: no-repeat;
   background-size: cover; /* Makes the background cover the entire container */
   background-position: center; /* Centers the background */
