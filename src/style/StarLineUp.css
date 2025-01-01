@@ -1,10 +1,9 @@
-/* Base styles (for larger screens) */
-
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Rubik+Gemstones&display=swap');
 
 .star-lineup-container {
   padding: 50px 20px;
-  background: linear-gradient(135deg, #a8e6cf, #d4f1e3);
+  /* background: black;  */
+  background: linear-gradient(to right, rgb(159, 47, 114), rgb(52, 7, 76));
   text-align: center;
   height: 600px;
 }
@@ -30,7 +29,7 @@
   position: absolute;
   width: 160px;
   height: 100px;
-  background-color: #84c5a4;
+  background-color: #FF6F00; /* Deep Orange */
   right: -50px;
 }
 
@@ -39,7 +38,7 @@
   position: absolute;
   width: 20px;
   height: 100px;
-  background-color: #ffb4a2;
+  background-color: #FFCC00; /* Golden Yellow */
   left: 70px;
 }
 
@@ -58,7 +57,7 @@
 
 .star-click {
   position: absolute;
-  background-color: #84c5a4;
+  background-color: #FFCC00; /* Golden Yellow */
   width: 180px;
   height: 35px;
   top: -35px;
@@ -73,7 +72,7 @@
   content: '';
   width: 20px;
   height: 35px;
-  background-color: #ffb4a2;
+  background-color: #FF6F00; /* Deep Orange */
   left: 80px;
   top: 0px;
 }
@@ -83,8 +82,8 @@
   position: absolute;
   width: 5px;
   height: 0;
-  border-bottom: 30px solid #ffb4a2;
-  border-top: 30px solid #ffb4a2;
+  border-bottom: 30px solid #FF6F00; /* Deep Orange */
+  border-top: 30px solid #FF6F00;
   border-left: 0px solid transparent;
   border-right: 30px solid transparent;
   transform: rotate(-90deg);
@@ -104,8 +103,19 @@
   transition: transform 0.5s, visibility 0.5s, opacity 0.5s;
 }
 
+.next-card-button {
+  visibility: hidden;
+  opacity: 0;
+}
+
 #star-click:checked~.star-card-container {
   transform: translateY(-20px) translateX(-55px);
+  visibility: visible;
+  opacity: 1;
+}
+
+#star-click:checked~.next-card-button {
+  transform: translateY(-345px) translateX(17px);
   visibility: visible;
   opacity: 1;
 }
@@ -119,7 +129,7 @@
   transform: perspective(750px) translate3d(0px, 0px, -250px) rotateX(27deg) scale(1.1, 1.1);
   border-radius: 20px;
   border: 5px solid transparent;
-  background: linear-gradient(to right, #a8e6cf, #d4f1e3);
+  background: linear-gradient(to right, #FFCC00, #FFEB3B); /* Golden Yellow to Bright Yellow */
   box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.3);
   transition: 0.4s ease-in-out transform, 0.4s ease-in-out box-shadow;
   bottom: 1px;
@@ -136,12 +146,7 @@
   bottom: -5px;
   z-index: -1;
   border-radius: 20px;
-  background: linear-gradient(45deg,
-      #a8e6cf,
-      #d4f1e3,
-      #84c5a4,
-      #d4f1e3,
-      #ffb4a2);
+  background: linear-gradient(45deg, #FFCC00, #FFB300, #FF6F00); /* Gradient */
   background-size: 300% 300%;
   animation: glowing-border 4s ease-in-out infinite;
 }
@@ -162,9 +167,7 @@
 
 .star-card:hover {
   transform: scale(1) rotateX(0);
-  box-shadow:
-    0 50px 80px -20px rgba(132, 197, 164, 0.5),
-    0 0 25px 15px rgba(255, 180, 162, 0.5);
+  box-shadow: 0 50px 80px -20px rgba(255, 203, 0, 0.5), 0 0 25px 15px rgba(255, 111, 0, 0.5);
 }
 
 .star-card-inner {
@@ -191,7 +194,7 @@
 }
 
 .star-card-front {
-  background: linear-gradient(to right, #84c5a4, #a8e6cf);
+  background: linear-gradient(to right, #FFCC00, #FFEB3B); /* Golden Yellow to Bright Yellow */
 }
 
 .star-card-front img {
@@ -202,45 +205,56 @@
 }
 
 .star-card-back {
-  background: linear-gradient(135deg, #a8e6cf, #84c5a4);
-  color: #ffffff;
+  background: #FF6F00; /* Deep Orange */
+  color: #000000; /* Black */
   transform: rotateY(180deg);
   align-content: center;
 }
 
 .star-card-back h3 {
   margin-bottom: 0.3rem;
-  color: #f9f9c5;
+  color: #FFCC00; /* Golden Yellow */
 }
 
 .star-card-back h1 {
   margin: 0;
-  color: #ffffff;
+  color: #FFEB3B; /* Bright Yellow */
 }
 
 .star-lineup-container h2 {
   font-family: 'Satisfy', cursive;
   font-size: 64px;
   text-align: center;
-  color: #5a9170;
-  text-shadow:
-    3px 3px 10px rgba(70, 160, 120, 0.9), 
-    0 0 10px rgba(132, 197, 164, 0.8),
-    0 0 20px rgba(255, 180, 162, 0.7);
-  background: linear-gradient(90deg, #5a9170, #84c5a4, #5a9170); 
+  color: #FFCC00; /* Golden Yellow */
+  text-shadow: 3px 3px 10px rgba(255, 204, 0, 0.9), 0 0 10px rgba(255, 111, 0, 0.8), 0 0 20px rgba(255, 179, 0, 0.7);
+  background: linear-gradient(90deg, #FFCC00, #FFEB3B, #FF6F00);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
   padding: 10px 15px;
-  border: 2px solid #5a9170; 
+  border: 2px solid #FFCC00;
   border-radius: 10px;
-  box-shadow: 
-    0 0 10px rgba(70, 160, 120, 0.8), 
-    0 0 15px rgba(132, 197, 164, 0.7); 
+  box-shadow: 0 0 10px rgba(255, 204, 0, 0.8), 0 0 15px rgba(255, 111, 0, 0.7);
+}
+
+.next-card-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: "Rubik Gemstones", sans-serif;
+  color: black;
+  background: linear-gradient(135deg, #FFCC00, #FF6F00); /* Golden Yellow to Deep Orange */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.next-card-button:hover {
+  background: linear-gradient(135deg, #FF6F00, #FFCC00); /* Reverse Gradient */
 }
 
 
-/* Media Queries for Different Screen Sizes */
 @media (max-width: 380px) {
   .star-lineup-container {
     padding: 30px 10px;
@@ -248,11 +262,32 @@
 
   .star-gift-container {
     left: -45%;
-    top: 330px;
+    top: 315px;
   }
 
   .star-lineup-container h2 {
     font-size: 54px;
+  }
+
+  .star-card {
+    width: 250px;
+    height: 250px;
+    bottom: 1px;
+    left: 20px;
+  }
+
+  #star-click:checked+.star-click {
+    transform: rotate(-110deg) scale(0.85);
+  }
+  
+  #star-click:checked~.next-card-button{
+    transform: translateY(-300px) translateX(17px);
+  }
+
+  .next-card-button {
+    margin-top: 0px;
+    padding: 8px 16px;
+    font-size: 14px;
   }
 }
 
@@ -265,7 +300,27 @@
 
   .star-gift-container {
     left: -45%;
-    top: 325px;
+    top: 315px;
+  }
+  .star-card {
+    width: 250px;
+    height: 250px;
+    bottom: 1px;
+    left: 20px;
+  }
+
+  #star-click:checked+.star-click {
+    transform: rotate(-110deg) scale(0.85);
+  }
+  
+  #star-click:checked~.next-card-button{
+    transform: translateY(-345px) translateX(17px);
+  }
+
+  .next-card-button {
+    margin-top: 30px;
+    padding: 8px 16px;
+    font-size: 14px;
   }
 }
 
@@ -280,7 +335,16 @@
     left: -47%;
     top: 325px;
   }
+  
+  #star-click:checked~.next-card-button{
+    transform: translateY(-345px) translateX(17px);
+  }
 
+  .next-card-button {
+    margin-top: 20px;
+    padding: 8px 16px;
+    font-size: 14px;
+  }
 }
 
 
@@ -294,17 +358,28 @@
     left: -48%;
     top: 325px;
   }
+  
+  #star-click:checked~.next-card-button{
+    transform: translateY(-345px) translateX(17px);
+  }
+
+  .next-card-button {
+    margin-top: 20px;
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+  
 }
 
 
 @media (min-width: 1001px) {
 
   .star-lineup-container {
-    height: 620px;
+    height: 670px;
   }
 
   .star-gift-container {
-    top: 320px;
+    top: 370px;
     left: -50%;
   }
 
@@ -351,5 +426,15 @@
     width: 300px;
     height: 300px;
   }
+  
+  #star-click:checked~.next-card-button{
+    transform: translateY(-365px) translateX(0px);
+  }
 
+  .next-card-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
 }
+
