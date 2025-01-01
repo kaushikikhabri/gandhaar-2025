@@ -1,22 +1,27 @@
  
-.gallery-container {
+ .gallery-container {
   width: 100vw;
   height: auto;
-  overflow:hidden;
+  overflow: hidden;
   position: relative;
   background-color: rgb(255, 255, 255);
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='460' height='120'><text x='0' y='60' font-size='60' font-weight='bold' fill='rgba(0, 0, 0, 0.889)' font-family='Arial'>Gandhaar-2024</text><line x1='0' y1='100' x2='510' y2='100' stroke='black' stroke-width='4' /></svg>");
-  background-repeat: repeat;
-  background-size: 200px 120px;  
+  background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  background-image: url("/src/images/bg9.png");
+  /* background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%); */
+  /* background-color: aqua; */
+  background-repeat: no-repeat;
+  background-size: cover; /* Makes the background cover the entire container */
+  background-position: center; /* Centers the background */
   display: flex;
 }
+
 
 .image-grid {
   display: inline-flex;
   gap: 28px;
   position: relative;
   z-index: 1;
-  animation: scrollImages 12s linear infinite;
+  animation: scrollImages 50s linear infinite;
   will-change: transform;
 }
 

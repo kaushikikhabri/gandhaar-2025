@@ -8,6 +8,7 @@
     flex-direction: column;
     height: 60em ; 
    /* background-image: url("E:\Projects\Gandhaar25\gandhaar-2025\src\images\dashboard3.jpeg"); Path to your background image */
+
    background-image: 
     /* url("/src/style/Collage.png");  */
     /* url("/src/images/Gandhaar_collage5.png"); */
@@ -175,6 +176,12 @@ background: linear-gradient(
   align-items: center;
   padding: 0.5em;
 }
+.logo-left{
+margin-left: 15px;
+}
+.logo-right{
+margin-right: 15px;
+}
 
 #logo1 {
   height: 5em; /* Adjust size of logos */
@@ -195,15 +202,15 @@ background: linear-gradient(
 }
 
 .nav-item {
-  margin: 0.7rem;
+  margin: 0.5rem;
 }
 
 .nav-item .nav-link {
   position: relative;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 800; 
-  font-size: 1.3em;
-  padding: 0.2rem 0.5rem;
+  font-size: 20px;
+  padding: 0.2rem 0.2rem;
   display: inline-block;
   text-decoration: none;
   overflow: hidden;
@@ -320,7 +327,7 @@ background: linear-gradient(
   cursor: pointer;
   animation: bounce 2s infinite;
   z-index: 1000;
-  background-image: url(/src/images/macaw_nav.jpg);
+  background-image: url(/src/images/macaw1.png);
   background-size: cover;
   
 }
