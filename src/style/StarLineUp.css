@@ -501,7 +501,7 @@
   width: 300px;
   height: 300px;
   perspective: 1000px;
-  transform: perspective(750px) translate3d(0px, 0px, -250px) rotateX(27deg) scale(1.1, 1.1);
+  transform: perspective(750px) translate3d(0px, 0px, -250px) rotateX(10deg) scale(1.1, 1.1);
   border-radius: 20px;
   border: 5px solid transparent;
   background: linear-gradient(to right, #FFCC00, #FFEB3B);
@@ -749,7 +749,7 @@
     font-size: 16px;
   }
   
-} */
+}  */
 
 
 /*********************************************************************************************************************************/
@@ -757,11 +757,19 @@
 /*********************************************************************************************************************************/
 /* StarLineUp for 2 cards */
 
+
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Rubik+Gemstones&display=swap');
 
 .star-lineup-container {
   padding: 50px 20px;
   background: black;
+  background-image: url("https://img.freepik.com/free-vector/round-podium-stage-spotlights-rays_107791-326.jpg");
+         background-image: url("/public/images/stage1.jpg"); 
+         background-image: url("/public/images/stage6.avif");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   text-align: center;
   height: 620px;
 }
@@ -884,7 +892,7 @@
   width: 300px;
   height: 300px;
   perspective: 1000px;
-  transform: perspective(750px) translate3d(0px, 0px, -250px) rotateX(27deg) scale(1.1, 1.1);
+  transform: perspective(750px) translate3d(0px, 0px, -250px) rotateX(20deg) scale(1.1, 1.1);
   border-radius: 20px;
   border: 5px solid transparent;
   background: linear-gradient(to right, #FFCC00, #FFEB3B); 
@@ -1133,8 +1141,32 @@
 @media (min-width: 1001px) {
 
   .star-lineup-container {
+    padding: 50px 20px;
+    /* background: black; */
+    background: black;
+    /* background-image: url("https://media.istockphoto.com/id/1322502570/vector/spotlight-backdrop-illuminated-blue-stage-background-for-displaying-products-bright-beams-of.jpg?s=612x612&w=0&k=20&c=1ZZ4JTBcjDknzlz6kyEgk0zSnIX6yktqC4gIS4IXUnY="); */
+    /* background-image: url("https://img.freepik.com/free-vector/round-podium-stage-spotlights-rays_107791-326.jpg"); */
+    /* background-image: url("/src/images/stage1\ \(1\).png"); */
+
+       /* background-image: url("/src/images/stage1\ \(2\).png"); */
+       background-image: url("/public/images/stage6.avif");
+       /* background-image: url("/public/images/stage4.jpg"); */
+       /* background-image: url("/public/images/stage1.jpg"); */
+
+
+
+       /* background-image: url("/src/images/stage\ \(1\).png"); */
+       /* background-image: url("/src/images/stage\ \(2\).png"); */
+       /* background-image: url("/public/images/stage7.avif"); */
+
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
     height: 800px;
   }
+
 
   .star-gift-container {
     top: 420px;
@@ -1200,28 +1232,4 @@
     font-size: 16px;
   }
 
-  .star-spotlight {
-    position: absolute;
-    top: 0;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    opacity: 0.8;
-    filter: blur(3px);
-    z-index: 2;
 }
-
-.star-spotlight-left {
-    left: 10%;
-    border-width: 0 200px 500px 200px;
-    border-color: transparent transparent rgba(255, 200, 150, 0.5) transparent;
-}
-
-.star-spotlight-right {
-    right: 10%;
-    border-width: 0 200px 500px 200px;
-    border-color: transparent transparent rgba(255, 200, 150, 0.5) transparent;
-}
-
-}
-

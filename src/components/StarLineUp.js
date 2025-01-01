@@ -87,8 +87,6 @@ function StarLineUp() {
 
   return (
     <div className="star-lineup-container">
-       <div class="star-spotlight star-spotlight-left"></div>
-       <div class="star-spotlight star-spotlight-right"></div>
       <h2>Star Line Up</h2>
       <div className="star-gift-container">
         <div className="star-gift">
