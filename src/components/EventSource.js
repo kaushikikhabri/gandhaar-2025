@@ -7,7 +7,7 @@ import "react-responsive-3d-carousel/dist/styles.css";
 import image1 from "../posters/1.png";
 import image2 from "../posters/2.png";
 import image3 from "../posters/3.png";
-import image4 from "../posters/4.png";
+import image4 from "../posters/4.jpg";
 import image5 from "../posters/5.png";
 import image6 from "../posters/Artiscope.PNG";
 import image7 from "../posters/Digital stage.PNG";
