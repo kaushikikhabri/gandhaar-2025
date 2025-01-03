@@ -147,9 +147,10 @@
     text-transform: uppercase;
     white-space: nowrap;
     font-family: "Badeen Display", system-ui;
-  font-weight: 400;
+  font-weight: 100;
   font-style: normal;
     z-index: 1; /*change*/
+    
 }
 
 

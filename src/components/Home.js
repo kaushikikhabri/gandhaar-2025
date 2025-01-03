@@ -30,7 +30,6 @@ function Home() {
   };
   return (
     <div>
-
       <div id="home">
         {" "}
         <Header toggleDrawer={toggleDrawer} />
@@ -53,7 +52,7 @@ function Home() {
       </div>
       {/* <CulturalFestMindMap /> */}
       <div id="themes">
-        <GandhaarThemes />
+        <PreGandhaarThemes />
       </div>
       {/* <Events /> */}
       <div>

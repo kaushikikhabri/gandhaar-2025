@@ -4,16 +4,19 @@
   height: auto;
   overflow: hidden;
   position: relative;
-  background-color: rgb(255, 255, 255);
-  background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
-  background-image: url("/src/images/bg9.png");
-  /* background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%); */
-  /* background-color: aqua; */
-  background-repeat: no-repeat;
-  background-size: cover; /* Makes the background cover the entire container */
-  background-position: center; /* Centers the background */
   display: flex;
+
+  /* Set the gradient as a background layer below the image */
+  background: 
+    linear-gradient(to top, rgb(83, 13, 188) 0%, #acc8f9 100%), 
+    url("/src/images/bg9.png");
+  
+  background-repeat: no-repeat;
+  background-size: cover; /* Makes both the gradient and image cover the container */
+  background-position: center; /* Centers the image and gradient */
+  background-blend-mode: overlay; /* Blend the gradient and image together */
 }
+
 
 
 .image-grid {
@@ -52,7 +55,7 @@
   height: 100%;
   object-fit: cover;  
   display: block;
-  border: 5px solid rgb(0, 0, 0);
+  border: 9px solid rgb(0, 0, 0);
   cursor: pointer;
 }
 
