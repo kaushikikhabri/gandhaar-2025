@@ -2,7 +2,7 @@ import React from "react";
 import "../style/DevTeam.css";
 
 import kaushikiImage from "../images/Kaushiki.png";
-import saiImage from "../images/SAI.png";
+import saiImage from "../images/sai.jpg";
 import yashodaImage from "../images/yashoda.png";
 import avasthiImage from "../images/Avasthi.png";
 import mrunalImage from "../images/mrunal.png";
