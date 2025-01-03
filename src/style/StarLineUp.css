@@ -384,6 +384,7 @@
 /* StarLineUp coming soon msg code*/
 
 
+/* 
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Rubik+Gemstones&display=swap');
 
 .star-lineup-container {
@@ -414,8 +415,7 @@
   position: absolute;
   width: 160px;
   height: 100px;
-  background-color: #FF6F00;
-  background: linear-gradient(107deg, rgb(255, 67, 5) 11.1%, rgb(245, 135, 0) 95.3%);  
+  background-color: #FF6F00;;
   right: -50px;
 }
 
@@ -425,7 +425,6 @@
   width: 20px;
   height: 100px;
   background-color: #FFCC00;
-  background: linear-gradient(109.6deg, rgb(255, 219, 47) 11.2%, rgb(244, 253, 0) 100.2%);
   left: 70px;
 }
 
@@ -445,7 +444,6 @@
 .star-click {
   position: absolute;
   background-color: #FFCC00;
-  background: linear-gradient(109.6deg, rgb(255, 219, 47) 11.2%, rgb(244, 253, 0) 100.2%);
   width: 180px;
   height: 35px;
   top: -35px;
@@ -461,7 +459,6 @@
   width: 20px;
   height: 35px;
   background-color: #FF6F00;
-  background: linear-gradient(107deg, rgb(255, 67, 5) 11.1%, rgb(245, 135, 0) 95.3%);  
   left: 80px;
   top: 0px;
 }
@@ -588,429 +585,171 @@
   }
   
 
-  @media (max-width: 380px) {
-    .star-lineup-container {
-      padding: 30px 10px;
-      height: 620px;
-    }
+@media (max-width: 380px) {
+  .star-lineup-container {
+    padding: 30px 10px;
+  }
+
+  .star-gift-container {
+    left: -45%;
+    top: 330px;
+  }
+
+  .star-lineup-container h2 {
+    font-size: 54px;
+  }
+
+  .star-card h3 {
+    top: 70px;
+    left: 0px;
+    font-size: 54px;
+    padding: 10px 15px;
+   }
+
+  .star-card-container {
+    transform: translateY(180px);
+    transition: transform 0.5s, visibility 0.5s, opacity 0.5s;
+  }
+
+  #star-click:checked~.star-card-container {
+    transform: translateY(-20px) translateX(-55px);
+  }
+
+  .star-card {
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    transform: perspective(750px) translate3d(0px, 0px, -250px) rotateX(27deg) scale(1.1, 1.1);
+    border-radius: 20px;
+    border: 5px solid transparent;
+    bottom: 1px;
+    left: 0px;
+  }
+
+}
+
+
+@media (min-width: 381px) and (max-width: 500px) {
+
+  .star-lineup-container {
+    padding: 40px 15px;
+  }
+
+  .star-gift-container {
+    left: -45%;
+    top: 325px;
+  }
+}
+
+
+@media (min-width: 501px) and (max-width: 700px) {
+
+  .star-lineup-container {
+    padding: 40px 15px;
+  }
+
+  .star-gift-container {
+    left: -47%;
+    top: 325px;
+  }
+}
+
+
+@media (min-width: 700px) and (max-width: 1000px) {
+
+  .star-lineup-container {
+    padding: 40px 15px;
+  }
+
+  .star-gift-container {
+    left: -48%;
+    top: 325px;
+  }
+}
+
+
+@media (min-width: 1001px) {
+
+  .star-lineup-container {
+    height: 800px;
+  }
+
+  .star-gift-container {
+    top: 420px;
+    left: -50%;
+  }
+
+  .star-gift {
+    width: 305px;
+    height: 130px;
+    right: -150px;
+  }
+
+  .star-gift::before {
+    width: 25px;
+    left: 140px;
+    height: 130px;
+  }
+
+  .star-gift::after {
+    position: absolute;
+    width: 305px;
+    height: 120px;
+  }
+
+  .star-click {
+    width: 325px;
+    height: 40px;
+    top: -40px;
+  }
+
+  .star-click::before {
+    width: 25px;
+    height: 40px;
+    left: 150px;
+  }
+
+  .star-click::after {
+    left: 148px;
+  }
+
+
+  .star-gift-container::before {
+    width: 200px;
+    right: -100px;
+  }
   
-    .star-gift-container {
-      left: -40%;
-      top: 315px;
-    }
-  
-  
-    .star-gift {
-      width: 180px;
-      height: 70px;
-      right: -50px;
-    }
-  
-    .star-gift::before {
-      width: 20px;
-      left: 80px;
-      height: 70px;
-    }
-  
-    .star-gift::after {
-      width: 180px;
-      height: 80px;
-      left: 0px;
-    }
-  
-    .star-click {
-      width: 200px;
-      height: 25px;
-      top: -25px;
-      left: -10px;
-    }
-  
-    .star-click::before {
-      width: 20px;
-      height: 25px;
-      left: 90px;
-      top: 0px;
-    }
-  
-    .star-click::after {
-      left: 84px;
-    }
-  
-    .star-lineup-container h2 {
-      font-size: 54px;
-    }
-  
-    .star-card {
-      width: 270px;
-      height: 250px;
-      bottom: 1px;
-      left: 10px;
-    }
-  
-    #star-click:checked+.star-click {
-      transform: rotate(-110deg) scale(0.85);
-    }
-  
-    #star-click:checked~.next-card-button {
-      transform: translateY(-300px) translateX(17px);
-    }
-  
-    .next-card-button {
-      position: absolute;
-      margin-top: 0px;
-      padding: 8px 16px;
-      font-size: 14px;
-      left: 20px;
-    }
-  
-    .star-gift-container::before {
-      width: 180px;
-      height: 20px;
-      border-radius: 50%;
-      top: 80px;
-      right: -50px;
-    }
+
+  .star-card {
+    width: 370px;
+    height: 370px;
+    left: 20px;
+  }
+
+  .star-card h3 {
+    position: absolute;
+    justify-self: center;
+    top: 70px;
+    left: 0px;
+    font-family: 'Satisfy', cursive;
+    font-size: 90px;
+    padding: 10px 15px;
   }
   
   
-  @media (min-width: 381px) and (max-width: 500px) {
-  
-    .star-lineup-container {
-      padding: 40px 15px;
-      height: 620px;
-    }
-  
-    .star-gift-container {
-      left: -40%;
-      top: 300px;
-    }
-  
-    .star-gift-container::before {
-      width: 180px;
-      height: 20px;
-      border-radius: 50%;
-      top: 80px;
-      right: -50px;
-    }
-  
-    .star-gift {
-      width: 180px;
-      height: 70px;
-      right: -50px;
-    }
-  
-    .star-gift::before {
-      width: 20px;
-      left: 80px;
-      height: 70px;
-    }
-  
-    .star-gift::after {
-      width: 180px;
-      height: 80px;
-      left: 0px;
-    }
-  
-    .star-click {
-      width: 200px;
-      height: 25px;
-      top: -25px;
-      left: -10px;
-    }
-  
-    .star-click::before {
-      width: 20px;
-      height: 25px;
-      left: 90px;
-      top: 0px;
-    }
-  
-    .star-click::after {
-      left: 84px;
-    }
-  
-    .star-card {
-      width: 270px;
-      height: 250px;
-      bottom: 1px;
-      left: 10px;
-    }
-  
-    #star-click:checked+.star-click {
-      transform: rotate(-110deg) scale(0.85);
-    }
-  
-    #star-click:checked~.next-card-button {
-      transform: translateY(-345px) translateX(17px);
-    }
-  
-    .next-card-button {
-      position: absolute;
-      margin-top: 50px;
-      padding: 8px 16px;
-      left: 20px;
-      font-size: 14px;
-    }
-  
+  #star-click:checked~.next-card-button{
+    transform: translateY(-365px) translateX(0px);
+  }
+
+  .next-card-button {
+    position: absolute;
+    margin-top: -40px;
+    left: 70px;
+    padding: 10px 20px;
+    font-size: 16px;
   }
   
-  @media (min-width: 501px) and (max-width: 700px) {
-  
-    .star-lineup-container {
-      padding: 40px 15px;
-    }
-  
-    .star-gift-container::before {
-      width: 180px;
-      height: 20px;
-      border-radius: 50%;
-      top: 80px;
-      right: -50px;
-    }
-  
-    #star-click:checked+.star-click {
-      transform: rotate(-115deg) scale(0.85);
-    }
-  
-    #star-click:checked~.next-card-button {
-      transform: translateY(-345px) translateX(17px);
-    }
-  
-  
-    .star-gift-container {
-      left: -43%;
-      top: 325px;
-    }
-  
-    .star-gift {
-      width: 220px;
-      height: 80px;
-      right: -50px;
-    }
-  
-    .star-gift::before {
-      width: 20px;
-      left: 100px;
-      height: 80px;
-    }
-  
-    .star-gift::after {
-      width: 220px;
-      height: 80px;
-      left: 0px;
-    }
-  
-    .star-click {
-      width: 240px;
-      height: 25px;
-      top: -25px;
-      left: -10px;
-    }
-  
-    .star-click::before {
-      width: 20px;
-      height: 25px;
-      left: 110px;
-      top: 0px;
-    }
-  
-    .star-click::after {
-      left: 103px;
-    }
-  
-    .star-card {
-      width: 350px;
-      height: 250px;
-      bottom: 1px;
-      left: -10px;
-    }
-  
-    .next-card-button {
-      position: absolute;
-      margin-top: 40px;
-      padding: 8px 16px;
-      left: 20px;
-      font-size: 14px;
-    }
-  
-  }
-  
-  
-  @media (min-width: 700px) and (max-width: 1000px) {
-  
-    .star-lineup-container {
-      padding: 40px 15px;
-    }
-  
-    .star-gift-container {
-      left: -43%;
-      top: 325px;
-    }
-  
-    #star-click:checked~.next-card-button {
-      transform: translateY(-345px) translateX(17px);
-    }
-  
-    .star-gift-container::before {
-      width: 220px;
-      height: 20px;
-      border-radius: 50%;
-      top: 88px;
-      right: -48px;
-    }
-  
-    .star-gift {
-      width: 220px;
-      height: 80px;
-      right: -50px;
-    }
-  
-    .star-gift::before {
-      width: 20px;
-      left: 100px;
-      height: 80px;
-    }
-  
-    .star-gift::after {
-      width: 220px;
-      height: 80px;
-      left: 0px;
-    }
-  
-    .star-click {
-      width: 240px;
-      height: 25px;
-      top: -25px;
-      left: -10px;
-    }
-  
-    .star-click::before {
-      width: 20px;
-      height: 25px;
-      left: 110px;
-      top: 0px;
-    }
-  
-    .star-click::after {
-      left: 103px;
-    }
-  
-    .star-card {
-      width: 350px;
-      height: 250px;
-      bottom: 1px;
-      left: -10px;
-    }
-  
-    #star-click:checked+.star-click {
-      transform: rotate(-120deg) scale(0.85);
-    }
-  
-    #star-click:checked~.next-card-button {
-      transform: translateY(-345px) translateX(17px);
-    }
-  
-    .next-card-button {
-      position: absolute;
-      margin-top: 40px;
-      padding: 8px 16px;
-      left: 20px;
-      font-size: 14px;
-    }
-  
-  
-  }
-  
-  
-  @media (min-width: 1001px) {
-  
-    .star-lineup-container {
-      padding: 50px 20px;
-      background: black;
-  
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      text-align: center;
-      height: 750px;
-    }
-  
-    .star-gift-container {
-      top: 420px;
-      left: -49%;
-    }
-  
-    .star-gift {
-      width: 350px;
-      height: 110px;
-      right: -150px;
-    }
-  
-    .star-gift::before {
-      width: 25px;
-      left: 165px;
-      height: 110px;
-    }
-  
-    .star-gift::after {
-      position: absolute;
-      width: 350px;
-      height: 120px;
-    }
-  
-    .star-click {
-      width: 370px;
-      height: 40px;
-      top: -40px;
-    }
-  
-    .star-click::before {
-      width: 25px;
-      height: 40px;
-      left: 175px;
-    }
-  
-    .star-click::after {
-      left: 170px;
-    }
-  
-    #star-click:checked+.star-click {
-      transform: rotate(-130deg) scale(0.85);
-    }
-  
-    .star-gift-container::before {
-      width: 200px;
-      right: -100px;
-    }
-  
-    .star-card {
-      width: 500px;
-      height: 370px;
-      left: -20px;
-      transform: perspective(750px) translate3d(0px, 0px, -250px) rotateX(20deg) scale(1.1, 1.1);
-    }
-  
-    #star-click:checked~.next-card-button {
-      transform: translateY(-365px) translateX(0px);
-    }
-  
-    .next-card-button {
-      position: absolute;
-      margin-top: -40px;
-      left: 100px;
-      padding: 10px 20px;
-      font-size: 16px;
-    }
-  
-    .star-card h3 {
-      position: absolute;
-      justify-self: center;
-      top: 40px;
-      left: 0px;
-      font-family: 'Satisfy', cursive;
-      font-size: 120px;
-    }
-  } 
+}  */
 
 
 /*********************************************************************************************************************************/
@@ -1019,12 +758,15 @@
 /* StarLineUp for 2 cards */
 
 
-/* @import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Rubik+Gemstones&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Rubik+Gemstones&display=swap');
 
 .star-lineup-container {
   padding: 50px 20px;
   background: black;
-  background-image: url("/src/images/stage12.jpg");
+  background-image: url("https://img.freepik.com/free-vector/round-podium-stage-spotlights-rays_107791-326.jpg");
+         background-image: url("/public/images/stage1.jpg"); 
+         background-image: url("/public/images/stage6.avif");
+
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1053,7 +795,7 @@
   position: absolute;
   width: 160px;
   height: 100px;
-  background: linear-gradient(107deg, rgb(255, 67, 5) 11.1%, rgb(245, 135, 0) 95.3%);
+  background-color: #FF6F00; 
   right: -50px;
 }
 
@@ -1062,7 +804,7 @@
   position: absolute;
   width: 20px;
   height: 100px;
-  background: linear-gradient(109.6deg, rgb(255, 219, 47) 11.2%, rgb(244, 253, 0) 100.2%);
+  background-color: #FFCC00; 
   left: 70px;
 }
 
@@ -1081,7 +823,7 @@
 
 .star-click {
   position: absolute;
-  background: linear-gradient(109.6deg, rgb(255, 219, 47) 11.2%, rgb(244, 253, 0) 100.2%);
+  background-color: #FFCC00; 
   width: 180px;
   height: 35px;
   top: -35px;
@@ -1096,7 +838,7 @@
   content: '';
   width: 20px;
   height: 35px;
-  background: linear-gradient(107deg, rgb(255, 67, 5) 11.1%, rgb(245, 135, 0) 95.3%);
+  background-color: #FF6F00; 
   left: 80px;
   top: 0px;
 }
@@ -1106,7 +848,7 @@
   position: absolute;
   width: 5px;
   height: 0;
-  border-bottom: 30px solid #FF6F00;
+  border-bottom: 30px solid #FF6F00; 
   border-top: 30px solid #FF6F00;
   border-left: 0px solid transparent;
   border-right: 30px solid transparent;
@@ -1153,7 +895,7 @@
   transform: perspective(750px) translate3d(0px, 0px, -250px) rotateX(20deg) scale(1.1, 1.1);
   border-radius: 20px;
   border: 5px solid transparent;
-  background: linear-gradient(to right, #FFCC00, #FFEB3B);
+  background: linear-gradient(to right, #FFCC00, #FFEB3B); 
   box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.3);
   transition: 0.4s ease-in-out transform, 0.4s ease-in-out box-shadow;
   bottom: 1px;
@@ -1170,7 +912,7 @@
   bottom: -5px;
   z-index: -1;
   border-radius: 20px;
-  background: linear-gradient(45deg, #FFCC00, #FFB300, #FF6F00);
+  background: linear-gradient(45deg, #FFCC00, #FFB300, #FF6F00); 
   background-size: 300% 300%;
   animation: glowing-border 4s ease-in-out infinite;
 }
@@ -1218,7 +960,7 @@
 }
 
 .star-card-front {
-  background: linear-gradient(to right, #FFCC00, #FFEB3B);
+  background: linear-gradient(to right, #FFCC00, #FFEB3B); 
 }
 
 .star-card-front img {
@@ -1229,27 +971,27 @@
 }
 
 .star-card-back {
-  background: linear-gradient(107deg, rgb(255, 67, 5) 11.1%, rgb(245, 135, 0) 95.3%);
-  color: #000000;
+  background: #FF6F00; 
+  color: #000000; 
   transform: rotateY(180deg);
   align-content: center;
 }
 
 .star-card-back h3 {
   margin-bottom: 0.3rem;
-  color: #FFCC00;
+  color: #FFCC00; 
 }
 
 .star-card-back h1 {
   margin: 0;
-  color: #FFEB3B;
+  color: #FFEB3B; 
 }
 
 .star-lineup-container h2 {
   font-family: 'Satisfy', cursive;
   font-size: 64px;
   text-align: center;
-  color: #FFCC00;
+  color: #FFCC00; 
   text-shadow: 3px 3px 10px rgba(255, 204, 0, 0.9), 0 0 10px rgba(255, 111, 0, 0.8), 0 0 20px rgba(255, 179, 0, 0.7);
   background: linear-gradient(90deg, #FFCC00, #FFEB3B, #FF6F00);
   -webkit-background-clip: text;
@@ -1267,7 +1009,7 @@
   font-size: 16px;
   font-family: "Rubik Gemstones", sans-serif;
   color: black;
-  background: linear-gradient(135deg, #FFCC00, #FF6F00);
+  background: linear-gradient(135deg, #FFCC00, #FF6F00); 
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -1275,56 +1017,18 @@
 }
 
 .next-card-button:hover {
-  background: linear-gradient(135deg, #FF6F00, #FFCC00);
+  background: linear-gradient(135deg, #FF6F00, #FFCC00); 
 }
 
 
 @media (max-width: 380px) {
   .star-lineup-container {
     padding: 30px 10px;
-    height: 620px;
   }
 
   .star-gift-container {
-    left: -40%;
+    left: -45%;
     top: 315px;
-  }
-
-
-  .star-gift {
-    width: 180px;
-    height: 70px;
-    right: -50px;
-  }
-
-  .star-gift::before {
-    width: 20px;
-    left: 80px;
-    height: 70px;
-  }
-
-  .star-gift::after {
-    width: 180px;
-    height: 80px;
-    left: 0px;
-  }
-
-  .star-click {
-    width: 200px;
-    height: 25px;
-    top: -25px;
-    left: -10px;
-  }
-
-  .star-click::before {
-    width: 20px;
-    height: 25px;
-    left: 90px;
-    top: 0px;
-  }
-
-  .star-click::after {
-    left: 84px;
   }
 
   .star-lineup-container h2 {
@@ -1332,34 +1036,24 @@
   }
 
   .star-card {
-    width: 270px;
+    width: 250px;
     height: 250px;
     bottom: 1px;
-    left: 10px;
+    left: 20px;
   }
 
   #star-click:checked+.star-click {
     transform: rotate(-110deg) scale(0.85);
   }
-
-  #star-click:checked~.next-card-button {
+  
+  #star-click:checked~.next-card-button{
     transform: translateY(-300px) translateX(17px);
   }
 
   .next-card-button {
-    position: absolute;
     margin-top: 0px;
     padding: 8px 16px;
     font-size: 14px;
-    left: 20px;
-  }
-
-  .star-gift-container::before {
-    width: 180px;
-    height: 20px;
-    border-radius: 50%;
-    top: 80px;
-    right: -50px;
   }
 }
 
@@ -1368,163 +1062,55 @@
 
   .star-lineup-container {
     padding: 40px 15px;
-    height: 620px;
   }
 
   .star-gift-container {
-    left: -40%;
-    top: 300px;
+    left: -45%;
+    top: 315px;
   }
-
-  .star-gift-container::before {
-    width: 180px;
-    height: 20px;
-    border-radius: 50%;
-    top: 80px;
-    right: -50px;
-  }
-
-  .star-gift {
-    width: 180px;
-    height: 70px;
-    right: -50px;
-  }
-
-  .star-gift::before {
-    width: 20px;
-    left: 80px;
-    height: 70px;
-  }
-
-  .star-gift::after {
-    width: 180px;
-    height: 80px;
-    left: 0px;
-  }
-
-  .star-click {
-    width: 200px;
-    height: 25px;
-    top: -25px;
-    left: -10px;
-  }
-
-  .star-click::before {
-    width: 20px;
-    height: 25px;
-    left: 90px;
-    top: 0px;
-  }
-
-  .star-click::after {
-    left: 84px;
-  }
-
   .star-card {
-    width: 270px;
+    width: 250px;
     height: 250px;
     bottom: 1px;
-    left: 10px;
+    left: 20px;
   }
 
   #star-click:checked+.star-click {
     transform: rotate(-110deg) scale(0.85);
   }
-
-  #star-click:checked~.next-card-button {
+  
+  #star-click:checked~.next-card-button{
     transform: translateY(-345px) translateX(17px);
   }
 
   .next-card-button {
-    position: absolute;
-    margin-top: 50px;
+    margin-top: 30px;
     padding: 8px 16px;
-    left: 20px;
     font-size: 14px;
   }
-
 }
+
 
 @media (min-width: 501px) and (max-width: 700px) {
 
   .star-lineup-container {
     padding: 40px 15px;
-    background-image: url("/public/images/stage6.avif");
   }
 
-  .star-gift-container::before {
-    width: 180px;
-    height: 20px;
-    border-radius: 50%;
-    top: 80px;
-    right: -50px;
+  .star-gift-container {
+    left: -47%;
+    top: 325px;
   }
-
-  #star-click:checked+.star-click {
-    transform: rotate(-115deg) scale(0.85);
-  }
-
-  #star-click:checked~.next-card-button {
+  
+  #star-click:checked~.next-card-button{
     transform: translateY(-345px) translateX(17px);
   }
 
-
-  .star-gift-container {
-    left: -43%;
-    top: 325px;
-  }
-
-  .star-gift {
-    width: 220px;
-    height: 80px;
-    right: -50px;
-  }
-
-  .star-gift::before {
-    width: 20px;
-    left: 100px;
-    height: 80px;
-  }
-
-  .star-gift::after {
-    width: 220px;
-    height: 80px;
-    left: 0px;
-  }
-
-  .star-click {
-    width: 240px;
-    height: 25px;
-    top: -25px;
-    left: -10px;
-  }
-
-  .star-click::before {
-    width: 20px;
-    height: 25px;
-    left: 110px;
-    top: 0px;
-  }
-
-  .star-click::after {
-    left: 103px;
-  }
-
-  .star-card {
-    width: 350px;
-    height: 250px;
-    bottom: 1px;
-    left: -10px;
-  }
-
   .next-card-button {
-    position: absolute;
-    margin-top: 40px;
+    margin-top: 20px;
     padding: 8px 16px;
-    left: 20px;
     font-size: 14px;
   }
-
 }
 
 
@@ -1532,87 +1118,23 @@
 
   .star-lineup-container {
     padding: 40px 15px;
-    background-image: url("/public/images/stage6.avif");
-
   }
 
   .star-gift-container {
-    left: -43%;
+    left: -48%;
     top: 325px;
   }
-
-  #star-click:checked~.next-card-button {
-    transform: translateY(-345px) translateX(17px);
-  }
-
-  .star-gift-container::before {
-    width: 220px;
-    height: 20px;
-    border-radius: 50%;
-    top: 88px;
-    right: -48px;
-  }
-
-  .star-gift {
-    width: 220px;
-    height: 80px;
-    right: -50px;
-  }
-
-  .star-gift::before {
-    width: 20px;
-    left: 100px;
-    height: 80px;
-  }
-
-  .star-gift::after {
-    width: 220px;
-    height: 80px;
-    left: 0px;
-  }
-
-  .star-click {
-    width: 240px;
-    height: 25px;
-    top: -25px;
-    left: -10px;
-  }
-
-  .star-click::before {
-    width: 20px;
-    height: 25px;
-    left: 110px;
-    top: 0px;
-  }
-
-  .star-click::after {
-    left: 103px;
-  }
-
-  .star-card {
-    width: 350px;
-    height: 250px;
-    bottom: 1px;
-    left: -10px;
-  }
-
-  #star-click:checked+.star-click {
-    transform: rotate(-120deg) scale(0.85);
-  }
-
-  #star-click:checked~.next-card-button {
+  
+  #star-click:checked~.next-card-button{
     transform: translateY(-345px) translateX(17px);
   }
 
   .next-card-button {
-    position: absolute;
-    margin-top: 40px;
+    margin-top: 20px;
     padding: 8px 16px;
-    left: 20px;
     font-size: 14px;
   }
-
-
+  
 }
 
 
@@ -1620,41 +1142,57 @@
 
   .star-lineup-container {
     padding: 50px 20px;
+    /* background: black; */
     background: black;
-    background-image: url("/public/images/stage6.avif");
+    /* background-image: url("https://media.istockphoto.com/id/1322502570/vector/spotlight-backdrop-illuminated-blue-stage-background-for-displaying-products-bright-beams-of.jpg?s=612x612&w=0&k=20&c=1ZZ4JTBcjDknzlz6kyEgk0zSnIX6yktqC4gIS4IXUnY="); */
+    /* background-image: url("https://img.freepik.com/free-vector/round-podium-stage-spotlights-rays_107791-326.jpg"); */
+    /* background-image: url("/src/images/stage1\ \(1\).png"); */
+
+       /* background-image: url("/src/images/stage1\ \(2\).png"); */
+       background-image: url("/public/images/stage6.avif");
+       /* background-image: url("/public/images/stage4.jpg"); */
+       /* background-image: url("/public/images/stage1.jpg"); */
+
+
+
+       /* background-image: url("/src/images/stage\ \(1\).png"); */
+       /* background-image: url("/src/images/stage\ \(2\).png"); */
+       /* background-image: url("/public/images/stage7.avif"); */
+
 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     text-align: center;
-    height: 750px;
+    height: 800px;
   }
+
 
   .star-gift-container {
     top: 420px;
-    left: -49%;
+    left: -50%;
   }
 
   .star-gift {
-    width: 350px;
-    height: 110px;
+    width: 305px;
+    height: 130px;
     right: -150px;
   }
 
   .star-gift::before {
     width: 25px;
-    left: 165px;
-    height: 110px;
+    left: 140px;
+    height: 130px;
   }
 
   .star-gift::after {
     position: absolute;
-    width: 350px;
+    width: 305px;
     height: 120px;
   }
 
   .star-click {
-    width: 370px;
+    width: 325px;
     height: 40px;
     top: -40px;
   }
@@ -1662,39 +1200,36 @@
   .star-click::before {
     width: 25px;
     height: 40px;
-    left: 175px;
+    left: 150px;
   }
 
   .star-click::after {
-    left: 170px;
+    left: 148px;
   }
 
-  #star-click:checked+.star-click {
-    transform: rotate(-130deg) scale(0.85);
-  }
 
   .star-gift-container::before {
     width: 200px;
     right: -100px;
   }
+  
 
   .star-card {
-    width: 500px;
+    width: 370px;
     height: 370px;
-    left: -20px;
-    transform: perspective(750px) translate3d(0px, 0px, -250px) rotateX(20deg) scale(1.1, 1.1);
+    left: 20px;
   }
-
-  #star-click:checked~.next-card-button {
+  
+  #star-click:checked~.next-card-button{
     transform: translateY(-365px) translateX(0px);
   }
 
   .next-card-button {
     position: absolute;
     margin-top: -40px;
-    left: 100px;
+    left: 70px;
     padding: 10px 20px;
     font-size: 16px;
   }
 
-} */
+}
