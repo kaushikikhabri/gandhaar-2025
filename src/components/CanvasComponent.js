@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { createNoise3D } from "simplex-noise"; // Import the createNoise3D function
+import "../style/CanvasComponent.css";
 
 const WaveCanvas = () => {
   const canvasRef = useRef(null);
