@@ -30,7 +30,20 @@
 
 .dev-team-member {
     background-color: transparent;
-    /* background-color: white; */
+    /* background-image: url(/src/images/dev_bg1.jpg); */
+    /* background-image: url(/src/images/dev_bg2.avif); */
+    /* background-image: url(/src/images/dev_bg3.jpg); */
+    /* background-image: url(/src/images/dev_bg4.jpg); */
+    background-image: url(/src/images/dev_bg5.jpg);
+    /* background-image: url(/src/images/dev_bg7.jpg); */
+
+
+
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
     border: 2px solid #5b8efc;
     border-radius: 8px;
     padding: 10px 10px 0 10px;
