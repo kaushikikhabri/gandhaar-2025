@@ -5,7 +5,11 @@
     /* max-width: 1024px;  Limits the container width to 1024px */
      padding: 10px; /* Centers the container horizontally */
      background-color: rgb(17, 2, 87);
+     background: 
+     linear-gradient(to top, #669eff 0%, rgb(0, 52, 165) 10%, rgb(17, 2, 87) 30%);
      padding-top: 100px;
+     padding-bottom: 100px;
+     
    }
    
    #monitor-text-wrapper {

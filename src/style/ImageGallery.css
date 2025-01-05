@@ -8,13 +8,14 @@
 
   /* Set the gradient as a background layer below the image */
   background: 
-    linear-gradient(to top, rgb(83, 13, 188) 0%, #acc8f9 100%), 
+    linear-gradient(to top, rgb(83, 13, 188) 0%, #669eff 100%), 
     url("/src/images/bg9.png");
   
   background-repeat: no-repeat;
   background-size: cover; /* Makes both the gradient and image cover the container */
   background-position: center; /* Centers the image and gradient */
   background-blend-mode: overlay; /* Blend the gradient and image together */
+  padding-top: 100px;
 }
 
 
