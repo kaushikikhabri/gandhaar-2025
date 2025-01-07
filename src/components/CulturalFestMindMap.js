@@ -1,19 +1,21 @@
 import React, { useState } from "react";
+import orangeStickyNote from "../theme_images/orangeStickyNote.jpg";
+import craft from "../theme_images/craft.webp";
 import "../style/CulturalFestMindMap.css";
 
 const themes = [
   {
     id: 1,
     name: "Film & Photography",
-    img: "/images/orange_stickynote.webp",
+    img: craft, // Use the imported image
     description: "Explore the art of capturing moments.",
-    top: "18%", // Position as a percentage of the map height
-    left: "22%", // Position as a percentage of the map width
+    top: "18%",
+    left: "22%",
   },
   {
     id: 2,
     name: "Beau Vista",
-    img: "/images/orange_stickynote.webp",
+    img: orangeStickyNote, // Use the imported image
     description: "A journey through the beautiful vistas.",
     top: "35%",
     left: "70%",
@@ -21,7 +23,7 @@ const themes = [
   {
     id: 3,
     name: "Florence",
-    img: "/images/orange_stickynote.webp",
+    img: orangeStickyNote, // Use the imported image
     description: "Dance your heart out with Florence.",
     top: "55%",
     left: "30%",
@@ -29,7 +31,7 @@ const themes = [
   {
     id: 4,
     name: "Quiz Fest",
-    img: "/images/orange_stickynote.webp",
+    img: orangeStickyNote, // Use the imported image
     description: "Test your knowledge and win prizes!",
     top: "80%",
     left: "60%",
@@ -41,7 +43,6 @@ const CulturalFestMindMap = () => {
 
   return (
     <div>
-      {/* Heading */}
       <h1 className="heading">Gandhaar Themes</h1>
       <div className="mindmap-container">
         {/* Mind Map Section */}
@@ -63,7 +64,7 @@ const CulturalFestMindMap = () => {
           {/* SVG for Zigzag Lines */}
           <svg className="zigzag-lines" width="100%" height="100%">
             {themes.map((theme) => {
-              const x1 = `calc(${theme.left} + 2%);`; // Dynamic pin start position
+              const x1 = `calc(${theme.left} + 2%)`; // Dynamic pin start position
               const y1 = `calc(${theme.top} + 2%)`;
               const x2 = "85%"; // Approximate Polaroid position
               const y2 = "85%";
