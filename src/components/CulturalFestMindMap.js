@@ -41,7 +41,6 @@ const CulturalFestMindMap = () => {
 
   return (
     <div>
-      {/* Heading */}
       <h1 className="heading">Gandhaar Themes</h1>
       <div className="mindmap-container">
         {/* Mind Map Section */}
@@ -63,7 +62,7 @@ const CulturalFestMindMap = () => {
           {/* SVG for Zigzag Lines */}
           <svg className="zigzag-lines" width="100%" height="100%">
             {themes.map((theme) => {
-              const x1 = `calc(${theme.left} + 2%);`; // Dynamic pin start position
+              const x1 = `calc(${theme.left} + 2%)`; // Dynamic pin start position
               const y1 = `calc(${theme.top} + 2%)`;
               const x2 = "85%"; // Approximate Polaroid position
               const y2 = "85%";
