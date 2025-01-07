@@ -1,5 +1,3 @@
-
-
 @import url("https://fonts.googleapis.com/css2?family=Honk&family=Lavishly+Yours&family=Mogra&family=Niconne&family=Rubik+Gemstones&family=Satisfy&family=Updock&family=Yesteryear&display=swap");
 
 .team-container {
@@ -206,5 +204,43 @@
   }
 }
 
+/* @media screen and (min-width: 600px) {
+  .panel-grid {
+    grid-template-columns: repeat(2, 1fr); 
+    padding: 10px;
+  }
+} */
 
+/* Media Query for desktop screens */
+@media screen and (max-width: 768px) {
+  .panel-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
 
+  .first-panel {
+    grid-column: 1 / -1;
+    margin-bottom: 20px;
+  }
+
+  .panel-card {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .panel-image-container {
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+  }
+
+  .panel-image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .icon {
+    font-size: 20px;
+  }
+}
