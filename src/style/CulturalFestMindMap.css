@@ -40,16 +40,17 @@
 /* Mind map background with map image */
 .mindmap-background {
   position: relative;
-  width: 800px;
+  width: 700px;
   height: 600px;
   background-image: url("/public/images/music_map.webp");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
-  border: 5px solid #333;
+  background-size: cover;
+  /* border: 1px solid #333;
   box-shadow: inset 0 0 15px 5px rgba(221, 157, 157, 0.7),
-    Inner red glow 5px 5px 15px rgba(0, 0, 0, 0.5);
+    Inner red glow 5px 5px 15px rgba(0, 0, 0, 0.5);*/
   transform: rotate(-3deg);
+  /* padding: 20px; */
 }
 
 .zigzag-line {
@@ -98,7 +99,7 @@
 .polaroid-container {
   display: flex;
   flex-direction: column;
-  margin-left: 20px;
+  margin-left: 40px;
 }
 
 .polaroid {
@@ -144,8 +145,8 @@
   }
 
   .mindmap-background {
-    width: 350px;
-    height: 350px;
+    width: 320px;
+    height: 320px;
     background-size: contain;
   }
 
