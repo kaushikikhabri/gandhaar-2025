@@ -203,6 +203,10 @@ const EventDetails = () => {
                       <GroupsIcon style={{ marginRight: "5px" }} />
                       {`Team Size: ${event.teamSize}`}
                     </div>
+                    <div className="event-tag">
+                      <GroupsIcon style={{ marginRight: "5px" }} />
+                      {`Participation: ${event.Participation}`}
+                    </div>
                   </div>
                   <button className="event-register-button">
                     View Event Details{" "}
