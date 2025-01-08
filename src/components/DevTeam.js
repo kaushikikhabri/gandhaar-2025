@@ -1,15 +1,15 @@
 import React from "react";
 import "../style/DevTeam.css";
 
-import kaushikiImage from "../images/Kaushiki.png";
-import saiImage from "../images/sai.jpg";
-import yashodaImage from "../images/yashoda.png";
-import avasthiImage from "../images/Avasthi.png";
-import mrunalImage from "../images/mrunal.png";
-import sameekshaImage from "../images/Sameeksha.png";
-import ieshaImage from "../images/isha.png";
-import shrushtiImage from "../images/shrushti.png";
-import purvaImage from "../images/purva.png";
+import kaushikiImage from "../star_dev_images/Kaushiki.png";
+import saiImage from "../star_dev_images/SAI.png";
+import yashodaImage from "../star_dev_images/yashoda.png";
+import avasthiImage from "../star_dev_images/Avasthi.png";
+import mrunalImage from "../star_dev_images/mrunal.png";
+import sameekshaImage from "../star_dev_images/Sameeksha.png";
+import ieshaImage from "../star_dev_images/isha.png";
+import shrushtiImage from "../star_dev_images/shrushti.png";
+import purvaImage from "../star_dev_images/purva.png";
 
 const DevTeam = () => {
   const teamMembers = [

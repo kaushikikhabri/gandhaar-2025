@@ -1,6 +1,6 @@
  
  .gallery-container {
-  width: 100vw;
+  width: 100%;
   height: auto;
   overflow: hidden;
   position: relative;
@@ -8,7 +8,7 @@
 
   /* Set the gradient as a background layer below the image */
   background: 
-    linear-gradient(to top, rgb(83, 13, 188) 0%, #669eff 100%), 
+    linear-gradient(to top, rgb(83, 13, 188), #669eff 100%), 
     url("/src/images/bg9.png");
   
   background-repeat: no-repeat;
