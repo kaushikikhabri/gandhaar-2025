@@ -16,6 +16,7 @@
 
 .event-container-title{
   font-size: 100px;
+  margin-top: 2rem;
   margin-bottom: 30px;
   font-family: "Lavishly Yours", cursive;
   font-weight: 400;
@@ -270,5 +271,4 @@ input[type="checkbox"] {
   cursor: pointer;
   position: relative;
 }
-
 }  

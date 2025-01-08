@@ -4,7 +4,8 @@
   justify-content: center;
   align-items: center;
   height: 4rem;
-  transition: top 0.3s ease, opacity 0.3s ease;
+  /* transition: top 0.3s ease, opacity 0.3s ease; */
+  
   /* Smooth transition for position and visibility */
 }
 
@@ -25,79 +26,45 @@
   background-color: rgba(255, 255, 255, 0.244);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(10px);
-  background-image: linear-gradient(135deg, rgba(132, 25, 156, 0.546) 10%, rgba(240, 95, 87, 0.546) 100%);
+  background-image: linear-gradient(135deg, rgba(255, 114, 246, 0.553) 10%, rgba(52, 21, 41, 0.546) 100%);
   list-style: none;
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid rgb(250, 123, 244);
-  border-radius: 20px;
+  border: 3px solid rgb(52, 1, 49);
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.655);
+  border-bottom-left-radius: 20px; /* Rounded bottom-left corner */
+  border-bottom-right-radius: 20px; 
   height: inherit;
+  width: fit-content;
 }
 
 .navitem {
   margin: 15px;
-  padding: 5px;
+  padding: 2px;
+  /* background-image: linear-gradient(135deg, rgba(241, 76, 208, 0.763) 10%, rgba(220, 79, 222, 0.861) 100%); */
+  border-bottom-left-radius: 10px; /* Rounded bottom-left corner */
+  border-bottom-right-radius: 25px; 
 }
 
-.navitem a {
+.navitem .navlink {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 800;
+  font-weight:bolder;
   font-size: 17px;
   text-decoration: none;
-  padding: 10px 15px;
-  background: linear-gradient(90deg, #d8d8d8, #f8f9fa, #d8d8d8);
+  padding: 5px 5px;
+  background: linear-gradient(90deg, #ffffff, #d5d0b8, #f4f1f1);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
 
-.navitem a:hover {
+.navitem .navlink:hover {
 
   color: black;
-
-}
-
-.hamburger {
-  font-size: 3rem;
-  color: #fff;
-  background: none;
-  border: none;
   cursor: pointer;
-  position: relative;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  outline: none;
-  transition: all 0.2s ease;
-}
 
-.hamburger::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: 100%;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  background: linear-gradient(45deg, #ff5454, #ffa65d, #fffc66, #79ff44, #00ffd5, #3a5bff, #ab5cff, #ff61dd, #ff5f5f);
-  background-size: 400%;
-  animation: glowing 3s linear infinite;
-  opacity: 0.5;
-  z-index: -1;
-  filter: blur(8px);
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-}
-
-.hamburger:hover::after {
-  transform: translate(-50%, -50%) scale(1.5);
-  opacity: 1;
-}
-
-.hamburger:active {
-  transform: scale(0.95);
 }
 
 @keyframes glowing {
@@ -112,112 +79,109 @@
   }
 }
 
+
+
 .drawer {
   position: fixed;
   top: 0;
   right: 0;
-  width: 50%;
-  max-width: 400px; /* Limit maximum width */
-  height: 100%;
-  background-color: rgba(132, 25, 156, 0.8);
-  background-image: linear-gradient(135deg, rgba(177, 36, 209, 0.274) 10%, rgba(240, 95, 87, 0.21) 100%);
-  box-shadow: -4px 0 6px rgba(0, 0, 0, 0.2);
-  transform: translateX(100%);
-  transition: transform 0.3s ease;
+  width: 80%; /* Drawer width */
+  height: 100%; /* Full height */
+  background: url('/src/images/wave.png') no-repeat right center; /* Align image */
+  background-size: 120% 120%; /* Stretch image to fit */
+  transform: translateX(100%) scale(0.9); /* Start outside and slightly scaled down */
+  opacity: 0; /* Invisible initially */
+  transition: transform 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55), opacity 0.4s ease-in;
   z-index: 999;
   color: #fff;
   font-family: 'Cinzel', serif;
   overflow-y: auto; /* Enable vertical scrolling */
+  border-radius: 0 50px 50px 0; /* Add curved edge for a smooth look */
+  /* box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3); Add shadow for depth */
 }
 
 .drawer.open {
-  transform: translateX(0);
+  transform: translateX(0) scale(1); /* Fully open and scaled back to normal */
+  opacity: 1; /* Fully visible */
+  z-index: 1001;
+}
+
+.drawer.open:hover {
+  background-size: 130% 130%; /* Slightly increase wave stretch on hover */
+  transition: background-size 0.5s ease-in-out; /* Smooth wave effect */
 }
 
 .drawer-header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  
+  justify-content: end;
+
+  
+  /* border-bottom: 1px solid rgba(255, 255, 255, 0.2); */
+  
 }
 
-.drawer-header h2 {
-  margin: 0;
-  font-size: 2.5rem;
-  color: #fff;
-}
+
 
 .close-drawer {
   background: none;
   border: none;
-  color: #fff;
+  color: #ffd500;
   font-size: 2rem;
   cursor: pointer;
+  margin-right: 3rem;
 }
 
 .drawermenu {
   display: flex;
   flex-direction: column;
   list-style: none;
-  padding: 1rem;
+  align-items: flex-end;
+  padding-right: 2rem;
+
 }
 
 .draweritem {
   margin: 1rem 0;
   padding: 1rem;
-  background-color: rgba(240, 95, 87, 0.7);
-  border-radius: 10px;
+  /* background-color: rgba(255, 175, 36, 0.215); */
+  border-radius: 50px;
   display: flex;
   align-items: center;
+  justify-content: center;
+  width: 75%;
+  transform: translateX(50px); /* Initially offset */
+  opacity: 0; /* Hidden initially */
+  animation: slideIn 0.6s ease-out forwards; /* Add slide-in effect */
+  animation-delay: calc(var(--delay, 0) * 0.1s); /* Stagger items */
 }
 
-.draweritem a {
+.draweritem .drawerlink {
   text-decoration: none;
-  color: #fff;
-  font-size: 1.6rem;
-  display: flex;
-  align-items: center;
-  font-weight: bold;
-  width: 100%;
+  color: #ffffff;
+  font-size: 1rem;
+  /* font-weight: bold; */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 900;
 }
 
-.draweritem a svg {
-  margin-right: 10px;
-  font-size: 1.8rem; /* Icon size */
-}
-
-.draweritem a:hover {
+.draweritem .drawerlink:hover {
   text-decoration: underline;
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .drawer {
-    width: 70%; /* Adjust width for smaller screens */
+/* Slide-in Animation */
+@keyframes slideIn {
+  from {
+    transform: translateX(50px);
+    opacity: 0;
   }
-
-  .drawer-header h2 {
-    font-size: 2rem;
-  }
-
-  .draweritem a {
-    font-size: 1.4rem;
-  }
-
-  .draweritem a svg {
-    font-size: 1.6rem;
+  to {
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 
 
-.draweritem a svg,
-/* If using icons as SVG */
-.draweritem a span {
-  /* Adjust icons and text spacing */
-  margin-right: 10px;
-  /* Spacing between icon and text */
-}
 
 /* Responsive Styles */
 @media (max-width: 968px) {
@@ -230,20 +194,20 @@
     top: 0%;
   }
 
-  .navmenu .navitem {
+  .navmenu {
     display: none;
     /* Hide nav items on smaller screens */
   }
 
-  .navmenu {
+  /* .navmenu {
     width: 100%;
     display: flex;
     justify-content: end;
     border-radius: 0%;
     padding: 10px;
-  }
+  } */
 
-  .navmenu .hamburger {
+  /* .navmenu .hamburger {
     right: 0;
-  }
+  } */
 }
