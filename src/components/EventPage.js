@@ -47,7 +47,9 @@ const RulesBox = ({ title, rules }) => (
       {rules.map((section, index) => (
         <div key={index} className="rules-section">
           <h3 className="rules-heading">{section.heading}</h3>
-          {section.subheading && <h4 className="rules-subheading">{section.subheading}</h4>}
+          {section.subheading && (
+            <h4 className="rules-subheading">{section.subheading}</h4>
+          )}
           <ul className="rules-list">
             {section.points.map((point, idx) => (
               <li key={idx}>{point}</li>
@@ -58,7 +60,6 @@ const RulesBox = ({ title, rules }) => (
     </div>
   </div>
 );
-
 
 // EventPage Component
 const EventPage = ({ event }) => {
@@ -86,7 +87,8 @@ const EventPage = ({ event }) => {
 
   return (
     <div>
-      <Header title={title} subtitle={subtitle} image={image} /> {/* Pass the image */}
+      <Header title={title} subtitle={subtitle} image={image} />{" "}
+      {/* Pass the image */}
       <div className="container">
         <div className="left">
           <button className="custom-btn btn-14">
@@ -99,25 +101,6 @@ const EventPage = ({ event }) => {
         </div>
 
         <RulesBox title="Rules" rules={rules} />
-        {/* Contact Coordinators Section */}
-        <section className="contact-section">
-          <h2>Contact Coordinators</h2>
-          <ul>
-            {event.contacts.map((contact, index) => (
-              <li key={index}>
-                <strong>{contact.name}:</strong> {contact.phone}
-              </li>
-            ))}
-          </ul>
-          <div className="register-button-container">
-            <button
-              className="register-button"
-              onClick={() => (window.location.href = event.registerLink)}
-            >
-              Register
-            </button>
-          </div>
-        </section>
       </div>
     </div>
   );

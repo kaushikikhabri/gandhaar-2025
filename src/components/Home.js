@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../style/Home.css";
-import Launch from "./Launch";
+// import Launch from "./Launch";
 import Header from "./Header";
 import Navigation from "./Navigation";
 import Countdown from "./Countdown";

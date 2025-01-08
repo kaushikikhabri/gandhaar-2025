@@ -2,7 +2,6 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import EventPage from "./EventPage";
 
-
 // Event Details
 const events = {
   /*
@@ -264,74 +263,73 @@ const events = {
     registerLink: "https://example.com/departmentantakshari-register",
   },*/
   departmentAntakshariFaculty: {
-  image: require("../images/open.png"),
-  title: "The Great Faculty Sing-Off",
-  subtitle: "Department Antakshari-Faculty",
-  details:
-    "Department Antakshari challenges teams to showcase their musical prowess through three exciting rounds. From song lyric decrypting to singing challenges, culminating in the ultimate Antakshari face-off. May the most melodious team emerge victorious!",
-  structure: [
-    "Participation: 1 team per department ",
-    "Team Size: Minimum 2, Maximum 4",
-    "Venue: Instrumentation Auditorium",
-    "Date: Day 1 (Wednesday, 29th January 2025)",
-    "Time: 2:00 PM - 4:00 PM",
-  ],
-  structureNote: [],
+    image: require("../images/open.png"),
+    title: "The Great Faculty Sing-Off",
+    subtitle: "Department Antakshari-Faculty",
+    details:
+      "Department Antakshari challenges teams to showcase their musical prowess through three exciting rounds. From song lyric decrypting to singing challenges, culminating in the ultimate Antakshari face-off. May the most melodious team emerge victorious!",
+    structure: [
+      "Participation: 1 team per department ",
+      "Team Size: Minimum 2, Maximum 4",
+      "Venue: Instrumentation Auditorium",
+      "Date: Day 1 (Wednesday, 29th January 2025)",
+      "Time: 2:00 PM - 4:00 PM",
+    ],
+    structureNote: [],
 
-  rules: [
-    {
-      heading: "Final Registration",
-      points: [
-        "Once registration is completed, it will be considered final, and no changes or alterations will be allowed under any circumstances.",
-      ],
-    },
-    {
-      heading: "Participation",
-      points: [
-        "Each class can nominate 1 participant to perform in the competition.",
-        "Participants must select a category from the approved list of talents.",
-      ],
-    },
-    {
-      heading: "Categories of Talent",
-      points: [
-        "Performing Arts: Stand-Up Comedy, Singing, Dancing, Drama (Solo/Group)",
-        "Literary Arts: Poetry (Spoken Word or Recital), Storytelling",
-        "Miscellaneous: Magic Tricks, Beatboxing, Any unique or unconventional talent",
-      ],
-    },
-    {
-      heading: "Time Allotment Per Performance",
-      points: [
-        "Each performance must not exceed 2 minutes. Exceeding the time limit will result in point deductions as per the penalty rules.",
-      ],
-    },
-    {
-      heading: "Winner Selection",
-      subheading: "Score Prediction",
-      points: [
-        "Before their performance, participants must predict their own score out of 10.",
-        "Judges will cross-question the participants after their performance and provide scores.",
-        "The average score from all judges will be calculated.",
-        "The participant whose predicted score matches the judges’ average score will be declared the winner. If no participant's prediction matches the average, no winner will be declared for that round or category.",
-      ],
-    },
-    {
-      heading: "Penalty Rules",
-      points: [
-        "Exceeding Time Limit: -0.5 points will be deducted for every 30 seconds over the 2-minute limit.",
-        "Offensive Content: Use of offensive content, including inappropriate language or behavior, will result in: -1 point deduction or disqualification, depending on the severity.",
-      ],
-    },
-  ],
+    rules: [
+      {
+        heading: "Final Registration",
+        points: [
+          "Once registration is completed, it will be considered final, and no changes or alterations will be allowed under any circumstances.",
+        ],
+      },
+      {
+        heading: "Participation",
+        points: [
+          "Each class can nominate 1 participant to perform in the competition.",
+          "Participants must select a category from the approved list of talents.",
+        ],
+      },
+      {
+        heading: "Categories of Talent",
+        points: [
+          "Performing Arts: Stand-Up Comedy, Singing, Dancing, Drama (Solo/Group)",
+          "Literary Arts: Poetry (Spoken Word or Recital), Storytelling",
+          "Miscellaneous: Magic Tricks, Beatboxing, Any unique or unconventional talent",
+        ],
+      },
+      {
+        heading: "Time Allotment Per Performance",
+        points: [
+          "Each performance must not exceed 2 minutes. Exceeding the time limit will result in point deductions as per the penalty rules.",
+        ],
+      },
+      {
+        heading: "Winner Selection",
+        subheading: "Score Prediction",
+        points: [
+          "Before their performance, participants must predict their own score out of 10.",
+          "Judges will cross-question the participants after their performance and provide scores.",
+          "The average score from all judges will be calculated.",
+          "The participant whose predicted score matches the judges’ average score will be declared the winner. If no participant's prediction matches the average, no winner will be declared for that round or category.",
+        ],
+      },
+      {
+        heading: "Penalty Rules",
+        points: [
+          "Exceeding Time Limit: -0.5 points will be deducted for every 30 seconds over the 2-minute limit.",
+          "Offensive Content: Use of offensive content, including inappropriate language or behavior, will result in: -1 point deduction or disqualification, depending on the severity.",
+        ],
+      },
+    ],
 
-  contacts: [
-    { name: "Tejaswini Patkar", phone: "9730044087" },
-    { name: "Mrudula Dafne", phone: "7447835329" },
-  ],
-  registerLink: "https://example.com/departmentantakshari-register",
-}
-,/*
+    contacts: [
+      { name: "Tejaswini Patkar", phone: "9730044087" },
+      { name: "Mrudula Dafne", phone: "7447835329" },
+    ],
+    registerLink: "https://example.com/departmentantakshari-register",
+  } /*
 
   CumminsGotLatent: {
     image: require("../images/open.png"),
@@ -478,9 +476,9 @@ const events = {
       { name: "Gayatri Kadu", phone: "9209115390" }
     ],
     registerLink: "https://example.com/treasurehunt-register"
-  },*/
+  },*/,
   btechfashionShow: {
-    image:  require("../images/Runway.png"),
+    image: require("../images/Runway.png"),
     title: "HauteAura",
     subtitle: "BTECH Fashion Show",
     details:
@@ -499,57 +497,57 @@ const events = {
           "This event is exclusively for final-year students.",
           "Registration of themes will be on a first-come, first-serve basis. In case of repetition of themes or tracks, the team that registered first will retain the right to use the theme/track.",
           "Upon completion of registration, it will be considered final, and no alterations will be accommodated under any circumstances.",
-          "The slots allotted by the organizers will be final and will not be changed."
-        ]
+          "The slots allotted by the organizers will be final and will not be changed.",
+        ],
       },
       {
         heading: "Performance Guidelines",
         points: [
           "Performance time for each team is 13 minutes, plus 1 minute for stage setup and clearance.",
           "The music track for the performance must be submitted as instructed by the coordinators. Any delay in track submission will result in a reduction of points.",
-          "There is no specific theme for the fashion show. Teams are free to select any theme and will be judged accordingly."
-        ]
+          "There is no specific theme for the fashion show. Teams are free to select any theme and will be judged accordingly.",
+        ],
       },
       {
         heading: "Props and Costumes",
         points: [
           "The use of simple props that can be carried in and out of the stage immediately before and after the performance is allowed.",
           "All outfits should be approved by the coordinators. Failure to share outfits when requested may result in disqualification.",
-          "Prop preparations and arrangements will be the team's responsibility."
-        ]
+          "Prop preparations and arrangements will be the team's responsibility.",
+        ],
       },
       {
         heading: "Conduct and Decorum",
         points: [
           "Participants must maintain a certain amount of decency. Any act or move deemed vulgar or indecent will lead to disqualification.",
           "Participants are strictly instructed to NOT use college property like the library or reading halls during their practice. Violations will result in disqualification.",
-          "Only females will be involved in costume fittings for the performance."
-        ]
+          "Only females will be involved in costume fittings for the performance.",
+        ],
       },
       {
         heading: "Meetings and Reporting",
         points: [
           "Participants must report 1.5 hours before their event and confirm their presence with the event coordinator.",
           "Any delay in the schedule will cause a reduction of points.",
-          "The team leader must complete any specific requirements form as instructed by the coordinators."
-        ]
+          "The team leader must complete any specific requirements form as instructed by the coordinators.",
+        ],
       },
       {
         heading: "Judging and Results",
         points: [
           "Marking will be based on the originality of ideas, props, costumes, and choreography.",
-          "The decision of the coordinators will be final and binding."
-        ]
+          "The decision of the coordinators will be final and binding.",
+        ],
       },
       {
         heading: "Practice and Permissions",
         points: [
           "Permission for practice venues and outside choreographers is the team’s responsibility, and the event coordinators must be informed in advance.",
-          "There will be only one team head in a team."
-        ]
-      }
+          "There will be only one team head in a team.",
+        ],
+      },
     ],
-    
+
     contacts: [
       { name: "Tejaswini Patkar", phone: "9730044087" },
       { name: "Sameeksha Tantak", phone: "9096417769" },
@@ -1130,116 +1128,120 @@ djembe: {
   registerLink: "https://forms.gle/WjDEeKH1kVoizrgP6 "
 },
 */
-ukulele: {
-  image: require("../images/workshop.png"),
-  title: "Ukulele Workshop",
-  subtitle: "Learn Ukulele",
-  details: "Join us for a hands-on Ukulele Workshop where you can learn the basics of playing this delightful instrument. Explore chords, strumming techniques, and play some tunes together!",
-  structure: [
-    "Team Size: Individual participation",
-    "Venue: IT Building",
-    "Date: Day 2 (Thursday, 30th January 2025) & Day 3 (Friday, 31st January 2025)",
-    "Time: 12:30 PM - 4:30 PM for Day 2, 10:00 AM - 2:00 PM for Day 3"
-  ],
- rules: [
-  {
-    heading: "Final Registration",
-    points: [
-      "Upon completion of registration, kindly note that it will be considered as final, and no alterations will be accommodated under any circumstances."
+  ukulele: {
+    image: require("../images/workshop.png"),
+    title: "Ukulele Workshop",
+    subtitle: "Learn Ukulele",
+    details:
+      "Join us for a hands-on Ukulele Workshop where you can learn the basics of playing this delightful instrument. Explore chords, strumming techniques, and play some tunes together!",
+    structure: [
+      "Team Size: Individual participation",
+      "Venue: IT Building",
+      "Date: Day 2 (Thursday, 30th January 2025) & Day 3 (Friday, 31st January 2025)",
+      "Time: 12:30 PM - 4:30 PM for Day 2, 10:00 AM - 2:00 PM for Day 3",
     ],
-  },
-],
-
-  contacts: [
-    { name: "Vaishnavi Patil", phone: "7447629569" },
-    { name: "Anushka Mamane", phone: "8668698667" }
-  ],
-  registerLink: "https://forms.gle/4vGFDSHzn6vq6S2w7"
-},
-
-textureMoon: {
-  image: require("../images/workshop.png"),
-  title: "Texture Moon Workshop",
-  subtitle: "Craft a Celestial Masterpiece",
-  details: "Unleash your creativity at the Texture Moon Workshop! Discover the art of crafting mesmerizing moon textures and create your own celestial masterpiece.",
-  structure: [
-    "Team Size: Individual participation",
-    "Venue: Mech Building",
-    "Date: Day 2 (Thursday, 30th January 2025)",
-    "Time: 12:30 PM - 2:30 PM"
-  ],
-  rules: [
-  {
-    heading: "Final Registration",
-    points: [
-      "Upon completion of registration, kindly note that it will be considered as final, and no alterations will be accommodated under any circumstances."
+    rules: [
+      {
+        heading: "Final Registration",
+        points: [
+          "Upon completion of registration, kindly note that it will be considered as final, and no alterations will be accommodated under any circumstances.",
+        ],
+      },
     ],
-  },
-],
 
-  contacts: [
-    { name: "Arya Hawaldar", phone: "8452820567" },
-    { name: "Sharvari Ughade", phone: "7823804166" }
-  ],
-  registerLink: "https://example.com/texturemoon-register"
-},
-
-fluidArt: {
-  image: require("../images/workshop.png"),
-  title: "Fluid Art Workshop",
-  subtitle: "Create Mesmerizing Fluid Art",
-  details: "Explore the beauty of Fluid Art, where colors flow and blend into beautiful patterns. Unleash your inner artist in this hands-on workshop!",
-  structure: [
-    "Team Size: Individual participation",
-    "Participation: Open for all",
-    "Venue: Mech Building",
-    "Date: Day 3 (Friday, 31st January 2025)",
-    "Time: 12:00 PM - 2:00 PM"
-  ],
-  rules: [
-  {
-    heading: "Final Registration",
-    points: [
-      "Upon completion of registration, kindly note that it will be considered as final, and no alterations will be accommodated under any circumstances."
+    contacts: [
+      { name: "Vaishnavi Patil", phone: "7447629569" },
+      { name: "Anushka Mamane", phone: "8668698667" },
     ],
+    registerLink: "https://forms.gle/4vGFDSHzn6vq6S2w7",
   },
-],
 
-  contacts: [
-    { name: "Shruti Shinkar", phone: "7620460172" },
-    { name: "Gayatri Kadu", phone: "9209115390" }
-  ],
-  registerLink: "https://forms.gle/4zpbFKr1N9efs4gt6 "
-},
-
-punchNeedle: {
-  image: require("../images/workshop.png"),
-  title: "Punch Needle Workshop",
-  subtitle: "Explore Punch Needle Art",
-  details: "Dive into the world of Punch Needle and learn how to create beautiful textured art. No prior experience is needed—just bring your creativity!",
-  structure: [
-    "Team Size: Individual participation",
-    "Participation: Open for all",
-    "Venue: Instru Quadrangle",
-    "Date: Day 4 (Saturday, 1st February 2025)",
-    "Time: 12:00 PM - 2:00 PM"
-  ],
-  rules: [
-  {
-    heading: "Final Registration",
-    points: [
-      "Upon completion of registration, kindly note that it will be considered as final, and no alterations will be accommodated under any circumstances."
+  textureMoon: {
+    image: require("../images/workshop.png"),
+    title: "Texture Moon Workshop",
+    subtitle: "Craft a Celestial Masterpiece",
+    details:
+      "Unleash your creativity at the Texture Moon Workshop! Discover the art of crafting mesmerizing moon textures and create your own celestial masterpiece.",
+    structure: [
+      "Team Size: Individual participation",
+      "Venue: Mech Building",
+      "Date: Day 2 (Thursday, 30th January 2025)",
+      "Time: 12:30 PM - 2:30 PM",
     ],
-  },
-],
+    rules: [
+      {
+        heading: "Final Registration",
+        points: [
+          "Upon completion of registration, kindly note that it will be considered as final, and no alterations will be accommodated under any circumstances.",
+        ],
+      },
+    ],
 
-  contacts: [
-    { name: "Samruddhi Patil", phone: "9763811008" },
-    { name: "Shruti Srinivasan", phone: "8208996654" }
-  ],
-  registerLink: "https://forms.gle/hVLnL9kEyf1oY61X8"
-},
-/*
+    contacts: [
+      { name: "Arya Hawaldar", phone: "8452820567" },
+      { name: "Sharvari Ughade", phone: "7823804166" },
+    ],
+    registerLink: "https://example.com/texturemoon-register",
+  },
+
+  fluidArt: {
+    image: require("../images/workshop.png"),
+    title: "Fluid Art Workshop",
+    subtitle: "Create Mesmerizing Fluid Art",
+    details:
+      "Explore the beauty of Fluid Art, where colors flow and blend into beautiful patterns. Unleash your inner artist in this hands-on workshop!",
+    structure: [
+      "Team Size: Individual participation",
+      "Participation: Open for all",
+      "Venue: Mech Building",
+      "Date: Day 3 (Friday, 31st January 2025)",
+      "Time: 12:00 PM - 2:00 PM",
+    ],
+    rules: [
+      {
+        heading: "Final Registration",
+        points: [
+          "Upon completion of registration, kindly note that it will be considered as final, and no alterations will be accommodated under any circumstances.",
+        ],
+      },
+    ],
+
+    contacts: [
+      { name: "Shruti Shinkar", phone: "7620460172" },
+      { name: "Gayatri Kadu", phone: "9209115390" },
+    ],
+    registerLink: "https://forms.gle/4zpbFKr1N9efs4gt6 ",
+  },
+
+  punchNeedle: {
+    image: require("../images/workshop.png"),
+    title: "Punch Needle Workshop",
+    subtitle: "Explore Punch Needle Art",
+    details:
+      "Dive into the world of Punch Needle and learn how to create beautiful textured art. No prior experience is needed—just bring your creativity!",
+    structure: [
+      "Team Size: Individual participation",
+      "Participation: Open for all",
+      "Venue: Instru Quadrangle",
+      "Date: Day 4 (Saturday, 1st February 2025)",
+      "Time: 12:00 PM - 2:00 PM",
+    ],
+    rules: [
+      {
+        heading: "Final Registration",
+        points: [
+          "Upon completion of registration, kindly note that it will be considered as final, and no alterations will be accommodated under any circumstances.",
+        ],
+      },
+    ],
+
+    contacts: [
+      { name: "Samruddhi Patil", phone: "9763811008" },
+      { name: "Shruti Srinivasan", phone: "8208996654" },
+    ],
+    registerLink: "https://forms.gle/hVLnL9kEyf1oY61X8",
+  },
+  /*
 adOMania: {
   image: require("../images/online.png"),
   title: "Ad-O-Mania: Advertisement Competition",
@@ -1458,10 +1460,7 @@ coneRush: {
 
 
 */
-
-  
 };
-
 
 // Component to Display Events
 function AllEvents() {

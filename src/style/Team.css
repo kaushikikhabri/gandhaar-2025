@@ -108,11 +108,12 @@
   /* background-size: 400% 400%; */
   /* background-attachment: fixed; */
   overflow: hidden; /* Prevent extra content */
-  background: linear-gradient(
+  /* background: linear-gradient(
     171.8deg,
     rgb(83, 13, 188) 13.5%,
     rgb(8, 7, 111) 78.6%
-  );
+  ); */
+  background: linear-gradient(to bottom, rgb(83, 13, 188), rgb(100, 13, 188) ,rgb(88, 0, 76));
 }
 
 /* Keyframe for background gradient animation */
