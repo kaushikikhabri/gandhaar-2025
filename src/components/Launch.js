@@ -1,8 +1,29 @@
 import React from "react";
-import "../style/Launch.css";
+import "../style/Launch.scss";
 
-function Launch() {
-  return <div>Launch</div>;
-}
+const Launch = () => {
+  return (
+    <div className="launch-page">
+     
+      <div className="loader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  );
+};
 
 export default Launch;

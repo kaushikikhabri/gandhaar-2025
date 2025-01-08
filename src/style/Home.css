@@ -2,9 +2,9 @@ body{
   margin: 0px;
   background: rgb(3, 59, 29);
   background: linear-gradient(
-    90deg,
-    rgba(3, 59, 29, 1) 19%,
-    rgba(121, 9, 28, 1) 56%,
-    rgba(2, 42, 50, 1) 100%
-  );
+  to top,
+  rgb(209, 247, 241) 8.3%, /* Matches the 8.3% start point */
+  rgb(249, 213, 213) 81% /* Matches the 81% end point */
+);
+
 }
