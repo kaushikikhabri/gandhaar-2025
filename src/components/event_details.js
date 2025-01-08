@@ -49,7 +49,7 @@ const event_details = {
     imageUrl:
       "https://media.istockphoto.com/id/937674774/vector/abstract-modern-music-poster-template.jpg?s=612x612&w=0&k=20&c=8WTeLpUCJRWadbiQ_9cVSfjSa2x-CVOSG5M5FbYmJ9w=",
   },
-   "Sargam Symphony": {
+  "Sargam Symphony": {
     start: "10:00 AM",
     end: "1:30 PM",
     location: "Main Bldg Quadrangle",
@@ -57,9 +57,9 @@ const event_details = {
     day: "Jan 31",
     teamSize: 2,
     imageUrl:
-       "https://media.licdn.com/dms/image/v2/D5612AQFRw-MO07-Y4g/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1710541180651?e=1741824000&v=beta&t=vwx7Ae6WKbzg-bkkh4uP4rGpjQBqmi-3KBL2EkPMT1M",
+      "https://media.licdn.com/dms/image/v2/D5612AQFRw-MO07-Y4g/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1710541180651?e=1741824000&v=beta&t=vwx7Ae6WKbzg-bkkh4uP4rGpjQBqmi-3KBL2EkPMT1M",
   },
-   "Suron ke Sikandar": {
+  "Suron ke Sikandar": {
     start: "10:00 AM",
     end: "12:00 PM",
     location: "KB Joshi Audi",
@@ -119,7 +119,7 @@ const event_details = {
     imageUrl:
       "https://img.freepik.com/premium-photo/inclusive-pridethemed-escape-room-experience-generative-ai_883586-207229.jpg",
   },
-  "TALAASH": {
+  TALAASH: {
     start: "10:30 AM",
     end: "12:30 PM",
     location: "All Campus",
@@ -129,7 +129,7 @@ const event_details = {
     imageUrl:
       "https://riddlepedia.com/wp-content/uploads/2024/02/prom-scavenger-hunt-riddles.png",
   },
-  "HAUTEAURA": {
+  HAUTEAURA: {
     start: "6:00 PM",
     end: "9:00 PM",
     location: "Samstha Ground",
@@ -179,7 +179,7 @@ const event_details = {
     imageUrl:
       "https://media.istockphoto.com/id/937674774/vector/abstract-modern-music-poster-template.jpg?s=612x612&w=0&k=20&c=8WTeLpUCJRWadbiQ_9cVSfjSa2x-CVOSG5M5FbYmJ9w=",
   },
-  "Spellbound": {
+  Spellbound: {
     start: "12:30 PM",
     end: "2:30 PM",
     location: "KB Joshi Audi",
@@ -242,7 +242,6 @@ const event_details = {
     imageUrl:
       "https://media.istockphoto.com/id/937674774/vector/abstract-modern-music-poster-template.jpg?s=612x612&w=0&k=20&c=8WTeLpUCJRWadbiQ_9cVSfjSa2x-CVOSG5M5FbYmJ9w=",
   },
-  
 };
 
 export default event_details;

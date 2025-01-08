@@ -17,12 +17,12 @@ import image9 from "../posters/Joyland.PNG";
 
 // Update items array with local images
 const items = [
-  { image: image1, category: "grooveArena" },
-  { image: image2, category: "soloSynergy" },
-  { image: image3, category: "nrutyanjali" },
-  { image: image4, category: "streetBrawl" },
+  { image: image1, category: "Dance (GROOVE ARENA)" },
+  { image: image2, category: "Music (JAMSPHERE)" },
+  { image: image3, category: "Fun (GATHERING HUB)" },
+  { image: image4, category: "Literary (WORDSMITH’S CORNER)" },
   { image: image5, category: "stepItUp" },
-  { image: image6, category: "Artiscope" },
+  { image: image6, category: "Artistry (ARTISCOPE)" },
   { image: image7, category: "DigitalStage" },
   { image: image8, category: "HauteRoute" },
   { image: image9, category: "Joyland" },
