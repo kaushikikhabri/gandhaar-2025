@@ -59,6 +59,7 @@ const RulesBox = ({ title, rules }) => (
   </div>
 );
 
+
 // EventPage Component
 const EventPage = ({ event }) => {
   const { title, subtitle, image, details, structure, rules, contacts } = event;
@@ -98,6 +99,25 @@ const EventPage = ({ event }) => {
         </div>
 
         <RulesBox title="Rules" rules={rules} />
+        {/* Contact Coordinators Section */}
+        <section className="contact-section">
+          <h2>Contact Coordinators</h2>
+          <ul>
+            {event.contacts.map((contact, index) => (
+              <li key={index}>
+                <strong>{contact.name}:</strong> {contact.phone}
+              </li>
+            ))}
+          </ul>
+          <div className="register-button-container">
+            <button
+              className="register-button"
+              onClick={() => (window.location.href = event.registerLink)}
+            >
+              Register
+            </button>
+          </div>
+        </section>
       </div>
     </div>
   );

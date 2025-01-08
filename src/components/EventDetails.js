@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../style/EventDetails.css";
 import event_details from "./event_details";
 import Header from "./Header";
@@ -16,7 +16,22 @@ import Bubbles from "./Bubbles";
 
 const EventDetails = () => {
   const [drawerOpen, setDrawerOpen] = useState(null); // For bottom drawer
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 968);
 
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 968);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+  const toggleDrawer1 = () => {
+    setIsDrawerOpen((prev) => !prev);
+  };
   const toggleDrawer = (key) => {
     setDrawerOpen(drawerOpen === key ? null : key);
   };
@@ -58,7 +73,7 @@ const EventDetails = () => {
 
   return (
     <div>
-      <Navigation />
+      <Navigation isDrawerOpen={isDrawerOpen} toggleDrawer={toggleDrawer1} />
       <div style={{ display: "flex", backgroundColor: "white" }}>
         {/* Sidebar */}
         <div className="sidebar">
@@ -124,14 +139,14 @@ const EventDetails = () => {
             <div>
               {[
                 "All",
-                "Dance",
-                "Music",
-                "Fun",
-                "Runway",
-                "Culinary",
-                "Artistry",
-                "Drama",
-                "Workshop",
+                "Groove Arena",
+                "JamSphere",
+                "Gathering Hub",
+                "Haute Route",
+                "Savory Symphony",
+                "ArtiScope",
+                "Theatrical Tapestry",
+                "Skill Lab",
               ].map((category) => (
                 <div key={category}>
                   <input
@@ -269,14 +284,14 @@ const EventDetails = () => {
                 {drawerOpen === "category" &&
                   [
                     "All",
-                    "dance",
-                    "music",
-                    "fun",
-                    "runway",
-                    "culinary",
-                    "artistry",
-                    "drama",
-                    "workshop",
+                    "Groove Arena",
+                    "JamSphere",
+                    "Gathering Hub",
+                    "Haute Route",
+                    "Savory Symphony",
+                    "ArtiScope",
+                    "Theatrical Tapestry",
+                    "Skill Lab",
                   ].map((category) => (
                     <div key={category}>
                       <input
@@ -297,6 +312,16 @@ const EventDetails = () => {
             </div>
           ))}
         </div>
+        {isMobile && (
+          <div className="floating-icon" onClick={toggleDrawer1}>
+            <div className="floating-content">
+              <span role="img" aria-label="menu">
+                ✨
+              </span>
+              <p>Menu</p>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
