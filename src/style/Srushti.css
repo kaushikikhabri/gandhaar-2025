@@ -16,14 +16,15 @@
 }
 
 /* Buttons Styling */
+/* Skip Button Styling (reuse control-button styles) */
 .control-button {
   position: absolute;
   padding: 10px;
-  font-size: 40px; /* Adjust font size for symbols */
+  font-size: 20px;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   border: none;
-  border-radius: 50%; /* Makes buttons circular */
+  border-radius: 10px; /* Makes buttons rectangular with rounded corners */
   cursor: pointer;
   z-index: 10;
   display: flex;
@@ -38,8 +39,8 @@
 }
 
 .bottom-right {
-  bottom: 5px;
-  right: 30px;
+  bottom: 7px;
+  right: 40px;
 }
 
 /* Hover Effect */
@@ -47,6 +48,7 @@
   background-color: rgba(255, 255, 255, 0.7);
   color: black;
 }
+
 /* Responsive Design for Video and Buttons */
 @media (max-width: 768px) {
   .video-container {
@@ -77,7 +79,7 @@
 
 @media (max-width: 480px) {
   .video-container {
-    height: 60vh; /* Further reduce height for phones */
+    height: 100vh; /* Further reduce height for phones */
     background-color: black;
   }
 

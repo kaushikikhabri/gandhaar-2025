@@ -1,5 +1,3 @@
-
-
 import React from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import "./App.css";
@@ -14,13 +12,19 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/launch" element={<Launch />} />
           <Route path="/star-lineup" element={<StarLineUp />} />
           <Route path="/event-details" element={<EventDetails />} />
-              {/* Use eventKey to identify the event */}
-        <Route path="/miss-freshers" element={<AllEvents eventKey="missFreshers" />} />
-        <Route path="/dance-battle" element={<AllEvents eventKey="danceBattle" />} />
+          {/* Use eventKey to identify the event */}
+          <Route
+            path="/miss-freshers"
+            element={<AllEvents eventKey="missFreshers" />}
+          />
+          <Route
+            path="/dance-battle"
+            element={<AllEvents eventKey="danceBattle" />}
+          />
         </Routes>
       </Router>
     </div>
@@ -28,4 +32,3 @@ function App() {
 }
 
 export default App;
-

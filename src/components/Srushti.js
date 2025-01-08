@@ -1,25 +1,25 @@
 import React, { useRef, useState } from "react";
+import { useNavigate } from "react-router-dom"; // Import useNavigate for navigation
 import "../style/Srushti.css";
 import gandhaarvideo from "../gandhaar_video.mp4";
 
 const Launchpage = () => {
   const videoRef = useRef(null);
-  const [isPlaying, setIsPlaying] = useState(true);
   const [isMuted, setIsMuted] = useState(true);
 
-  const togglePlay = () => {
-    if (videoRef.current.paused) {
-      videoRef.current.play();
-      setIsPlaying(true);
-    } else {
-      videoRef.current.pause();
-      setIsPlaying(false);
-    }
+  const navigate = useNavigate(); // Initialize useNavigate
+
+  const handleSkip = () => {
+    navigate("/home"); // Redirect to the home page
   };
 
   const toggleMute = () => {
     videoRef.current.muted = !videoRef.current.muted;
     setIsMuted(videoRef.current.muted);
+  };
+
+  const handleVideoEnd = () => {
+    navigate("/home"); // Redirect to the home page when the video ends
   };
 
   return (
@@ -28,16 +28,16 @@ const Launchpage = () => {
         ref={videoRef}
         className="fullscreen-video"
         autoPlay
-        loop
         muted={isMuted}
+        onEnded={handleVideoEnd} // Add onEnded event to redirect when the video finishes
       >
         <source src={gandhaarvideo} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
-      {/* Play/Pause Button in Top-Left */}
-      <button className="control-button top-left" onClick={togglePlay}>
-        {isPlaying ? "⏸️" : "▶️"} {/* Pause and Play Symbols */}
+      {/* Skip Button in Top-Left */}
+      <button className="control-button top-left" onClick={handleSkip}>
+        Skip
       </button>
 
       {/* Mute/Unmute Button in Bottom-Right */}
