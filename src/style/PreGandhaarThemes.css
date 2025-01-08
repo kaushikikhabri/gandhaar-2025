@@ -26,11 +26,13 @@
 }
 
 /* Theme-Specific Styles */
-.item.broadway .content {
+.item.broadway-ballad .content {
     color: #fdfdfd;
     right: -8%;
+    font-size: 90px;
     /* font-family: "Abril Fatface", serif; */
     font-family: "Times New Roman", serif;
+    letter-spacing: 2px;
 
 }
 
@@ -49,7 +51,7 @@
     letter-spacing: 2px;
 }
 
-.item.raag .content {
+.item.allankar .content {
     color: #ffffff;
     /* font-family: 'Georgia', serif; */
     font-family: "Georgia", serif;
@@ -144,7 +146,7 @@
     font-family: system-ui;
     text-transform: uppercase;
     white-space: nowrap;
-    font-family:system-ui;
+    
   font-weight: 400;
   font-style: normal;
     z-index: 1; /*change*/
@@ -354,6 +356,31 @@
 .stick {}
 
 
+.mockup {
+    position: absolute;
+    top: 55%;
+left: -1%;
+--left: 0%;
+transform: translate(-50%, -50%) rotate(0deg); 
+height: var(--height-mockup);
+width: var(--width-mockup);
+background: 
+    url('../images/mockup.png') center center no-repeat; 
+    /* url(img/listSoda.jpg) center center no-repeat; */
+background-size: contain;
+-webkit-mask-image: url('../images/mockup.png');
+-webkit-mask-repeat: no-repeat;
+-webkit-mask-size: contain;
+-webkit-mask-position: center;
+mask-image: url('../images/mockup.png');
+mask-repeat: no-repeat;
+mask-size: contain;
+mask-position: center;
+transition: transform 0.5s ease-in-out;
+transform-origin: center center;
+z-index: 2; 
+}
+
 
 
 /* MEDIA QUERIES  */
@@ -362,15 +389,7 @@
 
 
 /* MEDIA QUERIES */
-/* Media Queries */
 
-/* Default Sizes */
-:root {
-    --width-mockup: calc(500px); /* Increased width */
-    --height-mockup: calc(900px); /* Increased height */
-}
-
-/* For large screens */
 @media (max-width: 1200px) {
     .item .content {
         font-size: 7rem; /* Reduced font size */
@@ -384,7 +403,6 @@
     }
 }
 
-/* For medium screens */
 @media (max-width: 992px) {
     .item .content {
         font-size: 5rem;
@@ -398,16 +416,15 @@
     }
     .item.aria .content,
     .item.stomp .content,
-    .item.raas .content {
+    .item.raas .content{
         right: auto; /* Remove specific right positioning */
     }
-    .stick {
+    .stick{
         width: 15vw;
         height: 30vh;
     }
 }
 
-/* For smaller screens */
 @media (max-width: 768px) {
     .item .content {
         font-size: 4rem;
@@ -419,13 +436,12 @@
         height: 300px;
         width: 300px;
     }
-    .stick {
+    .stick{
         width: 20vw;
         height: 40vh;
     }
 }
 
-/* For very small screens */
 @media (max-width: 576px) {
     .item .content {
         font-size: 3rem;
@@ -437,16 +453,17 @@
         height: 200px;
         width: 200px;
     }
-    .stick {
+    .stick{
         width: 25vw;
         height: 50vh;
     }
     .item .description {
         font-size: 1.5rem; /* Adjust description font size */
     }
+
 }
 
-/* Example for tiny screens - adjust as needed */
+/* Example for very small screens - adjust as needed */
 @media (max-width: 400px) {
     .item .content {
         font-size: 2.5rem;
@@ -458,45 +475,40 @@
         height: 200px;
         width: 200px;
     }
-    .stick {
+    .stick{
         width: 30vw;
         height: 60vh;
     }
 }
 
-/* For adjusting the stick position */
-@media (max-width: 1400px) {
-    .stick {
-        left: 10%;
+/*For adjusting the stick position*/
+@media (max-width: 1400px){
+    .stick{
+       left: 10%;
     }
 }
-
-@media (max-width: 1200px) {
-    .stick {
-        left: 15%;
+@media (max-width: 1200px){
+    .stick{
+       left: 15%;
     }
 }
-
-@media (max-width: 992px) {
-    .stick {
-        left: 20%;
+@media (max-width: 992px){
+    .stick{
+       left: 20%;
     }
 }
-
-@media (max-width: 768px) {
-    .stick {
-        left: 25%;
+@media (max-width: 768px){
+    .stick{
+       left: 25%;
     }
 }
-
-@media (max-width: 576px) {
-    .stick {
-        left: 30%;
+@media (max-width: 576px){
+    .stick{
+       left: 30%;
     }
 }
-
-@media (max-width: 400px) {
-    .stick {
-        left: 35%;
+@media (max-width: 400px){
+    .stick{
+       left: 35%;
     }
 }
