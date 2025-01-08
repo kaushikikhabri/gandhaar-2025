@@ -111,39 +111,42 @@ const ImageGallery = () => {
   };
 
   return (
-    <div className="gallery-container">
-      <div className="image-grid" ref={imageGridRef}>
-        {[...images].map((image, index) => (
-          <div key={index} className="image-item">
-            <img
-              src={image.src}
-              alt={image.alt}
-              onClick={() => openImage(index)}
-            />
-          </div>
-        ))}
-      </div>
-
-      {selectedIndex !== null && (
-        <div className="image-modal" onClick={closeImage}>
-          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <span className="close" onClick={closeImage}>
-              &times;
-            </span>
-            <img
-              src={images[selectedIndex].src}
-              alt={images[selectedIndex].alt}
-              className="modal-image"
-            />
-            <span className="arrow left" onClick={showPrevImage}>
-              &#10094;
-            </span>
-            <span className="arrow right" onClick={showNextImage}>
-              &#10095;
-            </span>
-          </div>
+    <div className="gallery">
+      <div className="gallery-title">Image Gallery</div>
+      <div className="gallery-container">
+        <div className="image-grid" ref={imageGridRef}>
+          {[...images].map((image, index) => (
+            <div key={index} className="image-item">
+              <img
+                src={image.src}
+                alt={image.alt}
+                onClick={() => openImage(index)}
+              />
+            </div>
+          ))}
         </div>
-      )}
+
+        {selectedIndex !== null && (
+          <div className="image-modal" onClick={closeImage}>
+            <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+              <span className="close" onClick={closeImage}>
+                &times;
+              </span>
+              <img
+                src={images[selectedIndex].src}
+                alt={images[selectedIndex].alt}
+                className="modal-image"
+              />
+              <span className="arrow left" onClick={showPrevImage}>
+                &#10094;
+              </span>
+              <span className="arrow right" onClick={showNextImage}>
+                &#10095;
+              </span>
+            </div>
+          </div>
+        )}
+      </div>
     </div>
   );
 };

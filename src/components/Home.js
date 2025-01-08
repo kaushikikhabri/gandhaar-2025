@@ -20,8 +20,6 @@ import Bubbles from "./Bubbles";
 import Team from "./Team";
 import DevTeam from "./DevTeam";
 import AboutUs from "./AboutUs";
-import Launchpage from "./Srushti";
-
 
 function Home() {
   const targetDate = "2025-01-30T23:59:59";
@@ -32,7 +30,6 @@ function Home() {
   };
   return (
     <div>
-      <Srushti />
       <div id="home">
         {" "}
         <Header toggleDrawer={toggleDrawer} />
@@ -45,9 +42,7 @@ function Home() {
           scrollThreshold={200}
         />{" "}
       </div>
-      <div>
-        <Launchpage />
-      </div>
+      <div></div>
       <div id="countdown">
         {" "}
         <Countdown targetDate={targetDate} />{" "}
