@@ -2,35 +2,35 @@ const event_details = {
   "Jhoom Junction": {
     start: "12:30 PM",
     end: "6:00 PM",
-    location: "Main Bldg Quadrangle",
+    location: "Main Quad",
     category: "GROOVE ARENA",
     day: "Jan 29",
-    teamSize: "12-19 (12-16 performers + 3 volunteers)",
-    Participation: "1 team from each class",
+    teamSize: "12-19",
+    Participation: "1 team per class",
     imageUrl:
       "https://easy-peasy.ai/cdn-cgi/image/quality=80,format=auto,width=700/https://fdczvxmwwjwpwbeeqcth.supabase.co/storage/v1/object/public/images/00c75b73-0934-4ed4-be2d-a38ea416f81f/91dc1e47-0fb0-4fcd-970f-3dfd14ab403a.png",
   },
-  "soloSynergy": {
+  "Solo Synergy": {
     start: "11:00 AM",
     end: "2:00 PM",
     location: "Stage 2",
     category: "GROOVE ARENA",
     day: "Jan 31",
     teamSize: 1,
-    Participation: "1 participant per class",
+    Participation: "1 student per class",
     imageUrl:
-      "https://media.istockphoto.com/id/858777608/vector/dance-battle-party-poster.jpg?s=612x612&w=0&k=20&c=Adk3VCE61K6aQ4SsE_EMOImIY_ByTkhY_WZps8c2s_U=",
+      "https://img.freepik.com/premium-photo/female-dancer-dancing-neon-colored-background_77190-22971.jpg?w=360",
   },
-  "nrutyanjali": {
+  "Nrutyanjali": {
     start: "10:00 AM",
     end: "1:00 PM",
-    location: "Main Bldg Quadrangle",
+    location: "Main Quad",
     category: "GROOVE ARENA",
     day: "Feb 1",
-    teamSize: 5,
+    teamSize: "1-5",
     Participation: "1 team per class",
     imageUrl:
-      "https://www.holidify.com/images/cmsuploads/compressed/27858916_1744144345636773_5809530212233948261_n_20180410145639.jpg",
+      "https://img.freepik.com/premium-photo/mesmerizing-indian-classical-dance-performance_670382-122718.jpg",
   },
   "The Street Brawl": {
     start: "3:00 PM",
@@ -39,40 +39,40 @@ const event_details = {
     category: "GROOVE ARENA",
     day: "Jan 30",
     teamSize: 1,
-    Participation: "1 participant per class",
+    Participation: "1 student per class",
     imageUrl:
       "https://img.freepik.com/premium-photo/vibrant-group-dancers-dynamic-poses-with-colorful-lighting_272375-8948.jpg?w=996",
   },
   "Step It Up": {
     start: "10:00 AM",
     end: "12:30 PM",
-    location: "Main Bldg Quadrangle",
+    location: "Main Quad",
     category: "GROOVE ARENA",
     day: "Jan 30",
-    teamSize: "5-15 members + 1-2 helpers(only if needed)",
-    Participation: "Multiple teams from same college",
+    teamSize: "6-17",
+    Participation: "Multiple teams per college",
     imageUrl:
-      "https://img.freepik.com/premium-photo/poster-movie-called-group-people-dancing_1127009-4301.jpg",
+      "https://img.freepik.com/premium-photo/street-fashion-expressive-movements-hiphop-dance-group-generative-ai_722401-32575.jpg",
   },
    "Sargam Symphony": {
     start: "10:00 AM",
     end: "1:30 PM",
-    location: "Main Bldg Quadrangle",
+    location: "Main Quad",
     category: "JAMSPHERE",
     day: "Jan 31",
-    teamSize: "2 (minimum)/5 (maximum)",
+    teamSize: "2-5",
     Participation: "1 team per class",
     imageUrl:
-       "https://media.licdn.com/dms/image/v2/D5612AQFRw-MO07-Y4g/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1710541180651?e=1741824000&v=beta&t=vwx7Ae6WKbzg-bkkh4uP4rGpjQBqmi-3KBL2EkPMT1M",
+       "https://img.freepik.com/premium-photo/group-friends-singing-bar_118124-99558.jpg",
   },
-   "Suron ke Sikandar": {
+   "Suron Ke Sikandar": {
     start: "10:00 AM",
     end: "12:00 PM",
-    location: "KB Joshi Audi",
+    location: "KB Joshi",
     category: "GATHERING HUB",
     day: "Jan 30",
-    teamSize: "2 (minimum)/4 (maximum)",
-    Participation: "1 team per department (1 student per year)",
+    teamSize: "2-4",
+    Participation: "1 team per department",
     imageUrl:
       "https://img.freepik.com/premium-photo/colorful-microphone-black-background-generative-ai_918839-1265.jpg?w=900",
   },
@@ -83,36 +83,36 @@ const event_details = {
     category: "GATHERING HUB",
     day: "Jan 29",
     teamSize: "-",
-    Participation: "1 team from department", 
+    Participation: "1 team per department", 
     imageUrl:
-      "https://thumbs.dreamstime.com/b/vivid-illustration-microphone-musical-elements-ai-generated-vivid-illustration-microphone-musical-elements-335216799.jpg?w=992",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuS4_IuS-Cf2hoz6fNUsdeUHwhRjwy4IEyzw&s",
   },
-  "CUMMINS GOT LATENT": {
+  "Cummins Got Latent": {
     start: "12:00 PM",
     end: "2:30 PM",
     location: "Stage 2",
     category: "GATHERING HUB",
     day: "Jan 30",
     teamSize: 1,
-    Participation: "1 member per class",
+    Participation: "1 student per class",
     imageUrl:
       "https://static.vecteezy.com/system/resources/previews/038/498/811/large_2x/ai-generated-magic-background-with-magician-s-hat-free-photo.jpeg",
   },
   "Shantit Kranti": {
     start: "3:00 PM",
     end: "5:00 PM",
-    location: "KB Joshi Audi",
+    location: "KB Joshi",
     category: "GATHERING HUB",
     day: "Jan 29",
-    teamSize: 6,
-    Participation: "Inter-Departmental (One Team per department)",
+    teamSize: "4-6",
+    Participation: "1 team per department",
     imageUrl:
-      "https://t4.ftcdn.net/jpg/10/85/32/61/240_F_1085326141_29OFQptRbrrVt2mLuLRsiEzwtJmhAFb2.jpg",
+      "https://media.istockphoto.com/id/1494324236/photo/rear-view-of-group-of-children-playing-charades-at-home.jpg?s=612x612&w=0&k=20&c=jyWs-ZeXHCKhf9p3AnEBXFAt3cAAjA06fDOST0dQ2m4=",
   },
-  "KALAKAR KATTA": {
+  "Kalakar Katta": {
     start: "11:00 AM",
     end: "5:00 PM",
-    location: "Instrumentation Quadrangle",
+    location: "Instru Quad",
     category: "GATHERING HUB",
     day: "Jan 31",
     teamSize: "-",
@@ -120,57 +120,57 @@ const event_details = {
     imageUrl:
       "https://img.freepik.com/premium-photo/vibrant-colors-celebrate-beauty-creativity-painted-women-portrait-generated-by-artificial-intelligence_24640-123697.jpg?w=900",
   },
-  "ESCAPE ROOM": {
+  "Escape Room": {
     start: "11:00 AM",
     end: "1:00 PM",
-    location: "Entire IT/Mech Building",
+    location: "IT/Mech Bldg",
     category: "GATHERING HUB",
     day: "Jan 31",
     teamSize: 4,
-    Participation: "1 team from each class (FCFS)",
+    Participation: "1 team per class (FCFS)",
     imageUrl:
       "https://img.freepik.com/premium-photo/inclusive-pridethemed-escape-room-experience-generative-ai_883586-207229.jpg",
   },
-  "TALAASH": {
+  "Talaash": {
     start: "10:30 AM",
     end: "12:30 PM",
-    location: "All Campus",
+    location: "Whole Campus",
     category: "GATHERING HUB",
     day: "Feb 1",
     teamSize: 4,
-    Participation: "1 team from each class",
+    Participation: "1 team per class",
     imageUrl:
       "https://riddlepedia.com/wp-content/uploads/2024/02/prom-scavenger-hunt-riddles.png",
   },
-  "HAUTEAURA": {
+  "HauteAura": {
     start: "6:00 PM",
     end: "9:00 PM",
     location: "Samstha Ground",
     category: "HAUTE ROUTE",
     day: "Jan 29",
-    teamSize: "18 - 21 students (14-17 performers + 4 helpers)",
-    Participation: "1 team from each FINAL YEAR class",
+    teamSize: "18 - 21",
+    Participation: "1 team per FINAL YEAR class",
     imageUrl:
       "https://img.freepik.com/premium-photo/high-tech-fashion-show-futuristic-fashion-show_1228145-23396.jpg",
   },
   "Miss Cummins-Beauty Contest": {
     start: "2:00 PM",
     end: "4:30 PM",
-    location: "Main Building Quadrangle",
+    location: "Main Quad",
     category: "HAUTE ROUTE",
     day: "Jan 31",
     teamSize: 1,
-    Participation: "2 participant from each class",
+    Participation: "2 student per class",
     imageUrl:
       "https://img.freepik.com/premium-photo/contestants-stunning-evening-gowns-walking-runway-beauty-pageant_1284400-6615.jpg",
   },
   "Eco Vogue": {
     start: "1:00 PM",
     end: "3:00 PM",
-    location: "Main Building Quadrangle",
+    location: "Main Quad",
     category: "HAUTE ROUTE",
     day: "Jan 30",
-    teamSize: "3 (1 model + 2 designers)",
+    teamSize: "3",
     Participation: "1 team per class",
     imageUrl:
       "https://img.freepik.com/premium-photo/young-woman-poses-dress-made-from-plastic-bottles_14117-1057472.jpg",
@@ -182,61 +182,61 @@ const event_details = {
     category: "WORDSMITH’S CORNER",
     day: "Jan 29",
     teamSize: 1,
-    Participation: "1 team from each class", 
+    Participation: "1 team from per class", 
     imageUrl:
       "https://t3.ftcdn.net/jpg/07/28/02/58/360_F_728025858_THUOpi99IgFjoDdXqFHryVK2u3oMhTbi.jpg",
   },
   "Lights, Quiz, Action!": {
     start: "2:00 PM",
     end: "4:00 PM",
-    location: "KB Joshi Audi",
+    location: "KB Joshi",
     category: "WORDSMITH’S CORNER",
     day: "Jan 31",
     teamSize: 5,
-    Participation: "1 team from each class",
+    Participation: "1 team per class",
     imageUrl:
       "https://t4.ftcdn.net/jpg/06/88/97/09/360_F_688970981_LQ6pXYzZIRyXhpXA44dCUNDt4bjp1bmV.jpg",
   },
   "Spellbound": {
     start: "12:30 PM",
     end: "2:30 PM",
-    location: "KB Joshi Audi",
+    location: "KB Joshi",
     category: "WORDSMITH’S CORNER",
     day: "Jan 29",
-    teamSize: "2-3 members",
+    teamSize: "2-3",
     Participation: "1 team per class",
     imageUrl:
       "https://img.freepik.com/premium-photo/colorful-3d-letters-scattered-across-vibrant-background-create-playful-atmosphere_93995-69745.jpg",
   },
-  "Mic in the Open": {
+  "Mic In The Open": {
     start: "3:00 PM",
     end: "5:00 PM",
     location: "Stage 2",
     category: "WORDSMITH’S CORNER",
     day: "Jan 31",
     teamSize: 1,
-    Participation: "1 participant per class",
+    Participation: "1 student per class",
     imageUrl:
       "https://media.istockphoto.com/id/1819867493/vector/theater-stage-for-stand-up-show-scene-of-comedy-club-with-microphone-and-curtains.jpg?s=612x612&w=0&k=20&c=67qtxf9Oq3EMEx8doHpK7RNVH-i0zMKa0hm5YaUkEVw=",
   },
   "Taste Wars": {
     start: "10:00 AM",
     end: "2:00 PM",
-    location: "Between Main & IT Building",
-    category: "WORDSMITH’S CORNER",
+    location: "Between Main & IT Bldg",
+    category: "SAVOURY SYMPHONY",
     day: "Jan 31",
-    teamSize: "2 (minimum) / 4 (maximum)",
+    teamSize: "2-4",
     Participation: "1 team per class",
     imageUrl:
       "https://img.freepik.com/premium-photo/woman-chefs-hat-preparing-food-vibrant-kitchen_1282444-125893.jpg",
   },
-  "Kicks and Dyes Showdown": {
+  "Kicks & Dyes Showdown": {
     start: "12:30 PM",
     end: "2:30 PM",
-    location: "Instru Quadrangle",
+    location: "Instru Quad",
     category: "ARTISCOPE",
     day: "Jan 29",
-    teamSize: "1 or 2",
+    teamSize: "1-2",
     Participation: "1 team per class",
     imageUrl:
       "https://img.freepik.com/premium-photo/colorful-abstract-design-tshirt_885831-204800.jpg?w=360",
@@ -247,7 +247,7 @@ const event_details = {
     location: "Mech Circle",
     category: "ARTISCOPE",
     day: "Jan 29",
-    teamSize: "1 (Self- artist)/ 2 (1 artist + 1 model)",
+    teamSize: "1-2",
     Participation: "1 team per class",
     imageUrl:
       "https://img.freepik.com/premium-photo/henna-mehndi-diwali-background_1278458-10458.jpg",
@@ -259,14 +259,14 @@ const event_details = {
     category: "ARTISCOPE",
     day: "Feb 1",
     teamSize: "1-2",
-    Participation: "-",
+    Participation: "1 team per class",
     imageUrl:
       "https://www.causeartist.com/content/images/wp-content/uploads/2020/09/jason-mercier-artactivist-collages-celebrities-waste.jpg",
   },
   "Art-a-thon": {
     start: "2:30 PM",
     end: "4:30 PM",
-    location: "Between Main & IT Building",
+    location: "Between Main & IT Bldg",
     category: "ARTISCOPE",
     day: "Jan 31",
     teamSize: "3",
@@ -277,10 +277,10 @@ const event_details = {
   "Sketch Sphere": {
     start: "12:30 PM",
     end: "2:00 PM",
-    location: "Between Main & IT Building",
+    location: "Between Main & IT Bldg",
     category: "ARTISCOPE",
     day: "Jan 29",
-    teamSize: "Individual",
+    teamSize: "1",
     Participation: "1 student per class",
     imageUrl:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTleWGBIC5UaO2WGwILJCA3g0k6qsXRiWzD5A&s",
@@ -288,21 +288,21 @@ const event_details = {
   "Doodle Express": {
     start: "12:30 PM",
     end: "2:00 PM",
-    location: "Between Main & IT Building",
+    location: "Between Main & IT Bldg",
     category: "ARTISCOPE",
     day: "Jan 30",
-    teamSize: "Individual",
+    teamSize: "1",
     Participation: "1 student per class",
     imageUrl:
       "https://i.pinimg.com/originals/ea/f5/e0/eaf5e00b723dfccf338d1500b1563b8a.jpg",
   },
-  "Faces in focus": {
+  "Faces In Focus": {
     start: "10:00 AM",
     end: "12:00 PM",
-    location: "Between Main & IT Building",
+    location: "Between Main & IT Bldg",
     category: "ARTISCOPE",
     day: "Jan 30",
-    teamSize: "Individual",
+    teamSize: "1",
     Participation: "1 student per class",
     imageUrl:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP-YwgsqrXbo6If9EgOH7olOylZMrA3hWnjt3IGZswTWDl3JvFsi1ZRQLX14enr9RXoX8&usqp=CAU",
@@ -310,10 +310,10 @@ const event_details = {
   "Color Combat": {
     start: "2:30 PM",
     end: "4:30 PM",
-    location: "Between Main & IT Building",
+    location: "Between Main & IT Bldg",
     category: "ARTISCOPE",
     day: "Jan 29",
-    teamSize: "Individual",
+    teamSize: "1",
     Participation: "1 student per class",
     imageUrl:
       "https://cdn.shopify.com/s/files/1/0625/3818/6989/files/2_5acf9bab-5dd3-4e04-b42c-d4985ccda17b.jpg?v=1676615530",
@@ -324,29 +324,29 @@ const event_details = {
     location: "Instru Garden/Mech Circle",
     category: "ARTISCOPE",
     day: "Jan 31",
-    teamSize: "2 (1 makeup artist and 1 model)",
+    teamSize: "2",
     Participation: "1 team per class",
     imageUrl:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb6zP4dizUOrzwqrIf0-d1JCfv64mJUAKDXQ&s",
+      "https://img.freepik.com/premium-photo/woman-with-glitter-her-face_118124-201219.jpg",
   },
   "Rangoli-the-vibes": {
     start: "12:00 PM",
     end: "3:00 PM",
-    location: "Between Main & IT Building",
+    location: "Between Main & IT Bldg",
     category: "ARTISCOPE",
     day: "Feb 1",
-    teamSize: "2 (1 makeup artist and 1 model)",
-    Participation: "2 team per class",
+    teamSize: "2",
+    Participation: "1 team per class",
     imageUrl:
-      "https://i.ytimg.com/vi/hiCUwAba7jM/maxresdefault.jpg",
+      "https://img.freepik.com/premium-photo/flower-rangoli-diwali-pongal-made-using-marigold-zendu-flowers-ai-generated_852336-18750.jpg",
   },
   "The Drama Premiere League": {
     start: "1:00 PM",
     end: "4:30 PM",
-    location: "Main Building Quadrangle",
+    location: "Main Quad",
     category: "THEATRICAL TAPESTRY",
     day: "Feb 1",
-    teamSize: "5 (minimum)/ 10 (maximum) + 3 volunteers (if needed)",
+    teamSize: "8-13",
     Participation: "20 teams (FCFS)",
     imageUrl:
       "https://img.freepik.com/free-photo/smiling-female-mime-artist-looking-male-mime-artist-peeking-from-curtain_23-2147891614.jpg?t=st=1736355391~exp=1736358991~hmac=ec4c063f23551df45c258cfe81eb7be1375166e53580f9e7644c7eb911910cb0&w=900",
@@ -357,12 +357,12 @@ const event_details = {
     location: "Stage 2",
     category: "THEATRICAL TAPESTRY",
     day: "Feb 1",
-    teamSize: "8-20 (Including all music accompanists)",
+    teamSize: "8-20",
     Participation: "-",
     imageUrl:
-      "https://media.istockphoto.com/id/937674774/vector/abstract-modern-music-poster-template.jpg?s=612x612&w=0&k=20&c=8WTeLpUCJRWadbiQ_9cVSfjSa2x-CVOSG5M5FbYmJ9w=",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnZBdkv7LRq1Q0jsTs2Sz3karz8_TvpYHZlTwJEefntYq_mem1p8_r70ds1jDCIc4e4_o&usqp=CAU",
   },
-  "DJEMBE": {
+  "Djembe": {
     start: "12:00 PM",
     end: "2:00 PM",
     location: "Stage 2",
@@ -371,34 +371,34 @@ const event_details = {
     teamSize: "-",
     Participation: "-",
     imageUrl:
-      "https://img.freepik.com/premium-photo/drummer-hands-playing-ethnic-djembe-drum_829566-588.jpg?w=360",
+      "https://static.vecteezy.com/system/resources/thumbnails/036/050/173/small/ai-generated-colorful-bongo-drums-on-a-table-photo.jpg",
   },
-  "UKULELE": {
-    start: "(Day1) 12:30 PM,(Day2) 10:00 AM",
-    end: "4:30 PM, 2:00 PM",
-    location: "IT Building",
+  "Ukulele Unplugged": {
+    start: "(Day1) 12:30 PM - 4:30 PM",
+    end: "(Day2) 10:00 AM - 2:00 PM",
+    location: "IT Bulg",
     category: "SKILL LAB",
     day: "Jan 30, Jan 31",
     teamSize: "-",
     Participation: "-",
     imageUrl:
-      "https://assets.yousician.com/app/uploads/2022/08/05145549/yousician-educational-photography-13-1024x683.jpg",
+      "https://img.freepik.com/premium-vector/abstract-playing-guitar-colorful-watercolor-painting-background_1278344-3645.jpg",
   },
-  "TEXTURE MOON": {
+  "Texture Moon Painting": {
     start: "12:30 PM",
     end: "2:30 PM",
-    location: "Mech Building",
+    location: "Mech Bldg",
     category: "SKILL LAB",
     day: "Jan 30",
     teamSize: "-",
     Participation: "-",
     imageUrl:
-      "https://media.istockphoto.com/id/937674774/vector/abstract-modern-music-poster-template.jpg?s=612x612&w=0&k=20&c=8WTeLpUCJRWadbiQ_9cVSfjSa2x-CVOSG5M5FbYmJ9w=",
+      "https://img.freepik.com/premium-photo/mystical-encounter-saturn-s-moon-mimas-impasto-reverie_983420-184246.jpg",
   },
-  "ARTFLUID": {
+  "Fluid Art Frenzy": {
     start: "12:00 PM",
     end: "2:00 PM",
-    location: "Mech Building",
+    location: "Mech Bldg",
     category: "SKILL LAB",
     day: "Jan 31",
     teamSize: "-",
@@ -406,10 +406,10 @@ const event_details = {
     imageUrl:
       "https://u.bluet.hm/s/h/thumbnail/295/852/eyJpZCI6InVwbG9hZHMvbGlzdGluZy8zMTQxMzQvcGF1bC1tb29yZS1saXN0aW5nLWJsdWV0aHVtYi0yNDNkLmpwZyIsInN0b3JhZ2UiOiJzdG9yZSIsIm1ldGFkYXRhIjp7ImZpbGVuYW1lIjoicGF1bC1tb29yZS1saXN0aW5nLWJsdWV0aHVtYi0yNDNkLmpwZyIsIm1pbWVfdHlwZSI6bnVsbH19?signature=b2e2ed7dfbfc9baa2fa85b51aecc62777f42268b5e461edbc186d35c53e7860f",
   },
-  "PUNCH NEEDLE": {
+  "Punch Needle": {
     start: "12:00 PM",
     end: "2:00 PM",
-    location: "Instru Quadrangle",
+    location: "Instru Quad",
     category: "SKILL LAB",
     day: "Feb 1",
     teamSize: "-",
@@ -434,23 +434,34 @@ const event_details = {
     location: "Online",
     category: "THE DIGITAL STAGE",
     day: "",
-    teamSize: "Individual Participation",
-    Participation: "1 team per class",
+    teamSize: "1",
+    Participation: "1 student per class",
     imageUrl:
       "https://static.wixstatic.com/media/95dc62_f6350456601847699660ed55b26c6463~mv2.jpg/v1/fit/w_2500,h_1330,al_c/95dc62_f6350456601847699660ed55b26c6463~mv2.jpg",
   },
-  "Dodgeball in circle": {
+  "Octopus Race": {
+    start: "8:00 AM",
+    end: "10:00 AM",
+    location: "Samstha Ground",
+    category: "JOYLAND",
+    day: "Jan 30",
+    teamSize: "4",
+    Participation: "1 team per class",
+    imageUrl:
+      "https://www.shutterstock.com/image-photo/red-octopus-260nw-2449167195.jpg",
+  },
+  "Dodgeball In Circle": {
     start: "10:00 AM",
     end: "11:00 AM",
     location: "Samstha Ground",
     category: "JOYLAND",
     day: "Jan 31",
     teamSize: "1",
-    Participation: "1 team per class",
+    Participation: "1 student per class",
     imageUrl:
-      "https://media.istockphoto.com/id/937674774/vector/abstract-modern-music-poster-template.jpg?s=612x612&w=0&k=20&c=8WTeLpUCJRWadbiQ_9cVSfjSa2x-CVOSG5M5FbYmJ9w=",
+      "https://img.freepik.com/premium-photo/dodgeball-game-progress-with-players-dodging-throwing-balls_1314467-116358.jpg",
   },
-  "Up down race": {
+  "Up Down Race": {
     start: "8:00 AM",
     end: "10:00 AM",
     location: "Samstha Ground",
@@ -459,18 +470,18 @@ const event_details = {
     teamSize: "4",
     Participation: "1 team per class",
     imageUrl:
-      "https://media.istockphoto.com/id/937674774/vector/abstract-modern-music-poster-template.jpg?s=612x612&w=0&k=20&c=8WTeLpUCJRWadbiQ_9cVSfjSa2x-CVOSG5M5FbYmJ9w=",
+      "https://img.freepik.com/premium-vector/girls-running-race-marathon-cart-event-outdoors_1316704-14111.jpg",
   },
-  "Cone rush": {
+  "Cone Rush": {
     start: "10:00 AM",
     end: "11:00 AM",
     location: "Samstha Ground",
     category: "JOYLAND",
     day: "Jan 30",
-    teamSize: "Individual",
-    Participation: "1 team per class",
+    teamSize: "1",
+    Participation: "1 student per class",
     imageUrl:
-      "https://media.istockphoto.com/id/937674774/vector/abstract-modern-music-poster-template.jpg?s=612x612&w=0&k=20&c=8WTeLpUCJRWadbiQ_9cVSfjSa2x-CVOSG5M5FbYmJ9w=",
+      "https://img.freepik.com/premium-photo/group-colorful-cones_1308175-208949.jpg",
   },
   
 };
