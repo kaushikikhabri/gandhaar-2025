@@ -1,17 +1,22 @@
 import React, { useState } from "react";
-import orangeStickyNote from "../theme_images/orangeStickyNote.jpg";
-import craft from "../theme_images/craft.webp";
+// import orangeStickyNote from "../theme_images/orangeStickyNote.jpg";
+// import craft from "../theme_images/craft.webp";
 import "../style/CulturalFestMindMap.css";
-import Bandhani from "../theme_images/banaras.jpg";
-import Bantai from "../theme_images/tapori.jpg";
-import Candy from "../theme_images/Candy_1.jpeg";
-import old_money from "../theme_images/old_money.jpg";
-
+//import Bandhani from "../theme_images/banaras.jpg";
+import Bantai from "../theme_images/tapori_2.jpeg";
+// import Candy from "../theme_images/Candy_1.jpeg";
+import old_money from "../theme_images/old_money_2.jpeg";
+import Day_1 from "../images/Day_1_1.jpeg";
+import Day_2 from "../images/Day_2.jpeg";
+import Day_3 from "../images/Day_3.jpeg";
+import Day_4 from "../images/Day_4.jpeg";
+import Candy from "../theme_images/candy_2.jpeg";
+import Bandhani from "../theme_images/Indian_craft.jpeg";
 const themes = [
   {
     id: 1,
     name: "Indian Craft Couture",
-    img: craft, // Image for the pin
+    img: Day_1, // Image for the pin
     polaroidImg: Bandhani, // Image for the Polaroid
     description:
       "Outfits that represent the work of Indian artisans. This includes embroideries like Chikankari, Kantha , Gota work, or Prints like Bandhani, Block Prints, Ikkat, Brocade, Lehariya etc",
@@ -21,7 +26,7 @@ const themes = [
   {
     id: 2,
     name: "Bantai Banters",
-    img: orangeStickyNote, // Image for the pin
+    img: Day_2, // Image for the pin
     polaroidImg: Bantai, // Image for the Polaroid
     description:
       "Loud, over the top outfits inspired by Tapori characters/ villains. Use Bright tops covered by knotted shirts, Funky Sunglasses, Chunky chains, scarves, bandana to complete the look.",
@@ -31,7 +36,7 @@ const themes = [
   {
     id: 3,
     name: "Sweetopia",
-    img: orangeStickyNote, // Image for the pin
+    img: Day_3, // Image for the pin
     polaroidImg: Candy, // Image for the Polaroid
     description: "Dress up as your favourite Candy/ Chocolate.",
     top: "55%",
@@ -40,7 +45,7 @@ const themes = [
   {
     id: 4,
     name: "Old Money",
-    img: orangeStickyNote, // Image for the pin
+    img: Day_4, // Image for the pin
     polaroidImg: old_money, // Image for the Polaroid
     description:
       "It is all about elegant, timeless styles that look classy and expensive (not flashy) Tailored outfits, use of neutral colour clothing, pearls, Blazers, minimalistics but statement jewellery",
