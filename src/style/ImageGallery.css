@@ -1,55 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Almendra+SC&family=Delius&family=Galada&family=Honk&family=Imperial+Script&family=Kaushan+Script&family=Lavishly+Yours&family=Modak&family=Mogra&family=Niconne&family=Pattaya&family=Pirata+One&family=Rouge+Script&family=Rubik+Gemstones&family=Satisfy&family=Updock&family=Yesteryear&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
-@import url("https://db.onlinewebfonts.com/c/7e96eba370659b4e4563309dc4ebb33f?family=Samarkan+Normal+V2");
+@import url("https://fonts.googleapis.com/css2?family=Almendra+SC&family=Delius&family=Galada&family=Honk&family=Imperial+Script&family=Kaushan+Script&family=Lavishly+Yours&family=Modak&family=Mogra&family=Niconne&family=Pattaya&family=Pirata+One&family=Rouge+Script&family=Rubik+Gemstones&family=Satisfy&family=Updock&family=Yesteryear&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
 
-.gallery{
-    background: 
-    linear-gradient(to top, rgb(83, 13, 188), #669eff 100%), 
+.gallery {
+  background: linear-gradient(to top, rgb(83, 13, 188), #669eff 100%),
     url("/src/images/bg9.png");
 }
 
- .gallery-container {
+.gallery-container {
   width: 100%;
   height: auto;
   overflow: hidden;
   position: relative;
   display: flex;
+  background-image: url("/src/images/bg9.png");
 
-  /* Set the gradient as a background layer below the image */
-
-
-    background-image:  
-    url("/src/images/bg9.png");
-  
-  
-  
   background-repeat: no-repeat;
-  background-size: cover; /* Makes both the gradient and image cover the container */
-  background-position: center; /* Centers the image and gradient */
-  background-blend-mode: overlay; /* Blend the gradient and image together */
+  background-size: cover;  
+  background-position: center;  
+  background-blend-mode: overlay;  
   padding-top: 100px;
 }
 
 .gallery-title {
   margin-top: 0px;
-  font-size: 110px;
-  margin-bottom: 10px; /* Adds space below the heading */
+  font-size: 70px;
+  margin-bottom: 10px;  
   text-align: center;
-  /* color: white !important; */
-  color: black !important;
-  /* font-family: "Almendra SC", serif; */
-  /* font-family: "Mogra", system-ui; */
-  /* font-family: "Lobster", cursive; */
-  /* font-family: "Rubik Vinyl", cursive; */
-  /* font-family: "Sumarkan", sans-serif; */
-  /* font-family: "Noto Sans Newa", sans-serif; */
-  font-family: "Samarkan Normal V2", sans-serif;
-  /* font-family: "Cairo", sans-serif; */
-  font-weight: 600;
+  color: white !important;
+  font-family: "Mogra", system-ui;
+  font-weight: 400;
   font-style: normal;
-  /* font-family: 'Cinzel', serif; */
 }
-
 
 .image-grid {
   display: inline-flex;
@@ -74,24 +55,22 @@
 }
 
 .image-item {
-  width: auto;  
-  height: auto;  
+  width: auto;
+  height: auto;
   margin-top: 100px;
   margin-bottom: 100px;
   display: block;
 }
 
-
 .image-item img {
   width: 100%;
   height: 100%;
-  object-fit: cover;  
+  object-fit: cover;
   display: block;
   border: 9px solid rgb(0, 0, 0);
   cursor: pointer;
 }
 
-/* Set individual widths for each image item and adjust height to maintain the aspect ratio (231:285) */
 .image-item:nth-child(1) {
   margin-left: 300px;
   padding-top: 0px;
@@ -130,13 +109,7 @@
   height: calc(98 / 231 * 285px);
 }
 
- 
-
 .image-item:nth-child(7) {
-  /* margin-top: 340px;
-  width: 98px;
-  height: calc(98 / 231 * 285px); */
-
   margin-top: 218px;
   width: 98px;
   height: calc(98 / 231 * 285px);
@@ -161,19 +134,12 @@
 }
 
 .image-item:nth-child(11) {
-  /* margin-top: 218px;
-  width: 98px;
-  height: calc(98 / 231 * 285px); */
-
   padding-top: 0px;
   width: 196px;
   height: calc(196 / 231 * 285px);
 }
 
 .image-item:nth-child(12) {
-  /* width: 98px;
-  height: calc(98 / 231 * 285px); */
-
   margin-top: 340px;
   width: 98px;
   height: calc(98 / 231 * 285px);
@@ -197,10 +163,6 @@
 }
 
 .image-item:nth-child(16) {
-  /* margin-top: 218px;
-  width: 98px;
-  height: calc(98 / 231 * 285px); */
-
   margin-top: 218px;
   width: 196px;
   height: calc(196 / 231 * 285px);
@@ -219,10 +181,6 @@
 }
 
 .image-item:nth-child(19) {
-  /* margin-top: 218px;
-  width: 196px;
-  height: calc(196 / 231 * 285px); */
-
   padding-top: 0px;
   width: 196px;
   height: calc(196 / 231 * 285px);
@@ -235,10 +193,6 @@
 }
 
 .image-item:nth-child(21) {
-  /* margin-top: 218px;
-  width: 98px;
-  height: calc(98 / 231 * 285px); */
-
   padding-top: 0px;
   width: 196px;
   height: calc(196 / 231 * 285px);
@@ -262,10 +216,6 @@
 }
 
 .image-item:nth-child(25) {
-  /* margin-top: 218px;
-  width: 98px;
-  height: calc(98 / 231 * 285px); */
-
   margin-top: 218px;
   width: 196px;
   height: calc(196 / 231 * 285px);
@@ -309,10 +259,6 @@
 }
 
 .image-item:nth-child(32) {
-  /* margin-top: 340px;
-  width: 98px;
-  height: calc(98 / 231 * 285px); */
-
   padding-top: 0px;
   width: 196px;
   height: calc(196 / 231 * 285px);
@@ -336,7 +282,6 @@
   height: calc(98 / 231 * 285px);
 }
 
-
 .image-item:nth-child(36) {
   margin-top: 218px;
   width: 98px;
@@ -354,7 +299,7 @@
   width: 196px;
   height: calc(196 / 231 * 285px);
 }
- 
+
 .image-modal {
   position: fixed;
   top: 0;
@@ -367,7 +312,7 @@
   align-items: center;
   z-index: 10;
 }
- 
+
 .modal-content {
   position: relative;
   border-radius: 10px;
@@ -379,7 +324,7 @@
   max-width: 100%;
   max-height: 80vh;
 }
-/* Arrows styling */
+ 
 .arrow {
   position: absolute;
   top: 50%;
@@ -397,7 +342,7 @@
   right: 10px;
 }
 
-/* Close button styling */
+ 
 .close {
   position: absolute;
   top: 10px;
@@ -416,22 +361,21 @@
 
 @media (max-width: 1024px) {
   .image-item {
-    flex: 1 1 calc(50% - 20px); /* Adjust to 2 columns */
-    max-width: calc(50% - 20px); /* Ensure spacing is maintained */
+    flex: 1 1 calc(50% - 20px);  
+    max-width: calc(50% - 20px);  
   }
 
   .modal-content {
     position: relative;
     border-radius: 10px;
     text-align: center;
-    max-width: 90%; /* Adjust modal width for tablets/smaller screens */
+    max-width: 90%;  
   }
 }
 
-
 @media (max-width: 768px) {
   .image-item {
-    flex: 1 1 calc(50% - 20px); /* Adjust to 2 columns on tablets */
+    flex: 1 1 calc(50% - 20px); 
     max-width: calc(50% - 20px);
   }
 
@@ -441,12 +385,11 @@
     text-align: center;
     max-width: 90%;
   }
-  
 }
 
 @media (max-width: 480px) {
   .image-item {
-    flex: 1 1 100%; /* Full width for small screens */
+    flex: 1 1 100%;  
     max-width: 100%;
   }
 
@@ -456,9 +399,4 @@
     text-align: center;
     max-width: 95%;
   }
-
-  .gallery-title{
-    font-size: 60px;
-    font-weight: 900px;
-  }
-} 
+}
