@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../style/Home.css";
-import Launch from "./Launch";
+// import Launch from "./Launch";
 import Header from "./Header";
 import Navigation from "./Navigation";
 import Countdown from "./Countdown";
@@ -22,6 +22,7 @@ import DevTeam from "./DevTeam";
 import AboutUs from "./AboutUs";
 import Launchpage from "./Srushti";
 
+
 function Home() {
   const targetDate = "2025-01-30T23:59:59";
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -31,6 +32,7 @@ function Home() {
   };
   return (
     <div>
+      <Srushti />
       <div id="home">
         {" "}
         <Header toggleDrawer={toggleDrawer} />
