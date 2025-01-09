@@ -48,6 +48,7 @@ html, body {
     /* font-family: "Abril Fatface", serif; */
     font-family: "Times New Roman", serif;
     letter-spacing: 2px;
+    z-index: 999;
 
 }
 
@@ -56,7 +57,10 @@ html, body {
     /* font-family: "Rubik Dirt", sans-serif; */
     /* font-family: "Rubik Mono One", serif; */
     font-family: "Arial Black", sans-serif;
+    font-size: 90px;
     right: -10%;
+    z-index: 999;
+
 }
 
 .item.chart-pop .content {
@@ -64,6 +68,8 @@ html, body {
     /* font-family: 'Impact', sans-serif; */
     font-family: "Impact", sans-serif;
     letter-spacing: 2px;
+    z-index: 999;
+
 }
 
 .item.allankar-allure .content {
@@ -73,6 +79,8 @@ html, body {
     font-size: 70px;
     font-style: italic;
     align-items: center;
+    z-index: 999;
+
 }
 
 
@@ -516,6 +524,21 @@ z-index: 2;
     .item.allankar-allure .content {
       font-size: 4rem;
     }
+
+    .item.streetbeat .content {
+        font-size: 4rem;
+  
+  
+      }
+      .item.chart-pop .content {
+  
+  
+        font-size: 4rem;
+  
+      }
+
+
+
   }
   
   @media (max-width: 992px) {
@@ -526,6 +549,21 @@ z-index: 2;
     .item.allankar-allure .content {
       font-size: 3.5rem;
     }
+
+    .item.streetbeat .content {
+        font-size: 3.5rem;
+  
+  
+      }
+      .item.chart-pop .content {
+  
+  
+        font-size: 3.5rem;
+  
+      }
+
+
+    
   }
   
   @media (max-width: 768px) {
@@ -536,6 +574,20 @@ z-index: 2;
     .item.allankar-allure .content {
       font-size: 3rem;
     }
+
+    .item.streetbeat .content {
+        font-size: 3rem;
+  
+  
+      }
+      .item.chart-pop .content {
+  
+  
+        font-size: 3rem;
+  
+      }
+
+  
   }
   
   @media (max-width: 576px) {
@@ -546,6 +598,21 @@ z-index: 2;
     .item.allankar-allure .content {
       font-size: 2rem;
     }
+
+
+    .item.streetbeat .content {
+        font-size: 2rem;
+  
+  
+      }
+      .item.chart-pop .content {
+  
+  
+        font-size: 2rem;
+  
+      }
+
+  
   }
   
   @media (max-width: 400px) {
@@ -556,4 +623,18 @@ z-index: 2;
     .item.allankar-allure .content {
       font-size: 1.5rem;
     }
+
+    .item.streetbeat .content {
+      font-size: 1.5rem;
+
+
+    }
+    .item.chart-pop .content {
+
+
+      font-size: 1.5rem;
+
+    }
+
+   
   }
