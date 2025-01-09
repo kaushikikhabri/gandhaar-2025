@@ -86,7 +86,7 @@ const EventDetails = () => {
           <div>
             <h4>Day</h4>
             <div>
-              {["All", "Feb 1", "Feb 2", "Feb 3", "Feb 4"].map((day) => (
+              {["All", "Jan 29", "Jan 30", "Jan 31", "Feb 1"].map((day) => (
                 <div key={day}>
                   <input
                     type="checkbox"
@@ -109,13 +109,18 @@ const EventDetails = () => {
             <div>
               {[
                 "All",
-                "Main Bldg Quadrangle",
+                "Main Quad",
                 "Stage 2",
-                "Between Main & IT Building",
+                "Between Main & IT Bldg",
                 "Mech Circle",
-                "Instru Audi",
-                "KB Joshi Hall",
-                "Samastha Ground",
+                "Instru Quad",
+                "KB Joshi",
+                "Samstha Ground",
+                "IT/Mech Bldg",
+                "Whole Campus",
+                "Instru Garden/Mech Circle",
+                "IT Bulg",
+                "Online",
               ].map((location) => (
                 <div key={location}>
                   <input
@@ -140,13 +145,16 @@ const EventDetails = () => {
               {[
                 "All",
                 "Groove Arena",
-                "JamSphere",
+                "Jamsphere",
                 "Gathering Hub",
+                "Wordsmith’s Corner",
                 "Haute Route",
                 "Savory Symphony",
-                "ArtiScope",
+                "Artiscope",
                 "Theatrical Tapestry",
                 "Skill Lab",
+                "The Digital Stage",
+                "Joyland",
               ].map((category) => (
                 <div key={category}>
                   <input
@@ -203,6 +211,10 @@ const EventDetails = () => {
                       <GroupsIcon style={{ marginRight: "5px" }} />
                       {`Team Size: ${event.teamSize}`}
                     </div>
+                    <div className="event-tag">
+                      <GroupsIcon style={{ marginRight: "5px" }} />
+                      {`Participation: ${event.Participation}`}
+                    </div>
                   </div>
                   {/* <button className="event-register-button">
                     View Event Details{" "}
@@ -247,7 +259,7 @@ const EventDetails = () => {
               {/* Common Drawer Content */}
               <div className="drawer-content">
                 {drawerOpen === "day" &&
-                  ["All", "Feb 1", "Feb 2", "Feb 3", "Feb 4"].map((day) => (
+                  ["All", "Jan 29", "Jan 30", "Jan 31", "Feb 1"].map((day) => (
                     <div key={day}>
                       <input
                         type="checkbox"
@@ -265,13 +277,18 @@ const EventDetails = () => {
                 {drawerOpen === "location" &&
                   [
                     "All",
-                    "Main Bldg Quadrangle",
+                    "Main Quad",
                     "Stage 2",
-                    "Between Main & IT Building",
+                    "Between Main & IT Bldg",
                     "Mech Circle",
-                    "Instru Audi",
-                    "KB Joshi Hall",
+                    "Instru Quad",
+                    "KB Joshi",
                     "Samstha Ground",
+                    "IT/Mech Bldg",
+                    "Whole Campus",
+                    "Instru Garden/Mech Circle",
+                    "IT Bulg",
+                    "Online",
                   ].map((location) => (
                     <div key={location}>
                       <input
@@ -291,20 +308,26 @@ const EventDetails = () => {
                   [
                     "All",
                     "Groove Arena",
-                    "JamSphere",
+                    "Jamsphere",
                     "Gathering Hub",
+                    "Wordsmith’s Corner",
                     "Haute Route",
                     "Savory Symphony",
-                    "ArtiScope",
+                    "Artiscope",
                     "Theatrical Tapestry",
                     "Skill Lab",
+                    "The Digital Stage",
+                    "Joyland",
                   ].map((category) => (
                     <div key={category}>
                       <input
                         type="checkbox"
-                        checked={filters.category === category}
+                        checked={
+                          filters.category.toUpperCase() ===
+                          category.toUpperCase()
+                        }
                         onChange={() =>
-                          category === "All"
+                          category.toUpperCase() === "all"
                             ? handleFilterChange("category", category)
                             : handleSpecificFilterChange("category", category)
                         }
