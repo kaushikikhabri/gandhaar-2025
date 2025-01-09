@@ -13,7 +13,6 @@ import streetbeats from "../images/streetbeats.webp";
 import chartpopers from "../images/chartpopers.webp";
 import allankarallure from "../images/raagreverie.webp";
 // In your index.js or App.js file
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 function PreGandhaarThemes() {
   const [activeIndex, setActiveIndex] = useState(0);
