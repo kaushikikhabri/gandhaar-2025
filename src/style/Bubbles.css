@@ -7,7 +7,7 @@
   width: 80%; /* Occupy the remaining 80% */
   height: 100%; /* Full height */
   overflow: hidden;
-  z-index: 1; /* Ensure it stays on top */
+  z-index: -1; /* Ensure it stays on top */
 }
 
 
