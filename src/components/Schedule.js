@@ -85,7 +85,7 @@ const daySchedules = {
       end: "2:30 PM",
       background: "linear-gradient(to right, #ff416c, #ff4b2b)",
       location: "KB JOSHI HALL",
-      href: event_details["Kicks & Dyes Showdown"].detailsUrl,
+      href: event_details["Spellbound"].detailsUrl,
     },
     {
       id: 7,

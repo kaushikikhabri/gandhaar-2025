@@ -1,6 +1,6 @@
 import React from "react";
+import { Link, useNavigate } from "react-router-dom";
 import "../style/All-Events.css"; // Import the CSS file for styles
-
 // Header Component
 const Header = ({ title, subtitle, image }) => (
   <header className="event-header">
@@ -63,6 +63,11 @@ const RulesBox = ({ title, rules }) => (
 
 // EventPage Component
 const EventPage = ({ event }) => {
+  const navigate = useNavigate();
+
+  const handleRegisterClick = () => {
+    navigate("/registration");
+  };
   const { title, subtitle, image, details, structure, rules, contacts } = event;
 
   // Contact Information
@@ -91,9 +96,11 @@ const EventPage = ({ event }) => {
       {/* Pass the image */}
       <div className="container">
         <div className="left">
-          <button className="custom-btn btn-14">
-            <span>REGISTER</span>
-          </button>
+          <Link to={event.registerLink}>
+            <button className="custom-btn btn-14">
+              <span>REGISTER</span>
+            </button>
+          </Link>
 
           <Box title="Event Structure" content={eventStructureContent} />
           <Box title="Event Details" content={details} />

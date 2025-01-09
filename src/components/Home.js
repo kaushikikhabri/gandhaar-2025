@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../style/Home.css";
+// import Launch from "./Launch";
 import Header from "./Header";
 import Navigation from "./Navigation";
 import Countdown from "./Countdown";
@@ -52,10 +53,10 @@ function Home() {
       </div>
       {/* <CulturalFestMindMap /> */}
       <div id="themes">
-        <PreGandhaarThemes />
+        <GandhaarThemes />
       </div>
       {/* <Events /> */}
-      <div>
+      <div id="events">
         <EventSource />
       </div>
 
@@ -68,13 +69,26 @@ function Home() {
         <StarLineUp />
       </div>
       {/* <EventCard /> */}
-      <Schedule />
-      <AboutUs />
-      <ImageGallery />
-      <Team />
+      <div id="schedule">
+        <Schedule />
+      </div>
+
+      <div id="about-us">
+        <AboutUs />
+      </div>
+
+      <div id="gallery">
+        <ImageGallery />
+      </div>
+
+      <div id="team">
+        <Team />
+        <DevTeam />
+      </div>
+
       {/* <FireFooter /> */}
       {/* <Footer /> */}
-      <DevTeam />
+
       <Footer />
     </div>
   );

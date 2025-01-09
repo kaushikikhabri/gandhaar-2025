@@ -25,6 +25,7 @@ function App() {
           <Route path="/videolaunch" element={<VideoLaunch />} />
           {/* Dynamic route for AllEvents, passing eventKey */}
           <Route path="/event/:eventKey" element={<AllEvents />} />
+          <Route path="/registration" element={<RegistrationPage />} />
           {/* Use eventKey to identify the event */}
           //{" "}
           <Route

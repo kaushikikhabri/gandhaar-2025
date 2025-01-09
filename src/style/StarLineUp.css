@@ -574,7 +574,7 @@
   
   .star-lineup-container h2 {
     font-family: 'Satisfy', cursive;
-    font-size: 64px;
+    font-size: 80px;
     text-align: center;
     color: #FFCC00;
     text-shadow: 
@@ -582,6 +582,7 @@
       0 0 10px rgba(255, 111, 0, 0.8),
       0 0 20px rgba(255, 179, 0, 0.7);
     background: linear-gradient(90deg, #FFCC00, #FFEB3B, #FF6F00, #000000, #FFB300);
+    background: #FFCC00;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
