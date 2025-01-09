@@ -8,6 +8,7 @@ const event_details = {
     teamSize: 19,
     imageUrl:
       "https://media.istockphoto.com/id/1257938447/vector/musical-summer-dance-festival-vector-illustration-of-musicians-dancers-disco-dancing-people.jpg?s=1024x1024&w=is&k=20&c=xmrxYB18DSyXYtqkwEXA6U1je0eKQRt6VOU3D9SGNQg=",
+    detailsUrl : "http://localhost:3000/event/btechfashionshow",  
   },
   soloSynergy: {
     start: "11:00 AM",

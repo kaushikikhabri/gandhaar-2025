@@ -207,6 +207,7 @@ const EventDetails = () => {
                   <button className="event-register-button">
                     View Event Details{" "}
                     <LaunchIcon style={{ marginLeft: "5px" }} />
+                    <a href={event.detailsUrl}></a>
                   </button>
                 </div>
               ))}
