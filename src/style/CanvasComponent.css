@@ -1,3 +1,5 @@
+
+
 #canvas-container {
    display: flex;
    justify-content: center;
@@ -10,31 +12,17 @@
 
 canvas {
    display: block;
+   /* margin: 0 auto; */
    width: 100%;
    height: auto;
    max-width: 100%;
    max-height: 100%;
+   /* position: relative; */
 }
-
-
-@media (max-width: 480px) {
-  #canvas-container {
-    height: 50vh; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  canvas {
-    transform: scale(0.6); 
-    transform-origin: center;
-    height: 400px !important; 
-  }
-}
-
-@media (min-width: 481px) and (max-width: 768px) {
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
    #canvas-container {
-     height: 70vh; 
+     height: 70vh; /* Reduce height to 70% of the viewport */
      display: flex;
      justify-content: center;
      align-items: center;
@@ -48,5 +36,17 @@ canvas {
    }
  }
  
-
+ @media (max-width: 480px) {
+   #canvas-container {
+     height: 50vh; /* Further reduce height for smaller screens */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+ 
+   canvas {
+     transform: scale(0.6); 
+     transform-origin: center; 
+   }
+ }
  

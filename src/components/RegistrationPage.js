@@ -11,6 +11,13 @@ const RegistrationPage = () => {
         <p>Thank you for your interest in our events. Stay tuned for updates!</p>
         
       </div>
+
+      {/* Add floating orbs */}
+      <div className="orb"></div>
+      <div className="orb"></div>
+      <div className="orb"></div>
+      <div className="orb"></div>
+      <div className="orb"></div>
     </div>
   );
 };
