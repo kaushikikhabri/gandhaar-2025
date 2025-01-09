@@ -14,7 +14,6 @@
     font-family:'Poppins', sans-serif;
     text-align: center;
     padding: 30px 50px 50px 50px;
-    /* background: linear-gradient(to bottom, rgb(83, 13, 188), rgb(100, 13, 188) ,rgb(88, 0, 76)); */
     background: linear-gradient(180deg,rgb(88, 0, 76) 0.1%, rgb(49, 47, 218) 20%, rgb(0, 132, 255) 100%);
 }
 
@@ -72,7 +71,6 @@
     height: 300px;
     border-radius: 8px;
     object-fit: cover;
-    /* border: 1px solid #052469; */
     border: 1px solid whitesmoke;
 }
 
