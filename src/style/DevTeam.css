@@ -14,7 +14,8 @@
     font-family:'Poppins', sans-serif;
     text-align: center;
     padding: 30px 50px 50px 50px;
-    background: linear-gradient(180deg, #18168d 0.1%, #4b49c9 20%, rgb(0, 132, 255) 100%);
+    /* background: linear-gradient(to bottom, rgb(83, 13, 188), rgb(100, 13, 188) ,rgb(88, 0, 76)); */
+    background: linear-gradient(180deg,rgb(88, 0, 76) 0.1%, rgb(49, 47, 218) 20%, rgb(0, 132, 255) 100%);
 }
 
 
@@ -280,7 +281,7 @@
 
 
     .dev-team-container {
-        gap: 10px;
+        gap: 70px;
         /* margin-left: 100px; */
     }
 }
