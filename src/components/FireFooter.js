@@ -5,9 +5,7 @@ const FireFooter = () => {
   return (
     <div className="fire-footer">
       <div className="footer">
-        <div className="bubbles">
-          {/* Bubbles will be styled in CSS dynamically */}
-        </div>
+        <div className="bubbles"></div>
         <div className="content">
           <div className="container">
             <div className="footer__label">

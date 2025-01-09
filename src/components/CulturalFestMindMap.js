@@ -54,8 +54,8 @@ const themes = [
     description:
       "Embrace timeless elegance with tailored outfits in neutral tones, pearls, blazers, and minimalistic yet statement jewelry for a sophisticated, understated look.",
     Date: "28th January 2025",
-    top: "40%",
-    //top: "80%",
+    // top: "40%",
+    top: "80%",
     left: "60%",
   },
 ];
@@ -66,7 +66,6 @@ const CulturalFestMindMap = () => {
     <div>
       <h1 className="pre-heading">Pre-Gandhaar Themes</h1>
       <div className="mindmap-container">
-        {/* Mind Map Section */}
         <div className="mindmap-background">
           {themes.map((theme) => (
             <div
@@ -82,7 +81,6 @@ const CulturalFestMindMap = () => {
             </div>
           ))}
 
-          {/* SVG for Zigzag Lines */}
           <svg className="zigzag-lines" width="100%" height="100%">
             {themes.map((theme) => {
               const x1 = `calc(${theme.left} + 2%)`; // Dynamic pin start position
@@ -105,9 +103,7 @@ const CulturalFestMindMap = () => {
           </svg>
         </div>
 
-        {/* Polaroid Display Section */}
         <div className="polaroid-container">
-          {/* Polaroid for the image */}
           <div className="polaroid polaroid-image">
             <img
               src={selectedTheme.polaroidImg} // Use the Polaroid-specific image
@@ -116,7 +112,6 @@ const CulturalFestMindMap = () => {
             />
           </div>
 
-          {/* Polaroid for the description */}
           <div className="polaroid polaroid-description">
             <h4>{selectedTheme.name}</h4>
             <p>{selectedTheme.description}</p>

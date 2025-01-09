@@ -6,14 +6,10 @@ import Navigation from "./Navigation";
 import Countdown from "./Countdown";
 import PreGandhaarThemes from "./PreGandhaarThemes";
 import GandhaarThemes from "./GandhaarThemes";
-import Events from "./Events";
 import StarLineUp from "./StarLineUp";
 import Schedule from "./Schedule";
 import ImageGallery from "./ImageGallery";
 import Footer from "./Footer";
-import Event from "./Event";
-import EventSlider from "./EventSlider";
-import EventCard from "./EventCard";
 import CulturalFestMindMap from "./CulturalFestMindMap";
 import EventSource from "./EventSource";
 import Bubbles from "./Bubbles";
@@ -51,24 +47,16 @@ function Home() {
       <div id="pre-themes">
         <CulturalFestMindMap />
       </div>
-      {/* <CulturalFestMindMap /> */}
       <div id="themes">
         <GandhaarThemes />
       </div>
-      {/* <Events /> */}
       <div id="events">
         <EventSource />
       </div>
 
-      {/* <HundredDaysOfPoetry /> */}
-      {/* <Event /> */}
-      {/* <DummyGallery /> */}
-      {/* <EventSlider /> */}
-
       <div id="star-lineup">
         <StarLineUp />
       </div>
-      {/* <EventCard /> */}
       <div id="schedule">
         <Schedule />
       </div>
@@ -85,9 +73,6 @@ function Home() {
         <Team />
         <DevTeam />
       </div>
-
-      {/* <FireFooter /> */}
-      {/* <Footer /> */}
 
       <Footer />
     </div>

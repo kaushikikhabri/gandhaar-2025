@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Barrio&family=Cedarville+Cursive&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Linden+Hill:ital@0;1&family=Sigmar+One&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=UnifrakturCook:wght@700&display=swap');
 .btn-14 {
   margin-top: 40px; 
-  position: relative; /* Ensures the :after pseudo-element is positioned relative to the button */
+  position: relative;
   background: rgb(111, 0, 215);
   border: none;
   z-index: 1;
-  padding: 10px 20px; /* Button padding */
-  font-size: 40px; /* Adjust font size as needed */
-  color: #fff; /* Text color */
-  border-radius: 10px; /* Rounded corners */
-  cursor: pointer; /* Change cursor on hover */
-  font-family: 'EB Garamond', serif; /* Font styling */
-  text-align: center; /* Center text inside button */
-  outline: none; /* Remove outline on focus */
+  padding: 10px 20px; 
+  font-size: 40px; 
+  color: #fff; 
+  border-radius: 10px; 
+  cursor: pointer; 
+  font-family: 'EB Garamond', serif; 
+  text-align: center; 
+  outline: none; 
   height:80px;
-  width: 100%; /* Ensure the button takes up full width */
+  width: 100%; 
 }
 
 .btn-14:after {
@@ -35,22 +35,21 @@
 }
 
 .btn-14:hover {
-  color: #000; /* Change text color on hover */
+  color: #000; 
 }
 
 .btn-14:hover:after {
-  top: 0; /* Ensure it expands correctly on hover */
+  top: 0; 
   bottom: 0;
   height: 100%;
 }
 
 .btn-14:active {
-  top: 2px; /* Button moves down slightly when clicked */
+  top: 2px;
 }
 
 
-/* General Page Styling */
-/* General Page Styling */
+
 header {
   height: 150px;
   color: white;
@@ -60,16 +59,16 @@ header {
   font-size: 1.5em;
 }
 
-/* Ensures the content within .event-header stacks vertically */
+
 .event-header {
   text-align: center;
   padding: 20px 0;
-  display: flex; /* Enable flexbox */
-  flex-direction: column; /* Stack elements vertically */
-  align-items: center; /* Center align the elements horizontally */
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
 }
 
-/* Layout container for title and subtitle */
+
 .title-container {
   display: flex;
   align-items: center;
@@ -80,7 +79,7 @@ header {
 }
 
 .text-container {
-  text-align: center; /* Center-align title and subtitle */
+  text-align: center;
 }
 
 .event-title {
@@ -89,9 +88,9 @@ header {
   color: black;
   margin-top: 100px;
 
-  /* Border effect */
-  -webkit-text-stroke: 2px rgb(0, 0, 0); /* Stroke width and color */
-  -webkit-text-fill-color: rgb(0, 0, 0); /* Inner text color */
+
+  -webkit-text-stroke: 2px rgb(0, 0, 0);
+  -webkit-text-fill-color: rgb(0, 0, 0);
 }
 
 .event-subtitle {
@@ -100,49 +99,48 @@ header {
   color: black;
   margin: 0;
 
-  /* Optional: Add some space between the title and subtitle */
   margin-bottom: 30px;
 
 }
 
 .title-image {
-  width: 200px; /* Adjust image size */
-  height: auto; /* Maintain aspect ratio */
+  width: 200px; 
+  height: auto; 
 }
 
 @media (max-width: 768px) {
   .title-container {
-    flex-wrap: wrap; /* Stack elements if screen is too small */
+    flex-wrap: wrap;
   }
 
   .event-title {
-    font-size: 3rem; /* Reduce title size */
+    font-size: 3rem; 
   }
 
   .event-subtitle {
-    font-size: 1.5rem; /* Reduce subtitle size */
+    font-size: 1.5rem;
   }
 
   .title-image {
-    width: 4px; /* Reduce image size */
+    width: 4px; 
   }
 }
 @media (max-width: 1024px) {
   .title-container {
-    flex-wrap:nowrap; /* Stack elements if screen is too small */
+    flex-wrap:nowrap;
   }
 
   .event-title {
-    font-size: 1rem; /* Reduce title size */
+    font-size: 1rem; 
   }
 
   .event-subtitle {
-    font-size: 2rem; /* Reduce subtitle size */
+    font-size: 2rem; 
   }
 
   .title-image {
     margin-left: 10px;
-    width: 150px; /* Reduce image size */
+    width: 150px; 
   }
 }
 
@@ -160,18 +158,17 @@ header {
 .back-button:hover {
   background-color: #0056b3;
 }
-/* Apply full-page gradient background */
+
 html, body {
-  height: 100%; /* Ensure the body and html take up the full height */
-  margin: 0; /* Remove default margin */
-  font-family: sans-serif; /* Set font styling */
-  display: flex; /* Allow flex-based alignment */
+  height: 200%; 
+  margin: 0; 
+  font-family: sans-serif; 
+  display: flex; 
   flex-direction: column;
 
-  /* Unified background gradient */
   
-  background-attachment: fixed; /* Keep gradient fixed during scrolling */
-  background-size: cover; /* Ensure the gradient covers the entire page */
+  background-attachment: fixed; 
+  background-size: cover; 
 }
 
 
@@ -194,25 +191,25 @@ html, body {
   align-items: flex-start;
   margin: 50px 100px;
   gap: 20px;
-  flex-wrap: nowrap; /* Ensure boxes stay side-by-side on larger screens */
+  flex-wrap: nowrap; 
 }
 
 .left, .right {
   margin-top: 20px;
-  flex: 1 1 100%; /* Each box gets 50% width */
-  max-width: 40%; /* Restrict the width to 50% */
+  flex: 1 1 100%; 
+  max-width: 40%;
   box-sizing: border-box;
 }
 
-/* Adjust for responsiveness */
+
 @media (max-width: 1024px) {
   .container {
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    flex-wrap: wrap; 
     margin: 20px;
   }
 
   .left, .right {
-    flex: 1 1 100%; /* Stack boxes vertically */
+    flex: 1 1 100%;
     max-width: 100%;
   }
 
@@ -223,7 +220,7 @@ html, body {
 
 @media (max-width: 768px) {
   .container {
-    flex-direction: column; /* Column layout for very small screens */
+    flex-direction: column;  
     margin: 10px;
   }
 
@@ -243,30 +240,30 @@ html, body {
 .box {
   margin-top:20px;
   font-family: 'EB Garamond', serif;
-  width: 100%; /* Full width within its container */
-  height: 320px; /* Default height for boxes */
+  width: 100%; 
+  height: 320px;
   padding: 15px;
   position: relative;
   overflow: hidden;
   background-color: #f4f4f4;
-  border-radius: 10px; /* Rounded corners */
-  box-sizing: border-box; /* Ensure padding is included in width/height */
+  border-radius: 10px;
+  box-sizing: border-box; 
 }
 
 
 .box.full-height {
-  margin-top: 60px; /* Add visible spacing above the RulesBox */
-  min-height: 1100px; /* Set a fixed height for scrolling */
-  overflow: hidden; /* Prevent content from spilling outside the box */
-  padding: 15px; /* Add padding to ensure content stays inside */
+  margin-top: 60px; 
+  min-height: 1100px; 
+  overflow: hidden; 
+  padding: 15px; 
   position: relative;
-  box-sizing: border-box; /* Ensure padding is included in width/height */
+  box-sizing: border-box; 
 }
 
 .box.full-height ul {
   margin: 0;
-  padding-left: 20px; /* Indentation for list items */
-  overflow-wrap: break-word; /* Handle long text wrapping */
+  padding-left: 20px; 
+  overflow-wrap: break-word;
 }
 
 .box::before {
@@ -287,23 +284,23 @@ html, body {
   transform: translateX(-50%) translateY(-50%) rotate(45deg);
   transform-origin: center;
   animation: animate 20s linear infinite;
-  z-index: 1; /* Ensure it's behind the content */
+  z-index: 1; 
 }
 
 .box .content {
-  overflow-y: auto; /* Enable scrolling for content */
+  overflow-y: auto; 
   font-size: 1.5rem;
   position: relative;
   background-color: white;
   display: flex;
   flex-direction: column;
-  box-sizing: border-box; /* Ensure padding is included in width/height */
-  padding: 20px; /* Adjust padding */
+  box-sizing: border-box; 
+  padding: 20px; 
   text-align: left;
-  z-index: 2; /* Ensure content is above the background gradient */
-  height: 100%; /* Take full height of the box */
-  justify-content: flex-start; /* Align content to the top */
-  align-items: flex-start; /* Align content to the left */
+  z-index: 2; 
+  height: 100%; 
+  justify-content: flex-start; 
+  align-items: flex-start; 
   box-shadow: 0 0 2px deeppink,
               0 0 5px rgba(0, 0, 0, 1),
               inset 0 0 5px rgba(0, 0, 0, 1);
@@ -312,18 +309,18 @@ html, body {
 
 .box .content h2 {
   color: deeppink;
-  margin: 0 auto; /* Centers the heading */
-  font-size: 2rem; /* Increases the size */
-  font-weight: 800; /* Makes the font more bold */
-  text-align: center; /* Aligns the heading in the center */
-  text-transform: uppercase; /* Optional: Makes the text uppercase */
+  margin: 0 auto; 
+  font-size: 2rem; 
+  font-weight: 800; 
+  text-align: center; 
+  text-transform: uppercase;
 }
 
 
 .box .content p {
   font-size: 1.5rem;
   color: dimgray;
-  margin: 0; /* Prevent any unwanted margin */
+  margin: 0;
 }
 .rules-section {
   margin-bottom: 20px;
@@ -343,7 +340,6 @@ html, body {
 }
 
 
-/* Keyframe animation for the box background */
 @keyframes animate {
   from {
     background-position: 0;
@@ -358,25 +354,24 @@ html, body {
   position: absolute;
   top: 20px;
   left: 20px;
-  width: 90px; /* Set the width of the button */
-  height: 90px; /* Set the height of the button */
+  width: 90px; 
+  height: 90px; 
   background-color: #eaf818;
   color: black;
   border: none;
-  border-radius: 50%; /* Makes the button circular */
-  font-size: 50px; /* Adjust font size for better alignment */
+  border-radius: 50%; 
+  font-size: 50px; 
   display: flex;
   align-items: center;
-  justify-content: center; /* Centers the arrow inside the circle */
+  justify-content: center; 
   cursor: pointer;
-  z-index: 10; /* Ensure it's always on top */
+  z-index: 10;
 }
 
 .back-button:hover {
   background-color: #f6fc9c;
 }
 
-/* Responsive Design for Smaller and Medium Devices */
 
 @media (min-width: 1024px) {
  
@@ -389,17 +384,16 @@ html, body {
   }
 
   .back-button {
-    width: 90px; /* Set the width of the button */
+    width: 90px; 
   height: 90px; 
   }
 }
 
-/* New Breakpoint Between Medium and Large Devices (768px to 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
 
 
   .box {
-    width: 100%; /* Full width on small devices */
+    width: 100%; 
     height: auto;
     padding: 10px;
    
@@ -410,25 +404,25 @@ html, body {
     max-height: 500px;
   }
   .back-button {
-    width: 70px; /* Set the width of the button */
+    width: 70px; 
   height: 70px; 
   }
 
   .event-title {
-    font-size: 2.5rem; /* Adjust the title size for medium-large screens */
+    font-size: 2.5rem; 
   }
 
   .event-subtitle {
-    font-size: 1.2rem; /* Adjust subtitle size for medium-large screens */
+    font-size: 1.2rem; 
   }
 
   header {
-    font-size: 1.4rem; /* Adjust header font size */
+    font-size: 1.4rem; 
   }
 
   .box .content {
     padding: 20px;
-    font-size:1.5rem; /* Adjust content padding for medium-large screens */
+    font-size:1.5rem; 
   }
 }
 
@@ -436,7 +430,7 @@ html, body {
 
   
   .box {
-    width: 100%; /* Full width on small devices */
+    width: 100%; 
     height: auto;
     padding: 10px;
   }
@@ -447,23 +441,22 @@ html, body {
   }
 
   .event-title {
-    font-size: 2.5rem; /* Further reduce the title font size */
+    font-size: 2.5rem; 
   }
 
   .event-subtitle {
-    font-size: 1rem; /* Further reduce subtitle font size */
+    font-size: 1rem;
   }
 
   header {
-    font-size: 1.2rem; /* Adjust header font size */
+    font-size: 1.2rem;
   }
 
   .box .content {
     padding: 15px;
-     /* Adjust content padding for smaller screens */
   }
   .back-button {
-    width: 40px; /* Set the width of the button */
+    width: 40px; 
   height: 40px; 
   }
 }

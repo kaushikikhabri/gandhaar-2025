@@ -4,12 +4,8 @@
 .countdown-heading-container{
   margin: 0;
   padding: 0;
-  /* z-index: 5; */
   background-color: #f2f1ed;
 }
-
-
-
 
 .cd-heading {
   font-family: "Fugaz One", cursive;
@@ -26,31 +22,22 @@
   padding: 0px 5px 0px 5px;
 }
 
-
-
-
 .countdown-container{
-    position: relative; /* Ensures child elements can be positioned on top */
+    position: relative; 
     background-color: #f2f1ed;
     padding: 50px 0;
-    background:  linear-gradient(to top, rgb(255, 206, 150), #f2f1ed);
 }
- 
 
 
 .flip-clock {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 3rem; /* Adjust as needed */
-    /* background-color: #000; */
+    font-size: 3rem; 
     text-align: center;
     color: white;
     z-index: 2;
   }
-
-
-
 
   .countdown-overlay {
     position: absolute;
@@ -64,8 +51,6 @@
     z-index: 2;
   }
  
-
-
   .flip-clock *,
   .flip-clock *:before,
   .flip-clock *:after {
@@ -241,7 +226,5 @@
     .cd-heading {
       top: 80px;
       margin-bottom: 50px;
-
-
     }
   }

@@ -13,20 +13,13 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
-          {/* <Route path="/home" element={<Home />} /> */}
-          {/* <Route path="/launch" element={<Launch />} /> */}
           <Route path="/star-lineup" element={<StarLineUp />} />
           <Route path="/event-details" element={<EventDetails />} />
-          {/* Use eventKey to identify the event */}
-          {/* <Route path="/" element={<Home />} /> */}
-          {/* <Route path="/launch" element={<Launch />} /> */}
           <Route path="/star-lineup" element={<StarLineUp />} />
           <Route path="/event-details" element={<EventDetails />} />
           <Route path="/videolaunch" element={<VideoLaunch />} />
-          {/* Dynamic route for AllEvents, passing eventKey */}
           <Route path="/event/:eventKey" element={<AllEvents />} />
           <Route path="/registration" element={<RegistrationPage />} />
-          {/* Use eventKey to identify the event */}
           //{" "}
           <Route
             path="/miss-freshers"

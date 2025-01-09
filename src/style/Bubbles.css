@@ -1,13 +1,12 @@
 
-
 .bubbles {
-  position: fixed; /* Fixed to the viewport */
+  position: fixed; 
   top: 0;
-  left: 22%; /* Start from the right of the 20% sidebar */
-  width: 80%; /* Occupy the remaining 80% */
-  height: 100%; /* Full height */
+  left: 22%; 
+  width: 80%; 
+  height: 100%; 
   overflow: hidden;
-  z-index: -1; /* Ensure it stays on top */
+  z-index: -1; 
 }
 
 
@@ -20,7 +19,7 @@
   font-family: sans-serif;
   font-size: 13px;
   color: #333;
-  z-index: 2; /* Ensure button is on top of bubbles */
+  z-index: 2; 
 }
 
 .bubble-toggle:hover {
@@ -35,9 +34,9 @@
   opacity: 0;
   z-index: 1;
 
-/* Adjust the overall speed of the animation */
+
 .bubble-container {
-  animation-duration: 6s;  /* Increase the duration here for slower bubbles */
+  animation-duration: 6s; 
 }
 }
 
@@ -78,10 +77,10 @@
   }
 }
 
-/* Media query for screens below 768px */
+
 @media screen and (max-width: 768px) {
   .bubbles {
-    left: 0; /* Start from the leftmost edge */
-    width: 100%; /* Occupy full width */
+    left: 0; 
+    width: 100%; 
   }
 }

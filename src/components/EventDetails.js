@@ -75,14 +75,12 @@ const EventDetails = () => {
     <div>
       <Navigation isDrawerOpen={isDrawerOpen} toggleDrawer={toggleDrawer1} />
       <div style={{ display: "flex", backgroundColor: "white" }}>
-        {/* Sidebar */}
         <div className="sidebar">
           <h3>
             <FilterListIcon style={{ fontSize: "40px", marginRight: "5px" }} />
             Filters
           </h3>
 
-          {/* Day Filter */}
           <div>
             <h4>Day</h4>
             <div>
@@ -103,7 +101,6 @@ const EventDetails = () => {
             </div>
           </div>
 
-          {/* Location Filter */}
           <div>
             <h4>Location</h4>
             <div>
@@ -138,7 +135,6 @@ const EventDetails = () => {
             </div>
           </div>
 
-          {/* Category Filter */}
           <div>
             <h4>Category</h4>
             <div>
@@ -175,7 +171,6 @@ const EventDetails = () => {
           </div>
         </div>
 
-        {/* Main Content */}
         <div className="main-content">
           <Bubbles />
 
@@ -216,10 +211,6 @@ const EventDetails = () => {
                       {`Participation: ${event.Participation}`}
                     </div>
                   </div>
-                  {/* <button className="event-register-button">
-                    View Event Details{" "}
-                    <LaunchIcon style={{ marginLeft: "5px" }} />
-                  </button> */}
 
                   <a
                     href={event.detailsUrl}
@@ -235,7 +226,6 @@ const EventDetails = () => {
           )}
         </div>
 
-        {/* Bottom Navigation */}
         <div className="bottom-drawer">
           {["day", "location", "category"].map((key) => (
             <div
@@ -246,7 +236,6 @@ const EventDetails = () => {
                 className="drawer-toggle"
                 onClick={() => toggleDrawer(key)}
               >
-                {/* Conditionally render icons */}
                 {key === "day" && (
                   <CalendarMonthIcon style={{ marginRight: "5px" }} />
                 )}
@@ -259,7 +248,6 @@ const EventDetails = () => {
                 {key.charAt(0).toUpperCase() + key.slice(1)}
               </button>
 
-              {/* Common Drawer Content */}
               <div className="drawer-content">
                 {drawerOpen === "day" &&
                   ["All", "Jan 29", "Jan 30", "Jan 31", "Feb 1"].map((day) => (

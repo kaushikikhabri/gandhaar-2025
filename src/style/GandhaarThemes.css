@@ -1,47 +1,44 @@
 
-
-/* General styles for description */
 .item .description {
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    font-size: 2rem;
-    color: rgb(255, 255, 255);
-    font-family: "Abel", sans-serif;
-    z-index: 1;
-    white-space: nowrap;
-    animation: fadeIn 0.8s ease-in-out;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  font-family: "Abel", sans-serif;
+  z-index: 1;
+  white-space: nowrap;
+  animation: fadeIn 0.8s ease-in-out;
 }
 
 
 
 
-/* Animation keyframes for description */
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translate(-50%, -55%);
-    }
-    to {
-        opacity: 1;
-        transform: translate(-50%, -50%);
-    }
+  from {
+      opacity: 0;
+      transform: translate(-50%, -55%);
+  }
+  to {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+  }
 }
 
 
 
 
-/* Theme-Specific Styles */
+
 .item.broadway-ballad .content {
-    color: #fdfdfd;
-    right: -8%;
-    font-size: 90px;
-    /* font-family: "Abril Fatface", serif; */
-    font-family: "Times New Roman", serif;
-    letter-spacing: 2px;
-    z-index: 999;
+  color: #fdfdfd;
+  right: -8%;
+  font-size: 90px;
+ 
+  font-family: "Times New Roman", serif;
+  letter-spacing: 2px;
+  z-index: 999;
 
 
 
@@ -52,13 +49,12 @@
 
 
 .item.streetbeat .content {
-    color: #ffffff;
-    /* font-family: "Rubik Dirt", sans-serif; */
-    /* font-family: "Rubik Mono One", serif; */
-    font-family: "Arial Black", sans-serif;
-    font-size: 90px;
-    right: -10%;
-    z-index: 999;
+  color: #ffffff;
+
+  font-family: "Arial Black", sans-serif;
+  font-size: 90px;
+  right: -10%;
+  z-index: 999;
 
 
 
@@ -69,11 +65,11 @@
 
 
 .item.chart-pop .content {
-    color: #ff477e;
-    /* font-family: 'Impact', sans-serif; */
-    font-family: "Impact", sans-serif;
-    letter-spacing: 2px;
-    z-index: 999;
+  color: #ff477e;
+
+  font-family: "Impact", sans-serif;
+  letter-spacing: 2px;
+  z-index: 999;
 
 
 
@@ -84,13 +80,13 @@
 
 
 .item.allankar-allure .content {
-    color: #ffffff;
-    /* font-family: 'Georgia', serif; */
-    font-family: "Georgia", serif;
-    font-size: 70px;
-    font-style: italic;
-    align-items: center;
-    z-index: 999;
+  color: #ffffff;
+
+  font-family: "Georgia", serif;
+  font-size: 70px;
+  font-style: italic;
+  align-items: center;
+  z-index: 999;
 
 
 
@@ -105,15 +101,15 @@
 
 
 .item.active .description {
-    animation: fadeIn 0.8s ease-in-out;
+  animation: fadeIn 0.8s ease-in-out;
 }
 
 
 
 
 .item.hidden .description {
-    opacity: 0;
-    animation: none;
+  opacity: 0;
+  animation: none;
 }
 
 
@@ -123,65 +119,45 @@
 
 
 
-/* header{
-    display: flex;
-    height: 40px;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 50px;
-    box-sizing: border-box;
-    font-family: monospace;
-    font-weight: bold;
-    font-size: large;
-    position: relative;
-    z-index: 1;
-} */
-/* header ul{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    display: flex;
-    gap: 20px;
-} */
 
 
 
 
 .carousel{
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    margin-top: -50px;
-    background: transparent;
-    margin: 0;
-    padding: 0;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  margin-top: -50px;
+  background: transparent;
+  margin: 0;
+  padding: 0;
 }
 
 
 
 
 .list{
-    width: 100%;
-    height: 100%;
-    display: flex; /* Use flexbox for consistency */
-    flex-direction: column;
-    justify-content: center; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
+  width: 100%;
+  height: 100%;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
 }
 
 
 
 
 .item{
-    width: 100%;
-    height:100%;
-    background-color: var(--background);
-    position: absolute;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    display: none;
+  width: 100%;
+  height:100%;
+  background-color: var(--background);
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  display: none;
 }
 
 
@@ -207,24 +183,23 @@
 
 
 
-/* TROPICAL TUNES/METALLICA/STREET BEATS/RAAG REVERIE */
 .item img.fruit{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 0; /*changed*/
-    pointer-events: none;
-    background: transparent;
-    opacity: 0.59;
-    background-color: #000000;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  pointer-events: none;
+  background: transparent;
+  opacity: 0.59;
+  background-color: #000000;
 
 
 
 
-  object-fit: cover;
+object-fit: cover;
 
 
 
@@ -234,22 +209,22 @@
 
 
 
-/* DAY+THEMES NAME */
+
 .item .content{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    font-size: 9rem;
-    color: rgb(236, 232, 234);
-    font-weight: bold;
-    font-family: system-ui;
-    text-transform: uppercase;
-    white-space: nowrap;
-  font-weight: 400;
-  font-style: normal;
-    z-index: 1; /*change*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 9rem;
+  color: rgb(236, 232, 234);
+  font-weight: bold;
+  font-family: system-ui;
+  text-transform: uppercase;
+  white-space: nowrap;
+font-weight: 400;
+font-style: normal;
+  z-index: 1; 
 }
 
 
@@ -267,24 +242,23 @@
 
 
 
-/* DAY IS BEING EXPRESSED */
 
 
 
 
 .item .day{
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    font-size: 5rem;
-    color: #eee;
-    font-weight: bold;
-    font-family: "Ysabeau SC", serif;
-    /* text-transform: uppercase; */
-    white-space: nowrap;
-    padding-bottom: 15px;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 5rem;
+  color: #eee;
+  font-weight: bold;
+  font-family: "Ysabeau SC", serif;
+  
+  white-space: nowrap;
+  padding-bottom: 15px;
 }
 
 
@@ -299,26 +273,26 @@
 
 
 .item.active{
-    display: block;
+  display: block;
 }
 .item.hidden{
-    display: block;
-    pointer-events: none;
-    background-color: transparent;
-    z-index: 1;
+  display: block;
+  pointer-events: none;
+  background-color: transparent;
+  z-index: 1;
 }
 
 
 
 
 .background {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: transparent; /* Specifically make the background transparent */
-    z-index: -1; /* Keep it behind other elements */
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: transparent; 
+  z-index: -1; 
 }
 
 
@@ -326,26 +300,26 @@
 
 #prev,
 #next{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: transparent;
-    border: 1px solid #eee9;
-    background-color: #eee5;
-    color: #eee;
-    font-size: x-large;
-    font-family: monospace;
-    cursor: pointer;
-    z-index: 15;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid #eee9;
+  background-color: #eee5;
+  color: #eee;
+  font-size: x-large;
+  font-family: monospace;
+  cursor: pointer;
+  z-index: 15;
 }
 #prev{
-    left: 20px;
+  left: 20px;
 }
 #next{
-    right: 20px;
+  right: 20px;
 }
 
 
@@ -356,35 +330,35 @@
 
 
 @keyframes toActive{
-    from{
-        top: 100%;
-        opacity: 0;
-    }
+  from{
+      top: 100%;
+      opacity: 0;
+  }
 }
 @keyframes toOut{
-    from{
-        top: 50%;
-        opacity: 1;
-    }
+  from{
+      top: 50%;
+      opacity: 1;
+  }
 }
 .item.active img.fruit{
-    animation: toActive 0.5s ease-in-out 1;
+  animation: toActive 0.5s ease-in-out 1;
 }
 .item.hidden img.fruit{
-    animation: toOut 0.8s ease-in-out 1;
-    top: -100%;
-    opacity: 0;
+  animation: toOut 0.8s ease-in-out 1;
+  top: -100%;
+  opacity: 0;
 }
 .item.active .content{
-    animation: toActive 0.8s ease-in-out 1;
-   
+  animation: toActive 0.8s ease-in-out 1;
+ 
 }
 
 
 
 
 .item.active .day{
-    animation: toActive 0.8s ease-in-out 1;
+  animation: toActive 0.8s ease-in-out 1;
 
 
 
@@ -395,7 +369,7 @@
 
 
 .item.active .description{
-    animation: toActive 0.8s ease-in-out 1;
+  animation: toActive 0.8s ease-in-out 1;
 
 
 
@@ -409,13 +383,13 @@
 
 
 
-/* time being */
+
 
 
 
 
 .item.active .day{
-    animation: toActive 0.8s ease-in-out 1;
+  animation: toActive 0.8s ease-in-out 1;
 }
 
 
@@ -434,14 +408,14 @@
 
 
 .item.hidden .content{
-    opacity: 0;
+  opacity: 0;
 }
 
 
 
 
 .item.hidden .day{
-    opacity: 0;
+  opacity: 0;
 }
 
 
@@ -451,13 +425,13 @@
 
 
 
-/* time being */
+
 
 
 
 
 .item.hidden .day{
-    opacity: 0;
+  opacity: 0;
 
 
 
@@ -476,19 +450,19 @@
 
 
 .carousel.right .item.active img.fruit{
-    animation: toActivePrev 0.5s ease-in-out 1;
+  animation: toActivePrev 0.5s ease-in-out 1;
 }
 .carousel.right .item.hidden img.fruit{
-    animation: toOut 0.8s ease-in-out 1;
-    top: 100%;
-    opacity: 0;
+  animation: toOut 0.8s ease-in-out 1;
+  top: 100%;
+  opacity: 0;
 }
 .carousel.right .item.active .content{
-    animation: toActivePrev 0.8s ease-in-out 1;
+  animation: toActivePrev 0.8s ease-in-out 1;
 }
-/* time being */
+
 .carousel.right .item.active .day{
-    animation: toActivePrev 0.8s ease-in-out 1;
+  animation: toActivePrev 0.8s ease-in-out 1;
 
 
 
@@ -499,7 +473,7 @@
 
 
 .carousel.right .item.active .description{
-    animation: toActivePrev 0.8s ease-in-out 1;
+  animation: toActivePrev 0.8s ease-in-out 1;
 
 
 
@@ -526,10 +500,10 @@
 
 
 @keyframes toActivePrev{
-    from{
-        top: 0;
-        opacity: 0;
-    }
+  from{
+      top: 0;
+      opacity: 0;
+  }
 }
 
 
@@ -551,17 +525,14 @@
 
 
 
-/* :root{
-    --width-mockup: calc(371px / 1);
-    --height-mockup: calc(673px / 1);
-} */
+
 
 
 
 
 :root {
-    --width-mockup: calc(500px); /* Increase width */
-    --height-mockup: calc(900px); /* Increase height */
+  --width-mockup: calc(500px); 
+  --height-mockup: calc(900px);
 }
 
 
@@ -575,18 +546,6 @@
 
 
 
-/* Responsive Stick */
-/* .stick {
-    position: absolute;
-    width: 10vw;  
-    height: 20vh;  
-    background-image: url(img/stick.png);
-    background-size: 100%;
-    top: 50%;  
-    left: 35%;
-    transform: translateY(-50%) rotate(-45deg);
-    z-index: 2;
-} */
 
 
 
@@ -595,29 +554,6 @@
 
 
 
-/* Existing styles remain the same */
-
-
-
-
-/* New keyframes for stick animation */
-/* @keyframes stickAnimation {
-    0% {
-        top: 100%;
-        left: 20%;
-        transform: translateY(-50%) rotate(-45deg);
-    }
-    100% {
-        top: 23%;
-        left: 0%;
-        transform: translateY(-50%) rotate(70deg); /* Adjust to final position */
-    /* } */
-/* } */ */
-
-
-
-
-/* Apply animation to the stick */
 .stick {}
 
 
@@ -628,16 +564,16 @@
 
 
 .mockup {
-    position: absolute;
-    top: 55%;
+  position: absolute;
+  top: 55%;
 left: -1%;
 --left: 0%;
 transform: translate(-50%, -50%) rotate(0deg);
 height: var(--height-mockup);
 width: var(--width-mockup);
 background:
-    url('../images/mockup.png') center center no-repeat;
-    /* url(img/listSoda.jpg) center center no-repeat; */
+  url('../images/mockup.png') center center no-repeat;
+
 background-size: contain;
 -webkit-mask-image: url('../images/mockup.png');
 -webkit-mask-repeat: no-repeat;
@@ -663,285 +599,274 @@ z-index: 2;
 
 
 
-/* MEDIA QUERIES  */
-
-
-
-
-
-
-
-
-/* MEDIA QUERIES */
 
 
 
 
 @media (max-width: 1200px) {
-    /* Reduce mockup size to create space */
-    .mockup {
-      height: 400px;
-      width: 400px;
-    }
- 
-    /* Adjust text sizes as needed */
-    .item .content {
-      font-size: 5rem;
-    }
-    .item .day {
-      font-size: 3rem;
-    }
+
+  .mockup {
+    height: 400px;
+    width: 400px;
   }
+
+
+  .item .content {
+    font-size: 5rem;
+  }
+  .item .day {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 992px) {
+
+  .mockup {
+    height: 300px;
+    width: 300px;
+  }
+
  
-  @media (max-width: 992px) {
-    /* Reduce mockup size further */
-    .mockup {
-      height: 300px;
-      width: 300px;
-    }
+  .item .content {
+    font-size: 4rem;
+  }
+  .item .day {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .mockup {
+    height: 250px;
+    width: 250px;
+  }
+
+  .item .content {
+    font-size: 3rem;
+  }
+  .item .day {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
  
-    /* Adjust text sizes as needed */
-    .item .content {
+  .mockup {
+    height: 200px;
+    width: 200px;
+  }
+
+
+  .item .content {
+    font-size: 2.5rem;
+  }
+  .item .day {
+    font-size: 1.5rem;
+  }
+
+
+  .item .description {
+    font-size: 1.2rem;
+  }
+}
+
+
+@media (max-width: 400px) {
+
+  .mockup {
+    height: 180px;
+    width: 180px;
+  }
+
+
+  .item .content {
+    font-size: 2rem;
+  }
+  .item .day {
+    font-size: 1.2rem;
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .item.broadway-ballad .content {
+    font-size: 4rem;
+  }
+
+  .item.allankar-allure .content {
+    font-size: 4rem;
+  }
+
+
+
+
+  .item.streetbeat .content {
       font-size: 4rem;
-    }
-    .item .day {
-      font-size: 2.5rem;
-    }
-  }
- 
-  @media (max-width: 768px) {
-    /* Reduce mockup size further */
-    .mockup {
-      height: 250px;
-      width: 250px;
-    }
- 
-    /* Adjust text sizes as needed */
-    .item .content {
-      font-size: 3rem;
-    }
-    .item .day {
-      font-size: 2rem;
-    }
-  }
- 
-  @media (max-width: 576px) {
-    /* Reduce mockup size further */
-    .mockup {
-      height: 200px;
-      width: 200px;
-    }
- 
-    /* Adjust text sizes as needed */
-    .item .content {
-      font-size: 2.5rem;
-    }
-    .item .day {
-      font-size: 1.5rem;
-    }
- 
-    /* Adjust description font size as needed */
-    .item .description {
-      font-size: 1.2rem;
-    }
-  }
- 
-  /* Example for very small screens - adjust as needed */
-  @media (max-width: 400px) {
-    /* Reduce mockup size further (optional) */
-    .mockup {
-      height: 180px;
-      width: 180px;
-    }
- 
-    /* Adjust text sizes as needed */
-    .item .content {
-      font-size: 2rem;
-    }
-    .item .day {
-      font-size: 1.2rem;
-    }
-  }
- 
-  /* Maintain size adjustments for specific themes across breakpoints */
-  @media (max-width: 1200px) {
-    .item.broadway-ballad .content {
-      font-size: 4rem;
-    }
- 
-    .item.allankar-allure .content {
-      font-size: 4rem;
-    }
-
-
-
-
-    .item.streetbeat .content {
-        font-size: 4rem;
- 
- 
-      }
-      .item.chart-pop .content {
- 
- 
-        font-size: 4rem;
- 
-      }
-
-
-
-
-
-
-
-
-
-
-
-
-  }
- 
-  @media (max-width: 992px) {
-    .item.broadway-ballad .content {
-      font-size: 3.5rem;
-    }
- 
-    .item.allankar-allure .content {
-      font-size: 3.5rem;
-    }
-
-
-
-
-    .item.streetbeat .content {
-        font-size: 3.5rem;
- 
- 
-      }
-      .item.chart-pop .content {
- 
- 
-        font-size: 3.5rem;
- 
-      }
-
-
-
-
-
-
-
-
-   
-  }
- 
-  @media (max-width: 768px) {
-    .item.broadway-ballad .content {
-      font-size: 3rem;
-    }
- 
-    .item.allankar-allure .content {
-      font-size: 3rem;
-    }
-
-
-
-
-    .item.streetbeat .content {
-        font-size: 3rem;
- 
- 
-      }
-      .item.chart-pop .content {
- 
- 
-        font-size: 3rem;
- 
-      }
-
-
-
-
- 
-  }
- 
-  @media (max-width: 576px) {
-    .item.broadway-ballad .content {
-      font-size: 2rem;
-    }
- 
-    .item.allankar-allure .content {
-      font-size: 2rem;
-    }
-
-
-
-
-
-
-
-
-    .item.streetbeat .content {
-        font-size: 2rem;
- 
- 
-      }
-      .item.chart-pop .content {
- 
- 
-        font-size: 2rem;
- 
-      }
-
-
-
-
- 
-  }
- 
-  @media (max-width: 400px) {
-    .item.broadway-ballad .content {
-      font-size: 1.5rem;
-    }
- 
-    .item.allankar-allure .content {
-      font-size: 1.5rem;
-    }
-
-
-
-
-    .item.streetbeat .content {
-      font-size: 1.5rem;
-
-
-
-
-
-
 
 
     }
     .item.chart-pop .content {
 
 
-
-
-
-
-
-
-      font-size: 1.5rem;
-
-
-
+      font-size: 4rem;
 
     }
 
 
 
 
-   
+
+
+
+
+
+
+
+
+}
+
+@media (max-width: 992px) {
+  .item.broadway-ballad .content {
+    font-size: 3.5rem;
   }
+
+  .item.allankar-allure .content {
+    font-size: 3.5rem;
+  }
+
+
+
+
+  .item.streetbeat .content {
+      font-size: 3.5rem;
+
+
+    }
+    .item.chart-pop .content {
+
+
+      font-size: 3.5rem;
+
+    }
+
+
+
+
+
+
+
+
+ 
+}
+
+@media (max-width: 768px) {
+  .item.broadway-ballad .content {
+    font-size: 3rem;
+  }
+
+  .item.allankar-allure .content {
+    font-size: 3rem;
+  }
+
+
+
+
+  .item.streetbeat .content {
+      font-size: 3rem;
+
+
+    }
+    .item.chart-pop .content {
+
+
+      font-size: 3rem;
+
+    }
+
+
+
+
+
+}
+
+@media (max-width: 576px) {
+  .item.broadway-ballad .content {
+    font-size: 2rem;
+  }
+
+  .item.allankar-allure .content {
+    font-size: 2rem;
+  }
+
+
+
+
+
+
+
+
+  .item.streetbeat .content {
+      font-size: 2rem;
+
+
+    }
+    .item.chart-pop .content {
+
+
+      font-size: 2rem;
+
+    }
+
+
+
+
+
+}
+
+@media (max-width: 400px) {
+  .item.broadway-ballad .content {
+    font-size: 1.5rem;
+  }
+
+  .item.allankar-allure .content {
+    font-size: 1.5rem;
+  }
+
+
+
+
+  .item.streetbeat .content {
+    font-size: 1.5rem;
+
+
+
+
+
+
+
+
+  }
+  .item.chart-pop .content {
+
+
+
+
+
+
+
+
+    font-size: 1.5rem;
+
+
+
+
+  }
+
+
+
+
+ 
+}
 
 
