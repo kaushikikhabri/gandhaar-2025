@@ -15,7 +15,7 @@ import image7 from "../posters/Digital stage.PNG";
 import image8 from "../posters/haute route.png";
 import image9 from "../posters/Joyland.PNG";
 import image10 from "../posters/haute route.png";
-import image11 from "../posters/Joyland.PNG";
+import image11 from "../posters/Skills lab.PNG";
 
 // Update items array with local images
 const items = [
@@ -28,7 +28,7 @@ const items = [
   { image: image7, category: "THE DIGITAL STAGE" },
   { image: image8, category: "HAUTE ROUTE" },
   { image: image9, category: "THEATRICAL TAPESTRY" },
-  { image: image10, category: "SKILL LAB " },
+  { image: image10, category: "SKILL LAB" },
   { image: image11, category: "JOYLAND" },
 ];
 
