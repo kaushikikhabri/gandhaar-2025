@@ -1,9 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pattaya&display=swap');
+
+.countdown-heading-container{
+  margin: 0;
+  padding: 0;
+  /* z-index: 5; */
+  background-color: #f2f1ed;
+}
+
+
+.cd-heading { 
+  font-family: "Fugaz One", cursive; 
+  font-size: 5rem; 
+  font-weight: 700; 
+  color: #2a2a2a; 
+  text-align: center; 
+  position: relative;
+  background: linear-gradient(98.3deg, rgb(0, 0, 0) 10.6%, rgb(255, 0, 0) 97.7%);
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent;
+  top: 40px; 
+  line-height: normal;
+  padding: 0px 5px 0px 5px;
+}
+
 
 .countdown-container{
     position: relative; /* Ensures child elements can be positioned on top */
     background-color: #f2f1ed;
-    padding: 130px 0;
-    /* height: 500px; */
+    padding: 50px 0;
 }
   
 
@@ -158,16 +182,49 @@
     }
   }
   
+  @media (max-width: 350px) {
+    .countdown-container {
+      padding: 0px 0px; 
+    }
+
+    .cd-heading { 
+      font-size: 2rem; 
+      font-weight: 700; 
+      top: 20px; 
+    }
+  }
   
-  @media screen and (max-width: 480px) {
+  @media (min-width: 351px) and (max-width: 500px) {
     .countdown-container {
       padding: 30px 0; 
     }
+
+    .cd-heading { 
+      font-size: 2.7rem; 
+      font-weight: 700; 
+      top: 30px; 
+      margin-bottom: 20px;
+    }
   }
 
-  @media (min-width: 481px) and (max-width: 768px) {
+  @media (min-width: 500px) and (max-width: 800px) {
     .countdown-container {
       padding: 50px 0; 
+    }
+
+    .cd-heading { 
+      font-size: 3.5rem; 
+      font-weight: 700; 
+      top: 40px; 
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (min-width: 1024px){
+    .cd-heading { 
+      top: 80px; 
+      margin-bottom: 50px;
+
     }
   }
 

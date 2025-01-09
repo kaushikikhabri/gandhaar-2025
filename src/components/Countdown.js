@@ -89,27 +89,16 @@ export default function CountdownApp() {
     alert("Countdown complete");
   };
 
-  // return (
-  //   <div className="countdown-heading">
-  //     <h1 className="countdown-heading">Hold Your Excitement For</h1>
-  //     <div className="countdown-container">
-  //       <CanvasComponent />
-  //       <div className="countdown-overlay">
-  //         <Countdown targetDate={targetDate} onComplete={handleComplete} />
-  //       </div>
-  //     </div>
-  //   </div>
-  // );
-
   return (
-    
+    <div className="countdown-heading-container">
+      <h1 className="cd-heading">Hold Your Excitement For</h1>
       <div className="countdown-container">
         <CanvasComponent />
         <div className="countdown-overlay">
           <Countdown targetDate={targetDate} onComplete={handleComplete} />
         </div>
       </div>
-    
+    </div>
   );
 
 }
