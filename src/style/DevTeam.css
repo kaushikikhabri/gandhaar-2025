@@ -82,7 +82,6 @@
     font-size: 1rem;
     font-weight: 700;
     background: linear-gradient(181.2deg, rgb(181, 239, 249) 10.5%, rgb(254, 254, 254) 86.8%);
-    /* background: linear-gradient(109.5deg, rgb(13, 11, 136) 9.4%, rgb(86, 255, 248) 78.4%); */
     background: radial-gradient(circle at 85.4% 50.8%, rgb(14, 72, 222) 0%, rgb(3, 22, 65) 74.2%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -282,7 +281,6 @@
 
     .dev-team-container {
         gap: 70px;
-        /* margin-left: 100px; */
     }
 }
 
