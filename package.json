@@ -1,5 +1,4 @@
 {
-  "homepage": "https://kaushikikhabri.github.io/gandhaar-2025",
   "name": "gandhaar",
   "version": "0.1.0",
   "private": true,
@@ -30,7 +29,8 @@
     "sass": "^1.83.0",
     "simplex-noise": "^4.0.3",
     "swiper": "^11.1.15",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "homepage": "."
   },
   "scripts": {
     "start": "react-scripts start",
