@@ -54,7 +54,7 @@ const event_details = {
     imageUrl:
       "https://img.freepik.com/premium-photo/street-fashion-expressive-movements-hiphop-dance-group-generative-ai_722401-32575.jpg",
   },
-   "Sargam Symphony": {
+  "Sargam Symphony": {
     start: "10:00 AM",
     end: "1:30 PM",
     location: "Main Quad",
@@ -197,7 +197,7 @@ const event_details = {
     imageUrl:
       "https://t4.ftcdn.net/jpg/06/88/97/09/360_F_688970981_LQ6pXYzZIRyXhpXA44dCUNDt4bjp1bmV.jpg",
   },
-  "Spellbound": {
+  Spellbound: {
     start: "12:30 PM",
     end: "2:30 PM",
     location: "KB Joshi",
@@ -252,7 +252,7 @@ const event_details = {
     imageUrl:
       "https://img.freepik.com/premium-photo/henna-mehndi-diwali-background_1278458-10458.jpg",
   },
-  "Bincredible": {
+  Bincredible: {
     start: "1:00 PM",
     end: "3:00 PM",
     location: "Mech Circle",
@@ -351,7 +351,7 @@ const event_details = {
     imageUrl:
       "https://img.freepik.com/free-photo/smiling-female-mime-artist-looking-male-mime-artist-peeking-from-curtain_23-2147891614.jpg?t=st=1736355391~exp=1736358991~hmac=ec4c063f23551df45c258cfe81eb7be1375166e53580f9e7644c7eb911910cb0&w=900",
   },
-  "Nazariya": {
+  Nazariya: {
     start: "12:00 PM",
     end: "4:00 PM",
     location: "Stage 2",
@@ -483,7 +483,6 @@ const event_details = {
     imageUrl:
       "https://img.freepik.com/premium-photo/group-colorful-cones_1308175-208949.jpg",
   },
-  
 };
 
 export default event_details;

@@ -109,13 +109,18 @@ const EventDetails = () => {
             <div>
               {[
                 "All",
-                "Main Bldg Quadrangle",
+                "Main Quad",
                 "Stage 2",
-                "Between Main & IT Building",
+                "Between Main & IT Bldg",
                 "Mech Circle",
-                "Instru Audi",
-                "KB Joshi Hall",
-                "Samastha Ground",
+                "Instru Quad",
+                "KB Joshi",
+                "Samstha Ground",
+                "IT/Mech Bldg",
+                "Whole Campus",
+                "Instru Garden/Mech Circle",
+                "IT Bulg",
+                "Online",
               ].map((location) => (
                 <div key={location}>
                   <input
@@ -139,14 +144,17 @@ const EventDetails = () => {
             <div>
               {[
                 "All",
-                "Groove Arena",
-                "JamSphere",
-                "Gathering Hub",
-                "Haute Route",
-                "Savory Symphony",
-                "ArtiScope",
-                "Theatrical Tapestry",
-                "Skill Lab",
+                "GROOVE ARENA",
+                "JAMSPHERE",
+                "GATHERING HUB",
+                "WORDSMITH’S CORNER",
+                "HAUTE ROUTE",
+                "SAVORY SYMPHONY",
+                "ARTISCOPE",
+                "THEATRICAL TAPESTRY",
+                "SKILL LAB",
+                "THE DIGITAL STAGE",
+                "JOYLAND",
               ].map((category) => (
                 <div key={category}>
                   <input
@@ -264,13 +272,18 @@ const EventDetails = () => {
                 {drawerOpen === "location" &&
                   [
                     "All",
-                    "Main Bldg Quadrangle",
+                    "Main Quad",
                     "Stage 2",
-                    "Between Main & IT Building",
+                    "Between Main & IT Bldg",
                     "Mech Circle",
-                    "Instru Audi",
-                    "KB Joshi Hall",
+                    "Instru Quad",
+                    "KB Joshi",
                     "Samstha Ground",
+                    "IT/Mech Bldg",
+                    "Whole Campus",
+                    "Instru Garden/Mech Circle",
+                    "IT Bulg",
+                    "Online",
                   ].map((location) => (
                     <div key={location}>
                       <input
@@ -289,14 +302,17 @@ const EventDetails = () => {
                 {drawerOpen === "category" &&
                   [
                     "All",
-                    "Groove Arena",
-                    "JamSphere",
-                    "Gathering Hub",
-                    "Haute Route",
-                    "Savory Symphony",
-                    "ArtiScope",
-                    "Theatrical Tapestry",
-                    "Skill Lab",
+                    "GROOVE ARENA",
+                    "JAMSPHERE",
+                    "GATHERING HUB",
+                    "WORDSMITH’S CORNER",
+                    "HAUTE ROUTE",
+                    "SAVORY SYMPHONY",
+                    "ARTISCOPE",
+                    "THEATRICAL TAPESTRY",
+                    "SKILL LAB",
+                    "THE DIGITAL STAGE",
+                    "JOYLAND",
                   ].map((category) => (
                     <div key={category}>
                       <input
