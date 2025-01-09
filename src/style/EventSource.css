@@ -35,12 +35,11 @@
   }
   
 
-  /* EventSource.css */
 .carousel-container img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures the image covers the container without distortion */
-  border-radius: 8px; /* Optional: Adds rounded corners */
+  object-fit: cover; 
+  border-radius: 8px;
   display: block; 
 }
 

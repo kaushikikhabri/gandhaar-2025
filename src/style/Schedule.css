@@ -42,9 +42,9 @@
 
 .time-slot {
   position: relative;
-  height: 120px; /* Adjust height as needed */
-  width: 100%; /* Full width */
-  margin: 0; /* Remove margin */
+  height: 120px; 
+  width: 100%; 
+  margin: 0; 
   border-radius: 5px;
  
 }
@@ -56,8 +56,8 @@
   display: flex;
   justify-content: center;
   gap: 5vw;
-  z-index: 10; /* Ensure buttons are on top of other elements */
-  margin-bottom: 10px; /* Decrease this value to reduce the gap */
+  z-index: 10;
+  margin-bottom: 10px;
 }
 
 

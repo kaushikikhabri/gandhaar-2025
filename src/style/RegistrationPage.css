@@ -22,7 +22,7 @@
 .regPage-content h1 {
   font-size: 3rem;
   margin-bottom: 10px;
-  background: radial-gradient(circle at 52.1% -29.6%, rgb(144, 17, 105) 0%, rgb(51, 0, 131) 100.2%); /* Gradient text */
+  background: radial-gradient(circle at 52.1% -29.6%, rgb(144, 17, 105) 0%, rgb(51, 0, 131) 100.2%); 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "Fugaz One", cursive; 
