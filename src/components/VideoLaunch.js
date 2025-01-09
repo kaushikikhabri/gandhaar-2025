@@ -34,16 +34,13 @@ const VideoLaunch = () => {
       </video>
 
       <div className="music-loading-bar">
-        {/* Create multiple wave elements */}
         {[...Array(10)].map((_, index) => (
           <div key={index} className="wave" />
         ))}
-        {/* Progress bar for the loading */}
         <div
           className="music-loading-bar-progress"
           style={{ width: `${progress}%` }}
         />
-        {/* Display the progressive text */}
         <div className="loading-percentage">{visibleText}</div>
       </div>
     </div>

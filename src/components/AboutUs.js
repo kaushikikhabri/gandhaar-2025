@@ -7,7 +7,6 @@ const AboutUs = () => {
       <p className="about-us-title">About Us</p>
       <h5>Gandhaar :&nbsp; A grand celebration of Culture and Talent</h5>
       <div id="monitor-text-wrapper">
-        {/* <div id="card"> */}
         <div id="monitor">
           <div id="monitorscreen">
             <iframe
@@ -19,7 +18,6 @@ const AboutUs = () => {
             ></iframe>
           </div>
         </div>
-        {/* </div> */}
         <div id="text">
           <p>
             Gandhaar, the grand cultural fest of Cummins College of Engineering

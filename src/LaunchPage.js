@@ -110,7 +110,6 @@ const LaunchPage = () => {
         <h1 className="launch-title">Gandhaar 2025</h1>
       </div>
       <div className="buttons">
-        {/* SVG filter for gooey effect */}
         <svg width="0" height="0">
           <defs>
             <filter id="goo" x="-50%" y="-50%" width="200%" height="200%">
@@ -130,7 +129,6 @@ const LaunchPage = () => {
           </defs>
         </svg>
 
-        {/* Button with wave effect */}
         <button className="blob-btn" onClick={handleEnter}>
           <span className="blob-btn__inner"></span>
           <span className="blob-btn__blobs">

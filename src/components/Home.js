@@ -47,24 +47,16 @@ function Home() {
       <div id="pre-themes">
         <CulturalFestMindMap />
       </div>
-      {/* <CulturalFestMindMap /> */}
       <div id="themes">
         <GandhaarThemes />
       </div>
-      {/* <Events /> */}
       <div id="events">
         <EventSource />
       </div>
 
-      {/* <HundredDaysOfPoetry /> */}
-      {/* <Event /> */}
-      {/* <DummyGallery /> */}
-      {/* <EventSlider /> */}
-
       <div id="star-lineup">
         <StarLineUp />
       </div>
-      {/* <EventCard /> */}
       <div id="schedule">
         <Schedule />
       </div>
@@ -81,9 +73,6 @@ function Home() {
         <Team />
         <DevTeam />
       </div>
-
-      {/* <FireFooter /> */}
-      {/* <Footer /> */}
 
       <Footer />
     </div>

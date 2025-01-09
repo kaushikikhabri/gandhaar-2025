@@ -54,7 +54,6 @@ const VideoLaunch = () => {
   }, []);
 
   useEffect(() => {
-    // Hide "Are you ready" text after animation and scroll down
     const timer = setTimeout(() => {
       setShowReadyText(false);
       const scrollTarget = document.querySelector(".music-loading-bar");
@@ -92,7 +91,6 @@ const VideoLaunch = () => {
         <div className="loading-percentage">{visibleText}</div>
       </div>
 
-      {/* Render musical notes on the left */}
       {leftNotes.map((note) => (
         <div
           key={note.id}
@@ -106,7 +104,6 @@ const VideoLaunch = () => {
         </div>
       ))}
 
-      {/* Render musical notes on the right */}
       {rightNotes.map((note) => (
         <div
           key={note.id}

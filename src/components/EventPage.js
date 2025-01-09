@@ -93,7 +93,6 @@ const EventPage = ({ event }) => {
   return (
     <div>
       <Header title={title} subtitle={subtitle} image={image} />{" "}
-      {/* Pass the image */}
       <div className="container">
         <div className="left">
           <Link to={event.registerLink}>

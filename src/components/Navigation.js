@@ -124,11 +124,6 @@ const Navigation = ({ isDrawerOpen, toggleDrawer, scrollThreshold = null }) => {
       )}
       {isMobile && (
         <div className={`drawer ${isDrawerOpen ? "open" : ""}`}>
-          {/* <div className="drawer-header">
-            <button className="close-drawer" onClick={toggleDrawer}>
-              ✖
-            </button>
-          </div> */}
           <ul className="drawermenu">
             <li className="draweritem">
               <Link

@@ -893,7 +893,6 @@ const Schedule = () => {
                 {event.Ename}
               </div>
 
-              {/* {<div className="event-Ename">{event.Ename}</div>} */}
               <div className="end-time">{event.end}</div>
             </div>
           ))}
@@ -922,11 +921,7 @@ const Schedule = () => {
               <p>
                 <strong>Location:</strong> {modalData.location}
               </p>
-              {/* <p><strong> Event Details: </strong> 
-            <a href={modalData.href} className="details-link">
-              More Details
-            </a>
-            </p> */}
+
               {modalData.href ? (
                 <p>
                   <strong>Event Details: </strong>

@@ -35,14 +35,12 @@ const Launchpage = () => {
         Your browser does not support the video tag.
       </video>
 
-      {/* Skip Button in Top-Left */}
       <button className="control-button top-left" onClick={handleSkip}>
         Skip
       </button>
 
-      {/* Mute/Unmute Button in Bottom-Right */}
       <button className="control-button bottom-right" onClick={toggleMute}>
-        {isMuted ? "🔇" : "🔊"} {/* Mute and Sound Symbols */}
+        {isMuted ? "🔇" : "🔊"}
       </button>
     </div>
   );
