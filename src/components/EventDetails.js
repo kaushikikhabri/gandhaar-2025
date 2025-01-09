@@ -86,7 +86,7 @@ const EventDetails = () => {
           <div>
             <h4>Day</h4>
             <div>
-              {["All", "Feb 1", "Feb 2", "Feb 3", "Feb 4"].map((day) => (
+              {["All", "Jan 29", "Jan 30", "Jan 31", "Feb 1"].map((day) => (
                 <div key={day}>
                   <input
                     type="checkbox"
@@ -144,17 +144,17 @@ const EventDetails = () => {
             <div>
               {[
                 "All",
-                "GROOVE ARENA",
-                "JAMSPHERE",
-                "GATHERING HUB",
-                "WORDSMITH’S CORNER",
-                "HAUTE ROUTE",
-                "SAVORY SYMPHONY",
-                "ARTISCOPE",
-                "THEATRICAL TAPESTRY",
-                "SKILL LAB",
-                "THE DIGITAL STAGE",
-                "JOYLAND",
+                "Groove Arena",
+                "Jamsphere",
+                "Gathering Hub",
+                "Wordsmith’s Corner",
+                "Haute Route",
+                "Savory Symphony",
+                "Artiscope",
+                "Theatrical Tapestry",
+                "Skill Lab",
+                "The Digital Stage",
+                "Joyland",
               ].map((category) => (
                 <div key={category}>
                   <input
@@ -254,7 +254,7 @@ const EventDetails = () => {
               {/* Common Drawer Content */}
               <div className="drawer-content">
                 {drawerOpen === "day" &&
-                  ["All", "Feb 1", "Feb 2", "Feb 3", "Feb 4"].map((day) => (
+                  ["All", "Jan 29", "Jan 30", "Jan 31", "Feb 1"].map((day) => (
                     <div key={day}>
                       <input
                         type="checkbox"
@@ -302,24 +302,27 @@ const EventDetails = () => {
                 {drawerOpen === "category" &&
                   [
                     "All",
-                    "GROOVE ARENA",
-                    "JAMSPHERE",
-                    "GATHERING HUB",
-                    "WORDSMITH’S CORNER",
-                    "HAUTE ROUTE",
-                    "SAVORY SYMPHONY",
-                    "ARTISCOPE",
-                    "THEATRICAL TAPESTRY",
-                    "SKILL LAB",
-                    "THE DIGITAL STAGE",
-                    "JOYLAND",
+                    "Groove Arena",
+                    "Jamsphere",
+                    "Gathering Hub",
+                    "Wordsmith’s Corner",
+                    "Haute Route",
+                    "Savory Symphony",
+                    "Artiscope",
+                    "Theatrical Tapestry",
+                    "Skill Lab",
+                    "The Digital Stage",
+                    "Joyland",
                   ].map((category) => (
                     <div key={category}>
                       <input
                         type="checkbox"
-                        checked={filters.category === category}
+                        checked={
+                          filters.category.toUpperCase() ===
+                          category.toUpperCase()
+                        }
                         onChange={() =>
-                          category === "All"
+                          category.toUpperCase() === "all"
                             ? handleFilterChange("category", category)
                             : handleSpecificFilterChange("category", category)
                         }

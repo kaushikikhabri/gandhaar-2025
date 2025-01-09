@@ -255,7 +255,7 @@ label {
     width: 100%;
     text-align: start;
     font-size: 12px;
-    text-transform: lowercase;
+    /* text-transform: lowercase; */
     /* text-transform: capitalize; */
   }
 
@@ -280,3 +280,27 @@ input[type="checkbox"] {
 
 
 }  
+
+@media (max-width: 400px) {
+
+  .drawer-item {
+    width: 100%; /* Adjust to fit three filters equally */
+    max-height: 300px; /* Optional: To prevent excessive height */
+    overflow-y: auto; /* Enable scroll if content overflows */
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 380px) {
+
+  .drawer-item {
+    width: 100%; /* Adjust to fit three filters equally */
+    max-height: 300px; /* Optional: To prevent excessive height */
+    overflow-y: auto; /* Enable scroll if content overflows */
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 11px;
+  }
+}
