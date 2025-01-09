@@ -1,25 +1,17 @@
 .navcontainer {
   display: none;
-  /* Hidden by default */
   justify-content: center;
   align-items: center;
   height: 4rem;
-  /* transition: top 0.3s ease, opacity 0.3s ease; */
-  
-  /* Smooth transition for position and visibility */
 }
 
 .navcontainer.sticky {
   display: flex;
-  /* Becomes visible when sticky class is added */
   position: fixed;
-  /* Stick to the top */
   top: 0;
   left: 0;
   width: 100%;
-  /* Full width */
   z-index: 1000;
-  /* Ensure it's above other elements */
 }
 
 .navmenu {
@@ -34,7 +26,7 @@
   align-items: center;
   border: 3px solid rgb(52, 1, 49);
   box-shadow: -5px 0 15px rgba(0, 0, 0, 0.655);
-  border-bottom-left-radius: 20px; /* Rounded bottom-left corner */
+  border-bottom-left-radius: 20px; 
   border-bottom-right-radius: 20px; 
   height: inherit;
   width: fit-content;
@@ -43,8 +35,7 @@
 .navitem {
   margin: 15px;
   padding: 2px;
-  /* background-image: linear-gradient(135deg, rgba(241, 76, 208, 0.763) 10%, rgba(220, 79, 222, 0.861) 100%); */
-  border-bottom-left-radius: 10px; /* Rounded bottom-left corner */
+  border-bottom-left-radius: 10px; 
   border-bottom-right-radius: 25px; 
 }
 
@@ -85,40 +76,34 @@
   position: fixed;
   top: 0;
   right: 0;
-  width: 80%; /* Drawer width */
-  height: 100%; /* Full height */
-  background: url('/src/images/wave.png') no-repeat right center; /* Align image */
-  background-size: 120% 120%; /* Stretch image to fit */
-  transform: translateX(100%) scale(0.9); /* Start outside and slightly scaled down */
-  opacity: 0; /* Invisible initially */
+  width: 80%; 
+  height: 100%; 
+  background: url('/src/images/wave.png') no-repeat right center;
+  background-size: 120% 120%; 
+  transform: translateX(100%) scale(0.9); 
+  opacity: 0; 
   transition: transform 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55), opacity 0.4s ease-in;
   z-index: 999;
   color: #fff;
   font-family: 'Cinzel', serif;
-  overflow-y: auto; /* Enable vertical scrolling */
-  border-radius: 0 50px 50px 0; /* Add curved edge for a smooth look */
-  /* box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3); Add shadow for depth */
+  overflow-y: auto; 
+  border-radius: 0 50px 50px 0; 
 }
 
 .drawer.open {
-  transform: translateX(0) scale(1); /* Fully open and scaled back to normal */
-  opacity: 1; /* Fully visible */
+  transform: translateX(0) scale(1); 
+  opacity: 1;
   z-index: 1001;
 }
 
 .drawer.open:hover {
-  background-size: 130% 130%; /* Slightly increase wave stretch on hover */
-  transition: background-size 0.5s ease-in-out; /* Smooth wave effect */
+  background-size: 130% 130%; 
+  transition: background-size 0.5s ease-in-out; 
 }
 
 .drawer-header {
   display: flex;
-  
-  justify-content: end;
-
-  
-  /* border-bottom: 1px solid rgba(255, 255, 255, 0.2); */
-  
+  justify-content: end; 
 }
 
 
@@ -144,23 +129,21 @@
 .draweritem {
   margin: 1rem 0;
   padding: 1rem;
-  /* background-color: rgba(255, 175, 36, 0.215); */
   border-radius: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 75%;
-  transform: translateX(50px); /* Initially offset */
-  opacity: 0; /* Hidden initially */
-  animation: slideIn 0.6s ease-out forwards; /* Add slide-in effect */
-  animation-delay: calc(var(--delay, 0) * 0.1s); /* Stagger items */
+  transform: translateX(50px); 
+  opacity: 0; 
+  animation: slideIn 0.6s ease-out forwards; 
+  animation-delay: calc(var(--delay, 0) * 0.1s); 
 }
 
 .draweritem .drawerlink {
   text-decoration: none;
   color: #ffffff;
   font-size: 1rem;
-  /* font-weight: bold; */
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 900;
 }
@@ -169,7 +152,6 @@
   text-decoration: underline;
 }
 
-/* Slide-in Animation */
 @keyframes slideIn {
   from {
     transform: translateX(50px);
@@ -182,12 +164,9 @@
 }
 
 
-
-/* Responsive Styles */
 @media (max-width: 968px) {
   .hamburger {
     display: block;
-    /* Show hamburger button on smaller screens */
   }
 
   .navcontainer {
@@ -196,18 +175,6 @@
 
   .navmenu {
     display: none;
-    /* Hide nav items on smaller screens */
   }
 
-  /* .navmenu {
-    width: 100%;
-    display: flex;
-    justify-content: end;
-    border-radius: 0%;
-    padding: 10px;
-  } */
-
-  /* .navmenu .hamburger {
-    right: 0;
-  } */
 }

@@ -15,8 +15,7 @@
   object-fit: cover;
 }
 
-/* Buttons Styling */
-/* Skip Button Styling (reuse control-button styles) */
+ 
 .control-button {
   position: absolute;
   padding: 10px;
@@ -24,7 +23,7 @@
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   border: none;
-  border-radius: 10px; /* Makes buttons rectangular with rounded corners */
+  border-radius: 10px;  
   cursor: pointer;
   z-index: 10;
   display: flex;
@@ -32,7 +31,7 @@
   justify-content: center;
 }
 
-/* Button Placement */
+ 
 .top-left {
   top: 10px;
   left: 10px;
@@ -43,26 +42,26 @@
   right: 40px;
 }
 
-/* Hover Effect */
+ 
 .control-button:hover {
   background-color: rgba(255, 255, 255, 0.7);
   color: black;
 }
 
-/* Responsive Design for Video and Buttons */
+ 
 @media (max-width: 768px) {
   .video-container {
-    height: 70vh; /* Reduce height on smaller screens */
+    height: 70vh;  
   }
 
   .fullscreen-video {
-    object-fit: contain; /* Preserve aspect ratio for smaller devices */
+    object-fit: contain;  
     width: 100%;
     height: auto;
   }
 
   .control-button {
-    font-size: 30px; /* Reduce button size */
+    font-size: 30px;  
     padding: 8px;
   }
 
@@ -79,18 +78,18 @@
 
 @media (max-width: 480px) {
   .video-container {
-    height: 100vh; /* Further reduce height for phones */
+    height: 100vh;  
     background-color: black;
   }
 
   .fullscreen-video {
-    object-fit: contain; /* Ensure video fits within the smaller viewport */
+    object-fit: contain;  
     width: 100%;
     height: auto;
   }
 
   .control-button {
-    font-size: 24px; /* Further reduce button size */
+    font-size: 24px;  
     padding: 6px;
   }
 
