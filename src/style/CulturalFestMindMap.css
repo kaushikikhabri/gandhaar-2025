@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Almendra+SC&family=Delius&family=Galada&family=Honk&family=Imperial+Script&family=Kaushan+Script&family=Lavishly+Yours&family=Modak&family=Mogra&family=Niconne&family=Pattaya&family=Pirata+One&family=Rouge+Script&family=Rubik+Gemstones&family=Satisfy&family=Updock&family=Yesteryear&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
 .mindmap-container {
   background: rgb(60, 182, 241);
   /* background: linear-gradient(
@@ -7,6 +10,7 @@
     rgba(149, 23, 32, 1) 100%
   ); */
   background-color: rgb(104, 4, 4);
+  background:  linear-gradient(to bottom, rgb(173, 8, 8) 0%, rgb(122, 27, 6) 20%, rgb(104, 4, 4) 30%);;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,24 +23,22 @@
   height: 650px;
   padding-bottom: 120px;
 }
-.heading {
+.pre-heading {
   text-align: center;
   margin: 0;
-  font-size: 2.5rem;
+  font-size: 70px;
   font-weight: bold;
-  color: #fff; /* White text for contrast */
+  color: #fffae0; /* White text for contrast */
   font-family: "Courier New", Courier, monospace;
   padding: 10px 20px;
-  /* background: linear-gradient(
-    90deg,
-    rgba(60, 182, 241, 1) 31%,
-    rgba(8, 111, 193, 1) 50%,
-    rgba(149, 23, 32, 1) 100%
-  ); */
-  background-color: rgb(104, 4, 4);
+  background-color: rgb(173, 8, 8) ;
+  background:  linear-gradient(to bottom, rgb(255, 206, 150), rgb(173, 8, 8));
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Optional shadow */
   padding-bottom: 100px;
   padding-top: 20px;
+  font-family: "Mogra", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* Mind map background with map image */

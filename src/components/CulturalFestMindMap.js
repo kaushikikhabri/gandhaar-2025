@@ -58,7 +58,7 @@ const CulturalFestMindMap = () => {
 
   return (
     <div>
-      <h1 className="heading">Pre-Gandhaar Themes</h1>
+      <h1 className="pre-heading">Pre-Gandhaar Themes</h1>
       <div className="mindmap-container">
         {/* Mind Map Section */}
         <div className="mindmap-background">

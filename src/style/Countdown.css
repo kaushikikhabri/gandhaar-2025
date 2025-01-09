@@ -2,6 +2,7 @@
 .countdown-container{
     position: relative; /* Ensures child elements can be positioned on top */
     background-color: #f2f1ed;
+    background:  linear-gradient(to top, rgb(255, 206, 150) , #f0eee7 );;
     padding: 130px 0;
     /* height: 500px; */
 }
