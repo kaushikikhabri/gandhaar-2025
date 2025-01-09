@@ -2,8 +2,10 @@ import React, { useEffect, useState } from "react";
 import "../style/Countdown.css";
 import CanvasComponent from "./CanvasComponent";
 
+
 function CountdownTracker({ label, value }) {
   const [currentValue, setCurrentValue] = useState(value);
+
 
   useEffect(() => {
     const top = document.querySelector(`.${label} .card__top`);
@@ -12,6 +14,7 @@ function CountdownTracker({ label, value }) {
     const backBottom = document.querySelector(
       `.${label} .card__back .card__bottom`
     );
+
 
     const formattedValue = ("0" + value).slice(-2);
     if (formattedValue !== currentValue) {
@@ -23,12 +26,14 @@ function CountdownTracker({ label, value }) {
       top.innerText = formattedValue;
       backBottom.setAttribute("data-value", formattedValue);
 
+
       const el = document.querySelector(`.${label}`);
       el.classList.remove("flip");
       void el.offsetWidth; // trigger reflow
       el.classList.add("flip");
     }
   }, [value, currentValue, label]);
+
 
   return (
     <span className={`flip-clock__piece ${label}`}>
@@ -44,6 +49,7 @@ function CountdownTracker({ label, value }) {
   );
 }
 
+
 function getTimeRemaining(endtime) {
   const t = Date.parse(endtime) - Date.parse(new Date());
   return {
@@ -55,8 +61,10 @@ function getTimeRemaining(endtime) {
   };
 }
 
+
 function Countdown({ targetDate, onComplete }) {
   const [time, setTime] = useState(getTimeRemaining(targetDate));
+
 
   useEffect(() => {
     const updateClock = () => {
@@ -69,9 +77,11 @@ function Countdown({ targetDate, onComplete }) {
       }
     };
 
+
     const interval = setInterval(updateClock, 500);
     return () => clearInterval(interval);
   }, [targetDate, onComplete]);
+
 
   return (
     <div className="flip-clock">
@@ -82,12 +92,15 @@ function Countdown({ targetDate, onComplete }) {
   );
 }
 
+
 export default function CountdownApp() {
   const targetDate = new Date("2025-01-29T23:59:59"); // Set your target date here
+
 
   const handleComplete = () => {
     alert("Countdown complete");
   };
+
 
   return (
     <div className="countdown-heading-container">
@@ -101,4 +114,7 @@ export default function CountdownApp() {
     </div>
   );
 
+
 }
+
+
