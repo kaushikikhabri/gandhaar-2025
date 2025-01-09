@@ -73,7 +73,7 @@ const EventDetails = () => {
 
   return (
     <div>
-      <Navigation  isDrawerOpen={isDrawerOpen} toggleDrawer={toggleDrawer1} />
+      <Navigation isDrawerOpen={isDrawerOpen} toggleDrawer={toggleDrawer1} />
       <div style={{ display: "flex", backgroundColor: "white" }}>
         {/* Sidebar */}
         <div className="sidebar">
@@ -139,14 +139,14 @@ const EventDetails = () => {
             <div>
               {[
                 "All",
-                "Dance",
-                "Music",
-                "Fun",
-                "Runway",
-                "Culinary",
-                "Artistry",
-                "Drama",
-                "Workshop",
+                "Groove Arena",
+                "JamSphere",
+                "Gathering Hub",
+                "Haute Route",
+                "Savory Symphony",
+                "ArtiScope",
+                "Theatrical Tapestry",
+                "Skill Lab",
               ].map((category) => (
                 <div key={category}>
                   <input
@@ -211,6 +211,7 @@ const EventDetails = () => {
                   <button className="event-register-button">
                     View Event Details{" "}
                     <LaunchIcon style={{ marginLeft: "5px" }} />
+                    <a href={event.detailsUrl}></a>
                   </button>
                 </div>
               ))}
@@ -288,14 +289,14 @@ const EventDetails = () => {
                 {drawerOpen === "category" &&
                   [
                     "All",
-                    "dance",
-                    "music",
-                    "fun",
-                    "runway",
-                    "culinary",
-                    "artistry",
-                    "drama",
-                    "workshop",
+                    "Groove Arena",
+                    "JamSphere",
+                    "Gathering Hub",
+                    "Haute Route",
+                    "Savory Symphony",
+                    "ArtiScope",
+                    "Theatrical Tapestry",
+                    "Skill Lab",
                   ].map((category) => (
                     <div key={category}>
                       <input
@@ -317,13 +318,15 @@ const EventDetails = () => {
           ))}
         </div>
         {isMobile && (
-        <div className="floating-icon" onClick={toggleDrawer1}>
-          <div className="floating-content">
-            <span role="img" aria-label="menu">✨</span>
-            <p>Menu</p>
+          <div className="floating-icon" onClick={toggleDrawer1}>
+            <div className="floating-content">
+              <span role="img" aria-label="menu">
+                ✨
+              </span>
+              <p>Menu</p>
+            </div>
           </div>
-        </div>
-      )}
+        )}
       </div>
     </div>
   );
