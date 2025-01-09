@@ -10,7 +10,7 @@ const event_details = {
     imageUrl:
       "https://easy-peasy.ai/cdn-cgi/image/quality=80,format=auto,width=700/https://fdczvxmwwjwpwbeeqcth.supabase.co/storage/v1/object/public/images/00c75b73-0934-4ed4-be2d-a38ea416f81f/91dc1e47-0fb0-4fcd-970f-3dfd14ab403a.png",
   },
-  "soloSynergy": {
+  soloSynergy: {
     start: "11:00 AM",
     end: "2:00 PM",
     location: "Stage 2",
@@ -21,7 +21,7 @@ const event_details = {
     imageUrl:
       "https://media.istockphoto.com/id/858777608/vector/dance-battle-party-poster.jpg?s=612x612&w=0&k=20&c=Adk3VCE61K6aQ4SsE_EMOImIY_ByTkhY_WZps8c2s_U=",
   },
-  "nrutyanjali": {
+  nrutyanjali: {
     start: "10:00 AM",
     end: "1:00 PM",
     location: "Main Bldg Quadrangle",
@@ -54,7 +54,7 @@ const event_details = {
     imageUrl:
       "https://img.freepik.com/premium-photo/poster-movie-called-group-people-dancing_1127009-4301.jpg",
   },
-   "Sargam Symphony": {
+  "Sargam Symphony": {
     start: "10:00 AM",
     end: "1:30 PM",
     location: "Main Bldg Quadrangle",
@@ -63,9 +63,9 @@ const event_details = {
     teamSize: "2 (minimum)/5 (maximum)",
     Participation: "1 team per class",
     imageUrl:
-       "https://media.licdn.com/dms/image/v2/D5612AQFRw-MO07-Y4g/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1710541180651?e=1741824000&v=beta&t=vwx7Ae6WKbzg-bkkh4uP4rGpjQBqmi-3KBL2EkPMT1M",
+      "https://media.licdn.com/dms/image/v2/D5612AQFRw-MO07-Y4g/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1710541180651?e=1741824000&v=beta&t=vwx7Ae6WKbzg-bkkh4uP4rGpjQBqmi-3KBL2EkPMT1M",
   },
-   "Suron ke Sikandar": {
+  "Suron ke Sikandar": {
     start: "10:00 AM",
     end: "12:00 PM",
     location: "KB Joshi Audi",
@@ -83,7 +83,7 @@ const event_details = {
     category: "GATHERING HUB",
     day: "Jan 29",
     teamSize: "-",
-    Participation: "1 team from department", 
+    Participation: "1 team from department",
     imageUrl:
       "https://thumbs.dreamstime.com/b/vivid-illustration-microphone-musical-elements-ai-generated-vivid-illustration-microphone-musical-elements-335216799.jpg?w=992",
   },
@@ -131,7 +131,7 @@ const event_details = {
     imageUrl:
       "https://img.freepik.com/premium-photo/inclusive-pridethemed-escape-room-experience-generative-ai_883586-207229.jpg",
   },
-  "TALAASH": {
+  TALAASH: {
     start: "10:30 AM",
     end: "12:30 PM",
     location: "All Campus",
@@ -142,7 +142,7 @@ const event_details = {
     imageUrl:
       "https://riddlepedia.com/wp-content/uploads/2024/02/prom-scavenger-hunt-riddles.png",
   },
-  "HAUTEAURA": {
+  HAUTEAURA: {
     start: "6:00 PM",
     end: "9:00 PM",
     location: "Samstha Ground",
@@ -182,7 +182,7 @@ const event_details = {
     category: "WORDSMITH’S CORNER",
     day: "Jan 29",
     teamSize: 1,
-    Participation: "1 team from each class", 
+    Participation: "1 team from each class",
     imageUrl:
       "https://t3.ftcdn.net/jpg/07/28/02/58/360_F_728025858_THUOpi99IgFjoDdXqFHryVK2u3oMhTbi.jpg",
   },
@@ -197,7 +197,7 @@ const event_details = {
     imageUrl:
       "https://t4.ftcdn.net/jpg/06/88/97/09/360_F_688970981_LQ6pXYzZIRyXhpXA44dCUNDt4bjp1bmV.jpg",
   },
-  "Spellbound": {
+  Spellbound: {
     start: "12:30 PM",
     end: "2:30 PM",
     location: "KB Joshi Audi",
@@ -223,7 +223,7 @@ const event_details = {
     start: "10:00 AM",
     end: "2:00 PM",
     location: "Between Main & IT Building",
-    category: "WORDSMITH’S CORNER",
+    category: "SAVORY SYMOHONY",
     day: "Jan 31",
     teamSize: "2 (minimum) / 4 (maximum)",
     Participation: "1 team per class",
@@ -252,7 +252,7 @@ const event_details = {
     imageUrl:
       "https://img.freepik.com/premium-photo/henna-mehndi-diwali-background_1278458-10458.jpg",
   },
-  "Bincredible": {
+  Bincredible: {
     start: "1:00 PM",
     end: "3:00 PM",
     location: "Mech Circle",
@@ -337,8 +337,7 @@ const event_details = {
     day: "Feb 1",
     teamSize: "2 (1 makeup artist and 1 model)",
     Participation: "2 team per class",
-    imageUrl:
-      "https://i.ytimg.com/vi/hiCUwAba7jM/maxresdefault.jpg",
+    imageUrl: "https://i.ytimg.com/vi/hiCUwAba7jM/maxresdefault.jpg",
   },
   "The Drama Premiere League": {
     start: "1:00 PM",
@@ -351,7 +350,7 @@ const event_details = {
     imageUrl:
       "https://img.freepik.com/free-photo/smiling-female-mime-artist-looking-male-mime-artist-peeking-from-curtain_23-2147891614.jpg?t=st=1736355391~exp=1736358991~hmac=ec4c063f23551df45c258cfe81eb7be1375166e53580f9e7644c7eb911910cb0&w=900",
   },
-  "Nazariya": {
+  Nazariya: {
     start: "12:00 PM",
     end: "4:00 PM",
     location: "Stage 2",
@@ -362,7 +361,7 @@ const event_details = {
     imageUrl:
       "https://media.istockphoto.com/id/937674774/vector/abstract-modern-music-poster-template.jpg?s=612x612&w=0&k=20&c=8WTeLpUCJRWadbiQ_9cVSfjSa2x-CVOSG5M5FbYmJ9w=",
   },
-  "DJEMBE": {
+  DJEMBE: {
     start: "12:00 PM",
     end: "2:00 PM",
     location: "Stage 2",
@@ -373,7 +372,7 @@ const event_details = {
     imageUrl:
       "https://img.freepik.com/premium-photo/drummer-hands-playing-ethnic-djembe-drum_829566-588.jpg?w=360",
   },
-  "UKULELE": {
+  UKULELE: {
     start: "(Day1) 12:30 PM,(Day2) 10:00 AM",
     end: "4:30 PM, 2:00 PM",
     location: "IT Building",
@@ -395,7 +394,7 @@ const event_details = {
     imageUrl:
       "https://media.istockphoto.com/id/937674774/vector/abstract-modern-music-poster-template.jpg?s=612x612&w=0&k=20&c=8WTeLpUCJRWadbiQ_9cVSfjSa2x-CVOSG5M5FbYmJ9w=",
   },
-  "ARTFLUID": {
+  ARTFLUID: {
     start: "12:00 PM",
     end: "2:00 PM",
     location: "Mech Building",
@@ -472,7 +471,6 @@ const event_details = {
     imageUrl:
       "https://media.istockphoto.com/id/937674774/vector/abstract-modern-music-poster-template.jpg?s=612x612&w=0&k=20&c=8WTeLpUCJRWadbiQ_9cVSfjSa2x-CVOSG5M5FbYmJ9w=",
   },
-  
 };
 
 export default event_details;
