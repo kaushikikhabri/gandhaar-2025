@@ -1,13 +1,13 @@
-
 .schedule-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
   gap: 2px;
-  padding-top: 20px;
-  height: 109vh;
-  background: linear-gradient(to bottom, #1b1302, #250123, #640e61, #6f096c, rgb(17, 2, 87));
+  padding-top: 20px; /* Add padding to ensure buttons have space above the schedule */
+  padding-left: 90px;
+  height: 109vh; /* Ensures it takes up the full viewport height */
+  background: linear-gradient(to bottom, #1b1302, #250123, #640e61, #6f096c, rgb(17, 2, 87));; /* Optional background for visibility */
   padding-bottom: 850px;
 }
 
@@ -23,10 +23,12 @@
   margin-bottom: 20px;
 }
 
+
 .time-slot-container {
   position: relative; /* Make the container a positioning context */
-  margin-right: 20px;
+  margin-left: 20px;
 }
+
 
 .time-slot {
   position: relative; /* Needed for the background box */
@@ -34,8 +36,9 @@
   width: 100%; /* Full width */
   margin: 0; /* Remove margin */
   border-radius: 5px;
-  
+ 
 }
+
 
 .day-buttons {
   display: flex;
@@ -45,8 +48,10 @@
   margin-bottom: 10px; /* Decrease this value to reduce the gap */
 }
 
+
 .day-button {
   padding: 10px 20px;
+ 
   background: linear-gradient(45deg, #ff3366, #cc33cc, #9933ff);
   color: white;
   border: none;
@@ -57,61 +62,61 @@
   transition: background-color 0.3s;
 }
 
-.day-button.active { 
+
+.day-button.active {
   background: linear-gradient(45deg, #ff6600, #ff3366, #ff0066);
 }
+
 
 .day-button:hover {
   background: linear-gradient(45deg, #ff7eb3, #660066);
 }
 
+
 .schedule-container {
   display: grid;
-  grid-template-columns: 6vw repeat(10, 4.5vw); /*7vw repeat(13, 5vw); Add an extra column for time */
+  grid-template-columns: 7vw repeat(16, 5vw); /*7vw repeat(13, 5vw); Add an extra column for time */
   grid-template-rows: repeat(28, 3vh);/*repeat(22, 3vh); /* Set auto row height to adjust dynamically */
   gap: 5px;
   padding: 5px;
   margin-top: 5px;
-  height: 100vh;
+  height: 80vh;
   margin-bottom: 0.1em;
+  margin-left: -80px;
 }
 
-.time-label {
-  position: absolute; /* Place the label independently */
-  top: -8px; /* Adjust to place time exactly on the line */
-  left: 50%; /* Center horizontally */
-  transform: translateX(-50%); /* Center the text relative to the slot */
-  font-size: 10px;
-  font-weight: bold;
-  color: #fff;
-  background-color: #000; /* Optional: Add background for readability */
-  padding: 2px 5px; /* Optional: Add padding around text */
-  border-radius: 3px; /* Optional: Round corners */
-}
 
-.schedule-container .time-slot {
-  height: 5vh; /* Set a custom height for the first column rows */
-  line-height: 5vh; /* Align text vertically */
-}
-
-.event {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; /* Space between start time, event text, and end time */
+.schedule-container.day-3 {
+  grid-template-columns: 6vw repeat(17, 4vw); /* Custom grid for Day 3 */
+  grid-template-rows: repeat(28, 3vh);/*repeat(22, 3vh); /* Set auto row height to adjust dynamically */
+  gap: 5px;
   padding: 5px;
-  text-align: center;
-  font-size: 14px;
-  font-weight: bold;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
-  border: 2px solid #fff;
-  transition: transform 0.2s, box-shadow 0.2s;
+  margin-right: 2px;
+  margin-top: 5px;
+  height: 80vh;
+  margin-bottom: 0.1em;
+  margin-left: -80px;
+}
+.schedule-container.day-3 .event-Ename {
   position: relative;
-  
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+  /* padding: 10px; */
+  border-radius: 5px;
+  width: 80px; /* Fixed width for event details */
+  height: 50px; /* Fixed height */
+  box-sizing: border-box;
+  font-size: 12px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2;
 }
 
-.event-text {
+
+.event-Ename {
   position: relative;
   top: 50%;
   left: 50%;
@@ -129,6 +134,58 @@
   z-index: 2;
 }
 
+
+
+
+.special-event {
+  font-size: 13px !important;
+  width: 200px !important; /* Specific width for special event */
+  height: 50px;
+}
+
+
+.time-label {
+  position: absolute; /* Place the label independently */
+  top: -8px; /* Adjust to place time exactly on the line */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center the text relative to the slot */
+  font-size: 10px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #000; /* Optional: Add background for readability */
+  padding: 2px 5px; /* Optional: Add padding around text */
+  border-radius: 3px; /* Optional: Round corners */
+}
+
+
+.schedule-container .time-slot {
+  height: 5vh; /* Set a custom height for the first column rows */
+  line-height: 5vh; /* Align text vertically */
+}
+
+
+.event {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Space between start time, event text, and end time */
+  padding: 5px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  border: 2px solid #fff;
+  transition: transform 0.2s, box-shadow 0.2s;
+  position: relative;
+ 
+}
+
+
+
+
+
+
 .start-time
 {
   content: attr(data-start); /* Use `data-start` attribute for the start time */
@@ -144,6 +201,7 @@
   color: rgba(255, 255, 255, 0.7);
 }
 
+
 .end-time
 {
   content: attr(data-end); /* Use `data-end` attribute for the end time */
@@ -157,25 +215,27 @@
   color: #fff;
   font-weight: normal;
   color: rgba(255, 255, 255, 0.7); /* Semi-transparent text for better readability */
-  
+ 
 }
 .event:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
+
 .modal-overlay {
   position: absolute;
   top: 20%;
   left: 40%;
   width: 30%;
-  height: 50%;
+  height: 45%;
   /* background: rgba(0, 0, 0, 0.7); */
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1000;
 }
+
 
 .modal {
   background: #fff;
@@ -189,11 +249,13 @@
   z-index: 2000;
 }
 
+
 .modal h2 {
 margin: 40px;
 font-size: 18px;
 color: #333;
 }
+
 
 .modal p {
 font-size: 14px;
@@ -201,6 +263,7 @@ margin: 25px;
 color: #666;
 padding: 5px;
 }
+
 
 .modal button {
   padding: 10px 20px;
@@ -213,47 +276,99 @@ padding: 5px;
   font-size: 14px;
 }
 
+
 .modal button:hover {
   background-color: #ffb347;
 }
 
-.event-text.flashmob {
-  font-family: "Arial", sans-serif;
-  font-size: 5px;
-color: aqua;
-  width: 30px;
-  height: 30px;
-}
 
-.event.flashmob .start-time,
-.event.flashmob .end-time {
-  font-size: 0.8em;
-  color: gray;
-}
+
 
 @media (max-width: 760px) {
+  .schedule-container
+  {
+    grid-template-columns: 2vw repeat(10, 5vw);
+  }
+  .schedule-container.day-3
+  {
+    grid-template-columns: 2vw repeat(16, 4vw);
+  }
+
+
   .time-slot {
     font-size: 5px;
   }
-  .event-text {
-    font-size: 7px;
-    width: 30px; /* Fixed width for event details */
-    height: 30px; /* Fixed height */
+
+
+  .time-slot-container
+  {
+    margin-left: -15px;
+  }
+
+
+  .time-label
+  {
+    left: 30%;
+    font-size: 8px;
+    padding: 2px 3px;
+  }
+
+
+  .day-button {
+    padding: 6px 15px;
+    font-size: 12px;
+  }
+  .day-buttons
+  {
+    margin-left: -80px;
+  }
+
+
+  .event-Ename {
+    font-size: 6px !important;
+    width: 40px !important; /* Fixed width for event details */
+    height: 60px !important; /* Fixed height */
+  }
+
+
+  .special-event
+  {
+    font-size: 6px !important;
+    width: 50px !important; /* Fixed width for event details */
+    height: 50px !important; /* Fixed height */
+  }
+
+
+  .schedule-container.day-3 .event-Ename
+  {
+    font-size: 5px !important;
+    width: 30px !important; /* Fixed width for event details */
+    height: 50px !important; /* Fixed height */
+  }
+ 
+
+
+  .start-time,.end-time
+  {
+    font-size: 6px;
+    padding: 0.5px 0.5px;
   }
   .modal-overlay
   {
     width: 60%;
-    height: 25%;
+    height: 30%;
     top: 25%;
     left: 25%;
 
+
   }
-  
+ 
   .modal h2
   {
     font-size: 15px;
     margin: 10px;
   }
+
 
   .modal p
   {
@@ -261,3 +376,5 @@ color: aqua;
     margin: 10px;
   }
 }
+
+
