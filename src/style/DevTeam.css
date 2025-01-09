@@ -9,7 +9,8 @@
     font-family:'Poppins', sans-serif;
     text-align: center;
     padding: 30px 50px 50px 50px;
-    background: linear-gradient(180deg, #18168d 0.1%, #4b49c9 20%, rgb(0, 132, 255) 100%);
+    /* background: linear-gradient(180deg, #18168d 0.1%, #4b49c9 20%, rgb(0, 132, 255) 100%); */
+    background: linear-gradient(to bottom, rgb(88, 0, 76), rgb(135, 1, 165) , rgb(0, 16, 53));
 }
 
 .dev-team-section h1 {

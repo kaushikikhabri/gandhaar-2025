@@ -14,18 +14,22 @@ import image6 from "../posters/Artiscope.PNG";
 import image7 from "../posters/Digital stage.PNG";
 import image8 from "../posters/haute route.png";
 import image9 from "../posters/Joyland.PNG";
+import image10 from "../posters/haute route.png";
+import image11 from "../posters/Joyland.PNG";
 
 // Update items array with local images
 const items = [
-  { image: image1, category: "grooveArena" },
-  { image: image2, category: "soloSynergy" },
-  { image: image3, category: "nrutyanjali" },
-  { image: image4, category: "streetBrawl" },
-  { image: image5, category: "stepItUp" },
-  { image: image6, category: "Artiscope" },
-  { image: image7, category: "DigitalStage" },
-  { image: image8, category: "HauteRoute" },
-  { image: image9, category: "Joyland" },
+  { image: image1, category: "GROOVE ARENA" },
+  { image: image2, category: "JAMSPHERE" },
+  { image: image3, category: "GATHERING HUB" },
+  { image: image4, category: "WORDSMITH’S CORNER" },
+  { image: image5, category: "SAVORY SYMPHONY" },
+  { image: image6, category: "ARTISCOPE" },
+  { image: image7, category: "THE DIGITAL STAGE" },
+  { image: image8, category: "HAUTE ROUTE" },
+  { image: image9, category: "THEATRICAL TAPESTRY" },
+  { image: image10, category: "SKILL LAB " },
+  { image: image11, category: "JOYLAND" },
 ];
 
 function EventSource() {
