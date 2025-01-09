@@ -8,9 +8,21 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import Team from "./components/Team";
 import CulturalFestMindMap from "./components/CulturalFestMindMap";
+import Launchpage from "./components/Srushti";
+import Homepage from "./components/Homepage";
+import Home from "./components/Home";
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
 root.render(
   <React.StrictMode>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Launchpage />} />
+        <Route path="/home" element={<Home />} />
+      </Routes>
+    </Router>
     <App />
   </React.StrictMode>
 );

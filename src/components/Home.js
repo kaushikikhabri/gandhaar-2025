@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "../style/Home.css";
-import Launch from "./Launch";
 import Header from "./Header";
 import Navigation from "./Navigation";
 import Countdown from "./Countdown";
@@ -42,6 +41,7 @@ function Home() {
           scrollThreshold={200}
         />{" "}
       </div>
+      <div></div>
       <div id="countdown">
         {" "}
         <Countdown targetDate={targetDate} />{" "}

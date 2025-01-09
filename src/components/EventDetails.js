@@ -73,7 +73,7 @@ const EventDetails = () => {
 
   return (
     <div>
-      <Navigation  isDrawerOpen={isDrawerOpen} toggleDrawer={toggleDrawer1} />
+      <Navigation isDrawerOpen={isDrawerOpen} toggleDrawer={toggleDrawer1} />
       <div style={{ display: "flex", backgroundColor: "white" }}>
         {/* Sidebar */}
         <div className="sidebar">
@@ -109,13 +109,18 @@ const EventDetails = () => {
             <div>
               {[
                 "All",
-                "Main Bldg Quadrangle",
+                "Main Quad",
                 "Stage 2",
-                "Between Main & IT Building",
+                "Between Main & IT Bldg",
                 "Mech Circle",
-                "Instru Audi",
-                "KB Joshi Hall",
-                "Samastha Ground",
+                "Instru Quad",
+                "KB Joshi",
+                "Samstha Ground",
+                "IT/Mech Bldg",
+                "Whole Campus",
+                "Instru Garden/Mech Circle",
+                "IT Bulg",
+                "Online",
               ].map((location) => (
                 <div key={location}>
                   <input
@@ -139,14 +144,17 @@ const EventDetails = () => {
             <div>
               {[
                 "All",
-                "Dance",
-                "Music",
-                "Fun",
-                "Runway",
-                "Culinary",
-                "Artistry",
-                "Drama",
-                "Workshop",
+                "GROOVE ARENA",
+                "JAMSPHERE",
+                "GATHERING HUB",
+                "WORDSMITH’S CORNER",
+                "HAUTE ROUTE",
+                "SAVORY SYMPHONY",
+                "ARTISCOPE",
+                "THEATRICAL TAPESTRY",
+                "SKILL LAB",
+                "THE DIGITAL STAGE",
+                "JOYLAND",
               ].map((category) => (
                 <div key={category}>
                   <input
@@ -211,6 +219,7 @@ const EventDetails = () => {
                   <button className="event-register-button">
                     View Event Details{" "}
                     <LaunchIcon style={{ marginLeft: "5px" }} />
+                    <a href={event.detailsUrl}></a>
                   </button>
                 </div>
               ))}
@@ -263,13 +272,18 @@ const EventDetails = () => {
                 {drawerOpen === "location" &&
                   [
                     "All",
-                    "Main Bldg Quadrangle",
+                    "Main Quad",
                     "Stage 2",
-                    "Between Main & IT Building",
+                    "Between Main & IT Bldg",
                     "Mech Circle",
-                    "Instru Audi",
-                    "KB Joshi Hall",
+                    "Instru Quad",
+                    "KB Joshi",
                     "Samstha Ground",
+                    "IT/Mech Bldg",
+                    "Whole Campus",
+                    "Instru Garden/Mech Circle",
+                    "IT Bulg",
+                    "Online",
                   ].map((location) => (
                     <div key={location}>
                       <input
@@ -288,14 +302,17 @@ const EventDetails = () => {
                 {drawerOpen === "category" &&
                   [
                     "All",
-                    "dance",
-                    "music",
-                    "fun",
-                    "runway",
-                    "culinary",
-                    "artistry",
-                    "drama",
-                    "workshop",
+                    "GROOVE ARENA",
+                    "JAMSPHERE",
+                    "GATHERING HUB",
+                    "WORDSMITH’S CORNER",
+                    "HAUTE ROUTE",
+                    "SAVORY SYMPHONY",
+                    "ARTISCOPE",
+                    "THEATRICAL TAPESTRY",
+                    "SKILL LAB",
+                    "THE DIGITAL STAGE",
+                    "JOYLAND",
                   ].map((category) => (
                     <div key={category}>
                       <input
@@ -317,13 +334,15 @@ const EventDetails = () => {
           ))}
         </div>
         {isMobile && (
-        <div className="floating-icon" onClick={toggleDrawer1}>
-          <div className="floating-content">
-            <span role="img" aria-label="menu">✨</span>
-            <p>Menu</p>
+          <div className="floating-icon" onClick={toggleDrawer1}>
+            <div className="floating-content">
+              <span role="img" aria-label="menu">
+                ✨
+              </span>
+              <p>Menu</p>
+            </div>
           </div>
-        </div>
-      )}
+        )}
       </div>
     </div>
   );

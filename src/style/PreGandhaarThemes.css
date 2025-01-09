@@ -1,17 +1,3 @@
-
-/* default one */
-@import url('https://fonts.googleapis.com/css2?family=Badeen+Display&display=swap');
-
-/* TROPICAL TUNES */
-@import url('https://fonts.googleapis.com/css2?family=Badeen+Display&family=Gravitas+One&display=swap');
-
-/* STREET BEATS */
-@import url('https://fonts.googleapis.com/css2?family=Abel&family=Badeen+Display&family=Gravitas+One&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Rubik+Dirt&family=Rubik+Vinyl&display=swap');
-
-
-/* day css import  */
-@import url('https://fonts.googleapis.com/css2?family=Abel&family=Badeen+Display&family=Gravitas+One&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@300..700&family=Rubik+Dirt&family=Rubik+Vinyl&family=Ysabeau+SC:wght@1..1000&display=swap');
-
 /* General styles for description */
 .item .description {
     position: absolute;
@@ -39,25 +25,39 @@
     }
 }
 
-/* Specific theme-based styles for description */
-.item.tropical-tunes .description {
-    font-family: "Badeen Display", sans-serif;
-    color: rgb(236, 232, 234);
+/* Theme-Specific Styles */
+.item.broadway-ballad .content {
+    color: #fdfdfd;
+    right: -8%;
+    font-size: 90px;
+    /* font-family: "Abril Fatface", serif; */
+    font-family: "Times New Roman", serif;
+    letter-spacing: 2px;
+
 }
 
-.item.street-beats .description {
-    font-family: "Rubik Dirt", serif;
-    color: rgb(0, 0, 0);
+.item.streetbeat .content {
+    color: #ffffff;
+    /* font-family: "Rubik Dirt", sans-serif; */
+    /* font-family: "Rubik Mono One", serif; */
+    font-family: "Arial Black", sans-serif;
+    right: -10%;
 }
 
-.item.metallica .description {
-    font-family: 'Impact', sans-serif;
-    letter-spacing: 1px;
+.item.chart-pop .content {
+    color: #ff477e;
+    /* font-family: 'Impact', sans-serif; */
+    font-family: "Impact", sans-serif;
+    letter-spacing: 2px;
 }
 
-.item.raag-reverie .description {
-    font-family: 'Georgia', serif;
+.item.allankar .content {
+    color: #ffffff;
+    /* font-family: 'Georgia', serif; */
+    font-family: "Georgia", serif;
+
     font-style: italic;
+    right: -5%;
 }
 
 
@@ -93,11 +93,12 @@
 } */
 
 .carousel{
-    width: 100%;
-    height: 100vh;
     position: relative;
+    width: 100vw;
+    height: 100vh;
     overflow: hidden;
     margin-top: -50px;
+    background: transparent;
 }
 
 /* .list{
@@ -146,41 +147,12 @@
     font-family: system-ui;
     text-transform: uppercase;
     white-space: nowrap;
-    font-family: "Badeen Display", system-ui;
-  font-weight: 100;
+  font-weight: 400;
   font-style: normal;
     z-index: 1; /*change*/
-    
 }
 
 
-/* Specific styles for each theme */
-.item.tropical-tunes .content {
-    font-family: "Badeen Display", serif;
-  font-weight: 300;
-  font-style: normal;
-left: 55%
-  
-}
-
-.item.street-beats .content {
-    font-family: "Rubik Dirt", serif;
-    font-weight: 300;
-    font-style: normal;
-    color: rgb(0, 0, 0);
-    left: 55%;
-}
-
-
-.item.metallica .content {
-    font-family: 'Impact', sans-serif;
-    letter-spacing: 2px;
-}
-
-.item.raag-reverie .content {
-    font-family: 'Georgia', serif;
-    font-style: oblique;
-}
 
 
 /* DAY IS BEING EXPRESSED */
@@ -212,7 +184,15 @@ left: 55%
     z-index: 1;
 }
 
-
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: transparent; /* Specifically make the background transparent */
+    z-index: -1; /* Keep it behind other elements */
+}
 
 #prev,
 #next{
@@ -268,6 +248,11 @@ left: 55%
 
 }
 
+.item.active .description{
+    animation: toActive 0.8s ease-in-out 1;
+
+}
+
 
 /* time being */
 
@@ -313,6 +298,11 @@ left: 55%
 
 }
 
+.carousel.right .item.active .description{
+    animation: toActivePrev 0.8s ease-in-out 1;
+
+}
+
 
 
 
@@ -338,19 +328,7 @@ left: 55%
     --height-mockup: calc(900px); /* Increase height */
 }
 
-.background {
-    position: absolute;
-    top: 55%;
-    left: -1%;
-    transform: translate(-50%, -50%);
-    width: 90vw;  /* Adjust width to be relative to viewport width */
-    height: 90vh; /* Adjust height to be relative to viewport height */
-    background: url("../images/goldencd.png") center center no-repeat;
-    background-size: contain;  /* Ensures the image is fully visible */
-    background-position: center;  /* Keeps the image centered */
-    background-attachment: fixed;  /* Keeps the goldencd image fixed */
-    z-index: 2;  /* Ensures this is behind the mockup */
-}
+
 
 /* Responsive Stick */
 /* .stick {
@@ -369,7 +347,7 @@ left: 55%
 /* Existing styles remain the same */
 
 /* New keyframes for stick animation */
-@keyframes stickAnimation {
+/* @keyframes stickAnimation {
     0% {
         top: 100%;
         left: 20%;
@@ -378,122 +356,167 @@ left: 55%
     100% {
         top: 23%;
         left: 0%;
-        transform: translateY(-50%) rotate(75deg); /* Adjust to final position */
-    }
-}
+        transform: translateY(-50%) rotate(70deg); /* Adjust to final position */
+    /* } */
+/* } */ */
 
 /* Apply animation to the stick */
-.stick {
-    position: absolute;
-    width: 10vw;
-    height: 20vh;
-    background-image: url('../images/stick.png');
-    background-size: 100%;
-    top: 50%;
-    left: 35%;
-    transform: translateY(-50%) rotate(-45deg);
-    z-index: 3;
-    animation: stickAnimation 2s ease-out forwards; /* Add animation here */
-}
-
-/* Additional responsive adjustments can remain the same */
-
-
-/* Additional media queries for responsiveness */
-@media (max-width: 768px) {
-    .background {
-        width: 70vw;  /* Increase width for smaller screens */
-        height: 70vh; /* Increase height for smaller screens */
-    }
-
-    .stick {
-        width: 25vw;  /* Larger width on smaller screens */
-        height: 20vh; /* Larger height on smaller screens */
-        left: 20%;    /* Adjust stick position for small screens */
-    }
-}
-
-@media (max-width: 480px) {
-    .background {
-        width: 120vw;  /* Full width for very small screens */
-        height: 120vh; /* Full height for very small screens */
-    }
-
-    .stick {
-        width: 35vw;  /* Larger width for tiny screens */
-        height: 35vh; /* Larger height for tiny screens */
-        left: 5%;     /* Adjust stick position for tiny screens */
-    }
-}
+.stick {}
 
 
 .mockup {
     position: absolute;
     top: 55%;
-    left: -1%;
-    --left: 0%;
-    transform: translate(-50%, -50%) rotate(0deg); 
-    height: var(--height-mockup);
-    width: var(--width-mockup);
-    background: 
-        url('../images/mockup.png') center center no-repeat; 
-        /* url(img/listSoda.jpg) center center no-repeat; */
-    background-size: contain;
-    -webkit-mask-image: url('../images/mockup.png');
-    -webkit-mask-repeat: no-repeat;
-    -webkit-mask-size: contain;
-    -webkit-mask-position: center;
-    mask-image: url('../images/mockup.png');
-    mask-repeat: no-repeat;
-    mask-size: contain;
-    mask-position: center;
-    transition: transform 0.5s ease-in-out;
-    transform-origin: center center;
-    z-index: 2; /*change*/
+left: -1%;
+--left: 0%;
+transform: translate(-50%, -50%) rotate(0deg); 
+height: var(--height-mockup);
+width: var(--width-mockup);
+background: 
+    url('../images/mockup.png') center center no-repeat; 
+    /* url(img/listSoda.jpg) center center no-repeat; */
+background-size: contain;
+-webkit-mask-image: url('../images/mockup.png');
+-webkit-mask-repeat: no-repeat;
+-webkit-mask-size: contain;
+-webkit-mask-position: center;
+mask-image: url('../images/mockup.png');
+mask-repeat: no-repeat;
+mask-size: contain;
+mask-position: center;
+transition: transform 0.5s ease-in-out;
+transform-origin: center center;
+z-index: 2; 
 }
 
 
-/* .leaves{
-    position: absolute;
-    width: 170px;
-    height: 170px;
-    background-image: url(img/leaves.png);
-    background-size: 100%;
-    top: calc((50% - (var(--height-mockup) / 1.7)));
-    left: calc((50% + (var(--width-mockup) / 5)));
-} */
-/* .shadow{
-    width: var(--width-mockup);
-    height: 100px;
-    background-color: #0008;
-    border-radius: 50%;
-    position: absolute;
-    top:  calc((50% + (var(--height-mockup) / 2)));
-    left: 50%;
-    transform: translateX(-50%);
-    filter: blur(20px);
-} */
-@media screen and (max-width: 768px) {
-    .item .content{
-        transform: translate(-50%, -50%) scale(.5);
-    }
 
+/* MEDIA QUERIES  */
+
+
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1200px) {
+    .item .content {
+        font-size: 7rem; /* Reduced font size */
+    }
     .item .day {
-        transform: translate(-50%, -50%) scale(.5);
-
+        font-size: 4rem;
     }
-
-
-
-   
-
-
-    .item img.fruit{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+    .mockup {
+        height: 500px;
+        width: 500px;
     }
 }
 
+@media (max-width: 992px) {
+    .item .content {
+        font-size: 5rem;
+    }
+    .item .day {
+        font-size: 3rem;
+    }
+    .mockup {
+        height: 400px;
+        width: 400px;
+    }
+    .item.aria .content,
+    .item.stomp .content,
+    .item.raas .content{
+        right: auto; /* Remove specific right positioning */
+    }
+    .stick{
+        width: 15vw;
+        height: 30vh;
+    }
+}
 
+@media (max-width: 768px) {
+    .item .content {
+        font-size: 4rem;
+    }
+    .item .day {
+        font-size: 2.5rem;
+    }
+    .mockup {
+        height: 300px;
+        width: 300px;
+    }
+    .stick{
+        width: 20vw;
+        height: 40vh;
+    }
+}
 
+@media (max-width: 576px) {
+    .item .content {
+        font-size: 3rem;
+    }
+    .item .day {
+        font-size: 2rem;
+    }
+    .mockup {
+        height: 200px;
+        width: 200px;
+    }
+    .stick{
+        width: 25vw;
+        height: 50vh;
+    }
+    .item .description {
+        font-size: 1.5rem; /* Adjust description font size */
+    }
+
+}
+
+/* Example for very small screens - adjust as needed */
+@media (max-width: 400px) {
+    .item .content {
+        font-size: 2.5rem;
+    }
+    .item .day {
+        font-size: 1.5rem;
+    }
+    .mockup {
+        height: 200px;
+        width: 200px;
+    }
+    .stick{
+        width: 30vw;
+        height: 60vh;
+    }
+}
+
+/*For adjusting the stick position*/
+@media (max-width: 1400px){
+    .stick{
+       left: 10%;
+    }
+}
+@media (max-width: 1200px){
+    .stick{
+       left: 15%;
+    }
+}
+@media (max-width: 992px){
+    .stick{
+       left: 20%;
+    }
+}
+@media (max-width: 768px){
+    .stick{
+       left: 25%;
+    }
+}
+@media (max-width: 576px){
+    .stick{
+       left: 30%;
+    }
+}
+@media (max-width: 400px){
+    .stick{
+       left: 35%;
+    }
+}
