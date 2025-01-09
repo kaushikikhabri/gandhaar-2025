@@ -3,22 +3,14 @@
 
 .mindmap-container {
   background: rgb(60, 182, 241);
-  /* background: linear-gradient(
-    90deg,
-    rgba(60, 182, 241, 1) 31%,
-    rgba(8, 111, 193, 1) 50%,
-    rgba(149, 23, 32, 1) 100%
-  ); */
+
   background-color: rgb(104, 4, 4);
   background:  linear-gradient(to bottom, rgb(173, 8, 8) 0%, rgb(122, 27, 6) 20%, rgb(104, 4, 4) 30%);;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  /* padding: 10px; */
   font-family: "Courier New", Courier, monospace; /* Retro style font */
-  /* cursor: url("C:\Users\nikam\OneDrive\Desktop\Gandhaar-website\gandhaar-2025\public\images\magnifier.png"),
-    auto; */
   cursor: zoom-in;
   height: 650px;
   padding-bottom: 120px;

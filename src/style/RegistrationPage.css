@@ -38,13 +38,13 @@
 
 
 .bubbles {
-  position: fixed; /* Fixed to the viewport */
+  position: fixed; 
   top: 0;
-  left: 22%; /* Start from the right of the 20% sidebar */
-  width: 80%; /* Occupy the remaining 80% */
-  height: 100%; /* Full height */
+  left: 22%; 
+  width: 80%; 
+  height: 100%; 
   overflow: hidden;
-  z-index: 1; /* Ensure it stays on top */
+  z-index: 1; 
 }
 
   @media(max-width: 400px){
