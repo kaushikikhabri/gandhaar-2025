@@ -13,7 +13,10 @@ const Team = () => {
       <div className="team-container">
         <div className="panel-grid">
           {Object.values(panel_images).map((panel, index) => (
-            <div key={index} className="panel-card">
+            <div
+              key={index}
+              className={`panel-card ${index === 0 ? "first-panel" : ""}`}
+            >
               <div className="panel-image-container">
                 <div className="image-container">
                   <img
@@ -25,7 +28,7 @@ const Team = () => {
               </div>
               <div className="panel-info">
                 <h3>{panel.fullName}</h3>
-                <p>{panel.post}</p>
+                <p>{panel.year}</p>
                 <div className="social-icons">
                   <a
                     href={panel.instaLink}

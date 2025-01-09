@@ -43,6 +43,7 @@
   font-style: normal;
   padding-top: 70px;
   text-shadow: 0 0 1px #ecb621, 0 0 1px #ffd700, 0 0 30px #ffd700; /* Glow effect */
+  text-align: center;
 }
 
 .gallery_item {

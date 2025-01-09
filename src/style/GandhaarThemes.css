@@ -5,12 +5,15 @@
     box-sizing: border-box;
 }
 
+
 html, body {
     margin: 0;
     padding: 0;
     overflow-x: hidden; /* Prevent horizontal overflow */
     width: 100%; /* Ensure proper scaling */
 }
+
+
 
 
 /* General styles for description */
@@ -28,6 +31,7 @@ html, body {
     animation: fadeIn 0.8s ease-in-out;
 }
 
+
 /* Animation keyframes for description */
 @keyframes fadeIn {
     from {
@@ -40,6 +44,7 @@ html, body {
     }
 }
 
+
 /* Theme-Specific Styles */
 .item.broadway-ballad .content {
     color: #fdfdfd;
@@ -50,7 +55,9 @@ html, body {
     letter-spacing: 2px;
     z-index: 999;
 
+
 }
+
 
 .item.streetbeat .content {
     color: #ffffff;
@@ -61,7 +68,9 @@ html, body {
     right: -10%;
     z-index: 999;
 
+
 }
+
 
 .item.chart-pop .content {
     color: #ff477e;
@@ -70,7 +79,9 @@ html, body {
     letter-spacing: 2px;
     z-index: 999;
 
+
 }
+
 
 .item.allankar-allure .content {
     color: #ffffff;
@@ -81,17 +92,23 @@ html, body {
     align-items: center;
     z-index: 999;
 
+
 }
+
+
 
 
 .item.active .description {
     animation: fadeIn 0.8s ease-in-out;
 }
 
+
 .item.hidden .description {
     opacity: 0;
     animation: none;
 }
+
+
 
 
 /* header{
@@ -115,6 +132,7 @@ html, body {
     gap: 20px;
 } */
 
+
 .carousel{
     position: relative;
     width: 100vw;
@@ -126,6 +144,7 @@ html, body {
     padding: 0;
 }
 
+
 .list{
     width: 100%;
     height: 100%;
@@ -135,6 +154,7 @@ html, body {
     align-items: center; /* Center content horizontally */
 }
 
+
 .item{
     width: 100%;
     height:100%;
@@ -143,8 +163,14 @@ html, body {
     top: 0;
     left: 0;
     overflow: hidden;
-    display: none; 
+    display: none;
 }
+
+
+
+
+
+
 
 
 
@@ -162,9 +188,12 @@ html, body {
     z-index: 0; /*changed*/
     pointer-events: none;
 
+
   object-fit: cover;
 
+
 }
+
 
 /* DAY+THEMES NAME */
 .item .content{
@@ -187,7 +216,12 @@ html, body {
 
 
 
+
+
+
+
 /* DAY IS BEING EXPRESSED */
+
 
 .item .day{
     position: absolute;
@@ -202,7 +236,10 @@ html, body {
     /* text-transform: uppercase; */
     white-space: nowrap;
     z-index: 1; /*change*/
-} 
+}
+
+
+
 
 
 
@@ -216,6 +253,7 @@ html, body {
     z-index: 1;
 }
 
+
 .background {
     position: relative;
     width: 100%;
@@ -225,6 +263,7 @@ html, body {
     background-color: transparent; /* Specifically make the background transparent */
     z-index: -1; /* Keep it behind other elements */
 }
+
 
 #prev,
 #next{
@@ -251,6 +290,8 @@ html, body {
 }
 
 
+
+
 @keyframes toActive{
     from{
         top: 100%;
@@ -273,25 +314,36 @@ html, body {
 }
 .item.active .content{
     animation: toActive 0.8s ease-in-out 1;
-    
+   
 }
+
 
 .item.active .day{
     animation: toActive 0.8s ease-in-out 1;
 
+
 }
+
 
 .item.active .description{
     animation: toActive 0.8s ease-in-out 1;
 
+
 }
+
+
 
 
 /* time being */
 
+
 .item.active .day{
     animation: toActive 0.8s ease-in-out 1;
 }
+
+
+
+
 
 
 
@@ -300,17 +352,25 @@ html, body {
     opacity: 0;
 }
 
+
 .item.hidden .day{
     opacity: 0;
 }
+
+
 
 
 /* time being */
 
+
 .item.hidden .day{
     opacity: 0;
 
+
 }
+
+
+
 
 
 
@@ -329,12 +389,20 @@ html, body {
 .carousel.right .item.active .day{
     animation: toActivePrev 0.8s ease-in-out 1;
 
+
 }
+
 
 .carousel.right .item.active .description{
     animation: toActivePrev 0.8s ease-in-out 1;
 
+
 }
+
+
+
+
+
 
 
 
@@ -351,10 +419,16 @@ html, body {
 
 
 
+
+
+
+
+
 /* :root{
     --width-mockup: calc(371px / 1);
     --height-mockup: calc(673px / 1);
 } */
+
 
 :root {
     --width-mockup: calc(500px); /* Increase width */
@@ -363,21 +437,27 @@ html, body {
 
 
 
+
+
+
 /* Responsive Stick */
 /* .stick {
     position: absolute;
-    width: 10vw;   
+    width: 10vw;  
     height: 20vh;  
     background-image: url(img/stick.png);
     background-size: 100%;
     top: 50%;  
-    left: 35%; 
-    transform: translateY(-50%) rotate(-45deg); 
-    z-index: 2; 
+    left: 35%;
+    transform: translateY(-50%) rotate(-45deg);
+    z-index: 2;
 } */
 
 
+
+
 /* Existing styles remain the same */
+
 
 /* New keyframes for stick animation */
 /* @keyframes stickAnimation {
@@ -393,8 +473,11 @@ html, body {
     /* } */
 /* } */ */
 
+
 /* Apply animation to the stick */
 .stick {}
+
+
 
 
 .mockup {
@@ -402,11 +485,11 @@ html, body {
     top: 55%;
 left: -1%;
 --left: 0%;
-transform: translate(-50%, -50%) rotate(0deg); 
+transform: translate(-50%, -50%) rotate(0deg);
 height: var(--height-mockup);
 width: var(--width-mockup);
-background: 
-    url('../images/mockup.png') center center no-repeat; 
+background:
+    url('../images/mockup.png') center center no-repeat;
     /* url(img/listSoda.jpg) center center no-repeat; */
 background-size: contain;
 -webkit-mask-image: url('../images/mockup.png');
@@ -419,15 +502,21 @@ mask-size: contain;
 mask-position: center;
 transition: transform 0.5s ease-in-out;
 transform-origin: center center;
-z-index: 2; 
+z-index: 2;
 }
+
+
+
 
 
 
 /* MEDIA QUERIES  */
 
 
+
+
 /* MEDIA QUERIES */
+
 
 @media (max-width: 1200px) {
     /* Reduce mockup size to create space */
@@ -435,7 +524,7 @@ z-index: 2;
       height: 400px;
       width: 400px;
     }
-  
+ 
     /* Adjust text sizes as needed */
     .item .content {
       font-size: 5rem;
@@ -444,14 +533,14 @@ z-index: 2;
       font-size: 3rem;
     }
   }
-  
+ 
   @media (max-width: 992px) {
     /* Reduce mockup size further */
     .mockup {
       height: 300px;
       width: 300px;
     }
-  
+ 
     /* Adjust text sizes as needed */
     .item .content {
       font-size: 4rem;
@@ -460,14 +549,14 @@ z-index: 2;
       font-size: 2.5rem;
     }
   }
-  
+ 
   @media (max-width: 768px) {
     /* Reduce mockup size further */
     .mockup {
       height: 250px;
       width: 250px;
     }
-  
+ 
     /* Adjust text sizes as needed */
     .item .content {
       font-size: 3rem;
@@ -476,14 +565,14 @@ z-index: 2;
       font-size: 2rem;
     }
   }
-  
+ 
   @media (max-width: 576px) {
     /* Reduce mockup size further */
     .mockup {
       height: 200px;
       width: 200px;
     }
-  
+ 
     /* Adjust text sizes as needed */
     .item .content {
       font-size: 2.5rem;
@@ -491,13 +580,13 @@ z-index: 2;
     .item .day {
       font-size: 1.5rem;
     }
-  
+ 
     /* Adjust description font size as needed */
     .item .description {
       font-size: 1.2rem;
     }
   }
-  
+ 
   /* Example for very small screens - adjust as needed */
   @media (max-width: 400px) {
     /* Reduce mockup size further (optional) */
@@ -505,7 +594,7 @@ z-index: 2;
       height: 180px;
       width: 180px;
     }
-  
+ 
     /* Adjust text sizes as needed */
     .item .content {
       font-size: 2rem;
@@ -514,127 +603,146 @@ z-index: 2;
       font-size: 1.2rem;
     }
   }
-  
+ 
   /* Maintain size adjustments for specific themes across breakpoints */
   @media (max-width: 1200px) {
     .item.broadway-ballad .content {
       font-size: 4rem;
     }
-  
+ 
     .item.allankar-allure .content {
       font-size: 4rem;
     }
 
+
     .item.streetbeat .content {
         font-size: 4rem;
-  
-  
+ 
+ 
       }
       .item.chart-pop .content {
-  
-  
+ 
+ 
         font-size: 4rem;
-  
+ 
       }
+
+
+
 
 
 
   }
-  
+ 
   @media (max-width: 992px) {
     .item.broadway-ballad .content {
       font-size: 3.5rem;
     }
-  
+ 
     .item.allankar-allure .content {
       font-size: 3.5rem;
     }
 
+
     .item.streetbeat .content {
         font-size: 3.5rem;
-  
-  
+ 
+ 
       }
       .item.chart-pop .content {
-  
-  
+ 
+ 
         font-size: 3.5rem;
-  
+ 
       }
 
 
-    
+
+
+   
   }
-  
+ 
   @media (max-width: 768px) {
     .item.broadway-ballad .content {
       font-size: 3rem;
     }
-  
+ 
     .item.allankar-allure .content {
       font-size: 3rem;
     }
 
+
     .item.streetbeat .content {
         font-size: 3rem;
-  
-  
+ 
+ 
       }
       .item.chart-pop .content {
-  
-  
+ 
+ 
         font-size: 3rem;
-  
+ 
       }
 
-  
+
+ 
   }
-  
+ 
   @media (max-width: 576px) {
     .item.broadway-ballad .content {
       font-size: 2rem;
     }
-  
+ 
     .item.allankar-allure .content {
       font-size: 2rem;
     }
 
 
+
+
     .item.streetbeat .content {
         font-size: 2rem;
-  
-  
+ 
+ 
       }
       .item.chart-pop .content {
-  
-  
+ 
+ 
         font-size: 2rem;
-  
+ 
       }
 
-  
+
+ 
   }
-  
+ 
   @media (max-width: 400px) {
     .item.broadway-ballad .content {
       font-size: 1.5rem;
     }
-  
+ 
     .item.allankar-allure .content {
       font-size: 1.5rem;
     }
 
+
     .item.streetbeat .content {
       font-size: 1.5rem;
+
+
 
 
     }
     .item.chart-pop .content {
 
 
+
+
       font-size: 1.5rem;
 
+
     }
+
 
    
   }

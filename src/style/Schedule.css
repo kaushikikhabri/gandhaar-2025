@@ -5,12 +5,12 @@
   align-items: center;
   position: relative;
   gap: 2px;
-  padding-top: 20px; /* Add padding to ensure buttons have space above the schedule */
-  padding-left: 20px;
-  height: 109vh; /* Ensures it takes up the full viewport height */
-  background: linear-gradient(to right, #111111, #2c2a2b); /* Optional background for visibility */
+  padding-top: 20px;
+  height: 109vh;
+  background: linear-gradient(to bottom, #1b1302, #250123, #640e61, #6f096c, rgb(17, 2, 87));
   padding-bottom: 850px;
 }
+
 
 .schedule-title{
   font-family: "Mogra", system-ui;

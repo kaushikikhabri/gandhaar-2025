@@ -5,7 +5,12 @@
     /* max-width: 1024px;  Limits the container width to 1024px */
      padding: 10px; /* Centers the container horizontally */
      background-color: rgb(17, 2, 87);
-     padding-top: 100px;
+     background: 
+     linear-gradient(to top, #669eff 0%, rgb(0, 52, 165) 10%, rgb(17, 2, 87) 30%);
+     background: linear-gradient(to bottom, rgb(17, 2, 87), rgb(3, 54, 163),  rgb(1, 83, 154), #669eff);
+     padding-top: 80px;
+     padding-bottom: 100px;
+     
    }
    
    #monitor-text-wrapper {
@@ -72,7 +77,7 @@
    }
    
    .about-us-title {
-    margin-top: 40px;
+    margin-top: 0px;
     font-size: 70px;
      margin-bottom: 10px; /* Adds space below the heading */
      text-align: center;

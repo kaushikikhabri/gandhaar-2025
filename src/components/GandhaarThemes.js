@@ -1,19 +1,25 @@
 // import React from "react";
 // import "../style/GandhaarThemes.css";
 
+
 // function GandhaarThemes() {
 //   return <div>GandhaarThemes</div>;
 // }
 
+
 // export default GandhaarThemes;
+
+
 
 
 // import React from "react";
 // import "../style/PreGandhaarThemes.css";
 
+
 // function PreGandhaarThemes() {
 //   return <div>PreGandhaarThemes</div>;
 // }
+
 
 // export default PreGandhaarThemes;
 import React, { useState, useEffect } from "react";
@@ -24,9 +30,11 @@ import chartpopers from "../images/chartpopers.webp";
 import allankarallure from "../images/allankarallure.webp";
 // In your index.js or App.js file
 
+
 function PreGandhaarThemes() {
   const [activeIndex, setActiveIndex] = useState(0);
   const [rotation, setRotation] = useState(0);
+
 
   const itemList = [
     {
@@ -63,7 +71,9 @@ function PreGandhaarThemes() {
     },
   ];
 
+
   const count = itemList.length;
+
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -72,15 +82,18 @@ function PreGandhaarThemes() {
     return () => clearInterval(interval);
   }, [activeIndex]);
 
+
   const nextSlide = () => {
     setActiveIndex((prevIndex) => (prevIndex >= count - 1 ? 0 : prevIndex + 1));
     setRotation((prevRotation) => (prevRotation + 90) % 360);
   };
 
+
   const prevSlide = () => {
     setActiveIndex((prevIndex) => (prevIndex <= 0 ? count - 1 : prevIndex - 1));
     setRotation((prevRotation) => (prevRotation - 90) % 360);
   };
+
 
   return (
     <div className="carousel">
@@ -108,8 +121,10 @@ function PreGandhaarThemes() {
       ></div>
       <div className="shadow"></div>
 
+
     </div>
   );
 }
+
 
 export default PreGandhaarThemes;

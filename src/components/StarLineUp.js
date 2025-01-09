@@ -2,7 +2,7 @@
 
 // import React from "react";
 // import "../style/StarLineUp.css";
-// import concertImage from "../images/concert.jpg";
+// import concertImage from "../star_dev_images/concert.jpg";
 
 // function StarLineUp() {
 //   return (
@@ -33,9 +33,9 @@
 
 // export default StarLineUp;
 
+/*********************************************************************************************************************************/
 
-
-//********************************************************************************
+/*********************************************************************************************************************************/
 // StarLineUp coming soon msg code
 
 // import React from "react";
@@ -50,8 +50,8 @@
 //           <input type="checkbox" id="star-click" />
 //           <label htmlFor="star-click" className="star-click"></label>
 //           <div className="star-card-container">
-//             <div className="star-card">     
-//               <h3>Coming Soon...</h3>             
+//             <div className="star-card">
+//               <h3>Coming Soon...</h3>
 //             </div>
 //           </div>
 //         </div>
@@ -62,15 +62,15 @@
 
 // export default StarLineUp;
 
+/*********************************************************************************************************************************/
 
-// ********************************************************************************
+/*********************************************************************************************************************************/
 // StarLineUp double card code
-
 
 import React, { useState } from "react";
 import "../style/StarLineUp.css";
-import concertImage from "../images/concert.jpg";
-import macaw from "../images/macaw_nav.jpg";
+import concertImage from "../star_dev_images/concert.jpg";
+import macaw from "../star_dev_images/macaw_nav.jpeg";
 
 function StarLineUp() {
   const [showFirstCard, setShowFirstCard] = useState(true);
@@ -120,7 +120,6 @@ function StarLineUp() {
           </button>
         </div>
       </div>
-
     </div>
   );
 }
