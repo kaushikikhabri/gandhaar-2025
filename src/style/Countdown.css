@@ -33,6 +33,7 @@
     position: relative; /* Ensures child elements can be positioned on top */
     background-color: #f2f1ed;
     padding: 50px 0;
+    background:  linear-gradient(to top, rgb(255, 206, 150), #f2f1ed);
 }
  
 

@@ -186,3 +186,13 @@
     height: auto;
 } */
 }
+
+@media (max-width: 480px) {
+.pre-heading {
+  text-align: center;
+  margin: 0;
+  font-size: 40px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+}

@@ -18,7 +18,7 @@ function App() {
           <Route path="/star-lineup" element={<StarLineUp />} />
           <Route path="/event-details" element={<EventDetails />} />
           {/* Use eventKey to identify the event */}
-          <Route path="/" element={<Home />} />
+          {/* <Route path="/" element={<Home />} /> */}
           {/* <Route path="/launch" element={<Launch />} /> */}
           <Route path="/star-lineup" element={<StarLineUp />} />
           <Route path="/event-details" element={<EventDetails />} />
