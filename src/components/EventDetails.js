@@ -204,11 +204,16 @@ const EventDetails = () => {
                       {`Team Size: ${event.teamSize}`}
                     </div>
                   </div>
-                  <button className="event-register-button">
+                  {/* <button className="event-register-button">
                     View Event Details{" "}
                     <LaunchIcon style={{ marginLeft: "5px" }} />
-                    <a href={event.detailsUrl}></a>
-                  </button>
+                  </button> */}
+
+                  <a href={event.detailsUrl}  rel="noopener noreferrer"  className="event-register-button">
+                    View Event Details
+                    <LaunchIcon style={{ marginLeft: "5px" }} />
+                  </a>
+
                 </div>
               ))}
             </div>

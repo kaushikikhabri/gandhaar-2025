@@ -477,7 +477,7 @@ const events = {
     ],
     registerLink: "https://example.com/treasurehunt-register"
   },*/,
-  btechfashionshow: {
+  btechfashionShow: {
     image: require("../images/Runway.png"),
     title: "HauteAura",
     subtitle: "BTECH Fashion Show",
