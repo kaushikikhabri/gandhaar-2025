@@ -223,7 +223,7 @@ const event_details = {
     start: "10:00 AM",
     end: "2:00 PM",
     location: "Between Main & IT Building",
-    category: "SAVORY SYMOHONY",
+    category: "SAVORY SYMPHONY",
     day: "Jan 31",
     teamSize: "2 (minimum) / 4 (maximum)",
     Participation: "1 team per class",
