@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Almendra+SC&family=Delius&family=Galada&family=Honk&family=Imperial+Script&family=Kaushan+Script&family=Lavishly+Yours&family=Modak&family=Mogra&family=Niconne&family=Pattaya&family=Pirata+One&family=Rouge+Script&family=Rubik+Gemstones&family=Satisfy&family=Updock&family=Yesteryear&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url("https://db.onlinewebfonts.com/c/7e96eba370659b4e4563309dc4ebb33f?family=Samarkan+Normal+V2");
 
 .gallery {
   background: linear-gradient(to top, rgb(83, 13, 188), #669eff 100%),
@@ -23,12 +24,12 @@
 
 .gallery-title {
   margin-top: 0px;
-  font-size: 70px;
+  font-size: 100px;
   margin-bottom: 10px;  
   text-align: center;
-  color: white !important;
-  font-family: "Mogra", system-ui;
-  font-weight: 400;
+  color: rgb(0, 0, 0) !important;
+  font-family: "Samarkan Normal V2", sans-serif;
+  font-weight: 600;
   font-style: normal;
 }
 
@@ -388,6 +389,13 @@
 }
 
 @media (max-width: 480px) {
+  .gallery-title {
+    font-size: 55px;
+    font-weight: 900px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
   .image-item {
     flex: 1 1 100%;  
     max-width: 100%;
@@ -399,4 +407,5 @@
     text-align: center;
     max-width: 95%;
   }
+  
 }

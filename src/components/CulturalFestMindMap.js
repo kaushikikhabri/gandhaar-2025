@@ -54,8 +54,8 @@ const themes = [
     description:
       "Embrace timeless elegance with tailored outfits in neutral tones, pearls, blazers, and minimalistic yet statement jewelry for a sophisticated, understated look.",
     Date: "28th January 2025",
-    // top: "40%",
-    top: "80%",
+    top: "40%",
+    //top: "80%",
     left: "60%",
   },
 ];
