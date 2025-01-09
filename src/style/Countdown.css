@@ -1,7 +1,9 @@
+
 .countdown-container{
     position: relative; /* Ensures child elements can be positioned on top */
     background-color: #f2f1ed;
     padding: 130px 0;
+    /* height: 500px; */
 }
   
 
@@ -18,7 +20,7 @@
 
 
   .countdown-overlay {
-    position: absolute; /* Position it over the Canvas */
+    position: absolute; 
     top: 0;
     left: 0;
     width: 100%;
@@ -26,9 +28,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 2; /* Make sure countdown is above the Canvas */
-  }
-
+    z-index: 2; 
+  } 
+  
 
   .flip-clock *,
   .flip-clock *:before,
@@ -156,3 +158,15 @@
     }
   }
   
+  
+  @media screen and (max-width: 480px) {
+    .countdown-container {
+      padding: 30px 0; 
+    }
+  }
+
+  @media (min-width: 481px) and (max-width: 768px) {
+    .countdown-container {
+      padding: 50px 0; 
+    }
+  }
