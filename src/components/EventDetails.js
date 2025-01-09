@@ -118,6 +118,9 @@ const EventDetails = () => {
                 "Samstha Ground",
                 "IT/Mech Bldg",
                 "Whole Campus",
+                "Instru Garden/Mech Circle",
+                "IT Bulg",
+                "Online",
               ].map((location) => (
                 <div key={location}>
                   <input
@@ -278,6 +281,9 @@ const EventDetails = () => {
                     "Samstha Ground",
                     "IT/Mech Bldg",
                     "Whole Campus",
+                    "Instru Garden/Mech Circle",
+                    "IT Bulg",
+                    "Online",
                   ].map((location) => (
                     <div key={location}>
                       <input

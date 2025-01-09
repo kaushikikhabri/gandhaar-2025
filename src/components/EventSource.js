@@ -13,9 +13,9 @@ import image5 from "../posters/5.png";
 import image6 from "../posters/Artiscope.PNG";
 import image7 from "../posters/Digital stage.PNG";
 import image8 from "../posters/haute route.png";
-import image9 from "../posters/Joyland.PNG";
-import image10 from "../posters/haute route.png";
-import image11 from "../posters/Skills lab.PNG";
+import image9 from "../posters/theatre.png";
+import image10 from "../posters/Skills lab.PNG";
+import image11 from "../posters/Joyland.PNG";
 
 // Update items array with local images
 const items = [
