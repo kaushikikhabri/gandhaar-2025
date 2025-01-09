@@ -317,12 +317,9 @@ const EventDetails = () => {
                     <div key={category}>
                       <input
                         type="checkbox"
-                        checked={
-                          filters.category.toUpperCase() ===
-                          category.toUpperCase()
-                        }
+                        checked={filters.category === category}
                         onChange={() =>
-                          category.toUpperCase() === "all"
+                          category === "All"
                             ? handleFilterChange("category", category)
                             : handleSpecificFilterChange("category", category)
                         }
