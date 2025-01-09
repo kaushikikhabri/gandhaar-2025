@@ -27,9 +27,10 @@ const panel_images = {
   panel5: {
     fullName: "Tejaswini Patkar",
     year: "Final Year Comp",
-    instaLink: "N/A",
-    linkedinLink: "N/A",
-    emailId: "N/A",
+    instaLink:
+      "https://www.instagram.com/tejaswini_patkar/profilecard/?igsh=MWY1OXQ4emk1NThleg==",
+    linkedinLink: "https://www.linkedin.com/in/tejaswini-patkar-803774231/",
+    emailId: "tejaswini.patkar@cumminscollege.in",
     image: panel5, // Placeholder image
   },
   panel6: {
@@ -55,9 +56,10 @@ const panel_images = {
   panel3: {
     fullName: "Isha Bule",
     year: "Final Year Comp",
-    instaLink: "N/A",
-    linkedinLink: "N/A",
-    emailId: "N/A",
+    instaLink: "https://www.instagram.com/ishaa_deepak?igsh=YzljYTk1ODg3Zg==",
+    linkedinLink:
+      "https://www.linkedin.com/in/isha-bule-23a51820b?trk=contact-info",
+    emailId: "isha.bule@cumminscollege.in",
     image: panel6, // Placeholder image
   },
   panel2: {

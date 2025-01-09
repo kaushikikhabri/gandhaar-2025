@@ -52,7 +52,7 @@ function Home() {
       </div>
       {/* <CulturalFestMindMap /> */}
       <div id="themes">
-        <GandhaarThemes />
+        <PreGandhaarThemes />
       </div>
       {/* <Events /> */}
       <div>

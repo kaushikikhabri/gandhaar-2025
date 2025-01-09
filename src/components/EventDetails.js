@@ -149,7 +149,7 @@ const EventDetails = () => {
                 "Gathering Hub",
                 "Wordsmith’s Corner",
                 "Haute Route",
-                "Savory Symphony",
+                "Savoury Symphony",
                 "Artiscope",
                 "Theatrical Tapestry",
                 "Skill Lab",
@@ -221,11 +221,14 @@ const EventDetails = () => {
                     <LaunchIcon style={{ marginLeft: "5px" }} />
                   </button> */}
 
-                  <a href={event.detailsUrl}  rel="noopener noreferrer"  className="event-register-button">
+                  <a
+                    href={event.detailsUrl}
+                    rel="noopener noreferrer"
+                    className="event-register-button"
+                  >
                     View Event Details
                     <LaunchIcon style={{ marginLeft: "5px" }} />
                   </a>
-
                 </div>
               ))}
             </div>
@@ -312,7 +315,7 @@ const EventDetails = () => {
                     "Gathering Hub",
                     "Wordsmith’s Corner",
                     "Haute Route",
-                    "Savory Symphony",
+                    "Savoury Symphony",
                     "Artiscope",
                     "Theatrical Tapestry",
                     "Skill Lab",
