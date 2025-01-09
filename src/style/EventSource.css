@@ -3,8 +3,8 @@
 
 .event-source{
     height: 430px;
-    margin-top: 30px;
-    padding-bottom: 490px;
+    padding: 50px;
+    padding-bottom: 590px;
     background: linear-gradient(to right, rgb(173, 83, 137), rgb(60, 16, 83));
 }
 
@@ -13,7 +13,7 @@
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 70px;
+    font-size: 90px;
     margin-bottom: 40px;
     font-variation-settings:
       "MORF" 15,
@@ -43,3 +43,5 @@
   border-radius: 8px; /* Optional: Adds rounded corners */
   display: block; /* Ensures no extra spacing */
 }
+
+

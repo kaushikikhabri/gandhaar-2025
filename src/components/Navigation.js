@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../style/Navigation.css";
-import { Link } from 'react-scroll';
+import { Link } from "react-scroll";
 
 const Navigation = ({ isDrawerOpen, toggleDrawer, scrollThreshold = null }) => {
   const [isSticky, setIsSticky] = useState(false);
@@ -55,22 +55,42 @@ const Navigation = ({ isDrawerOpen, toggleDrawer, scrollThreshold = null }) => {
               </Link>
             </li>
             <li className="navitem">
-              <Link className="navlink" to="events" smooth={true} duration={500}>
+              <Link
+                className="navlink"
+                to="events"
+                smooth={true}
+                duration={500}
+              >
                 Events
               </Link>
             </li>
             <li className="navitem">
-              <Link className="navlink" to="schedule" smooth={true} duration={500}>
+              <Link
+                className="navlink"
+                to="schedule"
+                smooth={true}
+                duration={500}
+              >
                 Schedule
               </Link>
             </li>
             <li className="navitem">
-              <Link className="navlink" to="themes" smooth={true} duration={500}>
+              <Link
+                className="navlink"
+                to="themes"
+                smooth={true}
+                duration={500}
+              >
                 Themes
               </Link>
             </li>
             <li className="navitem">
-              <Link className="navlink" to="star-lineup" smooth={true} duration={500}>
+              <Link
+                className="navlink"
+                to="star-lineup"
+                smooth={true}
+                duration={500}
+              >
                 Star Line-up
               </Link>
             </li>
@@ -80,12 +100,22 @@ const Navigation = ({ isDrawerOpen, toggleDrawer, scrollThreshold = null }) => {
               </Link>
             </li>
             <li className="navitem">
-              <Link className="navlink" to="gallery" smooth={true} duration={500}>
+              <Link
+                className="navlink"
+                to="gallery"
+                smooth={true}
+                duration={500}
+              >
                 Gallery
               </Link>
             </li>
             <li className="navitem">
-              <Link className="navlink" to="about-us" smooth={true} duration={500}>
+              <Link
+                className="navlink"
+                to="about-us"
+                smooth={true}
+                duration={500}
+              >
                 About Us
               </Link>
             </li>

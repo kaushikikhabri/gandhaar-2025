@@ -20,7 +20,7 @@
   font-family: "Mogra", system-ui;
   font-weight: 400;
   font-style: normal;
-  font-size: 70px;
+  font-size: 90px;
   margin-top: 30px;
   color: white;
   text-align: center;
@@ -108,11 +108,12 @@
   /* background-size: 400% 400%; */
   /* background-attachment: fixed; */
   overflow: hidden; /* Prevent extra content */
-  background: linear-gradient(
+  /* background: linear-gradient(
     171.8deg,
     rgb(83, 13, 188) 13.5%,
     rgb(8, 7, 111) 78.6%
-  );
+  ); */
+  background: linear-gradient(to bottom, rgb(83, 13, 188), rgb(100, 13, 188) ,rgb(88, 0, 76));
 }
 
 /* Keyframe for background gradient animation */

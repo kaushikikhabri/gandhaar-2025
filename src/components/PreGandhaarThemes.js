@@ -8,10 +8,11 @@
 // export default PreGandhaarThemes;
 import React, { useState, useEffect } from "react";
 import "../style/PreGandhaarThemes.css";
-import tropicaltunes from "../images/tropicaltunes.webp";
+import broadwayballad from "../images/broadwayballad.webp";
 import streetbeats from "../images/streetbeats.webp";
-import metallica from "../images/metallica.webp";
-import rr from "../images/raagreverie.webp";
+import chartpopers from "../images/chartpopers.webp";
+import allankarallure from "../images/raagreverie.webp";
+// In your index.js or App.js file
 
 function PreGandhaarThemes() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -22,33 +23,33 @@ function PreGandhaarThemes() {
       id: 0,
       background: "#4e131c",
       day: "Day 1",
-      content: "Tropical Tunes",
-      description: "Vibe to the beats of the tropics",
-      imgSrc: tropicaltunes,
+      content: "Broadway Ballad",
+      description: "Drama, dreams, and dazzling melodies!",
+      imgSrc: broadwayballad,
     },
     {
       id: 1,
       background: "#2D5643",
       day: "Day 2",
-      content: "Street Beats",
-      description: "Feel the rhythm of the streets",
+      content: "StreetBeat",
+      description: "Feel the rhythm of the streets!",
       imgSrc: streetbeats,
     },
     {
       id: 2,
       background: "#E7A043",
       day: "Day 3",
-      content: "Metallica",
-      description: "Rock to the sound of legends",
-      imgSrc: metallica,
+      content: "Chart POP",
+      description: "Pop hits, loud beats, endless vibes!",
+      imgSrc: chartpopers,
     },
     {
       id: 3,
       background: "#E7A043",
       day: "Day 4",
-      content: "Raag Reverie",
-      description: "Immerse in the melody of raagas",
-      imgSrc: rr,
+      content: "Allankar Allure",
+      description: "Classical charm, timeless allure!",
+      imgSrc: allankarallure,
     },
   ];
 
@@ -90,17 +91,13 @@ function PreGandhaarThemes() {
         ))}
       </div>
       <div className="leaves"></div>
-      <div className="stick"></div>
       <div className="background"></div>
       <div
         className="mockup"
         style={{ transform: `translate(-50%, -50%) rotate(${rotation}deg)` }}
       ></div>
       <div className="shadow"></div>
-      <div className="arrow">
-        <button onClick={prevSlide}>&lt;</button>
-        <button onClick={nextSlide}>&gt;</button>
-      </div>
+
     </div>
   );
 }

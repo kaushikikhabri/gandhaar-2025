@@ -7,8 +7,8 @@
      background-color: rgb(17, 2, 87);
      background: 
      linear-gradient(to top, #669eff 0%, rgb(0, 52, 165) 10%, rgb(17, 2, 87) 30%);
-     background: linear-gradient(to bottom, rgb(17, 2, 872, rgb(0, 52, 165), #669eff));
-     padding-top: 20px;
+     background: linear-gradient(to bottom, rgb(17, 2, 87), rgb(3, 54, 163),  rgb(1, 83, 154), #669eff);
+     padding-top: 80px;
      padding-bottom: 100px;
      
    }
@@ -78,7 +78,7 @@
    
    .about-us-title {
     margin-top: 0px;
-    font-size: 70px;
+    font-size: 90px;
      margin-bottom: 10px; /* Adds space below the heading */
      text-align: center;
      color: white !important;
@@ -148,6 +148,10 @@
      font-style: normal;
      /* font-family: 'Cinzel', serif; */
    }
+   .about-us-title {
+    font-size: 60px;
+   }
+
    
      @keyframes tvflicker {
        0% {

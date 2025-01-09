@@ -1,13 +1,11 @@
-/* Importing Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pattaya&display=swap');
 
-/* General Page Styling */
 .registration-page {
   position: relative;
   height: 100vh;
   overflow: hidden;
   color: white;
-  font-family: "Montserrat", serif; /* Applying Montserrat font */
+  font-family: "Montserrat", serif; 
   text-align: center;
   display: flex;
   align-items: center;

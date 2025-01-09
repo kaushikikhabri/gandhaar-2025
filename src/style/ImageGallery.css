@@ -1,4 +1,13 @@
- 
+@import url('https://fonts.googleapis.com/css2?family=Almendra+SC&family=Delius&family=Galada&family=Honk&family=Imperial+Script&family=Kaushan+Script&family=Lavishly+Yours&family=Modak&family=Mogra&family=Niconne&family=Pattaya&family=Pirata+One&family=Rouge+Script&family=Rubik+Gemstones&family=Satisfy&family=Updock&family=Yesteryear&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url("https://db.onlinewebfonts.com/c/7e96eba370659b4e4563309dc4ebb33f?family=Samarkan+Normal+V2");
+
+.gallery{
+    background: 
+    linear-gradient(to top, rgb(83, 13, 188), #669eff 100%), 
+    url("/src/images/bg9.png");
+}
+
  .gallery-container {
   width: 100%;
   height: auto;
@@ -7,9 +16,12 @@
   display: flex;
 
   /* Set the gradient as a background layer below the image */
-  background: 
-    linear-gradient(to top, rgb(83, 13, 188) 0%, #669eff 100%), 
+
+
+    background-image:  
     url("/src/images/bg9.png");
+  
+  
   
   background-repeat: no-repeat;
   background-size: cover; /* Makes both the gradient and image cover the container */
@@ -18,6 +30,25 @@
   padding-top: 100px;
 }
 
+.gallery-title {
+  margin-top: 0px;
+  font-size: 110px;
+  margin-bottom: 10px; /* Adds space below the heading */
+  text-align: center;
+  /* color: white !important; */
+  color: black !important;
+  /* font-family: "Almendra SC", serif; */
+  /* font-family: "Mogra", system-ui; */
+  /* font-family: "Lobster", cursive; */
+  /* font-family: "Rubik Vinyl", cursive; */
+  /* font-family: "Sumarkan", sans-serif; */
+  /* font-family: "Noto Sans Newa", sans-serif; */
+  font-family: "Samarkan Normal V2", sans-serif;
+  /* font-family: "Cairo", sans-serif; */
+  font-weight: 600;
+  font-style: normal;
+  /* font-family: 'Cinzel', serif; */
+}
 
 
 .image-grid {
@@ -424,7 +455,10 @@
     border-radius: 10px;
     text-align: center;
     max-width: 95%;
-     
   }
-  
+
+  .gallery-title{
+    font-size: 60px;
+    font-weight: 900px;
+  }
 } 

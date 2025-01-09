@@ -1,50 +1,61 @@
 import React, { useState } from "react";
-import orangeStickyNote from "../theme_images/orangeStickyNote.jpg";
-import craft from "../theme_images/craft.webp";
+// import orangeStickyNote from "../theme_images/orangeStickyNote.jpg";
+// import craft from "../theme_images/craft.webp";
 import "../style/CulturalFestMindMap.css";
-import Bandhani from "../theme_images/banaras.jpg";
-import Bantai from "../theme_images/tapori.jpg";
-import Candy from "../theme_images/Candy_1.jpeg";
-import old_money from "../theme_images/old_money.jpg";
-
+//import Bandhani from "../theme_images/banaras.jpg";
+import Bantai from "../theme_images/tapori_2.jpeg";
+// import Candy from "../theme_images/Candy_1.jpeg";
+import old_money from "../theme_images/old_money_2.jpeg";
+import Day_1 from "../images/Day_1_1.jpeg";
+import Day_2 from "../images/Day_2.jpeg";
+import Day_3 from "../images/Day_3.jpeg";
+import Day_4 from "../images/Day_4.jpeg";
+import Candy from "../theme_images/candy_2.jpeg";
+import Bandhani from "../theme_images/Indian_craft.jpeg";
 const themes = [
   {
     id: 1,
     name: "Indian Craft Couture",
-    img: craft, // Image for the pin
+    img: Day_1, // Image for the pin
     polaroidImg: Bandhani, // Image for the Polaroid
     description:
-      "Outfits that represent the work of Indian artisans. This includes embroideries like Chikankari, Kantha , Gota work, or Prints like Bandhani, Block Prints, Ikkat, Brocade, Lehariya etc",
+      "Celebrate traditional craftsmanship with outfits showcasing Indian embroideries and prints, complemented by regal headgear like Rajasthani pagdis, Puneri pagdis, Phetas, and Pahadi caps to complete the look!",
+    Date: "23rd January 2025",
     top: "18%",
     left: "22%",
   },
   {
     id: 2,
     name: "Bantai Banters",
-    img: orangeStickyNote, // Image for the pin
+    img: Day_2, // Image for the pin
     polaroidImg: Bantai, // Image for the Polaroid
     description:
-      "Loud, over the top outfits inspired by Tapori characters/ villains. Use Bright tops covered by knotted shirts, Funky Sunglasses, Chunky chains, scarves, bandana to complete the look.",
+      " Channel your inner Bollywood tapori with loud, over-the-top outfits—think bright tops, knotted shirts, funky sunglasses, chunky chains, and bandanas for the ultimate street-smart vibe!",
+    Date: "24th January 2025",
     top: "35%",
     left: "70%",
   },
   {
     id: 3,
     name: "Sweetopia",
-    img: orangeStickyNote, // Image for the pin
+    img: Day_3, // Image for the pin
     polaroidImg: Candy, // Image for the Polaroid
-    description: "Dress up as your favourite Candy/ Chocolate.",
+    description:
+      "Transform into your favorite sweet treat with vibrant, whimsical outfits inspired by the colors, textures, and charm of iconic candies and chocolates!",
+    Date: " 27th January 2025",
     top: "55%",
     left: "30%",
   },
   {
     id: 4,
     name: "Old Money",
-    img: orangeStickyNote, // Image for the pin
+    img: Day_4, // Image for the pin
     polaroidImg: old_money, // Image for the Polaroid
     description:
-      "It is all about elegant, timeless styles that look classy and expensive (not flashy) Tailored outfits, use of neutral colour clothing, pearls, Blazers, minimalistics but statement jewellery",
-    top: "80%",
+      "Embrace timeless elegance with tailored outfits in neutral tones, pearls, blazers, and minimalistic yet statement jewelry for a sophisticated, understated look.",
+    Date: "28th January 2025",
+    top: "40%",
+    //top: "80%",
     left: "60%",
   },
 ];
@@ -53,7 +64,7 @@ const CulturalFestMindMap = () => {
 
   return (
     <div>
-      <h1 className="heading">Pre-Gandhaar Themes</h1>
+      <h1 className="pre-heading">Pre-Gandhaar Themes</h1>
       <div className="mindmap-container">
         {/* Mind Map Section */}
         <div className="mindmap-background">

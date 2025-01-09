@@ -141,6 +141,7 @@ header {
   }
 
   .title-image {
+    margin-left: 10px;
     width: 150px; /* Reduce image size */
   }
 }
@@ -161,7 +162,7 @@ header {
 }
 /* Apply full-page gradient background */
 html, body {
-  height: 200%; /* Ensure the body and html take up the full height */
+  height: 100%; /* Ensure the body and html take up the full height */
   margin: 0; /* Remove default margin */
   font-family: sans-serif; /* Set font styling */
   display: flex; /* Allow flex-based alignment */
@@ -174,36 +175,88 @@ html, body {
 }
 
 
-.container {
-  display: flex;
-  justify-content: space-between;
-  margin: 50px 100px; /* Adjust margin for responsiveness */
-  flex-grow: 1;
-  gap: 20px;
-  flex-wrap: wrap; /* Allow wrapping for smaller screens */
-}
-
-.left {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  flex-basis: 48%; /* For better distribution on medium-sized screens */
-}
 
 .box {
-  font-family: 'EB Garamond', serif; 
-  width: 100%; /* Ensure full width within its container */
+  font-family: 'EB Garamond', serif;
+  width: 100%;
   height: 320px;
-  box-sizing: border-box;
   padding: 15px;
   position: relative;
   overflow: hidden;
   background-color: #f4f4f4;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.container {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 50px 100px;
+  gap: 20px;
+  flex-wrap: nowrap; /* Ensure boxes stay side-by-side on larger screens */
 }
 
+.left, .right {
+  margin-top: 20px;
+  flex: 1 1 100%; /* Each box gets 50% width */
+  max-width: 40%; /* Restrict the width to 50% */
+  box-sizing: border-box;
+}
+
+/* Adjust for responsiveness */
+@media (max-width: 1024px) {
+  .container {
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    margin: 20px;
+  }
+
+  .left, .right {
+    flex: 1 1 100%; /* Stack boxes vertically */
+    max-width: 100%;
+  }
+
+  .box {
+    height:500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Column layout for very small screens */
+    margin: 10px;
+  }
+
+  .left, .right {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .box {
+    padding: 10px;
+    height:500px;
+  }
+}
+
+
+
+.box {
+  margin-top:20px;
+  font-family: 'EB Garamond', serif;
+  width: 100%; /* Full width within its container */
+  height: 320px; /* Default height for boxes */
+  padding: 15px;
+  position: relative;
+  overflow: hidden;
+  background-color: #f4f4f4;
+  border-radius: 10px; /* Rounded corners */
+  box-sizing: border-box; /* Ensure padding is included in width/height */
+}
+
+
 .box.full-height {
-  margin-top: 40px; /* Add visible spacing above the RulesBox */
-  max-height: 1200px; /* Set a fixed height for scrolling */
+  margin-top: 60px; /* Add visible spacing above the RulesBox */
+  min-height: 1100px; /* Set a fixed height for scrolling */
   overflow: hidden; /* Prevent content from spilling outside the box */
   padding: 15px; /* Add padding to ensure content stays inside */
   position: relative;
@@ -219,8 +272,8 @@ html, body {
 .box::before {
   content: '';
   position: absolute;
-  width: 1000%;
-  height: 1000%;
+  width: 500%;
+  height: 500%;
   background: repeating-linear-gradient(
     white 0%,
     white 7.5px,
@@ -326,16 +379,13 @@ html, body {
 /* Responsive Design for Smaller and Medium Devices */
 
 @media (min-width: 1024px) {
-  .container {
-    margin: 50px 150px;
-  }
-
+ 
   .box {
-    width: 600px;
+    width: 100%;
   }
 
   .box.full-height {
-    height: auto;
+    max-height: 600px;
   }
 
   .back-button {
@@ -346,13 +396,7 @@ html, body {
 
 /* New Breakpoint Between Medium and Large Devices (768px to 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
-  .container {
-    margin: 5px; /* Reduce margin further */
-  }
 
-  .left {
-    flex-basis: 100%; /* Ensure full width for the left column */
-  }
 
   .box {
     width: 100%; /* Full width on small devices */
@@ -363,7 +407,7 @@ html, body {
 
   .box.full-height {
     width: 100%;
-    height: auto;
+    max-height: 500px;
   }
   .back-button {
     width: 70px; /* Set the width of the button */
@@ -390,14 +434,7 @@ html, body {
 
 @media (max-width: 768px) {
 
-  .container {
-    margin: 10px; /* Reduce margin further */
-  }
-
-  .left {
-    flex-basis: 100%; /* Ensure full width for the left column */
-  }
-
+  
   .box {
     width: 100%; /* Full width on small devices */
     height: auto;
@@ -406,7 +443,7 @@ html, body {
 
   .box.full-height {
     width: 100%;
-    height: auto;
+    height: 500px;
   }
 
   .event-title {

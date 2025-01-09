@@ -383,7 +383,7 @@
 
 /* StarLineUp coming soon msg code*/
 
-/* 
+
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Rubik+Gemstones&display=swap');
 
 .star-lineup-container {
@@ -391,6 +391,11 @@
   background: black;
   text-align: center;
   height: 620px;
+  background-image: url("/src/star_dev_images/stage12.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
 }
 
 .star-gift-container {
@@ -544,7 +549,7 @@
 }
 
 .star-card:hover {
-  transform: scale(1) rotateX(0);
+  transform: scale(0.8) rotateX(0);
   box-shadow: 
     0 50px 80px -20px rgba(255, 203, 0, 0.5),
     0 0 25px 15px rgba(255, 111, 0, 0.5),
@@ -559,12 +564,8 @@
     font-family: 'Satisfy', cursive;
     font-size: 64px;
     text-align: center;
-    color: #FFB300;
-    text-shadow:
-      3px 3px 10px rgba(255, 179, 0, 0.9),
-      0 0 10px rgba(0, 0, 0, 0.8),
-      0 0 20px rgba(255, 111, 0, 0.7);
-    background: linear-gradient(90deg, #FFB300, #000000, #FF6F00, #FFCC00, #FFEB3B);
+    color: black;
+    background: black;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
@@ -573,7 +574,7 @@
   
   .star-lineup-container h2 {
     font-family: 'Satisfy', cursive;
-    font-size: 64px;
+    font-size: 80px;
     text-align: center;
     color: #FFCC00;
     text-shadow: 
@@ -581,6 +582,7 @@
       0 0 10px rgba(255, 111, 0, 0.8),
       0 0 20px rgba(255, 179, 0, 0.7);
     background: linear-gradient(90deg, #FFCC00, #FFEB3B, #FF6F00, #000000, #FFB300);
+    background: #FFCC00;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
@@ -758,6 +760,7 @@
   
     .star-lineup-container {
       padding: 40px 15px;
+      background-image: url("/src/star_dev_images/stage6.avif");
     }
   
     .star-gift-container::before {
@@ -840,6 +843,7 @@
   
     .star-lineup-container {
       padding: 40px 15px;
+      background-image: url("/src/star_dev_images/stage6.avif");
     }
   
     .star-gift-container {
@@ -918,7 +922,6 @@
       font-size: 14px;
     }
   
-  
   }
   
   
@@ -927,12 +930,12 @@
     .star-lineup-container {
       padding: 50px 20px;
       background: black;
-  
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
       text-align: center;
       height: 750px;
+      background-image: url("/src/star_dev_images/stage6.avif");
     }
   
     .star-gift-container {
@@ -1010,14 +1013,14 @@
       font-family: 'Satisfy', cursive;
       font-size: 120px;
     }
-  }  */
+  }  
 
 
 /*********************************************************************************************************************************/
 
 /*********************************************************************************************************************************/
 /* StarLineUp for 2 cards */
-
+/* 
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Rubik+Gemstones&display=swap');
 
 .star-lineup-container {
@@ -1696,4 +1699,4 @@
     font-size: 16px;
   }
 
-} 
+}  */
