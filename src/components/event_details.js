@@ -47,7 +47,18 @@ const event_details = {
       "https://img.freepik.com/premium-photo/vibrant-group-dancers-dynamic-poses-with-colorful-lighting_272375-8948.jpg?w=996",
     detailsUrl: "/event/streetdance",
   },
-
+  "Step It Up": {
+    start: "10:00 AM",
+    end: "12:30 PM",
+    location: "Main Quad",
+    category: "Groove Arena",
+    day: "Jan 30",
+    teamSize: "6-17",
+    Participation: "Multiple teams per college",
+    imageUrl:
+      "https://img.freepik.com/premium-photo/street-fashion-expressive-movements-hiphop-dance-group-generative-ai_722401-32575.jpg",
+    detailsUrl: "/event/interCollegeDance",
+  },
   "Sargam Symphony": {
     start: "10:00 AM",
     end: "1:30 PM",
@@ -72,7 +83,18 @@ const event_details = {
       "https://img.freepik.com/premium-photo/colorful-microphone-black-background-generative-ai_918839-1265.jpg?w=900",
     detailsUrl: "/event/departmentAntakshariStudents",
   },
-
+  "The Great Faculty Sing-Off": {
+    start: "2:00 PM",
+    end: "4:00 PM",
+    location: "Instru Audi",
+    category: "Gathering Hub",
+    day: "Jan 29",
+    teamSize: "-",
+    Participation: "1 team per department",
+    imageUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuS4_IuS-Cf2hoz6fNUsdeUHwhRjwy4IEyzw&s",
+    detailsUrl: "/event/departmentAntakshariFaculty",
+  },
   "Cummins Got Latent": {
     start: "12:00 PM",
     end: "2:30 PM",
@@ -361,7 +383,18 @@ const event_details = {
       "https://img.freepik.com/free-photo/smiling-female-mime-artist-looking-male-mime-artist-peeking-from-curtain_23-2147891614.jpg?t=st=1736355391~exp=1736358991~hmac=ec4c063f23551df45c258cfe81eb7be1375166e53580f9e7644c7eb911910cb0&w=900",
     detailsUrl: "/event/classDrama",
   },
-
+  Nazariya: {
+    start: "12:00 PM",
+    end: "4:00 PM",
+    location: "Stage 2",
+    category: "Theatrical Tapestry",
+    day: "Feb 1",
+    teamSize: "8-20",
+    Participation: "-",
+    imageUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnZBdkv7LRq1Q0jsTs2Sz3karz8_TvpYHZlTwJEefntYq_mem1p8_r70ds1jDCIc4e4_o&usqp=CAU",
+    detailsUrl: "/event/interCollegeNukkad",
+  },
   Djembe: {
     start: "12:00 PM",
     end: "2:00 PM",
