@@ -10,18 +10,19 @@ import sameekshaImage from "../star_dev_images/Sameeksha.png";
 import ieshaImage from "../star_dev_images/isha.png";
 import shrushtiImage from "../star_dev_images/shrushti.png";
 import purvaImage from "../star_dev_images/purva.png";
-
+import tejaswiniImage from "../star_dev_images/Tejaswini.jpeg";
 const DevTeam = () => {
   const teamMembers = [
     { name: "Kaushiki Khabri", img: kaushikiImage },
     { name: "Sai Ingole", img: saiImage },
     { name: "Yashoda Kangle", img: yashodaImage },
     { name: "Avasthi Jadhav", img: avasthiImage },
-    { name: "Mrunal Shinde", img: mrunalImage },
     { name: "Sameeksha Tantak", img: sameekshaImage },
     { name: "Srushti Nikam", img: shrushtiImage },
-    { name: "Isha Bule", img: ieshaImage },
     { name: "Purva Sarda", img: purvaImage },
+    { name: "Tejaswini Patkar", img: tejaswiniImage },
+    { name: "Isha Bhule", img: ieshaImage },
+    { name: "Mrunal Shinde", img: mrunalImage },
   ];
 
   return (
