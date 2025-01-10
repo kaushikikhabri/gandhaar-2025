@@ -94,12 +94,12 @@
   }
 
   .top-left {
-    top: 5px;
+    top: 200px;
     left: 5px;
   }
 
   .bottom-right {
-    bottom: 20px;
+    bottom: 200px;
     right: 5px;
   }
 }
