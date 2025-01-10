@@ -70,13 +70,14 @@ const EventDetails = () => {
     return (
       (filters.day === "All" || event.day === filters.day) &&
       (filters.location === "All" || event.location === filters.location) &&
-      (filters.category === "All" || event.category === filters.category) &&
-      (category === "All" || event.category === category) // Apply category filter from the route
+      (filters.category === "All" || event.category === filters.category)
+      // (filters.category === "All" || event.category === category)
     );
   });
 
   return (
     <div>
+      {/* <h1>{category}</h1> */}
       <Navigation isDrawerOpen={isDrawerOpen} toggleDrawer={toggleDrawer1} />
       <div style={{ display: "flex", backgroundColor: "white" }}>
         <div className="sidebar">
