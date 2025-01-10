@@ -35,16 +35,8 @@ const items = [
 function EventSource() {
   const navigate = useNavigate();
 
-  // const handleCardClick = (category) => {
-  //   navigate("/event-details"); // Navigate to EventDetails with category in state
-  // };
-
-  // const handleCardClick = (category) => {
-  //   navigate(`/event-details/${encodeURIComponent(category)}`);
-  // };
-
   const handleCardClick = (category) => {
-    navigate("/event-details", { state: { category } });
+    navigate("/event-details", { state: { category } }); // Navigate to EventDetails with category in state
   };
 
   return (
