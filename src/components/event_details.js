@@ -57,7 +57,7 @@ const event_details = {
     Participation: "Multiple teams per college",
     imageUrl:
       "https://img.freepik.com/premium-photo/street-fashion-expressive-movements-hiphop-dance-group-generative-ai_722401-32575.jpg",
-    detailsUrl: "/event/interCollegeDance",
+    detailsUrl: "/intercollege",
   },
   "Sargam Symphony": {
     start: "10:00 AM",
@@ -93,7 +93,7 @@ const event_details = {
     Participation: "1 team per department",
     imageUrl:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuS4_IuS-Cf2hoz6fNUsdeUHwhRjwy4IEyzw&s",
-    detailsUrl: "/event/departmentAntakshariFaculty",
+    detailsUrl: "/intercollege",
   },
   "Cummins Got Latent": {
     start: "12:00 PM",
@@ -393,7 +393,7 @@ const event_details = {
     Participation: "-",
     imageUrl:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnZBdkv7LRq1Q0jsTs2Sz3karz8_TvpYHZlTwJEefntYq_mem1p8_r70ds1jDCIc4e4_o&usqp=CAU",
-    detailsUrl: "/event/interCollegeNukkad",
+    detailsUrl: "/intercollege",
   },
   Djembe: {
     start: "12:00 PM",

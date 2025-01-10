@@ -7,6 +7,7 @@ import Home from "./components/Home";
 import StarLineUp from "./components/StarLineUp";
 import VideoLaunch from "./components/VideoLaunch.js";
 import RegistrationPage from "./components/RegistrationPage";
+import Intercollege from "./components/Intercollege.js";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/videolaunch" element={<VideoLaunch />} />
           <Route path="/event/:eventKey" element={<AllEvents />} />
           <Route path="/registration" element={<RegistrationPage />} />
+          <Route path="/intercollege" element={<Intercollege />} />
           //{" "}
           <Route
             path="/miss-freshers"
