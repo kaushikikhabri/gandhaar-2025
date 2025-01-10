@@ -19,24 +19,32 @@ import image11 from "../posters/Joyland.PNG";
 
 // Update items array with local images
 const items = [
-  { image: image1, category: "GROOVE ARENA" },
-  { image: image2, category: "JAMSPHERE" },
-  { image: image3, category: "GATHERING HUB" },
-  { image: image4, category: "WORDSMITH’S CORNER" },
-  { image: image5, category: "SAVORY SYMPHONY" },
-  { image: image6, category: "ARTISCOPE" },
+  { image: image1, category: "Groove Arena" },
+  { image: image2, category: "Jamsphere" },
+  { image: image3, category: "Gathering Hub" },
+  { image: image4, category: "Wordsmith’s Corner" },
+  { image: image5, category: "Savoury Symphony" },
+  { image: image6, category: "Artiscope" },
   { image: image7, category: "THE DIGITAL STAGE" },
-  { image: image8, category: "HAUTE ROUTE" },
-  { image: image9, category: "THEATRICAL TAPESTRY" },
-  { image: image10, category: "SKILL LAB" },
-  { image: image11, category: "JOYLAND" },
+  { image: image8, category: "Haute Route" },
+  { image: image9, category: "Theatrical Tapestry" },
+  { image: image10, category: "Skill Lab" },
+  { image: image11, category: "Joyland" },
 ];
 
 function EventSource() {
   const navigate = useNavigate();
 
+  // const handleCardClick = (category) => {
+  //   navigate("/event-details"); // Navigate to EventDetails with category in state
+  // };
+
+  // const handleCardClick = (category) => {
+  //   navigate(`/event-details/${encodeURIComponent(category)}`);
+  // };
+
   const handleCardClick = (category) => {
-    navigate("/event-details", { state: { category } }); // Navigate to EventDetails with category in state
+    navigate("/event-details", { state: { category } });
   };
 
   return (
