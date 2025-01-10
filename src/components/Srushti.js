@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom"; // Import useNavigate for navigation
 import "../style/Srushti.css";
-import gandhaarvideo from "../gandhaar_video_2.mp4";
+import gandhaarvideo from "../Gandhaar-website-video.mp4";
 
 const Launchpage = () => {
   const videoRef = useRef(null);
