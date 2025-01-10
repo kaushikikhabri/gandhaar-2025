@@ -77,7 +77,7 @@ const Navigation = ({ isDrawerOpen, toggleDrawer, scrollThreshold = null }) => {
             <li className="navitem">
               <Link
                 className="navlink"
-                to="themes"
+                to="pre-themes"
                 smooth={true}
                 duration={500}
               >
@@ -161,7 +161,7 @@ const Navigation = ({ isDrawerOpen, toggleDrawer, scrollThreshold = null }) => {
             <li className="draweritem">
               <Link
                 className="drawerlink"
-                to="theme"
+                to="pre-themes"
                 smooth={true}
                 duration={500}
                 onClick={toggleDrawer}

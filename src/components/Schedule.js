@@ -215,7 +215,7 @@ const daySchedules = {
       end: "12:30 PM",
       background: "linear-gradient(to right, #ff00b3, #00b3ff)",
       location: "MAIN BUILDING QUADRANGLE",
-      href: event_details["Step It Up"].detailsUrl,
+      
     },
     {
       id: 4,
@@ -661,7 +661,7 @@ const daySchedules = {
       end: "4:00 PM",
       background: "linear-gradient(to right, #ff0080, #40e0d0)",
       location: "STAGE 2",
-      href: event_details["Nazariya"].detailsUrl,
+      // href: event_details["Nazariya"].detailsUrl,
     },
     {
       id: 5,
