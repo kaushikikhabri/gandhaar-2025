@@ -203,8 +203,91 @@
     padding: 10px 15px;
   }
   
+  @media (max-width: 300px) {
+    .star-lineup-container {
+      padding: 30px 10px;
+      height: 620px;
+    }
+  
+    .star-gift-container {
+      left: -40%;
+      top: 250px;
+    }
+  
+  
+    .star-gift {
+      width: 180px;
+      height: 70px;
+      right: -50px;
+    }
+  
+    .star-gift::before {
+      width: 20px;
+      left: 80px;
+      height: 70px;
+    }
+  
+    .star-gift::after {
+      width: 180px;
+      height: 80px;
+      left: 0px;
+    }
+  
+    .star-click {
+      width: 200px;
+      height: 25px;
+      top: -25px;
+      left: -10px;
+    }
+  
+    .star-click::before {
+      width: 20px;
+      height: 25px;
+      left: 90px;
+      top: 0px;
+    }
+  
+    .star-click::after {
+      left: 84px;
+    }
+  
+    .star-lineup-container h2 {
+      font-size: 54px;
+    }
+  
+    .star-card {
+      width: 270px;
+      height: 250px;
+      bottom: 1px;
+      left: 10px;
+    }
+  
+    #star-click:checked+.star-click {
+      transform: rotate(-110deg) scale(0.85);
+    }
+  
+    #star-click:checked~.next-card-button {
+      transform: translateY(-300px) translateX(17px);
+    }
+  
+    .next-card-button {
+      position: absolute;
+      margin-top: 0px;
+      padding: 8px 16px;
+      font-size: 14px;
+      left: 20px;
+    }
+  
+    .star-gift-container::before {
+      width: 180px;
+      height: 20px;
+      border-radius: 50%;
+      top: 80px;
+      right: -50px;
+    }
+  }
 
-  @media (max-width: 380px) {
+  @media (min-width: 300px) and (max-width: 380px) {
     .star-lineup-container {
       padding: 30px 10px;
       height: 620px;
@@ -286,10 +369,13 @@
       top: 80px;
       right: -50px;
     }
+    .star-lineup-container h2 {
+      font-size: 50px;
+    }
   }
   
   
-  @media (min-width: 381px) and (max-width: 500px) {
+  @media (min-width: 380px) and (max-width: 500px) {
   
     .star-lineup-container {
       padding: 40px 15px;
@@ -298,7 +384,7 @@
   
     .star-gift-container {
       left: -40%;
-      top: 300px;
+      top: 270px;
     }
   
     .star-gift-container::before {
@@ -367,10 +453,13 @@
       left: 20px;
       font-size: 14px;
     }
+    .star-lineup-container h2 {
+      font-size: 60px;
+    }
   
   }
   
-  @media (min-width: 501px) and (max-width: 700px) {
+  @media (min-width: 500px) and (max-width: 700px) {
   
     .star-lineup-container {
       padding: 40px 15px;
