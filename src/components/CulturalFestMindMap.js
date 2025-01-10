@@ -115,6 +115,8 @@ const CulturalFestMindMap = () => {
           <div className="polaroid polaroid-description">
             <h4>{selectedTheme.name}</h4>
             <p>{selectedTheme.description}</p>
+            <p>Date: {selectedTheme.Date}</p>
+                      
           </div>
         </div>
       </div>
