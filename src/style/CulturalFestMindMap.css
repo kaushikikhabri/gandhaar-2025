@@ -183,6 +183,10 @@
   .zigzag-line {
     display: none; 
   }
+
+  svg{
+    display: none;
+  }
  }
 
 
