@@ -6,6 +6,12 @@ const Intercollege = () => {
   return (
     <div className="registration-page">
       <Bubbles />
+      <button
+        onClick={() => window.history.back()} // Goes back to the previous page
+        className="back-button"
+      >
+        &larr;
+      </button>
       <div className="regPage-content">
         <h1>Registrations Only for Inter-College</h1>
         <p>

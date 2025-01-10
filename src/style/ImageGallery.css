@@ -372,6 +372,15 @@
     text-align: center;
     max-width: 90%;  
   }
+   
+.arrow {
+  position: absolute;
+  top: 25%;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transform: translateY(-50%);
+}
 }
 
 @media (max-width: 768px) {
@@ -386,6 +395,15 @@
     text-align: center;
     max-width: 90%;
   }
+   
+.arrow {
+  position: absolute;
+  top: 25%;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transform: translateY(-50%);
+}
 }
 
 @media (max-width: 480px) {
@@ -407,5 +425,14 @@
     text-align: center;
     max-width: 95%;
   }
-  
+
+   
+.arrow {
+  position: absolute;
+  top: 25%;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transform: translateY(-50%);
+}
 }

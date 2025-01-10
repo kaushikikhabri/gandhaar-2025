@@ -33,7 +33,7 @@ const daySchedules = {
     },
     {
       id: 3,
-      text: "INTRA CLG GROUP DANCE",
+      text: "INTER CLASS GROUP DANCE",
       Ename: "JHOOM JUNCTION",
       startRow: 6,
       endRow: 17,

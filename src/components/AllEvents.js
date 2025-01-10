@@ -2,7 +2,6 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import EventPage from "./EventPage";
 
-// Event Details
 const events = {
   interClassDance: {
     image: require("../images/dance.png"),
@@ -120,10 +119,11 @@ const events = {
         ],
       },
       {
-        heading: "Judging and Coordination",
+        heading: "Judging Criteria",
         points: [
-          "The judges’ decisions will be final and binding.",
-          "The sequence of performances set by the coordinators will be final, and no requests to alter the order will be entertained.",
+          "Dancing skills.",
+          "Originality of ideas.",
+          "Use of props, costumes and choreography.",
         ],
       },
       {
@@ -131,6 +131,8 @@ const events = {
         points: [
           "Participants must maintain decency and refrain from making racial, religious, or offensive remarks.",
           "Any delays caused by participants or failure to comply with the rules will lead to disqualification.",
+          "The sequence of performances set by the coordinators will be final, and no requests to alter the order will be entertained.",
+          "The judges’ decisions will be final and binding.",
         ],
       },
     ],
@@ -277,72 +279,7 @@ const events = {
     ],
     registerLink: "/registration",
   },
-  interCollegeDance: {
-    image: require("../images/dance.png"),
-    title: "Step It Up",
-    subtitle: "Inter-College Dance",
-    details:
-      "Dance to win, Step It Up to conquer! This is more than a competition – it’s a chance to network with top teams, showcase your skills to an enthusiastic audience, and make your mark on a platform buzzing with energy and creativity.  Raise your college flag high, mesmerize the crowd, and claim your spot as the best in the game!",
-    structure: [
-      "Team size: 5-15 members + 1-2 helpers (only if needed)",
-      "Participation: Multiple teams from the same college",
-      "Venue: Main Building Quadrangle",
-      "Date: Day 2 (Thursday, 30th January 2025)",
-      "Time: 10:00 AM - 12:30 PM",
-    ],
-    rules: [
-      {
-        heading: "Registration and Eligibility",
-        points: [
-          "The event has limited registrations, considered on a first come, first serve basis.",
-          "Team size must consist of 5-15 performers + 1-2 helpers (only if needed).",
-          "This competition is open to college students aged 16-25.",
-          "All team members must be from the same college.",
-          "Multiple teams can register from the same college. However, a participant cannot be part of multiple teams.",
-          "Replacement of any team member after submission of team details is prohibited.",
-          "Teams must upload the following documents of all members (performers + assistants) to the drive: College ID Card and latest available marksheet.",
-        ],
-      },
-      {
-        heading: "Performance Guidelines",
-        points: [
-          "Time allotted per performance: Performance: 5-6 minutes (Setup: 0.5 minutes, Stage clearance: 1 minute).",
-          "Music track submission: Submit the track to Event Coordinators two days before the event. Tracks should be a single file; no changes are allowed after submission.",
-          "Participants must also bring their track in a pen drive on the event day.",
-          "Teams may use multiple songs in their performance.",
-        ],
-      },
-      {
-        heading: "Costumes and Props",
-        points: [
-          "Participants must wear decent costumes for the event. Failure to do so will result in disqualification. The decision lies with the Event Coordinators.",
-          "Props are allowed but hazardous and dangerous materials are prohibited.",
-          "A list of props must be submitted as instructed by the coordinators. Only listed props are allowed.",
-          "Prop usage is subject to the discretion of the coordinators.",
-        ],
-      },
-      {
-        heading: "Communication and Coordination",
-        points: [
-          "After registration, a WhatsApp group of all team heads will be created.",
-          "If a team is not added to the group before the event, it is their responsibility to contact the Event Coordinators.",
-        ],
-      },
-      {
-        heading: "Conduct and Decorum",
-        points: [
-          "Vulgarity and obscenity are strictly prohibited at any point during the event.",
-          "Participants must observe decency and refrain from racial, religious, or offensive remarks.",
-          "The decision of the judges regarding the winners will be final and binding.",
-        ],
-      },
-    ],
-    contacts: [
-      { name: "Purva Sarda", phone: "9021750026" },
-      { name: "Tanisha Dusane", phone: "9823389442" },
-    ],
-    registerLink: "/registration",
-  },
+
   groupSinging: {
     image: require("../images/music.png"),
     title: "Sargam Symphony",
@@ -457,7 +394,6 @@ const events = {
           "Time Limit: 20 seconds to think of a song.",
           "Turns: 3 turns for each team.",
           "Scoring: 10 points for each correct song.",
-          "Rules:",
           "No song can be repeated.",
           "At least 1 verse of the song must be sung.",
           "Elimination: No eliminations in this round.",
@@ -465,12 +401,16 @@ const events = {
       },
       {
         heading: "Lifelines",
+
+        subheading: "Sangeet Sathi:",
         points: [
-          "Sangeet Sathi:",
           "Round 1: Teams can take help from the audience to guess the song.",
           "Round 2: The audience can suggest only one song to the team.",
-          "Sangeet Shuffle: Teams can pick other chits.",
         ],
+      },
+      {
+        subheading: "Sangeet Shuffle",
+        points: [" Teams can pick other chits."],
       },
       {
         heading: "Lifeline Rules",
@@ -651,7 +591,7 @@ const events = {
         ],
       },
       {
-        heading: "Winner Selection",
+        heading: "Judging Criteria",
         points: [
           "Before their performance, participants must predict their own score out of 10.",
           "Judges will cross-question the participants after their performance and provide scores.",
@@ -661,9 +601,10 @@ const events = {
         ],
       },
       {
-        heading: "Penalty Rules",
+        heading: "Decorum and Conduct",
         points: [
           "Use of offensive content, including inappropriate language or behavior, will result in either a 1-point deduction or disqualification, depending on the severity of the offense.",
+          "The decision of coordinators and judges will be final and binding.",
         ],
       },
     ],
@@ -707,7 +648,7 @@ const events = {
         ],
       },
       {
-        heading: "Winning Criteria",
+        heading: "Judging Criteria",
         points: [
           "The team with the highest points at the end of all rounds will be declared the winner.",
         ],
@@ -800,14 +741,10 @@ const events = {
           "Teams must solve each challenge at a location to receive the clue for the next destination and a digit for the final password.",
           "Skipping challenges or locations is strictly prohibited.",
           "Given challenges need to be completed properly within the instructed time.",
-        ],
-      },
-      {
-        heading: "Winning Criteria",
-        points: [
           "The first team to successfully unlock the phone with the correct password within the time limit will be declared the winner.",
         ],
       },
+
       {
         heading: "Decorum and Conduct",
         points: [
@@ -1115,7 +1052,7 @@ const events = {
     title: "Goonj 3.0",
     subtitle: "Debate Competition",
     details:
-      "A solo debate where the speaker takes a stance on a topic and then switches sides after a set amount of time, presenting both the pros and cons of the particular motion.",
+      "TDSC-The Debating Society of Cummins brings you solo debate where the speaker takes a stance on a topic and then switches sides after a set amount of time, presenting both the pros and cons of the particular motion.",
     structure: [
       "Team Size: 1",
       "Participation: 1 team from each class",
@@ -1162,8 +1099,8 @@ const events = {
       },
     ],
     contacts: [
-      { name: "Anuradha Kalkar", phone: "9284469995" },
-      { name: "Sejal Patil", phone: "9373447616" },
+      { name: "Tanushka Nimbalkar(TDSC Member)", phone: "8149966038" },
+      { name: "Apurva Magdum(TDSC Member)", phone: "8149827582" },
     ],
     registerLink: "/registration",
   },
@@ -1984,7 +1921,7 @@ const events = {
       "Participate in this vibrant competition and showcase your Rangoli-making skills with organic and creative designs.",
     structure: [
       "Team Size: 2 members",
-      "Participation: 2 members per class",
+      "Participation: 1 Team per class",
       "Venue: Between Main & IT Building",
       "Date: Day 4 (Saturday, 1st February 2025)",
       "Time: 12:00 PM - 3:00 PM",
@@ -2036,7 +1973,7 @@ const events = {
       "Embark on an 8-minute storytelling extravaganza in Hindi/English/marathi—where props are your magical companions. Paint a vivid tale on the canvas of creativity. Let your performance echo, as decisions by coordinators and judges become the grand finale of your narrative journey!",
     structure: [
       "Team Size: 5 (minimum) / 10 (maximum) + 3 volunteers (if needed)",
-      "Participation: 20 teams (First come first serve basis)",
+      "Participation: 1 team per class (only 20 teams- First come first serve basis)",
       "Venue: Main Building Quadrangle",
       "Date: Day 4 (Saturday, 1st February 2025)",
       "Time: 1:00 PM - 4:30 PM",
@@ -2553,7 +2490,54 @@ const events = {
         ],
       },
     ],
-    tacts: [
+    contacts: [
+      { name: "Apurva Gapchup", phone: "7666687656" },
+      { name: "Arya Desai", phone: "8767029511" },
+    ],
+    registerLink: "/registration",
+  },
+  upDownRace: {
+    image: require("../images/sports.png"),
+    title: "Up-Down Race",
+    subtitle: "Energetic and Fast-Paced Group Game",
+    details:
+      "Up-Down Race is an energetic and fast-paced group game where players race back and forth. The game tests speed, coordination, and focus, making it perfect for team-building activities.",
+    structure: [
+      "Team Size: 4 members",
+      "Participation: 1 team per class",
+      "Venue: Sanstha Ground",
+      "Date: Day 3 (Friday, 31st January 2025)",
+      "Time: 8:00 AM - 10:00 AM",
+    ],
+    rules: [
+      {
+        heading: "Registration and Eligibility",
+        points: [
+          "Upon completion of registration, it will be considered final, and no alterations will be accommodated under any circumstances.",
+          "There will be four players in each team, divided into two pairs:",
+          "One pair will be sitting, and the other pair will be standing.",
+          "Both pairs must hold hands with their respective partners.",
+        ],
+      },
+      {
+        heading: "Gameplay Guidelines",
+        points: [
+          "The team that reaches the finish line first, while maintaining proper coordination and without breaking their formation, wins the race.",
+          "Players must complete the race by moving forward while maintaining their positions (one player sitting and the other standing).",
+          "The players in each pair move forward by passing over one another, i.e., the sitting pair moves into a standing position, and the standing pair moves into a sitting position ahead.",
+          "Players must not let go of each other’s hands during the race.",
+          "Teams will be disqualified if they fail to follow the sit-and-stand formation consistently or if their formation breaks.",
+        ],
+      },
+      {
+        heading: "Decorum and Conduct",
+        points: [
+          "Teams are expected to respect competition decorum.",
+          "Decisions made by the coordinators will be final and binding.",
+        ],
+      },
+    ],
+    contacts: [
       { name: "Apurva Gapchup", phone: "7666687656" },
       { name: "Arya Desai", phone: "8767029511" },
     ],
@@ -2606,16 +2590,14 @@ const events = {
   },
 };
 
-// Component to Display Events
 function AllEvents() {
-  const { eventKey } = useParams(); // Fetch eventKey from URL
+  const { eventKey } = useParams();
   const event = events[eventKey];
 
   if (!event) {
     return <p>Event not found</p>;
   }
 
-  // Pass the event data to the EventPage component
   return <EventPage event={event} />;
 }
 

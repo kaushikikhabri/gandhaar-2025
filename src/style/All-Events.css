@@ -116,7 +116,8 @@ header {
   }
 
   .event-title {
-    font-size: 3rem; 
+    font-size: 2rem; 
+    padding-top: 60px;
   }
 
   .event-subtitle {
@@ -125,7 +126,8 @@ header {
 
   .title-image {
     width: 150px; 
-    margin-top: 10px;
+    margin-top: -20px;
+    /* padding-bottom: 30px; */
   }
 }
 @media (max-width: 1024px) {
