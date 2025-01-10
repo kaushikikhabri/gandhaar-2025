@@ -3,6 +3,7 @@ import "../style/EventDetails.css";
 import event_details from "./event_details";
 import Header from "./Header";
 import Navigation from "./Navigation";
+import { useLocation } from "react-router-dom";
 
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import WatchLaterIcon from "@mui/icons-material/WatchLater";
@@ -13,15 +14,14 @@ import LaunchIcon from "@mui/icons-material/Launch";
 import FilterAltIcon from "@mui/icons-material/FilterAlt";
 import FilterListIcon from "@mui/icons-material/FilterList";
 import Bubbles from "./Bubbles";
-import { useLocation } from "react-router-dom";
 
 const EventDetails = () => {
   const location = useLocation();
-  const { category } = location.state || {}; // Get the category from the state
+  const { category } = location.state || {}; // Get category from state, if available
+
   const [drawerOpen, setDrawerOpen] = useState(null); // For bottom drawer
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 968);
-
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 968);
@@ -71,13 +71,11 @@ const EventDetails = () => {
       (filters.day === "All" || event.day === filters.day) &&
       (filters.location === "All" || event.location === filters.location) &&
       (filters.category === "All" || event.category === filters.category)
-      // (filters.category === "All" || event.category === category)
     );
   });
 
   return (
     <div>
-      {/* <h1>{category}</h1> */}
       <Navigation isDrawerOpen={isDrawerOpen} toggleDrawer={toggleDrawer1} />
       <div style={{ display: "flex", backgroundColor: "white" }}>
         <div className="sidebar">
