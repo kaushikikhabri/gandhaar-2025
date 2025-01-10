@@ -19,25 +19,21 @@ import image11 from "../posters/Joyland.PNG";
 
 // Update items array with local images
 const items = [
-  { image: image1, category: "GROOVE ARENA" },
-  { image: image2, category: "JAMSPHERE" },
-  { image: image3, category: "GATHERING HUB" },
-  { image: image4, category: "WORDSMITH’S CORNER" },
-  { image: image5, category: "SAVORY SYMPHONY" },
-  { image: image6, category: "ARTISCOPE" },
-  { image: image7, category: "THE DIGITAL STAGE" },
-  { image: image8, category: "HAUTE ROUTE" },
-  { image: image9, category: "THEATRICAL TAPESTRY" },
-  { image: image10, category: "SKILL LAB" },
-  { image: image11, category: "JOYLAND" },
+  { image: image1, alt: "GROOVE ARENA" },
+  { image: image2, alt: "JAMSPHERE" },
+  { image: image3, alt: "GATHERING HUB" },
+  { image: image4, alt: "WORDSMITH’S CORNER" },
+  { image: image5, alt: "SAVORY SYMPHONY" },
+  { image: image6, alt: "ARTISCOPE" },
+  { image: image7, alt: "THE DIGITAL STAGE" },
+  { image: image8, alt: "HAUTE ROUTE" },
+  { image: image9, alt: "THEATRICAL TAPESTRY" },
+  { image: image10, alt: "SKILL LAB" },
+  { image: image11, alt: "JOYLAND" },
 ];
 
 function EventSource() {
   const navigate = useNavigate();
-
-  const handleCardClick = (category) => {
-    navigate("/event-details", { state: { category } }); // Navigate to EventDetails with category in state
-  };
 
   return (
     <div className="event-source">
@@ -45,7 +41,7 @@ function EventSource() {
 
       <Carousel
         items={items.map(({ image, category }, index) => (
-          <div key={index} onClick={() => handleCardClick(category)}>
+          <div key={index}>
             <img
               src={image}
               alt={`Slide ${index + 1}`}
@@ -63,6 +59,12 @@ function EventSource() {
         onChange={(currentIndex) => console.log(currentIndex)}
         className="carousel-container"
       />
+      <button
+        className="event-button"
+        onClick={() => navigate("/event-details")}
+      >
+        View All Events
+      </button>
     </div>
   );
 }

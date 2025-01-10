@@ -4,7 +4,7 @@
 .event-source{
     height: 430px;
     padding: 50px;
-    padding-bottom: 590px;
+    padding-bottom: 690px;
     background: linear-gradient(to right, rgb(173, 83, 137), rgb(60, 16, 83));
 }
 
@@ -19,6 +19,10 @@
       "MORF" 15,
       "SHLN" 50;
       text-align: center;
+}
+
+.event-button{
+  align-items: center;
 }
 
 .carousel-container {
