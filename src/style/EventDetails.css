@@ -299,10 +299,10 @@ input[type="checkbox"] {
   cursor: pointer;
   position: relative;
 }
-
-
-
-
+.event-container-title{
+  font-size: 70px;
+  margin-top: 0px;
+}
 }  
 
 
@@ -317,6 +317,12 @@ input[type="checkbox"] {
     box-sizing: border-box;
     font-size: 12px;
   }
+  
+.event-container-title{
+  font-size: 70px;
+  margin-top: 0px;
+}
+
 }
 
 
@@ -331,6 +337,10 @@ input[type="checkbox"] {
     box-sizing: border-box;
     font-size: 11px;
   }
+  .event-container-title{
+    font-size: 70px;
+    margin-top: 0px;
+  }
 }
 
 
@@ -344,6 +354,10 @@ input[type="checkbox"] {
     padding: 5px;
     box-sizing: border-box;
     font-size: 9px;
+  }
+  .event-container-title{
+    margin-top: 0px;
+    font-size: 60px;
   }
 }
 
