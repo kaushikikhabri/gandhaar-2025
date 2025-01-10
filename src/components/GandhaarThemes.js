@@ -20,7 +20,7 @@ import "../style/GandhaarThemes.css";
 import broadwayballad from "../images/broadwayballad.webp";
 import streetbeats from "../images/streetbeats.webp";
 import chartpopers from "../images/chartpopers.webp";
-import allankarallure from "../images/allankarallure.webp";
+import allankarallure from "../images/New-Image.jpg";
 // In your index.js or App.js file
 
 function GandhaarThemes() {
@@ -40,7 +40,7 @@ function GandhaarThemes() {
       id: 1,
       background: "#2D5643",
       day: "Day 2 : Jan 30",
-      content: "StreetBeat",
+      content: "Street Beats",
       description: "Feel the rhythm of the streets!",
       imgSrc: streetbeats,
     },
@@ -48,7 +48,7 @@ function GandhaarThemes() {
       id: 2,
       background: "#E7A043",
       day: "Day 3: Jan 31",
-      content: "Chart POP",
+      content: "Chart POP-ers",
       description: "Pop hits, loud beats, endless vibes!",
       imgSrc: chartpopers,
     },
