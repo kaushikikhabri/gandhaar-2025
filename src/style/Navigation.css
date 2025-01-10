@@ -13,6 +13,31 @@
   width: 100%;
   z-index: 1000;
 }
+.close-drawer-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  background-color: #ff5555; /* Red background color */
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.close-drawer-btn:hover {
+  transform: scale(1.1); /* Slightly enlarge the button on hover */
+  background-color: #ff3333; /* Darker red on hover */
+}
+
 
 .navmenu {
   background-color: rgba(255, 255, 255, 0.244);
@@ -176,5 +201,5 @@
   .navmenu {
     display: none;
   }
-
+6
 }
