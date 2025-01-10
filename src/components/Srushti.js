@@ -29,6 +29,7 @@ const Launchpage = () => {
         className="fullscreen-video"
         autoPlay
         muted={isMuted}
+        playsInline
         onEnded={handleVideoEnd} // Add onEnded event to redirect when the video finishes
       >
         <source src={gandhaarvideo} type="video/mp4" />
