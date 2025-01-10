@@ -230,7 +230,7 @@ const EventDetails = () => {
         </div>
 
         <div className="bottom-drawer">
-          {["day", "location", "category"].map((key) => (
+          {["day", "category"].map((key) => (
             <div
               key={key}
               className={`drawer-item ${drawerOpen === key ? "open" : ""}`}
@@ -242,9 +242,7 @@ const EventDetails = () => {
                 {key === "day" && (
                   <CalendarMonthIcon style={{ marginRight: "5px" }} />
                 )}
-                {key === "location" && (
-                  <LocationOnIcon style={{ marginRight: "5px" }} />
-                )}
+
                 {key === "category" && (
                   <CategoryIcon style={{ marginRight: "5px" }} />
                 )}
@@ -265,36 +263,6 @@ const EventDetails = () => {
                         }
                       />
                       <label>{day}</label>
-                    </div>
-                  ))}
-
-                {drawerOpen === "location" &&
-                  [
-                    "All",
-                    "Main Quad",
-                    "Stage 2",
-                    "Between Main & IT Bldg",
-                    "Mech Circle",
-                    "Instru Quad",
-                    "KB Joshi",
-                    "Samstha Ground",
-                    "IT/Mech Bldg",
-                    "Whole Campus",
-                    "Instru Garden/Mech Circle",
-                    "IT Bulg",
-                    "Online",
-                  ].map((location) => (
-                    <div key={location}>
-                      <input
-                        type="checkbox"
-                        checked={filters.location === location}
-                        onChange={() =>
-                          location === "All"
-                            ? handleFilterChange("location", location)
-                            : handleSpecificFilterChange("location", location)
-                        }
-                      />
-                      <label style={{ fontSize: "13px" }}>{location}</label>
                     </div>
                   ))}
 
@@ -335,9 +303,6 @@ const EventDetails = () => {
         {isMobile && (
           <div className="floating-icon" onClick={toggleDrawer1}>
             <div className="floating-content">
-              <span role="img" aria-label="menu">
-                ✨
-              </span>
               <p>Menu</p>
             </div>
           </div>
