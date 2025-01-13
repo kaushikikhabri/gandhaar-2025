@@ -137,7 +137,7 @@ const event_details = {
     location: "IT/Mech Bldg",
     category: "Gathering Hub",
     day: "Jan 31",
-    teamSize: 4,
+    teamSize: "3-4",
     Participation: "1 team per class (FCFS)",
     imageUrl:
       "https://img.freepik.com/premium-photo/inclusive-pridethemed-escape-room-experience-generative-ai_883586-207229.jpg",
@@ -249,7 +249,7 @@ const event_details = {
     Participation: "1 team per class",
     imageUrl:
       "https://img.freepik.com/premium-photo/woman-chefs-hat-preparing-food-vibrant-kitchen_1282444-125893.jpg",
-    detailsUrl: "/event/btechfashionShow",
+    detailsUrl: "/event/masterchefCompetition",
   },
   "Kicks & Dyes Showdown": {
     start: "12:30 PM",

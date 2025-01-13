@@ -2,6 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import EventPage from "./EventPage";
 
+// Event Details
 const events = {
   interClassDance: {
     image: require("../images/dance.png"),
@@ -720,7 +721,7 @@ const events = {
     details:
       "Participants will be locked inside a building, teaming up in groups of four to tackle a series of thrilling challenges spread across mysterious locations. Each challenge completed unveils a clue to the next destination and a crucial digit for the ultimate password. The race is on to collect all the digits, return to the starting point within the 2-hour time limit, and crack the code to unlock the phone.",
     structure: [
-      "Team Size: 4",
+      "Team Size: 3-4",
       "Participation: 1 team from each class (only first 20 teams: first come- first serve)",
       "Venue: Entire IT/Mech Building",
       "Date: Day 3 (Friday, 31st January 2025)",
@@ -1582,28 +1583,24 @@ const events = {
       },
       {
         heading: "Stages",
-        subsections: [
-          {
-            title: "Stage 1: Origami",
-            points: [
-              "A specific origami figure will be demonstrated (e.g., a bird, flower, or box), and steps to make it will be displayed.",
-              "Participants must recreate the piece as quickly and accurately as possible.",
-            ],
-          },
-          {
-            title: "Stage 2: Collage Making",
-            points: [
-              "A specific design or pattern will be announced (e.g., a landscape or geometric art).",
-              "Participants must complete the collage following the instructions within the given time.",
-            ],
-          },
-          {
-            title: "Stage 3: Quilling Art",
-            points: [
-              "Participants will be shown a quilled design (e.g., a flower, heart, or abstract pattern).",
-              "The task must be completed quickly while maintaining neatness and accuracy.",
-            ],
-          },
+        subheading: "Stage 1: Origami",
+        points: [
+          "A specific origami figure will be demonstrated (e.g., a bird, flower, or box), and steps to make it will be displayed.",
+          "Participants must recreate the piece as quickly and accurately as possible.",
+        ],
+      },
+      {
+        subheading: "Stage 2: Collage Making",
+        points: [
+          "A specific design or pattern will be announced (e.g., a landscape or geometric art).",
+          "Participants must complete the collage following the instructions within the given time.",
+        ],
+      },
+      {
+        subheading: "Stage 3: Quilling Art",
+        points: [
+          "Participants will be shown a quilled design (e.g., a flower, heart, or abstract pattern).",
+          "The task must be completed quickly while maintaining neatness and accuracy.",
         ],
       },
       {
@@ -1622,12 +1619,15 @@ const events = {
         ],
       },
     ],
+
     contacts: [
       { name: "Yukti Mahajan", phone: "7028021566" },
       { name: "Twisha Gohil", phone: "9545944388" },
     ],
+
     registerLink: "/registration",
   },
+
   sketching: {
     image: require("../images/art.png"),
     title: "Sketching - Sketch Sphere",
