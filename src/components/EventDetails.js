@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import "../style/EventDetails.css";
 import event_details from "./event_details";
 import Header from "./Header";
-import Navigation from "./Navigation";
 import { useLocation } from "react-router-dom";
 
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
@@ -76,7 +75,6 @@ const EventDetails = () => {
 
   return (
     <div>
-      <Navigation isDrawerOpen={isDrawerOpen} toggleDrawer={toggleDrawer1} />
       <div style={{ display: "flex", backgroundColor: "white" }}>
         <div className="sidebar">
           <h3>
@@ -153,7 +151,6 @@ const EventDetails = () => {
                 "Theatrical Tapestry",
                 "Skill Lab",
                 "The Digital Stage",
-                
               ].map((category) => (
                 <div key={category}>
                   <input
@@ -176,6 +173,12 @@ const EventDetails = () => {
 
         <div className="main-content">
           <Bubbles />
+          <button
+            onClick={() => window.history.back()} // Goes back to the previous page
+            className="event-back-button"
+          >
+            &larr;
+          </button>
 
           <h2 className="event-container-title">Event List</h2>
           {filteredEvents.length === 0 ? (
@@ -279,7 +282,6 @@ const EventDetails = () => {
                     "Theatrical Tapestry",
                     "Skill Lab",
                     "The Digital Stage",
-                   
                   ].map((category) => (
                     <div key={category}>
                       <input
