@@ -153,7 +153,7 @@ const EventDetails = () => {
                 "Theatrical Tapestry",
                 "Skill Lab",
                 "The Digital Stage",
-                "Joyland",
+                
               ].map((category) => (
                 <div key={category}>
                   <input
@@ -279,7 +279,7 @@ const EventDetails = () => {
                     "Theatrical Tapestry",
                     "Skill Lab",
                     "The Digital Stage",
-                    "Joyland",
+                   
                   ].map((category) => (
                     <div key={category}>
                       <input
