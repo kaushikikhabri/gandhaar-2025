@@ -25,7 +25,7 @@ function App() {
           <Route path="/registration" element={<RegistrationPage />} />
           <Route path="/intercollege" element={<Intercollege />} />
 
-          <Route path="/" element={<Soon />} />
+          <Route path="/" element={<Launchpage />} />
           <Route path="/home" element={<Home />} />
           <Route
             path="/miss-freshers"
