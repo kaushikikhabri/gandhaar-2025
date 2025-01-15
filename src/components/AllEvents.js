@@ -75,7 +75,7 @@ const events = {
       { name: "Shruti Kothavade", phone: "8767824195" },
       { name: "Paridha Bhoite", phone: "9321649591" },
     ],
-    registerLink: "/registration",
+    registerLink: "https://forms.gle/px2vtA38sKyo3pPX9",
   },
   soloDance: {
     image: require("../images/dance.png"),
@@ -142,7 +142,8 @@ const events = {
       { name: "Sakshi Bansode", phone: "8600591667" },
       { name: "Komal", phone: "9022696146" },
     ],
-    registerLink: "/registration",
+    registerLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLScLqiMEY-Yv-1t9p6XyoTXccdTl7ehM6E4b_HfD6U8-yH4Xyg/viewform?usp=sf_link",
   },
   classicalDance: {
     image: require("../images/dance.png"),
@@ -278,7 +279,7 @@ const events = {
       { name: "Aarohii Hanji", phone: "9765154647" },
       { name: "Samruddhi Patil", phone: "9765154647" },
     ],
-    registerLink: "/registration",
+    registerLink: "https://forms.gle/65Sx4E94wCMBruvC6",
   },
 
   groupSinging: {
@@ -443,7 +444,7 @@ const events = {
       { name: "Sakshi Deshmukh", phone: "7055929394" },
       { name: "Shruti Srinivasan", phone: "8208996654" },
     ],
-    registerLink: "/registration",
+    registerLink: " https://forms.gle/3hd3Rsw9Jw1W4gF56",
   },
   departmentAntakshariFaculty: {
     image: require("../images/open.png"),
@@ -613,7 +614,7 @@ const events = {
       { name: "Rujuta Kulkarni", phone: "8983083422" },
       { name: "Mrudula Dafne", phone: "7447835329" },
     ],
-    registerLink: "/registration",
+    registerLink: "https://forms.gle/iwu3g1Y3McUEkAX4A",
   },
   DumbCharades: {
     image: require("../images/open.png"),
@@ -667,7 +668,7 @@ const events = {
       { name: "Sachi Shah", phone: "9175034745" },
       { name: "Ishita Patil", phone: "8237551931" },
     ],
-    registerLink: "/registration",
+    registerLink: "https://forms.gle/qKyGrGEiiNAqaFfeA",
   },
   KalakaarKatta: {
     image: require("../images/open.png"),
@@ -712,7 +713,8 @@ const events = {
       { name: "Ishita Patil", phone: "8237551931" },
       { name: "Tanisha Joshi", phone: "7796760971" },
     ],
-    registerLink: "/registration",
+    registerLink:
+      "https://docs.google.com/forms/d/1Kh30UtSNhG59PAP5Z4I03ODdyvGqyTA2BAX8wMRAJ2s",
   },
   EscapeRoom: {
     image: require("../images/open.png"),
@@ -761,7 +763,8 @@ const events = {
       { name: "Aditi Pardeshi", phone: "7447554554" },
       { name: "Aarohii Hanji", phone: "9765154647" },
     ],
-    registerLink: "/registration",
+    registerLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSfmDcfijutYY5ZFfG7sV1opnAaWztwAjuV7vzJl7njcIN_kWg/viewform?usp=sf_link",
   },
   TreasureHunt: {
     image: require("../images/open.png"),
@@ -819,7 +822,8 @@ const events = {
       { name: "Eva Deswal", phone: "9920267634" },
       { name: "Gayatri Kadu", phone: "9209115390" },
     ],
-    registerLink: "/registration",
+    registerLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLScnm_eYUQZnu2wpeSHEFli3QY9fVDt90xoR122_2nQLmJ2FgQ/viewform?usp=sf_link",
   },
   btechfashionShow: {
     image: require("../images/Runway.png"),
@@ -896,7 +900,7 @@ const events = {
       { name: "Tejaswini Patkar", phone: "9730044087" },
       { name: "Sameeksha Tantak", phone: "9096417769" },
     ],
-    registerLink: "/registration",
+    registerLink: "https://forms.gle/Z78PEMqiu2TkPCre6",
   },
 
   missCummins: {
@@ -983,7 +987,8 @@ const events = {
       { name: "Isha Madhavan", phone: "7507685007" },
       { name: "Aarya Kadam", phone: "7887799700" },
     ],
-    registerLink: "/registration",
+    registerLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSc8k8XZ1sBTlceZU_wHa7cIzwTD_wlh8RRVwiiInwXUjxF-1A/viewform?usp=sf_link",
   },
 
   ecoVogue: {
@@ -1046,7 +1051,7 @@ const events = {
       { name: "Aarya Kadam", phone: "7887799700" },
       { name: "Srushti Tarate", phone: "7770004893" },
     ],
-    registerLink: "/registration",
+    registerLink: "https://forms.gle/7zVHq91sgYd5iGs28",
   },
   debateCompetition: {
     image: require("../images/Literary.png"),
@@ -1103,7 +1108,7 @@ const events = {
       { name: "Tanushka Nimbalkar(TDSC Member)", phone: "8149966038" },
       { name: "Apurva Magdum(TDSC Member)", phone: "8149827582" },
     ],
-    registerLink: "/registration",
+    registerLink: "https://forms.gle/1xVPTxazmJgmgJom9",
   },
 
   quizCompetition: {
@@ -1221,7 +1226,8 @@ const events = {
       { name: "Isha Madhavan", phone: "7507685007" },
       { name: "Twisha Gohil", phone: "9545944388" },
     ],
-    registerLink: "/registration",
+    registerLink:
+      "https://docs.google.com/forms/d/1QfL4g95HmP0QJBkMAJ31KY7I9-G21SO6juNVUlPDd40/",
   },
 
   openMic: {
