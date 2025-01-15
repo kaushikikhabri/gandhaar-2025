@@ -77,7 +77,7 @@ const event_details = {
     location: "KB Joshi",
     category: "Gathering Hub",
     day: "Jan 30",
-    teamSize: "2-4",
+    teamSize: "4",
     Participation: "1 team per department",
     imageUrl:
       "https://img.freepik.com/premium-photo/colorful-microphone-black-background-generative-ai_918839-1265.jpg?w=900",
@@ -126,7 +126,7 @@ const event_details = {
     location: "IT/Mech Bldg",
     category: "Gathering Hub",
     day: "Jan 31",
-    teamSize: "3-4",
+    teamSize: "4",
     Participation: "1 team per class (FCFS)",
     imageUrl:
       "https://img.freepik.com/premium-photo/inclusive-pridethemed-escape-room-experience-generative-ai_883586-207229.jpg",

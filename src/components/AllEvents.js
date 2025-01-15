@@ -358,7 +358,7 @@ const events = {
       "Department Antakshari challenges teams to showcase their musical prowess through three exciting rounds. From song lyric decrypting to singing challenges, culminating in the ultimate Antakshari face-off. May the most melodious team emerge victorious!",
     structure: [
       "Participation: 1 team per department (1 student per year)",
-      "Team Size: Minimum 2, Maximum 4",
+      "Team Size: 4",
       "Venue: KB Joshi Auditorium",
       "Date: Day 2 (Thursday, 30th January 2025)",
       "Time: 10:00 AM - 12:00 PM",
@@ -725,7 +725,7 @@ const events = {
     details:
       "Participants will be locked inside a building, teaming up in groups of four to tackle a series of thrilling challenges spread across mysterious locations. Each challenge completed unveils a clue to the next destination and a crucial digit for the ultimate password. The race is on to collect all the digits, return to the starting point within the 2-hour time limit, and crack the code to unlock the phone.",
     structure: [
-      "Team Size: 3-4",
+      "Team Size: 4",
       "Participation: 1 team from each class (only first 20 teams: first come- first serve)",
       "Venue: Entire IT/Mech Building",
       "Date: Day 3 (Friday, 31st January 2025)",
