@@ -164,7 +164,7 @@ const event_details = {
     teamSize: "18 - 21",
     Participation: "1 team per FINAL YEAR class",
     imageUrl:
-      "https://img.freepik.com/premium-photo/high-tech-fashion-show-futuristic-fashion-show_1228145-23396.jpg",
+      "https://files.oaiusercontent.com/file-4PqiNCwh2xjAaVJGTCTXH7?se=2025-01-15T06%3A56%3A50Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D44738cda-40b2-4a37-adaf-10658350d640.webp&sig=5tDt8lbemI8FnIK1wpMmsAkoiByxdXGW/hcy9MzDAqE%3D",
     detailsUrl: "/event/btechfashionShow",
   },
   "Miss Cummins-Beauty Contest": {
@@ -479,7 +479,6 @@ const event_details = {
       "https://static.wixstatic.com/media/95dc62_f6350456601847699660ed55b26c6463~mv2.jpg/v1/fit/w_2500,h_1330,al_c/95dc62_f6350456601847699660ed55b26c6463~mv2.jpg",
     detailsUrl: "/event/bexpressionDance",
   },
-  
 };
 
 export default event_details;

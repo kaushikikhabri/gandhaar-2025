@@ -21,7 +21,7 @@ const DevTeam = () => {
     { name: "Srushti Nikam", img: shrushtiImage },
     { name: "Purva Sarda", img: purvaImage },
     { name: "Tejaswini Patkar", img: tejaswiniImage },
-    { name: "Isha Bhule", img: ieshaImage },
+    { name: "Isha Bule", img: ieshaImage },
     { name: "Mrunal Shinde", img: mrunalImage },
   ];
 
