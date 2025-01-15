@@ -477,7 +477,7 @@ const event_details = {
     Participation: "1 student per class",
     imageUrl:
       "https://static.wixstatic.com/media/95dc62_f6350456601847699660ed55b26c6463~mv2.jpg/v1/fit/w_2500,h_1330,al_c/95dc62_f6350456601847699660ed55b26c6463~mv2.jpg",
-    detailsUrl: "/event/bexpressionDance",
+    detailsUrl: "/event/expressionDance",
   },
 };
 
