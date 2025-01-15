@@ -1172,7 +1172,7 @@ const events = {
       { name: "Kashish Patil", phone: "9834645651" },
       { name: "Srushti Tarate", phone: "7770004893" },
     ],
-    registerLink: "/registration",
+    registerLink: "https://forms.gle/dhpac4Jd6eEey9CY7",
   },
 
   spellingBee: {
@@ -1288,7 +1288,7 @@ const events = {
       { name: "Priyanka Dhawale", phone: "8766011318" },
       { name: "Dhanashree Deshmukh", phone: "9307982145" },
     ],
-    registerLink: "/registration",
+    registerLink: "https://forms.gle/esQfUHspEqPf5YEc9",
   },
   masterchefCompetition: {
     image: require("../images/Culinary.png"),
