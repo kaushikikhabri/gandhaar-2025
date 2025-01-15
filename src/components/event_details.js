@@ -83,18 +83,7 @@ const event_details = {
       "https://img.freepik.com/premium-photo/colorful-microphone-black-background-generative-ai_918839-1265.jpg?w=900",
     detailsUrl: "/event/departmentAntakshariStudents",
   },
-  "The Great Faculty Sing-Off": {
-    start: "2:00 PM",
-    end: "4:00 PM",
-    location: "Instru Audi",
-    category: "Gathering Hub",
-    day: "Jan 29",
-    teamSize: "-",
-    Participation: "1 team per department",
-    imageUrl:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuS4_IuS-Cf2hoz6fNUsdeUHwhRjwy4IEyzw&s",
-    detailsUrl: "/intercollege",
-  },
+
   "Cummins Got Latent": {
     start: "12:00 PM",
     end: "2:30 PM",

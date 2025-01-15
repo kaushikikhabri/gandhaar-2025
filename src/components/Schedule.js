@@ -99,7 +99,6 @@ const daySchedules = {
       end: "4:00 PM",
       background: "linear-gradient(to right, #ff416c, #ff4b2b)",
       location: "INSTRUMENTATION AUDITORIUM",
-      href: event_details["The Great Faculty Sing-Off"].detailsUrl,
     },
     {
       id: 8,
