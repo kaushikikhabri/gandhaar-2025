@@ -209,7 +209,8 @@ const events = {
       { name: "Gayatri More", phone: "9561937665" },
       { name: "Bhargavi Girisagar", phone: "9373602852" },
     ],
-    registerLink: "/registration",
+    registerLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSd_1-cY9oWbhSTy3KZvUnqkHpim9ThaBwihNLnaWoeyzv7Ahw/viewform?usp=sf_link",
   },
   streetdance: {
     image: require("../images/dance.png"),
@@ -346,7 +347,8 @@ const events = {
       { name: "Sneha Ranade", phone: "9172457943" },
       { name: "Rujuta Kulkarni", phone: "8983083422" },
     ],
-    registerLink: "/registration",
+    registerLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSfebzRnB9w_cc7Gf5hI1GoQ3gleGxmOJJzdoxk67JgApUNZ6Q/viewform?usp=sf_link",
   },
   departmentAntakshariStudents: {
     image: require("../images/open.png"),
