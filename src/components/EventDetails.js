@@ -302,13 +302,6 @@ const EventDetails = () => {
             </div>
           ))}
         </div>
-        {isMobile && (
-          <div className="floating-icon" onClick={toggleDrawer1}>
-            <div className="floating-content">
-              <p>Menu</p>
-            </div>
-          </div>
-        )}
       </div>
     </div>
   );
