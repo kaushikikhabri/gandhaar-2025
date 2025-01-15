@@ -1346,7 +1346,8 @@ const events = {
       { name: "Mrudula Kinkar", phone: "9604068921" },
       { name: "Gayatri More", phone: "9561937665" },
     ],
-    registerLink: "/registration",
+    registerLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSe8Z-M4I70CqpBaU4I5b4WwbOEgf3yINbo0VNA8tpCNzqZxwQ/viewform?usp=sf_link",
   },
   tShirtSneakerCompetition: {
     image: require("../images/art.png"),
@@ -1418,7 +1419,7 @@ const events = {
       { name: "Ashlesha Jagtap", phone: "9420482496" },
       { name: "Shruti Shinkar", phone: "7620460172" },
     ],
-    registerLink: "/registration",
+    registerLink: "https://forms.gle/SB5NS1BMAeneKimQ7",
   },
 
   mehendiCompetition: {
@@ -1481,7 +1482,7 @@ const events = {
       { name: "Tanisha Joshi", phone: "7796760971" },
       { name: "Komal", phone: "7015663591" },
     ],
-    registerLink: "/registration",
+    registerLink: "https://forms.gle/S8r4KXj6x1uYueQJ8",
   },
 
   bestOutOfWaste: {
@@ -1549,7 +1550,8 @@ const events = {
       { name: "Mrudula Kinkar", phone: "9604068921" },
       { name: "Tanisha Dusane", phone: "9823389442" },
     ],
-    registerLink: "/registration",
+    registerLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSdcpO2NtqC8u32PBqN_SnvBtVDMBuYiCAjxrEpcAPnfdgOhPQ/viewform?usp=sf_link",
   },
 
   artRelay: {
@@ -1631,7 +1633,8 @@ const events = {
       { name: "Twisha Gohil", phone: "9545944388" },
     ],
 
-    registerLink: "/registration",
+    registerLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSfHHXFXxfQa19rgEHHy2cd0Q9eUfKJFJAr8PPyNDKA_eDykjg/viewform?usp=sf_link",
   },
 
   sketching: {
@@ -1686,7 +1689,7 @@ const events = {
       { name: "Sakshi Deshmukh", phone: "7055929394" },
       { name: "Sharvari Ughade", phone: "7823804166" },
     ],
-    registerLink: "/registration",
+    registerLink: "https://forms.gle/vy8mdq1CJfziFjxu5",
   },
   doodling: {
     image: require("../images/art.png"),
@@ -1743,7 +1746,7 @@ const events = {
       { name: "Sanjana Tupe", phone: "9156102292" },
       { name: "Paridha Bhoite", phone: "9321649591" },
     ],
-    registerLink: "/registration",
+    registerLink: "https://forms.gle/n45t7QwfD8AzpqX26",
   },
   portrait: {
     image: require("../images/art.png"),
@@ -1802,7 +1805,7 @@ const events = {
       { name: "Sejal Patil", phone: "9373447616" },
       { name: "Samruddhi Pawar", phone: "9850558436" },
     ],
-    registerLink: "/registration",
+    registerLink: "https://forms.gle/qYZcH6b9YT2MTbW36",
   },
 
   painting: {
@@ -1853,7 +1856,7 @@ const events = {
       { name: "Vaishnavi Morge", phone: "9022696146" },
       { name: "Sanjana Tupe", phone: "9156102292" },
     ],
-    registerLink: "/registration",
+    registerLink: "https://forms.gle/5RzYGhT6pfC74TB96",
   },
 
   makeup: {
@@ -1917,7 +1920,8 @@ const events = {
       { name: "Yugandhara Padhye", phone: "7038188582" },
       { name: "Sanskruti Jawade", phone: "8668294865" },
     ],
-    registerLink: "/registration",
+    registerLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSfvbQrgNYcHR_hEnhhNWfdXPXFSOQVLEiZB9kFLLc6sgbXyjA/viewform?usp=sf_link",
   },
   rangoli: {
     image: require("../images/art.png"),
@@ -1969,7 +1973,8 @@ const events = {
       { name: "Vaishnavi Borkar", phone: "9307982886" },
       { name: "Sakshi Bansode", phone: "8600591667" },
     ],
-    registerLink: "/registration",
+    registerLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSccVw1l6Ju0Dw69D_6zMuzQk3uJZ3qjJ_Jj-biO-79OwPfsyQ/viewform?usp=sf_link",
   },
   classDrama: {
     image: require("../images/drama.png"),
@@ -2025,7 +2030,8 @@ const events = {
       { name: "Sanskruti Inamdar", phone: "8888003927" },
       { name: "Palavi Hardikar", phone: "9021797311" },
     ],
-    registerLink: "/registration",
+    registerLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSfRxdg9B9wbO0NUtPOW60Ym99G1GYxjl6Ddd-yfq3r8HvF7lA/viewform?usp=sf_link",
   },
 
   interCollegeNukkad: {
@@ -2277,7 +2283,7 @@ const events = {
 
   adOMania: {
     image: require("../images/online.png"),
-    title: "Ad-O-Mania: Advertisement Competition",
+    title: "Ad-O-Mania",
     subtitle: "Create Your Quirky Ad Campaign",
     details:
       "This advertising competition challenges teams to create and present a witty, imaginative, and compelling ad campaign for a fictional product or service under the theme 'Quirky Inventions.' Participants will use humor, storytelling, and creativity to market their unique invention in a fun and engaging way.",
@@ -2335,7 +2341,8 @@ const events = {
       { name: "Tanvi Dudhagundi", phone: "9699910524" },
       { name: "Sanskruti Nilawar", phone: "9834907483" },
     ],
-    registerLink: "/registration",
+    registerLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSeFGsS-rVqodVlDF-08Qd7vJ_kCfn-VMug0opj3PBRU-3f_Mw/viewform?usp=sf_link",
   },
 
   expressionDance: {
@@ -2397,7 +2404,8 @@ const events = {
       { name: "Shreya Rathi", phone: "9028828128" },
       { name: "Bhargavi Girisagar", phone: "9373602852" },
     ],
-    registerLink: "/registration",
+    registerLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLScisRxRHpHDmJbPne9SaABFbyHVR5nm0eBV1FyaOTh4ducfEA/viewform?usp=sf_link",
   },
   octopusRace: {
     image: require("../images/sports.png"),
